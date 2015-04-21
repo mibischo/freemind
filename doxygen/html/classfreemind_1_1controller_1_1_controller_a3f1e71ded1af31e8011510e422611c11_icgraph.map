@@ -1,0 +1,10 @@
+<map id="freemind.controller.Controller.getProperty" name="freemind.controller.Controller.getProperty">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#a570a0fcac79d8a95fd0ee9ecfcce6013" title="freemind.controller.Controller.init" alt="" coords="580,5,788,32"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#a4d55fad272235b2dd229936d10ffb9bc" title="freemind.controller.Controller.initialization" alt="" coords="264,56,523,83"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#aa9295a882433689391b27f84b500c74a" title="freemind.controller.Controller.set\lProperty" alt="" coords="289,107,498,149"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1controller_1_1_controller.html#ada8bc642c80906bfd638fbe77db8b3c8" title="freemind.controller.Controller.get\lDefaultFontFamilyName" alt="" coords="289,179,498,221"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#a7dc78613af09a336b2d946c992175345" title="freemind.controller.Controller.toggle\lSelectionAsRectangle" alt="" coords="571,57,797,98"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller.html#abf4b46bfc45476a785adbc4ab6efb39c" title="freemind.controller.Controller.store\lPageFormat" alt="" coords="574,122,794,163"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller_1_1_show_selection_as_rectangle_action.html#a6798bfb206eaa5b75793019045ca76d4" title="freemind.controller.Controller.\lShowSelectionAsRectangleAction.action\lPerformed" alt="" coords="845,49,1104,105"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1controller_1_1_controller.html#a253fc69c3fbde625edaee6571f908547" title="freemind.controller.Controller.get\lDefaultFont" alt="" coords="579,187,789,229"/>
+</map>

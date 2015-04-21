@@ -1,0 +1,13 @@
+<map id="freemind.common.PropertyBean.getValue" name="freemind.common.PropertyBean.getValue">
+<area shape="rect" id="node2" href="$classfreemind_1_1common_1_1_property_bean.html#a7287b74fbeee9cc8c7f0bd5c10065aad" title="freemind.common.Property\lBean.firePropertyChangeEvent" alt="" coords="233,266,431,307"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1common_1_1_boolean_property.html#af47becaf45c4b512aa195eca4d245d95" title="freemind.common.BooleanProperty.\lBooleanProperty" alt="" coords="489,5,719,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1common_1_1_color_property.html#a57d0cb455fc267fcd7fcbf58a684139d" title="freemind.common.ColorProperty.action\lPerformed" alt="" coords="481,70,727,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1common_1_1_combo_property.html#a7a0a52bde48a96be01a24c22114af982" title="freemind.common.ComboProperty.\lComboProperty" alt="" coords="493,135,715,177"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1common_1_1_font_property.html#a8fa42b1fba70148fb1c8482992633142" title="freemind.common.FontProperty.\lFontProperty" alt="" coords="500,201,708,242"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1common_1_1_icon_property.html#abbc4e7e2367518b72ca5c959b86c63f7" title="freemind.common.IconProperty.action\lPerformed" alt="" coords="483,266,725,307"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1common_1_1_number_property.html#a7f5ae989460a201e8963aaf191892ad6" title="freemind.common.NumberProperty.\lNumberProperty" alt="" coords="491,331,717,373"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1common_1_1_script_editor_property.html#a205175cfdfd4b96e9eff1f97b315ae5a" title="freemind.common.ScriptEditor\lProperty.actionPerformed" alt="" coords="505,397,703,438"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1common_1_1_string_property.html#a9ee3e57e7d5b9d2f5842332f3a61d117" title="freemind.common.StringProperty.\lStringProperty" alt="" coords="496,462,712,503"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1common_1_1_three_check_box_property.html#af382f914401c7c1e788b6ed9768af5bd" title="freemind.common.ThreeCheck\lBoxProperty.ThreeCheckBoxProperty" alt="" coords="485,527,723,569"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1common_1_1_color_property.html#ab7f3771d15df3d5b1f808f66a6d5ce0c" title="freemind.common.ColorProperty.layout" alt="" coords="777,77,1023,104"/>
+</map>

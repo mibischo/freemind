@@ -1,0 +1,8 @@
+<map id="freemind.controller.Controller.OptionAntialiasAction.actionPerformed" name="freemind.controller.Controller.OptionAntialiasAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller_1_1_option_antialias_action.html#ad6a14ec9f575e419a47318859ec70238" title="freemind.controller.Controller.\lOptionAntialiasAction.changeAntialias" alt="" coords="299,70,541,111"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#ac7a979679d425fd0ef12c1f6ddd40457" title="freemind.controller.Controller.set\lAntialiasEdges" alt="" coords="603,5,813,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#abdd89cd514759e4abaf24474eea064fa" title="freemind.controller.Controller.set\lAntialiasAll" alt="" coords="603,70,813,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#a2c236b4302d67abf53fe82f9b02afeb2" title="freemind.controller.Controller.getView" alt="" coords="589,136,827,163"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller.html#af08aeb632a58c8cce04bd218cbc8dad9" title="freemind.controller.Controller.get\lMapModule" alt="" coords="875,129,1085,170"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller.html#a4220d479ecd3ca70760f575683c6203c" title="freemind.controller.Controller.get\lMapModuleManager" alt="" coords="1134,129,1343,170"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="freemind.controller.MapModuleManager.tryToChangeToMapModule" name="freemind.controller.MapModuleManager.tryToChangeToMapModule">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_map_module_manager.html#a8e3d47bfe52bf77e00d527cbce91b085" title="freemind.controller.MapModule\lManager.getMapKeys" alt="" coords="286,5,485,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_map_module_manager.html#a3e74f8017b83743f0fc3c690ee1cd2a8" title="freemind.controller.MapModule\lManager.changeToMapModule" alt="" coords="286,70,485,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1main_1_1_tools.html#a6e8fb446c296573a7ddccaa20069008f" title="freemind.main.Tools.safe\lEquals" alt="" coords="546,37,713,78"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1_map_module.html#a2d3236c0586c6eea4a97587433c64e2a" title="freemind.view.MapModule.get\lDisplayName" alt="" coords="533,102,725,143"/>
+</map>

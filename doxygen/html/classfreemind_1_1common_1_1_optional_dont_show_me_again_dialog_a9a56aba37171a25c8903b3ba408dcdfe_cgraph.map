@@ -1,0 +1,6 @@
+<map id="freemind.common.OptionalDontShowMeAgainDialog.show" name="freemind.common.OptionalDontShowMeAgainDialog.show">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_tools.html#a6e8fb446c296573a7ddccaa20069008f" title="freemind.main.Tools.safe\lEquals" alt="" coords="302,5,469,46"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1common_1_1_text_translator.html#a21c6c6e95ee7bb90468bf84111852462" title="freemind.common.TextTranslator.getText" alt="" coords="256,71,515,97"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1main_1_1_resources.html#aa7a8b63baf65c8894323e8172d67249a" title="freemind.main.Resources.get\lInstance" alt="" coords="290,122,481,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1main_1_1_resources.html#a5d9bbd5e6e5a09d88b1f99550cc02747" title="freemind.main.Resources.create\lInstance" alt="" coords="563,122,773,163"/>
+</map>

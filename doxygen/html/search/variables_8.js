@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['icon',['icon',['../classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_icon_action.html#af0055e6a00089b5191ec8bf8d0730a27',1,'freemind::modes::mindmapmode::actions::IconAction']]],
+  ['icon_5fsize',['ICON_SIZE',['../classfreemind_1_1controller_1_1_structured_menu_holder.html#a24a5aa75f7675969544ce2d24db9424b',1,'freemind::controller::StructuredMenuHolder']]],
+  ['iconactions',['iconActions',['../classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#ab7a26d78cc1096b927c3dea4702ac569',1,'freemind::modes::mindmapmode::MindMapController']]],
+  ['icons',['icons',['../classfreemind_1_1modes_1_1_node_adapter.html#a7f66665992349f52ddeca23fa3b920f0',1,'freemind::modes::NodeAdapter']]],
+  ['ignorecase',['ignoreCase',['../classfreemind_1_1main_1_1_x_m_l_element.html#a39695f33d0de64b61d379f642f2805c7',1,'freemind::main::XMLElement']]],
+  ['importbranch',['importBranch',['../classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a5087b803d12aef26520262a2f73911f7',1,'freemind::modes::mindmapmode::MindMapController']]],
+  ['importexplorerfavorites',['importExplorerFavorites',['../classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a6c6835f92228e9e10a2237840f395810',1,'freemind::modes::mindmapmode::MindMapController']]],
+  ['importfolderstructure',['importFolderStructure',['../classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#aa09a9e2107d306abb7e0ee2db19c718e',1,'freemind::modes::mindmapmode::MindMapController']]],
+  ['importlinkedbranch',['importLinkedBranch',['../classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#af1a23f8a4490f34779d5c25caced515d',1,'freemind::modes::mindmapmode::MindMapController']]],
+  ['importlinkedbranchwithoutroot',['importLinkedBranchWithoutRoot',['../classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a06874ee7d72ec981faf6cabdaae420a7',1,'freemind::modes::mindmapmode::MindMapController']]],
+  ['increasenodefont',['increaseNodeFont',['../classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a7a542b2db9a4485e89383b48ba7ad689',1,'freemind::modes::mindmapmode::MindMapController']]],
+  ['insert_5fmenu',['INSERT_MENU',['../classfreemind_1_1controller_1_1_menu_bar.html#aa9c8e1946a2483d4a035768bd205099c',1,'freemind::controller::MenuBar']]],
+  ['int_5fedgestyle_5fbezier',['INT_EDGESTYLE_BEZIER',['../classfreemind_1_1modes_1_1_edge_adapter.html#aa4af2ac69eeb0cbb51e260e11ff5cca7',1,'freemind::modes::EdgeAdapter']]],
+  ['int_5fedgestyle_5flinear',['INT_EDGESTYLE_LINEAR',['../classfreemind_1_1modes_1_1_edge_adapter.html#a42b865fe7d41557f5429be417b091135',1,'freemind::modes::EdgeAdapter']]],
+  ['int_5fedgestyle_5fsharp_5fbezier',['INT_EDGESTYLE_SHARP_BEZIER',['../classfreemind_1_1modes_1_1_edge_adapter.html#ab8daf5825d1b99efd2f66de56ea5bbaa',1,'freemind::modes::EdgeAdapter']]],
+  ['int_5fedgestyle_5fsharp_5flinear',['INT_EDGESTYLE_SHARP_LINEAR',['../classfreemind_1_1modes_1_1_edge_adapter.html#ae45cedfa2c2aec530af26982b89ddd29',1,'freemind::modes::EdgeAdapter']]],
+  ['isattributelayoutchanged',['isAttributeLayoutChanged',['../classfreemind_1_1modes_1_1attributes_1_1_attribute_registry.html#a7bd4a1bbc325fe0553d3cb807d7af29e',1,'freemind::modes::attributes::AttributeRegistry']]],
+  ['isdraggedover',['isDraggedOver',['../classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a8f040fd503e0078d59a34fbc7873181f',1,'freemind::view::mindmapview::MainView']]],
+  ['italic',['italic',['../classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a17719c31ff1a4ef552ee7f371fff7ca6',1,'freemind::modes::mindmapmode::MindMapController']]],
+  ['iterativelevel',['iterativeLevel',['../classfreemind_1_1view_1_1mindmapview_1_1_arrow_link_view.html#a554babe4e38ddbf145e6df3e7eeb17c6',1,'freemind::view::mindmapview::ArrowLinkView']]]
+];

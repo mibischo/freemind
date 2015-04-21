@@ -1,0 +1,17 @@
+<map id="freemind.common.PropertyControl" name="freemind.common.PropertyControl">
+<area shape="rect" id="node2" href="$classfreemind_1_1common_1_1_boolean_property.html" title="freemind.common.BooleanProperty" alt="" coords="233,12,458,39"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1common_1_1_color_property.html" title="freemind.common.ColorProperty" alt="" coords="241,63,449,89"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1common_1_1_combo_property.html" title="freemind.common.ComboProperty" alt="" coords="236,113,455,140"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1common_1_1_font_property.html" title="freemind.common.FontProperty" alt="" coords="243,164,447,191"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1common_1_1_icon_property.html" title="freemind.common.IconProperty" alt="" coords="244,215,447,241"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1common_1_1_next_line_property.html" title="freemind.common.NextLine\lProperty" alt="" coords="255,266,435,307"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1common_1_1_number_property.html" title="freemind.common.NumberProperty" alt="" coords="234,332,457,359"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1common_1_1_script_editor_property.html" title="freemind.common.ScriptEditor\lProperty" alt="" coords="247,383,444,425"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1common_1_1_separator_property.html" title="freemind.common.Separator\lProperty" alt="" coords="253,449,438,490"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1common_1_1_string_property.html" title="freemind.common.StringProperty" alt="" coords="239,515,451,541"/>
+<area shape="rect" id="node15" href="$classfreemind_1_1common_1_1_three_check_box_property.html" title="freemind.common.ThreeCheck\lBoxProperty" alt="" coords="246,566,445,607"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1common_1_1_dont_show_notification_property.html" title="freemind.common.DontShow\lNotificationProperty" alt="" coords="539,5,727,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1dialogs_1_1_integer_combo_property.html" title="freemind.modes.mindmapmode.dialogs.\lIntegerComboProperty" alt="" coords="507,106,759,147"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1common_1_1_password_property.html" title="freemind.common.Password\lProperty" alt="" coords="540,503,727,545"/>
+<area shape="rect" id="node16" href="$classfreemind_1_1common_1_1_remind_value_property.html" title="freemind.common.RemindValue\lProperty" alt="" coords="530,569,737,610"/>
+</map>

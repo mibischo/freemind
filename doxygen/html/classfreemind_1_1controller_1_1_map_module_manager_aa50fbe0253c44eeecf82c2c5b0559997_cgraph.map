@@ -1,0 +1,6 @@
+<map id="freemind.controller.MapModuleManager.newMapModule" name="freemind.controller.MapModuleManager.newMapModule">
+<area shape="rect" id="node2" href="$interfacefreemind_1_1modes_1_1_mode_controller.html#a11ceee2d3828b57251f22a79324b4c1c" title="freemind.modes.ModeController.getMode" alt="" coords="253,5,512,32"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1_map_module.html#a659d71fecd942ae3f0f96d31f64f74f8" title="freemind.view.MapModule.to\lString" alt="" coords="290,57,475,98"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1_map_module.html#a9799a8f98f0929db0b9aec6d3be0f25d" title="freemind.view.MapModule.rename" alt="" coords="561,64,778,91"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1_map_module.html#a802ef22a5a27346dfb0fd95d35efc937" title="freemind.view.MapModule.get\lModel" alt="" coords="827,57,1019,98"/>
+</map>

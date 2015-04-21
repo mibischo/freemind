@@ -1,0 +1,7 @@
+<map id="freemind.controller.MenuItemEnabledListener" name="freemind.controller.MenuItemEnabledListener">
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_color_action.html" title="freemind.modes.mindmapmode.actions.\lCloudColorAction" alt="" coords="219,70,472,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_hook_action.html" title="freemind.modes.mindmapmode.actions.\lNodeHookAction" alt="" coords="219,135,472,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller_1_1_link_action_base.html" title="freemind.modes.mindmapmode.\lMindMapController.LinkActionBase" alt="" coords="233,201,458,242"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller_1_1_follow_link_action.html" title="freemind.modes.mindmapmode.\lMindMapController.FollowLinkAction" alt="" coords="525,163,757,205"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller_1_1_open_link_directory_action.html" title="freemind.modes.mindmapmode.\lMindMapController.OpenLinkDirectory\lAction" alt="" coords="521,229,762,285"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="freemind.controller.Controller.beforeMapModuleChange" name="freemind.controller.Controller.beforeMapModuleChange">
+<area shape="rect" id="node2" href="$interfacefreemind_1_1modes_1_1_mode_controller.html#a00252048b4d442c05098a14ad2cacddf" title="freemind.modes.ModeController.get\lModeToolBar" alt="" coords="280,5,507,46"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mode_controller.html#aa5bdfea45ad061f440551ad77da35534" title="freemind.modes.ModeController.get\lLeftToolBar" alt="" coords="280,70,507,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#a853e4de9923c54cc1cb5d6bff9bf322d" title="freemind.controller.Controller.get\lFrame" alt="" coords="289,135,498,177"/>
+</map>

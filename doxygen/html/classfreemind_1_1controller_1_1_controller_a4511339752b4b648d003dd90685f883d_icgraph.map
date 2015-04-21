@@ -1,0 +1,7 @@
+<map id="freemind.controller.Controller.changeZoomValueProperty" name="freemind.controller.Controller.changeZoomValueProperty">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#a50d702a7f01c4cc646c49a0a9c601aaf" title="freemind.controller.Controller.after\lMapModuleChange" alt="" coords="301,9,517,50"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#abfd1defa542f41f923760309abe82b3d" title="freemind.controller.Controller.setZoom" alt="" coords="289,77,530,104"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#a526ba0f0036b238a0b861a9b4b7474ac" title="freemind.controller.Controller.add\lTabbedPane" alt="" coords="579,5,791,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller_1_1_zoom_in_action.html#aec8df0caa4e309da3c044371c8eae8c5" title="freemind.controller.Controller.\lZoomInAction.actionPerformed" alt="" coords="586,70,785,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller_1_1_zoom_out_action.html#a55331643edf31fdac8ac9a2bf8255146" title="freemind.controller.Controller.\lZoomOutAction.actionPerformed" alt="" coords="580,135,791,177"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="freemind.controller.Controller.afterMapModuleChange" name="freemind.controller.Controller.afterMapModuleChange">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#a853e4de9923c54cc1cb5d6bff9bf322d" title="freemind.controller.Controller.get\lFrame" alt="" coords="569,159,778,201"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#aaa118e1200bc965420464956b07e440f" title="freemind.controller.Controller.set\lAllActions" alt="" coords="282,101,491,142"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#a2c236b4302d67abf53fe82f9b02afeb2" title="freemind.controller.Controller.getView" alt="" coords="555,343,792,369"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller.html#a4511339752b4b648d003dd90685f883d" title="freemind.controller.Controller.change\lZoomValueProperty" alt="" coords="270,218,503,259"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1_map_module.html#a162fd7ff6d8fc00deebebb83a92edd5f" title="freemind.view.MapModule.getView" alt="" coords="277,284,497,311"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1controller_1_1_controller.html#a7584a6d6ddbb17093493ce0ce4a607e4" title="freemind.controller.Controller.set\lTitle" alt="" coords="282,35,491,77"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1controller_1_1_controller.html#aa7bc4a6cc5eb42909cbae6820e69e8e7" title="freemind.controller.Controller.obtain\lFocusForSelected" alt="" coords="273,335,500,377"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#af08aeb632a58c8cce04bd218cbc8dad9" title="freemind.controller.Controller.get\lMapModule" alt="" coords="843,161,1053,202"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller.html#a4220d479ecd3ca70760f575683c6203c" title="freemind.controller.Controller.get\lMapModuleManager" alt="" coords="1102,161,1311,202"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1controller_1_1_controller.html#a8bbf21f0d4ce731707be84f613a88f74" title="freemind.controller.Controller.getMode" alt="" coords="553,43,794,69"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1controller_1_1_controller.html#a67c6b1924a0739a42301dfd004cb9e08" title="freemind.controller.Controller.get\lResourceString" alt="" coords="569,94,778,135"/>
+</map>

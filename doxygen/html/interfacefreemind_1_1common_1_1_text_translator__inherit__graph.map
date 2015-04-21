@@ -1,0 +1,12 @@
+<map id="freemind.common.TextTranslator" name="freemind.common.TextTranslator">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_resources.html" title="freemind.main.Resources" alt="" coords="306,5,475,32"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1dialogs_1_1_style_pattern_frame.html" title="freemind.modes.mindmapmode.dialogs.\lStylePatternFrame" alt="" coords="265,57,517,98"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mode_controller.html" title="freemind.modes.ModeController" alt="" coords="288,123,493,149"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1preferences_1_1layout_1_1_option_panel.html" title="freemind.preferences.layout.\lOptionPanel" alt="" coords="298,174,483,215"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html" title="freemind.modes.Controller\lAdapter" alt="" coords="565,115,739,157"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html" title="freemind.modes.mindmapmode.\lMindMapController" alt="" coords="787,82,994,123"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1viewmodes_1_1_view_controller_adapter.html" title="freemind.modes.viewmodes.\lViewControllerAdapter" alt="" coords="798,147,983,189"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_controller.html" title="freemind.modes.browsemode.\lBrowseController" alt="" coords="1045,82,1240,123"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1filemode_1_1_file_controller.html" title="freemind.modes.filemode.\lFileController" alt="" coords="1057,147,1228,189"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_controller.html" title="freemind.modes.schememode.\lSchemeController" alt="" coords="1043,213,1243,254"/>
+</map>

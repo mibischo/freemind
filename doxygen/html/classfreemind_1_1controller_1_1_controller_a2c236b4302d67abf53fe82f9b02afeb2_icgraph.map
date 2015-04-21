@@ -1,0 +1,14 @@
+<map id="freemind.controller.Controller.getView" name="freemind.controller.Controller.getView">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#a50d702a7f01c4cc646c49a0a9c601aaf" title="freemind.controller.Controller.after\lMapModuleChange" alt="" coords="603,5,819,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#aa7bc4a6cc5eb42909cbae6820e69e8e7" title="freemind.controller.Controller.obtain\lFocusForSelected" alt="" coords="299,63,525,105"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller.html#abfd1defa542f41f923760309abe82b3d" title="freemind.controller.Controller.setZoom" alt="" coords="291,180,533,207"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1controller_1_1_controller_1_1_zoom_in_action.html#aec8df0caa4e309da3c044371c8eae8c5" title="freemind.controller.Controller.\lZoomInAction.actionPerformed" alt="" coords="611,126,810,167"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1controller_1_1_controller_1_1_zoom_out_action.html#a55331643edf31fdac8ac9a2bf8255146" title="freemind.controller.Controller.\lZoomOutAction.actionPerformed" alt="" coords="605,198,816,239"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1controller_1_1_controller_1_1_option_antialias_action.html#ad6a14ec9f575e419a47318859ec70238" title="freemind.controller.Controller.\lOptionAntialiasAction.changeAntialias" alt="" coords="291,282,533,323"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1controller_1_1_map_mouse_motion_listener.html#a8b128da807a3ce0964fc53c57d96066e" title="freemind.controller.MapMouse\lMotionListener.mouseClicked" alt="" coords="314,347,510,389"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#a526ba0f0036b238a0b861a9b4b7474ac" title="freemind.controller.Controller.add\lTabbedPane" alt="" coords="889,5,1101,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#a4d55fad272235b2dd229936d10ffb9bc" title="freemind.controller.Controller.initialization" alt="" coords="581,71,840,97"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller.html#a570a0fcac79d8a95fd0ee9ecfcce6013" title="freemind.controller.Controller.init" alt="" coords="891,71,1099,97"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1controller_1_1_controller_1_1_option_antialias_action.html#a5ce8858aa73cb04f810e0f5c811aa947" title="freemind.controller.Controller.\lOptionAntialiasAction.actionPerformed" alt="" coords="588,278,833,319"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1controller_1_1_controller_1_1_option_antialias_action.html#a71d27e50cb5651d6613112694dee65cc" title="freemind.controller.Controller.\lOptionAntialiasAction.propertyChanged" alt="" coords="586,343,835,385"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="freemind.common.ColorProperty.layout" name="freemind.common.ColorProperty.layout">
+<area shape="rect" id="node2" href="$classfreemind_1_1common_1_1_color_property.html#ab3557d870e047aa05a6b1a9d2265b555" title="freemind.common.ColorProperty.get\lLabel" alt="" coords="611,8,842,50"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1common_1_1_color_property.html#a7abf02211f339e3449e40e3bd0ab8bed" title="freemind.common.ColorProperty.get\lDescription" alt="" coords="310,38,541,79"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1common_1_1_text_translator.html#a21c6c6e95ee7bb90468bf84111852462" title="freemind.common.TextTranslator.getText" alt="" coords="597,169,856,196"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1common_1_1_color_property.html#a57d0cb455fc267fcd7fcbf58a684139d" title="freemind.common.ColorProperty.action\lPerformed" alt="" coords="302,103,549,144"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1common_1_1_color_property.html#aeb8396b02adb008cfd568a4d5c071b35" title="freemind.common.ColorProperty.set\lValue" alt="" coords="310,220,541,262"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1common_1_1_property_bean.html#a7287b74fbeee9cc8c7f0bd5c10065aad" title="freemind.common.Property\lBean.firePropertyChangeEvent" alt="" coords="627,103,826,144"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1common_1_1_property_bean.html#a82e37cd3bf6768cbf0ab98e0ab1e8564" title="freemind.common.Property\lBean.getLabel" alt="" coords="904,70,1083,111"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1common_1_1_property_bean.html#a8e56b0aa7f64c76d7a3288ca14ccea38" title="freemind.common.Property\lBean.getValue" alt="" coords="904,135,1083,176"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1main_1_1_tools.html#a429bb434d0b1775c46b29621432d48c1" title="freemind.main.Tools.xmlTo\lColor" alt="" coords="638,220,815,262"/>
+</map>

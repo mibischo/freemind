@@ -1,0 +1,7 @@
+<map id="freemind.common.ColorProperty.actionPerformed" name="freemind.common.ColorProperty.actionPerformed">
+<area shape="rect" id="node2" href="$interfacefreemind_1_1common_1_1_text_translator.html#a21c6c6e95ee7bb90468bf84111852462" title="freemind.common.TextTranslator.getText" alt="" coords="301,5,560,32"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1common_1_1_color_property.html#ab3557d870e047aa05a6b1a9d2265b555" title="freemind.common.ColorProperty.get\lLabel" alt="" coords="315,57,546,98"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1common_1_1_property_bean.html#a7287b74fbeee9cc8c7f0bd5c10065aad" title="freemind.common.Property\lBean.firePropertyChangeEvent" alt="" coords="331,122,530,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1common_1_1_property_bean.html#a82e37cd3bf6768cbf0ab98e0ab1e8564" title="freemind.common.Property\lBean.getLabel" alt="" coords="608,89,787,130"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1common_1_1_property_bean.html#a8e56b0aa7f64c76d7a3288ca14ccea38" title="freemind.common.Property\lBean.getValue" alt="" coords="608,154,787,195"/>
+</map>

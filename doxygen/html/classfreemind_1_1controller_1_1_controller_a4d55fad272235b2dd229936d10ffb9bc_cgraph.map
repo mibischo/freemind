@@ -1,0 +1,9 @@
+<map id="freemind.controller.Controller.initialization" name="freemind.controller.Controller.initialization">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#aa7bc4a6cc5eb42909cbae6820e69e8e7" title="freemind.controller.Controller.obtain\lFocusForSelected" alt="" coords="312,34,539,75"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller.html#a3f1e71ded1af31e8011510e422611c11" title="freemind.controller.Controller.get\lProperty" alt="" coords="321,99,530,141"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1main_1_1_tools.html#af7bdb9ecb92d1e2cb2aa1cf412b79649" title="freemind.main.Tools.isAvailable\lFontFamily" alt="" coords="324,165,527,206"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#a2c236b4302d67abf53fe82f9b02afeb2" title="freemind.controller.Controller.getView" alt="" coords="587,12,824,39"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller.html#a853e4de9923c54cc1cb5d6bff9bf322d" title="freemind.controller.Controller.get\lFrame" alt="" coords="601,63,810,105"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#af08aeb632a58c8cce04bd218cbc8dad9" title="freemind.controller.Controller.get\lMapModule" alt="" coords="873,5,1082,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#a4220d479ecd3ca70760f575683c6203c" title="freemind.controller.Controller.get\lMapModuleManager" alt="" coords="1131,5,1341,46"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="freemind.controller.MenuBar" name="freemind.controller.MenuBar">
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html" title="freemind.controller.Controller" alt="" coords="741,297,928,324"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller_1_1_option_antialias_action.html" title="freemind.controller.Controller.\lOptionAntialiasAction" alt="" coords="281,109,471,150"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1controller_1_1_controller_1_1_property_action.html" title="freemind.controller.Controller.\lPropertyAction" alt="" coords="281,174,471,215"/>
+<area shape="rect" id="node9" href="$interfacefreemind_1_1preferences_1_1_freemind_property_listener.html" title="freemind.preferences.Freemind\lPropertyListener" alt="" coords="5,109,205,150"/>
+<area shape="rect" id="node14" href="$interfacefreemind_1_1controller_1_1_controller_1_1_local_link_converter.html" title="freemind.controller.Controller.\lLocalLinkConverter" alt="" coords="281,381,471,422"/>
+</map>

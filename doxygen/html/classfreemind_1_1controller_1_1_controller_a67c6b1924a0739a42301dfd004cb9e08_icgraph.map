@@ -1,0 +1,15 @@
+<map id="freemind.controller.Controller.getResourceString" name="freemind.controller.Controller.getResourceString">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#a570a0fcac79d8a95fd0ee9ecfcce6013" title="freemind.controller.Controller.init" alt="" coords="288,5,496,32"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#a55fddbadf3261a250533bd15364dd7ea" title="freemind.controller.Controller.create\lNewMode" alt="" coords="568,107,795,149"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#aa274f3430edcef28a429e7c320a8aafd" title="freemind.controller.Controller.error\lMessage" alt="" coords="283,107,501,149"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller.html#a7584a6d6ddbb17093493ce0ce4a607e4" title="freemind.controller.Controller.set\lTitle" alt="" coords="287,173,497,214"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1controller_1_1_controller_1_1_zoom_in_action.html#a5ccaca87a76f7b43e964766b7132d0ea" title="freemind.controller.Controller.\lZoomInAction.ZoomInAction" alt="" coords="297,238,487,279"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1controller_1_1_controller_1_1_zoom_out_action.html#a2233a051cb0075b8edc251f5e3719c88" title="freemind.controller.Controller.\lZoomOutAction.ZoomOutAction" alt="" coords="289,303,495,345"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1controller_1_1_controller_1_1_show_selection_as_rectangle_action.html#ab868d7aca086d38b8c7fd3eaf39dc74c" title="freemind.controller.Controller.\lShowSelectionAsRectangleAction.Show\lSelectionAsRectangleAction" alt="" coords="265,369,519,425"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1controller_1_1_controller_1_1_property_action.html#a55338c7c7234c0dbfcc70ad9c252a0ff" title="freemind.controller.Controller.\lPropertyAction.PropertyAction" alt="" coords="293,450,491,491"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1controller_1_1_controller_1_1_property_action.html#ade417264d01542baa1657855e390e6b4" title="freemind.controller.Controller.\lPropertyAction.actionPerformed" alt="" coords="289,515,495,557"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1controller_1_1_menu_bar.html#a5d207eef33d42c486259b66b188b454d" title="freemind.controller.Menu\lBar.updateMenus" alt="" coords="310,581,474,622"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_last_opened_list.html#a7fc786f8324e40d286ed8cea58c9b385" title="freemind.controller.Last\lOpenedList.open" alt="" coords="871,107,1028,149"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller.html#a50d702a7f01c4cc646c49a0a9c601aaf" title="freemind.controller.Controller.after\lMapModuleChange" alt="" coords="573,173,789,214"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1controller_1_1_controller.html#a526ba0f0036b238a0b861a9b4b7474ac" title="freemind.controller.Controller.add\lTabbedPane" alt="" coords="843,173,1055,214"/>
+</map>

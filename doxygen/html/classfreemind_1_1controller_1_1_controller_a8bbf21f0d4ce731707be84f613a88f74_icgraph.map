@@ -1,0 +1,9 @@
+<map id="freemind.controller.Controller.getMode" name="freemind.controller.Controller.getMode">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#a33befcbe33bd29e96c9c7b0f1d9490b7" title="freemind.controller.Controller.get\lModeController" alt="" coords="297,5,506,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#ada41b322ce4e9d9e8931ba7aea098508" title="freemind.controller.Controller.set\lLeftToolbarVisible" alt="" coords="563,27,773,69"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#a55fddbadf3261a250533bd15364dd7ea" title="freemind.controller.Controller.create\lNewMode" alt="" coords="555,114,781,155"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller.html#a7584a6d6ddbb17093493ce0ce4a607e4" title="freemind.controller.Controller.set\lTitle" alt="" coords="297,173,506,214"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_last_opened_list.html#a7fc786f8324e40d286ed8cea58c9b385" title="freemind.controller.Last\lOpenedList.open" alt="" coords="857,114,1015,155"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller.html#a50d702a7f01c4cc646c49a0a9c601aaf" title="freemind.controller.Controller.after\lMapModuleChange" alt="" coords="560,179,776,221"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1controller_1_1_controller.html#a526ba0f0036b238a0b861a9b4b7474ac" title="freemind.controller.Controller.add\lTabbedPane" alt="" coords="830,179,1042,221"/>
+</map>

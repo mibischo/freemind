@@ -1,0 +1,9 @@
+<map id="freemind.controller.Controller.createNewMode" name="freemind.controller.Controller.createNewMode">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#a8bbf21f0d4ce731707be84f613a88f74" title="freemind.controller.Controller.getMode" alt="" coords="547,41,789,67"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#aa274f3430edcef28a429e7c320a8aafd" title="freemind.controller.Controller.error\lMessage" alt="" coords="281,209,498,251"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#a67c6b1924a0739a42301dfd004cb9e08" title="freemind.controller.Controller.get\lResourceString" alt="" coords="563,157,773,199"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#a853e4de9923c54cc1cb5d6bff9bf322d" title="freemind.controller.Controller.get\lFrame" alt="" coords="563,223,773,264"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller.html#a4220d479ecd3ca70760f575683c6203c" title="freemind.controller.Controller.get\lMapModuleManager" alt="" coords="838,37,1047,79"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1_controller.html#a7584a6d6ddbb17093493ce0ce4a607e4" title="freemind.controller.Controller.set\lTitle" alt="" coords="285,92,494,133"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1controller_1_1_controller.html#af08aeb632a58c8cce04bd218cbc8dad9" title="freemind.controller.Controller.get\lMapModule" alt="" coords="563,92,773,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="freemind.controller.Controller.ShowSelectionAsRectangleAction.actionPerformed" name="freemind.controller.Controller.ShowSelectionAsRectangleAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_controller.html#a7dc78613af09a336b2d946c992175345" title="freemind.controller.Controller.toggle\lSelectionAsRectangle" alt="" coords="312,38,539,79"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_controller.html#aa9295a882433689391b27f84b500c74a" title="freemind.controller.Controller.set\lProperty" alt="" coords="587,38,797,79"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1_controller.html#a3f1e71ded1af31e8011510e422611c11" title="freemind.controller.Controller.get\lProperty" alt="" coords="846,5,1055,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#a853e4de9923c54cc1cb5d6bff9bf322d" title="freemind.controller.Controller.get\lFrame" alt="" coords="846,70,1055,111"/>
+</map>
