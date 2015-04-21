@@ -1,12 +1,5 @@
-<a href="https://scan.coverity.com/projects/4894">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/4894/badge.svg"/>
-</a>
-<br/>
-<a href="https://travis-ci.org/mibischo/freemind">
-  <img Travis-ci Build Status"
-       src="https://travis-ci.org/mibischo/freemind.svg?branch=master"/>
-</a>
+Coverity: [![Build Status](https://scan.coverity.com/projects/4894/badge.svg)](https://scan.coverity.com/projects/4894)
+Travis-CI: [![Build Status](https://travis-ci.org/mibischo/freemind.svg?branch=master)](https://travis-ci.org/mibischo/freemind)
 
 
 /*FreeMind - A Program for creating and viewing Mindmaps
