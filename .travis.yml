@@ -1,0 +1,6 @@
+language: 
+	java
+script: 
+	ant dist
+after_success:
+	ant test
