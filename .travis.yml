@@ -1,4 +1,18 @@
 language: java
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "LSgjrqU6KX6o+Wf1cwtC+saRh2ttLqB5QtM/qQ/Q9hpze/ChYSjdqpf8tch6AAD/l1fUWLQT+3Tr4TT1K+Tc/M2qut1XwSl3UeGxIfo0KjeHwraujMgiu+daGAXETsgf3XyrKMFXwsfFbC1uoutUVsu/icY66L1NOZj7eOfdcTY="
+
+addons:
+  coverity_scan:
+    project:
+      name: "mibischo/freemind"
+      description: "freemind"
+    notification_email: m.bischof2@gmail.com
+    build_command:   "ant dist"
+    branch_pattern: coverity_scan
 before_script:
  - chmod +x check_for_duplicate_resources.sh
 script: ant dist
