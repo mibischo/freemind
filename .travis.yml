@@ -1,3 +1,5 @@
 language: java
+before_script:
+ - chmod +x check_for_duplicate_resources.sh
 script: ant dist
 after_success: ant test
