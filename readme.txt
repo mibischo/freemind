@@ -1,3 +1,14 @@
+<a href="https://scan.coverity.com/projects/4894">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/4894/badge.svg"/>
+</a>
+<br/>
+<a href="https://travis-ci.org/mibischo/freemind">
+  <img Travis-ci Build Status"
+       src="https://travis-ci.org/mibischo/freemind.svg?branch=master"/>
+</a>
+
+
 /*FreeMind - A Program for creating and viewing Mindmaps
  *Copyright (C) 2005   Christian Foltin.
  *
