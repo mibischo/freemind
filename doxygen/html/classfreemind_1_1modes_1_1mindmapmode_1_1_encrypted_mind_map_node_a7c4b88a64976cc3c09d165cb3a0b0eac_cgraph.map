@@ -1,0 +1,10 @@
+<map id="freemind.modes.mindmapmode.EncryptedMindMapNode.decrypt" name="freemind.modes.mindmapmode.EncryptedMindMapNode.decrypt">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_encrypted_mind_map_node.html#a1b31eb451796988ab9b5a46c197bef72" title="freemind.modes.mindmapmode.\lEncryptedMindMapNode.checkPassword" alt="" coords="266,5,526,46"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a96d14c3f37cf4ec6c2998c92061628d0" title="freemind.modes.MindMapNode.children\lUnfolded" alt="" coords="271,70,521,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#af024e1508e175947ce3a4f9b1dac5aac" title="freemind.modes.mindmapmode.\lMindMapNodeModel.MindMapNodeModel" alt="" coords="265,135,527,177"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_node_adapter.html#aa1ab0dd9c2a60c27b311bf1c4db4c96d" title="freemind.modes.NodeAdapter.get\lModeController" alt="" coords="289,201,503,242"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_encrypted_mind_map_node.html#a564889b58613160dd9295d48348efdd0" title="freemind.modes.mindmapmode.\lEncryptedMindMapNode.setFolded" alt="" coords="283,266,509,307"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_node_adapter.html#a1c0efd1aacb673a99529e643ae03362d" title="freemind.modes.NodeAdapter.getMap" alt="" coords="276,332,516,359"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1main_1_1_html_tools.html#a860ef227a50f536686b78f7785f8e9c5" title="freemind.main.HtmlTools.get\lInstance" alt="" coords="604,5,791,46"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_encrypted_mind_map_node.html#ae77405db1073e9649219ebb950e2a567" title="freemind.modes.mindmapmode.\lEncryptedMindMapNode.isAccessible" alt="" coords="576,266,819,307"/>
+</map>

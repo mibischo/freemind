@@ -1,0 +1,8 @@
+<map id="freemind.modes.browsemode.EncryptedBrowseNode.EncryptedBrowseNode" name="freemind.modes.browsemode.EncryptedBrowseNode.EncryptedBrowseNode">
+<area shape="rect" id="node2" href="$interfacefreemind_1_1modes_1_1_mode_controller.html#ac4d06e5eade25da4c0f4c2d0b84df179" title="freemind.modes.ModeController.getMap" alt="" coords="345,5,597,32"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1browsemode_1_1_encrypted_browse_node.html#a3ac51e940d049afe35f9c313dd48ffbe" title="freemind.modes.browsemode.\lEncryptedBrowseNode.updateIcon" alt="" coords="360,57,581,98"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_node_adapter.html#a56b346dade60475576ee6bd2f6a0ca83" title="freemind.modes.NodeAdapter.set\lStateIcon" alt="" coords="646,57,861,98"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_node_adapter.html#a1c0efd1aacb673a99529e643ae03362d" title="freemind.modes.NodeAdapter.getMap" alt="" coords="1200,39,1440,65"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_node_adapter.html#a94bf4cd757bac102b4df7e3a91760f6c" title="freemind.modes.NodeAdapter.addIcon" alt="" coords="909,64,1152,91"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_mind_icon.html#ab95077e3183a251ddafeb275d740cf02" title="freemind.modes.MindIcon.factory" alt="" coords="924,115,1137,141"/>
+</map>

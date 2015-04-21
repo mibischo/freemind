@@ -1,0 +1,13 @@
+<map id="freemind.view.mindmapview.EdgeView.getModel" name="freemind.view.mindmapview.EdgeView.getModel">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_bezier_edge_view.html#add5b64da10644c68de21d93957fe5f04" title="freemind.view.mindmapview.\lBezierEdgeView.getColor" alt="" coords="505,5,689,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a0c7f5ea6a343477f2ad7b7a14d94e841" title="freemind.view.mindmapview.\lEdgeView.getWidth" alt="" coords="247,181,431,222"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_linear_edge_view.html#a90e87ec63eb15f30e38bccfa4825e613" title="freemind.view.mindmapview.\lLinearEdgeView.getColor" alt="" coords="247,311,431,353"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1view_1_1mindmapview_1_1_sharp_bezier_edge_view.html#af0102db25b463629aa44496c8057a342" title="freemind.view.mindmapview.\lSharpBezierEdgeView.getColor" alt="" coords="237,377,440,418"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1view_1_1mindmapview_1_1_sharp_linear_edge_view.html#aba36a2a8f0b31f6d745635c5b8dcd46b" title="freemind.view.mindmapview.\lSharpLinearEdgeView.getColor" alt="" coords="238,246,439,287"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_bezier_edge_view.html#add8f5bea36a7fcd2bacdf85bbcdb0e61" title="freemind.view.mindmapview.\lBezierEdgeView.paint" alt="" coords="755,34,939,75"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a43dc7a1530032e9637c40c8a1bddd50d" title="freemind.view.mindmapview.\lEdgeView.getStroke" alt="" coords="505,70,689,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_linear_edge_view.html#a800f74e45e139d42545775848da57ef9" title="freemind.view.mindmapview.\lLinearEdgeView.paint" alt="" coords="755,129,939,170"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_sharp_bezier_edge_view.html#a140d2711c80eb52605824cec264ef290" title="freemind.view.mindmapview.\lSharpBezierEdgeView.createStart" alt="" coords="488,187,707,229"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_sharp_linear_edge_view.html#a01cce6bd54d9f50d1dbc3f9672ca9ac9" title="freemind.view.mindmapview.\lSharpLinearEdgeView.paint" alt="" coords="505,253,689,294"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1view_1_1mindmapview_1_1_sharp_bezier_edge_view.html#af10b72798e503d666e31b8e516a6d5e1" title="freemind.view.mindmapview.\lSharpBezierEdgeView.paint" alt="" coords="505,377,689,418"/>
+</map>

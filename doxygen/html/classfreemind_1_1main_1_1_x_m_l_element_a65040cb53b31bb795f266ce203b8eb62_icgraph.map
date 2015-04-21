@@ -1,0 +1,18 @@
+<map id="freemind.main.XMLElement.getName" name="freemind.main.XMLElement.getName">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1filter_1_1condition_1_1_condition_factory.html#ac0ddc6485f06dd21e0bd9df60c17eb54" title="freemind.controller.filter.condition.\lConditionFactory.loadCondition" alt="" coords="309,5,525,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1extensions_1_1_permanent_node_hook_adapter.html#ae5d96a55ace32bff54b9a3594be4878c" title="freemind.extensions.Permanent\lNodeHookAdapter.loadNameValuePairs" alt="" coords="291,70,543,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1main_1_1_x_m_l_element.html#a5207a17b5fcc9ffeeccfa237b45e7cd3" title="freemind.main.XMLElement.invalid\lValueSet" alt="" coords="308,135,527,177"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1main_1_1_x_m_l_element.html#aa715aa73649bb0bf8197e194f2564d13" title="freemind.main.XMLElement.invalid\lValue" alt="" coords="308,201,527,242"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1main_1_1_x_m_l_element.html#ab066b1ce60a249cc8a66a165948606fd" title="freemind.main.XMLElement.unexpected\lEndOfData" alt="" coords="292,266,543,307"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1main_1_1_x_m_l_element.html#afda278ca0dca24977f8497daa21d36e5" title="freemind.main.XMLElement.syntax\lError" alt="" coords="306,331,529,373"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1main_1_1_x_m_l_element.html#a99bff2021b1a60c3313c9b42a9c9c64a" title="freemind.main.XMLElement.expected\lInput" alt="" coords="299,397,536,438"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1main_1_1_x_m_l_element.html#a9c6fd3bf9f3833c2412ab4db1190f249" title="freemind.main.XMLElement.unknown\lEntity" alt="" coords="300,462,535,503"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_style_pattern.html#afb32f6b45e643cb9346f6dc60b7ef7e7" title="freemind.modes.StylePattern.load\lPattern" alt="" coords="308,527,527,569"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1_x_m_l_element_adapter.html#af70aa33d55b13f2a9a67855b7966d80d" title="freemind.modes.XMLElement\lAdapter.XMLElementAdapter" alt="" coords="322,593,513,634"/>
+<area shape="rect" id="node15" href="$classfreemind_1_1modes_1_1_x_m_l_element_adapter.html#ac199a7561e4e223c44788359f1c93a32" title="freemind.modes.XMLElement\lAdapter.addChild" alt="" coords="322,658,513,699"/>
+<area shape="rect" id="node16" href="$classfreemind_1_1modes_1_1_x_m_l_element_adapter.html#a6040adf2760889d2b96f35f29e769e2a" title="freemind.modes.XMLElement\lAdapter.setAttribute" alt="" coords="322,723,513,765"/>
+<area shape="rect" id="node17" href="$classfreemind_1_1modes_1_1_x_m_l_element_adapter.html#ab417433058b020a467c0d895eae71581" title="freemind.modes.XMLElement\lAdapter.completeElement" alt="" coords="322,789,513,830"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html#aa6dd2f6539362e70e0a4148bdd13223a" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase.loadFrom" alt="" coords="593,38,842,79"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#a4af399232da24ea105509c86e19ec46b" title="freemind.modes.common.plugins.\lReminderHookBase.loadFrom" alt="" coords="609,103,826,145"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1_style_pattern.html#aab658bce6811d25ccb3644f79e3b9245" title="freemind.modes.StylePattern.\lStylePattern" alt="" coords="620,527,815,569"/>
+</map>

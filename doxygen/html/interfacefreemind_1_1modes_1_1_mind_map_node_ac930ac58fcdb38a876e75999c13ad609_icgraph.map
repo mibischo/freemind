@@ -1,0 +1,5 @@
+<map id="freemind.modes.MindMapNode.getActivatedHooks" name="freemind.modes.MindMapNode.getActivatedHooks">
+<area shape="rect" id="node2" href="$classfreemind_1_1extensions_1_1_hook_factory_adapter.html#ac5a4cf8c79734083b1468314096e42c3" title="freemind.extensions.Hook\lFactoryAdapter.getHookInNode" alt="" coords="313,5,516,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1extensions_1_1_hook_instanciation_method.html#a92906520c5049b21969afad72b126ffc" title="freemind.extensions.Hook\lInstanciationMethod.isAlready\lPresent" alt="" coords="317,71,513,127"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html#ab1b52b07b1dec921ed301e3e4662da99" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase.getBaseHook" alt="" coords="278,151,551,193"/>
+</map>

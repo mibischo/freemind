@@ -1,0 +1,6 @@
+<map id="freemind.view.mindmapview.NodeView.convertPointToMap" name="freemind.view.mindmapview.NodeView.convertPointToMap">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#af5ba45f420f6533d23b1aaeb91173c56" title="freemind.view.mindmapview.\lNodeView.getLinkPoint" alt="" coords="248,5,432,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#aa6b13e9746b74d8d3784e498fb35af77" title="freemind.view.mindmapview.\lNodeView.getInPointInMap" alt="" coords="248,70,432,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a6babd586b1127a075fd63e19f2a9474f" title="freemind.view.mindmapview.\lNodeView.getNextPage" alt="" coords="480,37,664,78"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a0c6286dae8347c3820661c72332c3315" title="freemind.view.mindmapview.\lNodeView.getPreviousPage" alt="" coords="480,102,664,143"/>
+</map>

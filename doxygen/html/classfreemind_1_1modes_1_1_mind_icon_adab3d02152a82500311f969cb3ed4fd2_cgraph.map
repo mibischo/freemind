@@ -1,0 +1,9 @@
+<map id="freemind.modes.MindIcon.getIcon" name="freemind.modes.MindIcon.getIcon">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_resources.html#aa7a8b63baf65c8894323e8172d67249a" title="freemind.main.Resources.get\lInstance" alt="" coords="282,38,473,79"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_mind_icon.html#ac2879f6219b1add420a17ec6ff2bbf73" title="freemind.modes.MindIcon.get\lIconFileName" alt="" coords="281,135,473,177"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_mind_icon.html#acbc57718b7c488e95f1cf2b320c17171" title="freemind.modes.MindIcon.getName" alt="" coords="792,172,1019,199"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_mind_icon.html#af4a93eb11146bda58f044316a93ba130" title="freemind.modes.MindIcon.setIcon" alt="" coords="269,252,485,279"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1main_1_1_resources.html#a5d9bbd5e6e5a09d88b1f99550cc02747" title="freemind.main.Resources.create\lInstance" alt="" coords="534,5,743,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_mind_icon.html#a9073266ccaf6b3f8812153b47f6dc262" title="freemind.modes.MindIcon.get\lIconsPath" alt="" coords="543,70,735,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_mind_icon.html#a4b6ac1adb5c293984d853b57d016af2b" title="freemind.modes.MindIcon.get\lIconBaseFileName" alt="" coords="543,135,735,177"/>
+</map>

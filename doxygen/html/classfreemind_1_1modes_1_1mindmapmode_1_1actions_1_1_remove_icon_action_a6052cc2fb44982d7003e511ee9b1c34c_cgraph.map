@@ -1,0 +1,4 @@
+<map id="freemind.modes.mindmapmode.actions.RemoveIconAction.getKeyStroke" name="freemind.modes.mindmapmode.actions.RemoveIconAction.getKeyStroke">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_abstract_xml_action.html#a4108859b703c219a6831b41de2b91ea0" title="freemind.modes.mindmapmode.actions.xml.\lAbstractXmlAction.getMindMapController" alt="" coords="317,5,595,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_remove_icon_action.html#aafc6fd8815e1e902bea05c86dbf091c9" title="freemind.modes.mindmapmode.actions.\lRemoveIconAction.getKeystrokeResourceName" alt="" coords="307,70,605,111"/>
+</map>

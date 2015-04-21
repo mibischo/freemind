@@ -1,0 +1,8 @@
+<map id="freemind.modes.mindmapmode.MindMapController" name="freemind.modes.mindmapmode.MindMapController">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html" title="freemind.modes.Controller\lAdapter" alt="" coords="557,27,731,69"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mode_controller.html" title="freemind.modes.ModeController" alt="" coords="264,5,469,32"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1common_1_1_text_translator.html" title="freemind.common.TextTranslator" alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node5" href="$interfacefreemind_1_1modes_1_1_free_mind_file_dialog_1_1_directory_result_listener.html" title="freemind.modes.FreeMindFile\lDialog.DirectoryResultListener" alt="" coords="268,57,465,98"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_mind_map_actions.html" title="freemind.modes.mindmapmode.actions.\lMindMapActions" alt="" coords="517,93,771,134"/>
+<area shape="rect" id="node7" href="$interfacefreemind_1_1modes_1_1_mind_map_1_1_map_source_changed_observer.html" title="freemind.modes.MindMap.Map\lSourceChangedObserver" alt="" coords="544,158,744,199"/>
+</map>

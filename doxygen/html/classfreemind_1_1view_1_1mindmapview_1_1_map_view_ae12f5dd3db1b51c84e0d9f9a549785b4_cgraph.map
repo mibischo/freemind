@@ -1,0 +1,6 @@
+<map id="freemind.view.mindmapview.MapView.print" name="freemind.view.mindmapview.MapView.print">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a2deb288184367fe768436413f52784ec" title="freemind.view.mindmapview.\lMapView.preparePrinting" alt="" coords="237,24,421,65"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#aebabd6b4d1812481064a08e7cc911fd5" title="freemind.view.mindmapview.\lMapView.endPrinting" alt="" coords="469,89,653,130"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a1a058b7e2cd2c79bbba2968c96d12b3b" title="freemind.view.mindmapview.\lMapView.getRoot" alt="" coords="701,24,885,65"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a28bd6f525ef76c4abc420fde5599ee07" title="freemind.view.mindmapview.\lMapView.getInnerBounds" alt="" coords="469,24,653,65"/>
+</map>

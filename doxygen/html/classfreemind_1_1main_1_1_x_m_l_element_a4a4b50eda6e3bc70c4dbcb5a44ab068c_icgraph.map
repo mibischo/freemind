@@ -1,0 +1,8 @@
+<map id="freemind.main.XMLElement.getChildren" name="freemind.main.XMLElement.getChildren">
+<area shape="rect" id="node2" href="$classfreemind_1_1extensions_1_1_permanent_node_hook_adapter.html#ae5d96a55ace32bff54b9a3594be4878c" title="freemind.extensions.Permanent\lNodeHookAdapter.loadNameValuePairs" alt="" coords="257,37,509,78"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1extensions_1_1_permanent_node_hook_substitute_unknown.html#a9add374c8c532f50fa0af152cf64253a" title="freemind.extensions.Permanent\lNodeHookSubstituteUnknown.save" alt="" coords="271,102,495,143"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_style_pattern.html#afb32f6b45e643cb9346f6dc60b7ef7e7" title="freemind.modes.StylePattern.load\lPattern" alt="" coords="273,167,492,209"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html#aa6dd2f6539362e70e0a4148bdd13223a" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase.loadFrom" alt="" coords="558,5,807,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#a4af399232da24ea105509c86e19ec46b" title="freemind.modes.common.plugins.\lReminderHookBase.loadFrom" alt="" coords="574,70,791,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_style_pattern.html#aab658bce6811d25ccb3644f79e3b9245" title="freemind.modes.StylePattern.\lStylePattern" alt="" coords="585,167,780,209"/>
+</map>

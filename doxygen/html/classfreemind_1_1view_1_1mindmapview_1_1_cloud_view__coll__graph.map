@@ -1,0 +1,8 @@
+<map id="freemind.view.mindmapview.CloudView" name="freemind.view.mindmapview.CloudView">
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_cloud.html" title="freemind.modes.MindMapCloud" alt="" coords="726,65,930,92"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_line.html" title="freemind.modes.MindMapLine" alt="" coords="361,5,556,32"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html" title="freemind.view.mindmapview.\lNodeView" alt="" coords="736,166,920,207"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_motion_listener_view.html" title="freemind.view.mindmapview.\lNodeMotionListenerView" alt="" coords="367,107,551,149"/>
+<area shape="rect" id="node11" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html" title="freemind.modes.MindMapNode" alt="" coords="358,224,559,251"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html" title="freemind.view.mindmapview.\lMapView" alt="" coords="367,391,551,433"/>
+</map>

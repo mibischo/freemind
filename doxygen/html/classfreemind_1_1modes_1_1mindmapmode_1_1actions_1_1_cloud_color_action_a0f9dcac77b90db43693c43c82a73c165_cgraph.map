@@ -1,0 +1,9 @@
+<map id="freemind.modes.mindmapmode.actions.CloudColorAction.actionPerformed" name="freemind.modes.mindmapmode.actions.CloudColorAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac64063f2bd2905f220ddbf796e7ba667" title="freemind.modes.Controller\lAdapter.getSelected" alt="" coords="347,5,520,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a2a1fbb955a04aa8c1bd2907a5c9fba0b" title="freemind.modes.Controller\lAdapter.getSelecteds" alt="" coords="347,70,520,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_color_action.html#ab4098b713e942f8e44e13b957bd3fb21" title="freemind.modes.mindmapmode.actions.\lCloudColorAction.setCloudColor" alt="" coords="307,135,560,177"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa80374fa8f6d04254c8a8ed6ee7eaecb" title="freemind.modes.Controller\lAdapter.getSelectedView" alt="" coords="663,7,836,49"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="939,38,1112,79"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_color_action.html#a4b67a75abd3f255d7edb7f68f825f700" title="freemind.modes.mindmapmode.actions.\lCloudColorAction.createCloudColorXmlAction" alt="" coords="608,131,891,173"/>
+<area shape="rect" id="node8" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a2e1596af88d788e7e858f9ea4b33b7a2" title="freemind.modes.MindMapNode.get\lCloud" alt="" coords="638,197,861,238"/>
+</map>

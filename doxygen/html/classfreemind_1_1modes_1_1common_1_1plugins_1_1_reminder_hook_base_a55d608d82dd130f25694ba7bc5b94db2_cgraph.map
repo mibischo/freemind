@@ -1,0 +1,10 @@
+<map id="freemind.modes.common.plugins.ReminderHookBase.shutdownMapHook" name="freemind.modes.common.plugins.ReminderHookBase.shutdownMapHook">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#ad6660da4873447a95943799d7bc23ec1" title="freemind.modes.common.plugins.\lReminderHookBase.setToolTip" alt="" coords="305,5,522,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1extensions_1_1_node_hook_adapter.html#a5dc3f6951adfb0e15eb69acb57aa34fb" title="freemind.extensions.Node\lHookAdapter.getNode" alt="" coords="606,61,778,102"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1extensions_1_1_hook_adapter.html#afa59f712e16f2d91236894c2c51563d7" title="freemind.extensions.Hook\lAdapter.getName" alt="" coords="327,122,499,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#afef87502862565725f6dd53fafc39528" title="freemind.modes.common.plugins.\lReminderHookBase.displayState" alt="" coords="305,190,522,231"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#a6cede59f42f78671e8ba39da4a1dbeea" title="freemind.modes.common.plugins.\lReminderHookBase.getStateKey" alt="" coords="583,126,801,167"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#a932aca42546f43d994a7ea973417ce12" title="freemind.modes.common.plugins.\lReminderHookBase.nodeRefresh" alt="" coords="583,191,801,233"/>
+<area shape="rect" id="node8" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a83d7f4de5c123740d92dba20d891ff7b" title="freemind.modes.MindMapNode.isRoot" alt="" coords="571,257,813,284"/>
+<area shape="rect" id="node9" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#acbc6c9f7e3d475bbcd7caad1cc11cea0" title="freemind.modes.MindMapNode.get\lParentNode" alt="" coords="581,309,803,350"/>
+</map>

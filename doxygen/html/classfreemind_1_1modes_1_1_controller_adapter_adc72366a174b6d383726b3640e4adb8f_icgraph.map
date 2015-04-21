@@ -1,0 +1,5 @@
+<map id="freemind.modes.ControllerAdapter.getRootNode" name="freemind.modes.ControllerAdapter.getRootNode">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_controller.html#a157d3ec08d6cae7fece111e728b79752" title="freemind.modes.browsemode.\lBrowseController.startupController" alt="" coords="235,5,453,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a0b1af49d2842a4dd504eec138317a7a0" title="freemind.modes.Controller\lAdapter.registerNodeLifetimeListener" alt="" coords="227,70,461,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#ac78869d675a325a43bfb9de0400238fd" title="freemind.modes.mindmapmode.\lMindMapController.startupController" alt="" coords="229,135,459,177"/>
+</map>

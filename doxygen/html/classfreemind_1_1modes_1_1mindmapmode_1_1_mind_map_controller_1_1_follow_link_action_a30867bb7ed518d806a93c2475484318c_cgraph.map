@@ -1,0 +1,8 @@
+<map id="freemind.modes.mindmapmode.MindMapController.FollowLinkAction.actionPerformed" name="freemind.modes.mindmapmode.MindMapController.FollowLinkAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a2a1fbb955a04aa8c1bd2907a5c9fba0b" title="freemind.modes.Controller\lAdapter.getSelecteds" alt="" coords="621,5,795,46"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a5751837687303477952fed43b295520b" title="freemind.modes.MindMapNode.getLink" alt="" coords="326,51,573,77"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#abf2becf0dfe8dc6b94278fc0cdfd485e" title="freemind.modes.Controller\lAdapter.loadURL" alt="" coords="363,102,536,143"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="1064,42,1237,83"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac64063f2bd2905f220ddbf796e7ba667" title="freemind.modes.Controller\lAdapter.getSelected" alt="" coords="621,81,795,122"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa80374fa8f6d04254c8a8ed6ee7eaecb" title="freemind.modes.Controller\lAdapter.getSelectedView" alt="" coords="843,73,1016,114"/>
+</map>

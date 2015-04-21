@@ -1,0 +1,6 @@
+<map id="freemind.modes.mindmapmode.listeners.MindMapMouseMotionManager" name="freemind.modes.mindmapmode.listeners.MindMapMouseMotionManager">
+<area shape="rect" id="node2" href="$interfacefreemind_1_1controller_1_1_map_mouse_motion_listener_1_1_map_mouse_motion_receiver.html" title="freemind.controller.MapMouse\lMotionListener.MapMouseMotionReceiver" alt="" coords="627,5,890,46"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_arrow_link.html" title="freemind.modes.MindMapArrowLink" alt="" coords="645,71,873,97"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_link.html" title="freemind.modes.MindMapLink" alt="" coords="381,71,576,97"/>
+<area shape="rect" id="node5" href="$interfacefreemind_1_1modes_1_1_mind_map_line.html" title="freemind.modes.MindMapLine" alt="" coords="136,71,331,97"/>
+</map>

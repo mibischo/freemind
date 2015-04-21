@@ -1,0 +1,7 @@
+<map id="freemind.view.MapModule.getModel" name="freemind.view.MapModule.getModel">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1_last_opened_list.html#aaee623b250261b17a8d711831898dc04" title="freemind.controller.Last\lOpenedList.mapOpened" alt="" coords="283,5,445,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1_map_module_manager.html#a6c0ddad177a3bd89e96e3a21d0d36a1a" title="freemind.controller.MapModule\lManager.checkIfFileIsAlreadyOpened" alt="" coords="245,70,483,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1_map_module.html#a9799a8f98f0929db0b9aec6d3be0f25d" title="freemind.view.MapModule.rename" alt="" coords="255,136,473,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1_map_module.html#a659d71fecd942ae3f0f96d31f64f74f8" title="freemind.view.MapModule.to\lString" alt="" coords="531,129,717,170"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_map_module_manager.html#aa50fbe0253c44eeecf82c2c5b0559997" title="freemind.controller.MapModule\lManager.newMapModule" alt="" coords="766,129,965,170"/>
+</map>

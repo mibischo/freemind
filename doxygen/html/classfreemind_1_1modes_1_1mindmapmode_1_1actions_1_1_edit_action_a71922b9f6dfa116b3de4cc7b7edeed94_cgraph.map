@@ -1,0 +1,10 @@
+<map id="freemind.modes.mindmapmode.actions.EditAction.edit" name="freemind.modes.mindmapmode.actions.EditAction.edit">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edit_action.html#a6a00a2869a256c44dadcd1be65846596" title="freemind.modes.mindmapmode.actions.\lEditAction.stopEditing" alt="" coords="307,5,560,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac028c6caf7a7b9875787be6933a201c0" title="freemind.modes.Controller\lAdapter.getFrame" alt="" coords="347,70,520,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa80374fa8f6d04254c8a8ed6ee7eaecb" title="freemind.modes.Controller\lAdapter.getSelectedView" alt="" coords="347,135,520,177"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edit_action.html#a553083fd1b25cafc7355e1d9bf722948" title="freemind.modes.mindmapmode.actions.\lEditAction.setNodeText" alt="" coords="307,201,560,242"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a83d9bda3de8fa5f26eb92d15dd4ac6ca" title="freemind.view.mindmapview.\lNodeView.getModel" alt="" coords="341,266,525,307"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a790a9689ef6a299ba97edf478113d9e8" title="freemind.modes.Controller\lAdapter.getController" alt="" coords="608,70,781,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac4f3de0d3e67a126df931304d9a96876" title="freemind.modes.Controller\lAdapter.getMode" alt="" coords="829,70,1003,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="608,135,781,177"/>
+</map>

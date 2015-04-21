@@ -1,0 +1,10 @@
+<map id="freemind.modes.mindmapmode.actions.NodeColorAction.actionPerformed" name="freemind.modes.mindmapmode.actions.NodeColorAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac64063f2bd2905f220ddbf796e7ba667" title="freemind.modes.Controller\lAdapter.getSelected" alt="" coords="347,5,520,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a2a1fbb955a04aa8c1bd2907a5c9fba0b" title="freemind.modes.Controller\lAdapter.getSelecteds" alt="" coords="347,70,520,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_color_action.html#a7873898f19326ca9381e986a257cf9a4" title="freemind.modes.mindmapmode.actions.\lNodeColorAction.setNodeColor" alt="" coords="307,162,560,203"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa80374fa8f6d04254c8a8ed6ee7eaecb" title="freemind.modes.Controller\lAdapter.getSelectedView" alt="" coords="671,5,844,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="955,34,1128,75"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1main_1_1_tools.html#a6e8fb446c296573a7ddccaa20069008f" title="freemind.main.Tools.safe\lEquals" alt="" coords="674,122,841,163"/>
+<area shape="rect" id="node8" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a8e7fe9fc76b1a20095a5fdab44ff2540" title="freemind.modes.MindMapNode.get\lColor" alt="" coords="646,187,869,229"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_color_action.html#a5680e250d0ff9bb5c2aa18abe2a8c379" title="freemind.modes.mindmapmode.actions.\lNodeColorAction.createNodeColorFormatAction" alt="" coords="609,253,906,294"/>
+</map>

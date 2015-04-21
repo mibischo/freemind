@@ -1,0 +1,5 @@
+<map id="freemind.modes.mindmapmode.actions.CutAction.cut" name="freemind.modes.mindmapmode.actions.CutAction.cut">
+<area shape="rect" id="node2" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#acbc6c9f7e3d475bbcd7caad1cc11cea0" title="freemind.modes.MindMapNode.get\lParentNode" alt="" coords="322,5,545,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cut_action.html#a1a74e20049571aeba891d2fbdb682a2b" title="freemind.modes.mindmapmode.actions.\lCutAction.getCutNodeAction" alt="" coords="307,70,560,111"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#aa2dd87818e3819c0cad5a1d33a72fdd6" title="freemind.modes.MindMapNode.isLeft" alt="" coords="315,136,551,163"/>
+</map>

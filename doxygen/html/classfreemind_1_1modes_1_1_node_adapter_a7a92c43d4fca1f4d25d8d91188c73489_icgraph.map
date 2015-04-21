@@ -1,0 +1,10 @@
+<map id="freemind.modes.NodeAdapter.getText" name="freemind.modes.NodeAdapter.getText">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_encrypted_mind_map_node.html#a6c3e2f2b96ab4651d30cafd558c0a84f" title="freemind.modes.mindmapmode.\lEncryptedMindMapNode.save" alt="" coords="294,34,501,75"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_node_adapter.html#abf0b45ccee8cf6b856043cd2996596f2" title="freemind.modes.NodeAdapter.to\lString" alt="" coords="293,99,501,141"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edit_action.html#a25cdc660e2084628f538ada48e295e07" title="freemind.modes.mindmapmode.actions.\lEditAction.act" alt="" coords="553,5,807,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#ad2524c3222245c526c5b9c57671d24a0" title="freemind.modes.mindmapmode.\lMindMapNodeModel.getPlainTextContent" alt="" coords="549,70,811,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#a8944c0b9b6220121178e65656d16e49f" title="freemind.modes.mindmapmode.\lMindMapNodeModel.saveRTF" alt="" coords="863,126,1070,167"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_node_adapter.html#a09aa6be728c4168d0214517209144590" title="freemind.modes.NodeAdapter.get\lPlainTextContent" alt="" coords="573,189,787,230"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#a1033d25640f7fff6d6edc38fa1142f72" title="freemind.modes.mindmapmode.\lMindMapNodeModel.saveTXT" alt="" coords="863,61,1070,102"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_node_adapter.html#acc70f0694e323254777e65ad3bc98416" title="freemind.modes.NodeAdapter.get\lShortText" alt="" coords="859,191,1074,233"/>
+</map>

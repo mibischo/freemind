@@ -1,0 +1,10 @@
+<map id="freemind.view.mindmapview.NodeViewLayoutAdapter.getView" name="freemind.view.mindmapview.NodeViewLayoutAdapter.getView">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_left_node_view_layout.html#ab40dedaaadf7238231895482ac27c287" title="freemind.view.mindmapview.\lLeftNodeViewLayout.layout" alt="" coords="569,136,753,177"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view_layout_adapter.html#a93a8e46aa7d531714d7d46f910e0a4f5" title="freemind.view.mindmapview.\lNodeViewLayoutAdapter.getChild\lContentHeight" alt="" coords="277,48,491,104"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_right_node_view_layout.html#a52be9f77975525c83f11afe29b6f34a8" title="freemind.view.mindmapview.\lRightNodeViewLayout.layout" alt="" coords="567,216,755,257"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_vertical_root_node_view_layout.html#ae1fe138bef4712ef02122f9a9ca17744" title="freemind.view.mindmapview.\lVerticalRootNodeViewLayout.layout" alt="" coords="547,288,776,329"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view_layout_adapter.html#a251d137dfcde9341ff7116d8eeed5de3" title="freemind.view.mindmapview.\lNodeViewLayoutAdapter.getChild\lVerticalShift" alt="" coords="277,128,491,184"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view_layout_adapter.html#acc8dbe2b89b2ef48578de43582cf0c91" title="freemind.view.mindmapview.\lNodeViewLayoutAdapter.getChild\lHorizontalShift" alt="" coords="277,208,491,264"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view_layout_adapter.html#aad6ae7d2297cc578e7669401250096cd" title="freemind.view.mindmapview.\lNodeViewLayoutAdapter.placeRight\lChildren" alt="" coords="269,419,499,475"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view_layout_adapter.html#a4d68fdfd463388004c5ce53e4d5db482" title="freemind.view.mindmapview.\lNodeViewLayoutAdapter.placeLeft\lChildren" alt="" coords="274,288,494,344"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="freemind.view.mindmapview.NodeView.getPreviousPage" name="freemind.view.mindmapview.NodeView.getPreviousPage">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a83d9bda3de8fa5f26eb92d15dd4ac6ca" title="freemind.view.mindmapview.\lNodeView.getModel" alt="" coords="757,57,941,98"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a3b2dcf2335615744548cb2bc73dae8eb" title="freemind.view.mindmapview.\lNodeView.isRoot" alt="" coords="520,28,704,69"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#aa6b13e9746b74d8d3784e498fb35af77" title="freemind.view.mindmapview.\lNodeView.getInPointInMap" alt="" coords="260,313,444,354"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#af11974ba5ebc71cf1ba01ebc05439975" title="freemind.view.mindmapview.\lNodeView.getMap" alt="" coords="757,254,941,296"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#adfda3f967d1ff01b22e8412199bb64de" title="freemind.view.mindmapview.\lNodeView.getPreviousVisibleSibling" alt="" coords="237,145,467,186"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#ac512e3caacf2560336ccf612f3e76e27" title="freemind.view.mindmapview.\lNodeView.getParentView" alt="" coords="260,378,444,420"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#acaaa1967e383c53c114930941b16b765" title="freemind.view.mindmapview.\lNodeView.convertPointToMap" alt="" coords="515,313,709,354"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#adf15cd240388f73e4dfb09696aa8671b" title="freemind.view.mindmapview.\lNodeView.isLeft" alt="" coords="520,145,704,186"/>
+</map>

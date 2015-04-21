@@ -1,0 +1,5 @@
+<map id="freemind.modes.mindmapmode.actions.NodeColorAction.setNodeColor" name="freemind.modes.mindmapmode.actions.NodeColorAction.setNodeColor">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_tools.html#a6e8fb446c296573a7ddccaa20069008f" title="freemind.main.Tools.safe\lEquals" alt="" coords="373,5,539,46"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a8e7fe9fc76b1a20095a5fdab44ff2540" title="freemind.modes.MindMapNode.get\lColor" alt="" coords="345,70,567,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_color_action.html#a5680e250d0ff9bb5c2aa18abe2a8c379" title="freemind.modes.mindmapmode.actions.\lNodeColorAction.createNodeColorFormatAction" alt="" coords="307,135,605,177"/>
+</map>

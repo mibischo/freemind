@@ -1,0 +1,10 @@
+<map id="freemind.view.mindmapview.BezierEdgeView.paint" name="freemind.view.mindmapview.BezierEdgeView.paint">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_bezier_edge_view.html#add5b64da10644c68de21d93957fe5f04" title="freemind.view.mindmapview.\lBezierEdgeView.getColor" alt="" coords="477,5,661,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a43dc7a1530032e9637c40c8a1bddd50d" title="freemind.view.mindmapview.\lEdgeView.getStroke" alt="" coords="241,99,425,141"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a46563d8a3c1fc6bdad687f99978925ca" title="freemind.view.mindmapview.\lEdgeView.isTargetEclipsed" alt="" coords="477,187,661,229"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#aa6e183bb61c95570d18be120026f9cda" title="freemind.view.mindmapview.\lEdgeView.getEclipsedStroke" alt="" coords="238,217,429,258"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a7d2336fc583c15d56499a713049a1e20" title="freemind.view.mindmapview.\lEdgeView.getModel" alt="" coords="709,63,893,105"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a14a9b8b57fb6310bd976649022232315" title="freemind.view.mindmapview.\lEdgeView.getTarget" alt="" coords="941,129,1125,170"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a0c7f5ea6a343477f2ad7b7a14d94e841" title="freemind.view.mindmapview.\lEdgeView.getWidth" alt="" coords="477,70,661,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a23f37806d7a9a6c06a3e90fe29d72dd1" title="freemind.view.mindmapview.\lEdgeView.getMap" alt="" coords="709,129,893,170"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="freemind.modes.mindmapmode.actions.SetLinkByTextFieldAction.actionPerformed" name="freemind.modes.mindmapmode.actions.SetLinkByTextFieldAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac64063f2bd2905f220ddbf796e7ba667" title="freemind.modes.Controller\lAdapter.getSelected" alt="" coords="365,5,539,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_set_link_by_text_field_action.html#a00ee84fe8c4a1a5e3e7d66ec9753096b" title="freemind.modes.mindmapmode.actions.\lSetLinkByTextFieldAction.setLink" alt="" coords="325,70,579,111"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa80374fa8f6d04254c8a8ed6ee7eaecb" title="freemind.modes.Controller\lAdapter.getSelectedView" alt="" coords="627,5,800,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="848,5,1021,46"/>
+</map>

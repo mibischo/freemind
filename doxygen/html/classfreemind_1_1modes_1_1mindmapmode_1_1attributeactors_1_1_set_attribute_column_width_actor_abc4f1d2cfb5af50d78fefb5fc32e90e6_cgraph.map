@@ -1,0 +1,5 @@
+<map id="freemind.modes.mindmapmode.attributeactors.SetAttributeColumnWidthActor.createActionPair" name="freemind.modes.mindmapmode.attributeactors.SetAttributeColumnWidthActor.createActionPair">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1attributeactors_1_1_set_attribute_column_width_actor.html#a2a08b80c53a7b9d5a2eaf09447e29536" title="freemind.modes.mindmapmode.attributeactors.\lSetAttributeColumnWidthActor.createAction" alt="" coords="355,38,650,79"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_abstract_actor_xml.html#a586b71dd922489b7c577a76d52881bdd" title="freemind.modes.mindmapmode.actions.xml.\lAbstractActorXml.getNodeID" alt="" coords="699,5,978,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1attributes_1_1_node_attribute_table_model.html#a3052205a55c3a76fdf461d08907afc70" title="freemind.modes.attributes.\lNodeAttributeTableModel.getNode" alt="" coords="729,70,948,111"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="freemind.modes.ControllerAdapter.insertNodeInto" name="freemind.modes.ControllerAdapter.insertNodeInto">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a0f2f18df424edb56921345a80ff05074" title="freemind.modes.Controller\lAdapter.getModel" alt="" coords="263,5,436,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#acf7314b478f9e1e0efea0bc04730f557" title="freemind.modes.Controller\lAdapter.newNode" alt="" coords="263,70,436,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a70aae3bb1e5ed1ed4bc2baed8e8d6646" title="freemind.modes.Controller\lAdapter.fireRecursiveNodeCreateEvent" alt="" coords="227,135,471,177"/>
+<area shape="rect" id="node5" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a96d14c3f37cf4ec6c2998c92061628d0" title="freemind.modes.MindMapNode.children\lUnfolded" alt="" coords="520,135,771,177"/>
+</map>

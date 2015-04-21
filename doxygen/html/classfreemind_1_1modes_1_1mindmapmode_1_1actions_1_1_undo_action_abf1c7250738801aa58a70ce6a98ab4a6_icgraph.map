@@ -1,0 +1,7 @@
+<map id="freemind.modes.mindmapmode.actions.UndoAction.isUndoAction" name="freemind.modes.mindmapmode.actions.UndoAction.isUndoAction">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_undo_action.html#a977ecf2b03f19755bc4f9f43762e6620" title="freemind.modes.mindmapmode.actions.\lUndoAction.UndoAction" alt="" coords="307,5,560,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_undo_action.html#ae78dfe5b229498e4ba535141fb58fed6" title="freemind.modes.mindmapmode.actions.\lUndoAction.undoDoAction" alt="" coords="307,70,560,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#af5cfbdee4f7cf55896b99c58582ec547" title="freemind.modes.mindmapmode.\lMindMapController.isUndoAction" alt="" coords="328,135,539,177"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_undo_action.html#aaf9067414867d704c7d17646dba7de6e" title="freemind.modes.mindmapmode.actions.\lUndoAction.xmlActionPerformed" alt="" coords="621,70,875,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_undo_action_handler.html#acb285c8a423667f186e2f01f76e5969d" title="freemind.modes.mindmapmode.actions.xml.\lUndoActionHandler.executeAction" alt="" coords="609,135,887,177"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="freemind.main.Tools.removeMnemonic" name="freemind.main.Tools.removeMnemonic">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter_1_1_save_action.html#a3ea7598ad8afd7a89bb60b361ee5698e" title="freemind.modes.Controller\lAdapter.SaveAction.SaveAction" alt="" coords="261,38,467,79"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_general_action.html#a5c280de10d429e698cbd4aff390e089d" title="freemind.modes.mindmapmode.actions.\lNodeGeneralAction.setName" alt="" coords="237,103,491,145"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_apply_pattern_action.html#a7777e2b2b3da9d48015a9ec53c0bb358" title="freemind.modes.mindmapmode.actions.\lApplyPatternAction.ApplyPatternAction" alt="" coords="539,5,792,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_style_action.html#ae67711ab5cc7b73890a6b230d00fbe62" title="freemind.modes.mindmapmode.actions.\lEdgeStyleAction.EdgeStyleAction" alt="" coords="539,70,792,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_width_action.html#aadd6acd941b52cf9dafaea201f9e6a98" title="freemind.modes.mindmapmode.actions.\lEdgeWidthAction.EdgeWidthAction" alt="" coords="539,135,792,177"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_general_action.html#ad0d0fe4dc36dac1e85b1a6572221cdd3" title="freemind.modes.mindmapmode.actions.\lNodeGeneralAction.NodeGeneralAction" alt="" coords="539,201,792,242"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="freemind.view.mindmapview.MapView.isSelected" name="freemind.view.mindmapview.MapView.isSelected">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a6c3614ef89c2a456d282583573603ab2" title="freemind.view.mindmapview.\lMapView.toggleSelected" alt="" coords="237,37,421,78"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a6d86baeb9edcdb02ac8dbba6bb11caf0" title="freemind.view.mindmapview.\lMapView.selectBranch" alt="" coords="469,5,653,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a111b7e3a25f4c2d485bc5a9c1f322ec9" title="freemind.view.mindmapview.\lMapView.selectContinuous" alt="" coords="469,95,653,137"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#af2c659807a333c4714efeba5f9cfbe6d" title="freemind.view.mindmapview.\lMapView.makeTheSelected" alt="" coords="237,154,421,195"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a8852cbad0e5db78714d7142c907a6f45" title="freemind.view.mindmapview.\lMapView.deselect" alt="" coords="237,219,421,261"/>
+</map>

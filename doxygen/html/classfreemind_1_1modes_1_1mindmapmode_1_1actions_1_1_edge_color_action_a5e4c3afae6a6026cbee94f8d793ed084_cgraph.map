@@ -1,0 +1,9 @@
+<map id="freemind.modes.mindmapmode.actions.EdgeColorAction.actionPerformed" name="freemind.modes.mindmapmode.actions.EdgeColorAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac64063f2bd2905f220ddbf796e7ba667" title="freemind.modes.Controller\lAdapter.getSelected" alt="" coords="347,5,520,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a2a1fbb955a04aa8c1bd2907a5c9fba0b" title="freemind.modes.Controller\lAdapter.getSelecteds" alt="" coords="347,70,520,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_color_action.html#a53a285f59010597e55d879553774e5e1" title="freemind.modes.mindmapmode.actions.\lEdgeColorAction.setEdgeColor" alt="" coords="307,135,560,177"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa80374fa8f6d04254c8a8ed6ee7eaecb" title="freemind.modes.Controller\lAdapter.getSelectedView" alt="" coords="671,7,844,49"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="955,38,1128,79"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_color_action.html#a8df5a4daea5a9c0bcf343c4dfc0bcf17" title="freemind.modes.mindmapmode.actions.\lEdgeColorAction.createEdgeColorFormatAction" alt="" coords="609,131,906,173"/>
+<area shape="rect" id="node8" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#adaefed7bfc6055ab26bcb1b31c16d1d8" title="freemind.modes.MindMapNode.getEdge" alt="" coords="631,197,884,224"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="freemind.view.mindmapview.EditNodeTextField.show" name="freemind.view.mindmapview.EditNodeTextField.show">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_base.html#a204febd6204dba3d09a411dc7eee0480" title="freemind.view.mindmapview.\lEditNodeBase.getText" alt="" coords="261,5,445,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_base.html#abf95c36d32b84a9cd8182da74e5561f1" title="freemind.view.mindmapview.\lEditNodeBase.getNode" alt="" coords="261,70,445,111"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a84c48f640cfd7b03794e30f297588f8f" title="freemind.modes.MindMapNode.is\lFolded" alt="" coords="246,135,461,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#adf15cd240388f73e4dfb09696aa8671b" title="freemind.view.mindmapview.\lNodeView.isLeft" alt="" coords="261,201,445,242"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_base.html#a31ee9b1cd1b2481bbfeec39385553dd4" title="freemind.view.mindmapview.\lEditNodeBase.getView" alt="" coords="261,266,445,307"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_text_field.html#ab778be0e3093e605909b8a102e951133" title="freemind.view.mindmapview.\lEditNodeTextField.setTextfield\lLoaction" alt="" coords="254,332,453,388"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_text_field.html#a3a5ee16d4f0b6eb2c329d45cd85cc3e4" title="freemind.view.mindmapview.\lEditNodeTextField.addTextfield" alt="" coords="253,413,454,454"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_base.html#a4026bfb5a1e55777fc26270a88d179e6" title="freemind.view.mindmapview.\lEditNodeBase.redispatchKeyEvents" alt="" coords="238,478,469,519"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a83d9bda3de8fa5f26eb92d15dd4ac6ca" title="freemind.view.mindmapview.\lNodeView.getModel" alt="" coords="517,201,701,242"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="freemind.view.mindmapview.NodeView.getParentView" name="freemind.view.mindmapview.NodeView.getParentView">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#afce08f7f60de87e3d6e24a1b85d8895d" title="freemind.view.mindmapview.\lNodeView.isSiblingOf" alt="" coords="259,5,443,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a0098af9e0c37e9fcb937b82ffae119e2" title="freemind.view.mindmapview.\lNodeView.isChildOf" alt="" coords="259,70,443,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a076861c9def502d01dcce44410f91c2c" title="freemind.view.mindmapview.\lNodeView.isParentOf" alt="" coords="259,135,443,177"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#ac2c19f3fd1c5c4e94b19f2106d559ee0" title="freemind.view.mindmapview.\lNodeView.getSiblingViews" alt="" coords="259,201,443,242"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a6babd586b1127a075fd63e19f2a9474f" title="freemind.view.mindmapview.\lNodeView.getNextPage" alt="" coords="259,266,443,307"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a0c6286dae8347c3820661c72332c3315" title="freemind.view.mindmapview.\lNodeView.getPreviousPage" alt="" coords="259,331,443,373"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#accb40c5a964ddd7dd6f08c7da123a999" title="freemind.view.mindmapview.\lNodeView.getNextSiblingSingle" alt="" coords="249,397,453,438"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#aa6ff852440548425a36273817a6c83d5" title="freemind.view.mindmapview.\lNodeView.getPreviousSiblingSingle" alt="" coords="237,462,464,503"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a111b7e3a25f4c2d485bc5a9c1f322ec9" title="freemind.view.mindmapview.\lMapView.selectContinuous" alt="" coords="512,5,696,46"/>
+</map>

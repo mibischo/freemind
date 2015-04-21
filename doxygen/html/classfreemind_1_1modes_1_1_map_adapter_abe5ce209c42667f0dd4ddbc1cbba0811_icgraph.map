@@ -1,0 +1,11 @@
+<map id="freemind.modes.MapAdapter.getFrame" name="freemind.modes.MapAdapter.getFrame">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_map_model.html#a9a2360c6207f2e15157f2baf0f9b3530" title="freemind.modes.browsemode.\lBrowseMapModel.BrowseMapModel" alt="" coords="269,5,501,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1filemode_1_1_file_map_model.html#ab9be3f921e3e195b4ff50f9683f5026f" title="freemind.modes.filemode.\lFileMapModel.FileMapModel" alt="" coords="291,70,479,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_map_adapter.html#a9a1ea821a5eadf900d55028ad4028051" title="freemind.modes.MapAdapter.getText" alt="" coords="268,187,503,213"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_map_model.html#ae4c268397ca492a2d0d786df912f5a8f" title="freemind.modes.mindmapmode.\lMindMapMapModel.tryToLock" alt="" coords="555,121,762,162"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_map_model.html#a8ac70ccb394b557cbec82b18d04d1560" title="freemind.modes.mindmapmode.\lMindMapMapModel.load" alt="" coords="811,179,1018,221"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_map_model.html#aaccea77b8152c09af045b0f76acdebf6" title="freemind.modes.mindmapmode.\lMindMapMapModel.loadTree" alt="" coords="282,289,489,330"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_map_model.html#a8e008e7ce2becd22b419ede6ae24bb26" title="freemind.modes.schememode.\lSchemeMapModel.SchemeMapModel" alt="" coords="264,354,507,395"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_map_model.html#a221e6336c803735a7fbbc0795e39fb65" title="freemind.modes.schememode.\lSchemeMapModel.load" alt="" coords="559,442,759,483"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_map_model.html#aa7bb5f918d836b102b4a90edda72395f" title="freemind.modes.schememode.\lSchemeMapModel.loadMathStyle" alt="" coords="277,471,494,513"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="freemind.modes.NodeAdapter.toString" name="freemind.modes.NodeAdapter.toString">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edit_action.html#a25cdc660e2084628f538ada48e295e07" title="freemind.modes.mindmapmode.actions.\lEditAction.act" alt="" coords="265,5,519,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#ad2524c3222245c526c5b9c57671d24a0" title="freemind.modes.mindmapmode.\lMindMapNodeModel.getPlainTextContent" alt="" coords="261,70,523,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#a8944c0b9b6220121178e65656d16e49f" title="freemind.modes.mindmapmode.\lMindMapNodeModel.saveRTF" alt="" coords="575,126,782,167"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_node_adapter.html#a09aa6be728c4168d0214517209144590" title="freemind.modes.NodeAdapter.get\lPlainTextContent" alt="" coords="285,189,499,230"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#a1033d25640f7fff6d6edc38fa1142f72" title="freemind.modes.mindmapmode.\lMindMapNodeModel.saveTXT" alt="" coords="575,61,782,102"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_node_adapter.html#acc70f0694e323254777e65ad3bc98416" title="freemind.modes.NodeAdapter.get\lShortText" alt="" coords="571,191,786,233"/>
+</map>

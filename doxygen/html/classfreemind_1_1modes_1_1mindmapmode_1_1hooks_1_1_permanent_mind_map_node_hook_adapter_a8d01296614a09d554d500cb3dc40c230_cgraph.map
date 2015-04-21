@@ -1,0 +1,6 @@
+<map id="freemind.modes.mindmapmode.hooks.PermanentMindMapNodeHookAdapter.propagate" name="freemind.modes.mindmapmode.hooks.PermanentMindMapNodeHookAdapter.propagate">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1hooks_1_1_permanent_mind_map_node_hook_adapter.html#ad534693984c52a408c2c4732dc8f2933" title="freemind.modes.mindmapmode.hooks.\lPermanentMindMapNodeHookAdapter.get\lMindMapController" alt="" coords="358,5,623,61"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1extensions_1_1_hook_adapter.html#afa59f712e16f2d91236894c2c51563d7" title="freemind.extensions.Hook\lAdapter.getName" alt="" coords="405,86,577,127"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1extensions_1_1_node_hook_adapter.html#a4604e7f60a7ff780fe01469f830a3b09" title="freemind.extensions.Node\lHookAdapter.getMap" alt="" coords="405,151,577,193"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1extensions_1_1_hook_adapter.html#ac04d3be4b69ba4f364ec2eedc029b0fb" title="freemind.extensions.Hook\lAdapter.getController" alt="" coords="673,13,845,54"/>
+</map>

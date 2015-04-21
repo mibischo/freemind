@@ -1,0 +1,5 @@
+<map id="freemind.modes.mindmapmode.attributeactors.SetAttributeNameActor.act" name="freemind.modes.mindmapmode.attributeactors.SetAttributeNameActor.act">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_abstract_actor_xml.html#abc90e2bc263b5a40cfe9b6e451117eca" title="freemind.modes.mindmapmode.actions.xml.\lAbstractActorXml.getNode" alt="" coords="350,5,629,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_node_adapter.html#a5166f67c0797e81e0f391c4d9d611ab7" title="freemind.modes.NodeAdapter.get\lAttributes" alt="" coords="382,70,597,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1attributes_1_1_node_attribute_table_model.html#ab75e5c32ea296be8bb95df9d3fa9fa6e" title="freemind.modes.attributes.\lNodeAttributeTableModel.getName" alt="" coords="378,135,601,177"/>
+</map>

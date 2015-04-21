@@ -1,0 +1,5 @@
+<map id="freemind.modes.mindmapmode.actions.NodeUpAction._moveNodes" name="freemind.modes.mindmapmode.actions.NodeUpAction._moveNodes">
+<area shape="rect" id="node2" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a83d7f4de5c123740d92dba20d891ff7b" title="freemind.modes.MindMapNode.isRoot" alt="" coords="312,5,555,32"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a9c5bd1270410f0dbad52c33f0e3b5c8e" title="freemind.modes.MindMapNode.getText" alt="" coords="309,56,557,83"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_up_action.html#a9dffb027a55bf64e9ac4c66009c5fd6b" title="freemind.modes.mindmapmode.actions.\lNodeUpAction.moveNodeTo" alt="" coords="307,107,560,149"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="freemind.modes.mindmapmode.MindMapController.SetLinkByFileChooserAction.actionPerformed" name="freemind.modes.mindmapmode.MindMapController.SetLinkByFileChooserAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a1d70f89c8413125b8b08b1862a925e58" title="freemind.modes.mindmapmode.\lMindMapController.setLinkByFile\lChooser" alt="" coords="269,197,483,253"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a71608cae451ae8cb9edec08d9e7f7205" title="freemind.modes.mindmapmode.\lMindMapController.getLinkByFile\lChooser" alt="" coords="531,124,744,180"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a30b64850cf5fceea836af70291b0d76e" title="freemind.modes.mindmapmode.\lMindMapController.setLink" alt="" coords="534,205,741,246"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac64063f2bd2905f220ddbf796e7ba667" title="freemind.modes.Controller\lAdapter.getSelected" alt="" coords="551,270,724,311"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ab49ddbbc4346e98636104f91c5be9731" title="freemind.modes.Controller\lAdapter.getFileChooser" alt="" coords="792,5,965,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a58b4224be9532f92c590d0b089eeb6ee" title="freemind.modes.Controller\lAdapter.getMap" alt="" coords="792,70,965,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac028c6caf7a7b9875787be6933a201c0" title="freemind.modes.Controller\lAdapter.getFrame" alt="" coords="792,135,965,177"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a38f5c812b666352db1e5c1396a77d2e3" title="freemind.modes.Controller\lAdapter.getText" alt="" coords="792,201,965,242"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a9d7aa4ddcd49de78245f3228c88620ea" title="freemind.modes.Controller\lAdapter.getFileFilter" alt="" coords="1013,5,1187,46"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a790a9689ef6a299ba97edf478113d9e8" title="freemind.modes.Controller\lAdapter.getController" alt="" coords="1013,169,1187,210"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac4f3de0d3e67a126df931304d9a96876" title="freemind.modes.Controller\lAdapter.getMode" alt="" coords="1235,169,1408,210"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa80374fa8f6d04254c8a8ed6ee7eaecb" title="freemind.modes.Controller\lAdapter.getSelectedView" alt="" coords="792,270,965,311"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="1013,270,1187,311"/>
+</map>

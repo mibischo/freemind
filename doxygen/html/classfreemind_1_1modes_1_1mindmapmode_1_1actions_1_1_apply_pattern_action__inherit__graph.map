@@ -1,0 +1,6 @@
+<map id="freemind.modes.mindmapmode.actions.ApplyPatternAction" name="freemind.modes.mindmapmode.actions.ApplyPatternAction">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_general_action.html" title="freemind.modes.mindmapmode.actions.\lNodeGeneralAction" alt="" coords="792,5,1045,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_abstract_xml_action.html" title="freemind.modes.mindmapmode.actions.xml.\lAbstractXmlAction" alt="" coords="465,5,743,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_freemind_action.html" title="freemind.modes.mindmapmode.actions.\lFreemindAction" alt="" coords="163,5,416,46"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_single_node_operation.html" title="freemind.modes.mindmapmode.actions.\lSingleNodeOperation" alt="" coords="792,70,1045,111"/>
+</map>

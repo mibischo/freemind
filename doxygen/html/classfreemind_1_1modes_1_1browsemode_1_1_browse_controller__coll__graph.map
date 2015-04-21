@@ -1,0 +1,11 @@
+<map id="freemind.modes.browsemode.BrowseController" name="freemind.modes.browsemode.BrowseController">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1viewmodes_1_1_view_controller_adapter.html" title="freemind.modes.viewmodes.\lViewControllerAdapter" alt="" coords="1107,225,1293,266"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html" title="freemind.modes.Controller\lAdapter" alt="" coords="729,57,903,98"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mode_controller.html" title="freemind.modes.ModeController" alt="" coords="285,5,491,32"/>
+<area shape="rect" id="node5" href="$interfacefreemind_1_1common_1_1_text_translator.html" title="freemind.common.TextTranslator" alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1modes_1_1_free_mind_file_dialog_1_1_directory_result_listener.html" title="freemind.modes.FreeMindFile\lDialog.DirectoryResultListener" alt="" coords="289,57,487,98"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1viewmodes_1_1_common_toggle_children_folded_action.html" title="freemind.modes.viewmodes.\lCommonToggleChildrenFoldedAction" alt="" coords="699,122,933,163"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1common_1_1_common_toggle_folded_action.html" title="freemind.modes.common.Common\lToggleFoldedAction" alt="" coords="704,187,928,229"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1common_1_1actions_1_1_find_action.html" title="freemind.modes.common.actions.\lFindAction" alt="" coords="707,318,925,359"/>
+<area shape="rect" id="node15" href="$interfacefreemind_1_1controller_1_1_menu_item_enabled_listener.html" title="freemind.controller.Menu\lItemEnabledListener" alt="" coords="306,383,470,425"/>
+</map>

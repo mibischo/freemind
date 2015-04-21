@@ -1,0 +1,4 @@
+<map id="freemind.modes.mindmapmode.actions.EdgeWidthAction.act" name="freemind.modes.mindmapmode.actions.EdgeWidthAction.act">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_general_action.html#a001e5af9fc4ec7981c6dd6b47390d1cd" title="freemind.modes.mindmapmode.actions.\lNodeGeneralAction.getNodeFromID" alt="" coords="307,5,560,46"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#adaefed7bfc6055ab26bcb1b31c16d1d8" title="freemind.modes.MindMapNode.getEdge" alt="" coords="307,71,560,97"/>
+</map>

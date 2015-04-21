@@ -1,0 +1,9 @@
+<map id="freemind.modes.mindmapmode.MindMapController.clearNodeContents" name="freemind.modes.mindmapmode.MindMapController.clearNodeContents">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a5edfd6bd27da01a0b206c5604a28eedc" title="freemind.modes.mindmapmode.\lMindMapController.applyPattern" alt="" coords="299,23,506,65"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#ac518810dcf5a49f6e6d32ee143a03a6f" title="freemind.modes.mindmapmode.\lMindMapController.setNoteText" alt="" coords="299,125,506,166"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_apply_pattern_action.html#aa37fa8c64ef2079a2f822c545fd7028c" title="freemind.modes.mindmapmode.actions.\lApplyPatternAction.getPattern" alt="" coords="555,5,808,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1main_1_1_tools.html#a6e8fb446c296573a7ddccaa20069008f" title="freemind.main.Tools.safe\lEquals" alt="" coords="598,70,765,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#ae30be796bb20cd3ae53b61cfeb0a6bee" title="freemind.modes.mindmapmode.\lMindMapController.createEditNote\lToNodeAction" alt="" coords="571,136,791,192"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#ae3829ebdcca738003f39863b2c31aa8d" title="freemind.modes.mindmapmode.\lMindMapController.getActionFactory" alt="" coords="565,217,798,258"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1main_1_1_html_tools.html#aff28205481110291ec69ad30f5ac842e" title="freemind.main.HtmlTools.html\lToPlain" alt="" coords="856,143,1051,185"/>
+</map>

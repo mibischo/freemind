@@ -1,0 +1,9 @@
+<map id="freemind.modes.XMLElementAdapter.getMap" name="freemind.modes.XMLElementAdapter.getMap">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_x_m_l_element.html#a6bdee536f7648f297620b7d9ac57b100" title="freemind.modes.browsemode.\lBrowseXMLElement.createNodeAdapter" alt="" coords="251,5,504,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_x_m_l_element.html#a69fe71c3716c3bb94bcd036700dacaab" title="freemind.modes.mindmapmode.\lMindMapXMLElement.createNodeAdapter" alt="" coords="246,70,509,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_x_m_l_element_adapter.html#ac199a7561e4e223c44788359f1c93a32" title="freemind.modes.XMLElement\lAdapter.addChild" alt="" coords="282,135,473,177"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_x_m_l_element_adapter.html#a6040adf2760889d2b96f35f29e769e2a" title="freemind.modes.XMLElement\lAdapter.setAttribute" alt="" coords="282,201,473,242"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_x_m_l_element_adapter.html#ab417433058b020a467c0d895eae71581" title="freemind.modes.XMLElement\lAdapter.completeElement" alt="" coords="282,266,473,307"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_x_m_l_element.html#a2667c4635a3cc3e863505cbd128e340c" title="freemind.modes.browsemode.\lBrowseXMLElement.createEncryptedNode" alt="" coords="563,5,829,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_x_m_l_element.html#a900308d042273e44ffbd1095c5405ed1" title="freemind.modes.mindmapmode.\lMindMapXMLElement.createEncryptedNode" alt="" coords="557,70,835,111"/>
+</map>

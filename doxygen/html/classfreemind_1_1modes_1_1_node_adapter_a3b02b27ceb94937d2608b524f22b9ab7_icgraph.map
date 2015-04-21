@@ -1,0 +1,19 @@
+<map id="freemind.modes.NodeAdapter.getFrame" name="freemind.modes.NodeAdapter.getFrame">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_node_model.html#a7ca5a121ef526a3e94c4f3d6bfd9c31c" title="freemind.modes.browsemode.\lBrowseNodeModel.BrowseNodeModel" alt="" coords="280,5,523,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1filemode_1_1_file_node_model.html#a6a7d0b52286e52c1223f744c1a0da2d4" title="freemind.modes.filemode.\lFileNodeModel.FileNodeModel" alt="" coords="302,122,501,163"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1filemode_1_1_file_node_model.html#a212bb053b0c16ca509d9a58fe4769cf3" title="freemind.modes.filemode.\lFileNodeModel.childrenUnfolded" alt="" coords="609,93,815,134"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#a88389529c8adbd451d396fa7e349fba1" title="freemind.modes.mindmapmode.\lMindMapNodeModel.MindMapNodeModel" alt="" coords="270,187,533,229"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_node_adapter.html#a76c037590785dc255e624a85f8151c7f" title="freemind.modes.NodeAdapter.get\lStyle" alt="" coords="294,253,509,294"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_node_adapter.html#ae5b80a28b86ffeb50ceee4c744fefabe" title="freemind.modes.NodeAdapter.establish\lOwnFont" alt="" coords="277,370,526,411"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_node_adapter.html#a6837898568d78ee125d81092ecd55f25" title="freemind.modes.NodeAdapter.toggleBold" alt="" coords="583,340,841,367"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_node_adapter.html#a33287ec3c649d8118a4a1873f3c64f39" title="freemind.modes.NodeAdapter.toggle\lItalic" alt="" coords="596,402,828,443"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1_node_adapter.html#a7523f36720bbb6d79fbbb14c6591cf38" title="freemind.modes.NodeAdapter.set\lFontSize" alt="" coords="605,474,819,515"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1_node_adapter.html#a78533be881542267c919834eaac2f4ba" title="freemind.modes.NodeAdapter.get\lFontSize" alt="" coords="294,538,509,579"/>
+<area shape="rect" id="node15" href="$classfreemind_1_1modes_1_1_node_adapter.html#abcf1368b63d3cc77287df80d550f6278" title="freemind.modes.NodeAdapter.get\lFontFamilyName" alt="" coords="294,603,509,645"/>
+<area shape="rect" id="node16" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_node_model.html#a05ced7040b8cc457ccd9ac52b9fd70de" title="freemind.modes.schememode.\lSchemeNodeModel.SchemeNodeModel" alt="" coords="275,669,527,710"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1filemode_1_1_file_node_model.html#af75b832f75ec029cf56b98e1412a8b94" title="freemind.modes.filemode.\lFileNodeModel.childrenFolded" alt="" coords="914,93,1110,134"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_node_adapter.html#ad203d703dcd88659fbc53c7c31766b58" title="freemind.modes.NodeAdapter.setBold" alt="" coords="891,340,1133,367"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_node_adapter.html#a49495420537b34b2aa1e8696e2463b9f" title="freemind.modes.NodeAdapter.set\lItalic" alt="" coords="905,402,1119,443"/>
+<area shape="rect" id="node17" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_node_model.html#a5504cae1ff07ba3133f1ca9a26b56289" title="freemind.modes.schememode.\lSchemeNodeModel.getCodeMathStyle" alt="" coords="589,635,835,677"/>
+<area shape="rect" id="node18" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_node_model.html#a0e396e5f1e670a35acb19c70e90d0207" title="freemind.modes.schememode.\lSchemeNodeModel.getCodeClassicStyle" alt="" coords="582,701,842,742"/>
+</map>

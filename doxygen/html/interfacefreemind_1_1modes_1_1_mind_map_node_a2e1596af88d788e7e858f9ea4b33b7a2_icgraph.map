@@ -1,0 +1,7 @@
+<map id="freemind.modes.MindMapNode.getCloud" name="freemind.modes.MindMapNode.getCloud">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_action.html#aa7450d853baf4c892361d9858e5f7156" title="freemind.modes.mindmapmode.actions.\lCloudAction.apply" alt="" coords="277,5,531,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_action.html#ac6fbd8cc95153f19f50ea52856616b0c" title="freemind.modes.mindmapmode.actions.\lCloudAction.act" alt="" coords="277,70,531,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_color_action.html#ab4098b713e942f8e44e13b957bd3fb21" title="freemind.modes.mindmapmode.actions.\lCloudColorAction.setCloudColor" alt="" coords="277,135,531,177"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_color_action.html#aed4ca3d85da1f491a3cb29ebae52a5ff" title="freemind.modes.mindmapmode.actions.\lCloudColorAction.act" alt="" coords="277,201,531,242"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_color_action.html#a0f9dcac77b90db43693c43c82a73c165" title="freemind.modes.mindmapmode.actions.\lCloudColorAction.actionPerformed" alt="" coords="579,135,832,177"/>
+</map>

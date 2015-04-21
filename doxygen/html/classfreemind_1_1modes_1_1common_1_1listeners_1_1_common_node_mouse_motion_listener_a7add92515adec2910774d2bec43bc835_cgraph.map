@@ -1,0 +1,5 @@
+<map id="freemind.modes.common.listeners.CommonNodeMouseMotionListener.mouseEntered" name="freemind.modes.common.listeners.CommonNodeMouseMotionListener.mouseEntered">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1common_1_1listeners_1_1_common_node_mouse_motion_listener.html#a9e156b353abc4e14fef935a56352b7be" title="freemind.modes.common.listeners.\lCommonNodeMouseMotionListener.createTimer" alt="" coords="326,50,626,91"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1common_1_1listeners_1_1_common_node_mouse_motion_listener.html#a7431af4efa24c0f72cf25e5ce8d26142" title="freemind.modes.common.listeners.\lCommonNodeMouseMotionListener.stop\lTimerForDelayedSelection" alt="" coords="711,5,969,61"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1common_1_1listeners_1_1_common_node_mouse_motion_listener.html#a8abe6c05cb891efebaaa87024d197489" title="freemind.modes.common.listeners.\lCommonNodeMouseMotionListener.getControlRegion" alt="" coords="675,86,1005,127"/>
+</map>

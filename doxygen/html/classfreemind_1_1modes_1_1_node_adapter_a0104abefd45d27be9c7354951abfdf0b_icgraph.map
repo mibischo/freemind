@@ -1,0 +1,11 @@
+<map id="freemind.modes.NodeAdapter.NodeAdapter" name="freemind.modes.NodeAdapter.NodeAdapter">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1browsemode_1_1_encrypted_browse_node.html#a5e110ff201cd7750d44237544810d22c" title="freemind.modes.browsemode.\lEncryptedBrowseNode.setFolded" alt="" coords="262,5,477,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_node_adapter.html#ad394af97b06c6df86a6a4f4a8077e77a" title="freemind.modes.NodeAdapter.has\lFoldedStrictDescendant" alt="" coords="260,70,479,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_node_adapter.html#a2a2c77a85a16076cfff036fb02d01071" title="freemind.modes.NodeAdapter.setLeft" alt="" coords="251,136,487,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_node_adapter.html#af7992c679012cefc89ffb31820da9723" title="freemind.modes.NodeAdapter.isLeft" alt="" coords="537,136,765,163"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_node_adapter.html#a82652afb9728e325a4b40940a40d1395" title="freemind.modes.NodeAdapter.sorted\lChildrenUnfolded" alt="" coords="814,63,1047,105"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_node_adapter.html#a1427b75dd5378c5b4962c05d07e81eab" title="freemind.modes.NodeAdapter.is\lNewChildLeft" alt="" coords="827,129,1034,170"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_node_adapter.html#a153f18c313d65deb3f67228795f5ee72" title="freemind.modes.NodeAdapter.save" alt="" coords="819,195,1042,221"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1filemode_1_1_file_node_model.html#a212bb053b0c16ca509d9a58fe4769cf3" title="freemind.modes.filemode.\lFileNodeModel.childrenUnfolded" alt="" coords="1097,129,1303,170"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1filemode_1_1_file_node_model.html#af75b832f75ec029cf56b98e1412a8b94" title="freemind.modes.filemode.\lFileNodeModel.childrenFolded" alt="" coords="1353,129,1549,170"/>
+</map>

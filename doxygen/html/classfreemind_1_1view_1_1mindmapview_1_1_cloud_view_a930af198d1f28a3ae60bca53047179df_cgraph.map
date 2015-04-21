@@ -1,0 +1,10 @@
+<map id="freemind.view.mindmapview.CloudView.paint" name="freemind.view.mindmapview.CloudView.paint">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_cloud_view.html#a96300166ee83566608c0dc8f8f18f7ae" title="freemind.view.mindmapview.\lCloudView.getColor" alt="" coords="469,5,653,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_cloud_view.html#a0cb314834706f88798a8160cd8676e9a" title="freemind.view.mindmapview.\lCloudView.getStroke" alt="" coords="237,70,421,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_cloud_view.html#ae3f5944e846a5d4d8a731fe4fcb4b786" title="freemind.view.mindmapview.\lCloudView.getExteriorColor" alt="" coords="469,135,653,177"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_cloud_view.html#a8655f4b7d969a48940acec000d731ff1" title="freemind.view.mindmapview.\lCloudView.getIterativeLevel" alt="" coords="237,187,421,229"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_cloud_view.html#a95b1c53679a76da7c8688a77fd40fa6f" title="freemind.view.mindmapview.\lCloudView.getZoom" alt="" coords="237,253,421,294"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_cloud_view.html#a8df01cfd1d5a3e679f4206c1b46b72ec" title="freemind.view.mindmapview.\lCloudView.getModel" alt="" coords="701,70,885,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_cloud_view.html#afa49f5b70dc8ed40d388adb937a7e72f" title="freemind.view.mindmapview.\lCloudView.getWidth" alt="" coords="469,70,653,111"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_cloud_view.html#a9bfc5bbf891557f6c673c6e63ef0a2ad" title="freemind.view.mindmapview.\lCloudView.getMap" alt="" coords="469,253,653,294"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="freemind.modes.mindmapmode.actions.NodeBackgroundColorAction.actionPerformed" name="freemind.modes.mindmapmode.actions.NodeBackgroundColorAction.actionPerformed">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a2a1fbb955a04aa8c1bd2907a5c9fba0b" title="freemind.modes.Controller\lAdapter.getSelecteds" alt="" coords="424,9,597,50"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_background_color_action.html#ae64b74400cffa27cc265ef1dbab3bda3" title="freemind.modes.mindmapmode.actions.\lNodeBackgroundColorAction.setNodeBackgroundColor" alt="" coords="341,78,680,119"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="771,5,944,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_background_color_action.html#acb255f97f609355f2879b5ba74e78657" title="freemind.modes.mindmapmode.actions.\lNodeBackgroundColorAction.createNode\lBackgroundColorFormatAction" alt="" coords="728,71,987,127"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#aaf27570720e78feaddd8bd18197b0393" title="freemind.modes.MindMapNode.get\lBackgroundColor" alt="" coords="746,151,969,193"/>
+</map>

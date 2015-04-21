@@ -1,0 +1,16 @@
+<map id="freemind.modes.LineAdapter" name="freemind.modes.LineAdapter">
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_cloud_adapter.html" title="freemind.modes.CloudAdapter" alt="" coords="611,77,807,104"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_edge_adapter.html" title="freemind.modes.EdgeAdapter" alt="" coords="613,241,806,268"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_link_adapter.html" title="freemind.modes.LinkAdapter" alt="" coords="616,332,803,359"/>
+<area shape="rect" id="node2" href="$interfacefreemind_1_1modes_1_1_mind_map_line.html" title="freemind.modes.MindMapLine" alt="" coords="133,241,328,268"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_cloud_model.html" title="freemind.modes.browsemode.\lBrowseCloudModel" alt="" coords="863,5,1057,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_cloud_model.html" title="freemind.modes.mindmapmode.\lMindMapCloudModel" alt="" coords="857,70,1063,111"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_edge_model.html" title="freemind.modes.browsemode.\lBrowseEdgeModel" alt="" coords="863,135,1057,177"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1filemode_1_1_file_edge_model.html" title="freemind.modes.filemode.\lFileEdgeModel" alt="" coords="875,201,1045,242"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_edge_model.html" title="freemind.modes.mindmapmode.\lMindMapEdgeModel" alt="" coords="857,266,1063,307"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_edge_model.html" title="freemind.modes.schememode.\lSchemeEdgeModel" alt="" coords="860,331,1060,373"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html" title="freemind.modes.ArrowLink\lAdapter" alt="" coords="873,397,1047,438"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1_arrow_link_target.html" title="freemind.modes.ArrowLink\lTarget" alt="" coords="1129,331,1303,373"/>
+<area shape="rect" id="node15" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_arrow_link_model.html" title="freemind.modes.browsemode.\lBrowseArrowLinkModel" alt="" coords="1119,397,1313,438"/>
+<area shape="rect" id="node16" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_arrow_link_model.html" title="freemind.modes.mindmapmode.\lMindMapArrowLinkModel" alt="" coords="1113,462,1319,503"/>
+</map>

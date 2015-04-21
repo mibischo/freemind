@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_mind_map_layout.html" title="freemind.view.mindmapview.\lMindMapLayout" alt="" coords="165,5,349,46"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1view_1_1mindmapview_1_1_node_view_layout.html" title="freemind.view.mindmapview.\lNodeViewLayout" alt="" coords="165,70,349,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view_layout_adapter.html" title="freemind.view.mindmapview.\lNodeViewLayoutAdapter" alt="" coords="397,70,581,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_left_node_view_layout.html" title="freemind.view.mindmapview.\lLeftNodeViewLayout" alt="" coords="633,5,817,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_right_node_view_layout.html" title="freemind.view.mindmapview.\lRightNodeViewLayout" alt="" coords="633,70,817,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_vertical_root_node_view_layout.html" title="freemind.view.mindmapview.\lVerticalRootNodeViewLayout" alt="" coords="630,135,821,177"/>
+</map>

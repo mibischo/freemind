@@ -1,0 +1,6 @@
+<map id="freemind.modes.mindmapmode.MindMapMapModel.loadTree" name="freemind.modes.mindmapmode.MindMapMapModel.loadTree">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_tools.html#ada4596f1ecbdba8ac3ccfa787d52b788" title="freemind.main.Tools.isHeadless" alt="" coords="271,5,478,32"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mode_controller.html#a08bbb99418144a9837948671ceedf4f9" title="freemind.modes.ModeController.get\lFrame" alt="" coords="261,57,488,98"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mode_controller.html#aad61773f195f5bd5c0e26c480449026a" title="freemind.modes.ModeController.get\lSelectedView" alt="" coords="261,122,488,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_map_adapter.html#abe5ce209c42667f0dd4ddbc1cbba0811" title="freemind.modes.MapAdapter.get\lFrame" alt="" coords="269,187,480,229"/>
+</map>

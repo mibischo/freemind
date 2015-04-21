@@ -1,0 +1,20 @@
+<map id="freemind.view.mindmapview.MainView.getNodeView" name="freemind.view.mindmapview.MainView.getNodeView">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#ac99de33714c927690e19b24c208fe8e6" title="freemind.view.mindmapview.\lMainView.getPreferredSize" alt="" coords="503,55,687,97"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a7bf876f7cf9d2f2407a14cc42efc8d48" title="freemind.view.mindmapview.\lMainView.getTextX" alt="" coords="756,114,940,155"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a02683cdfb42005b4934d7a4585c9dc6e" title="freemind.view.mindmapview.\lMainView.isCurrentlyPrinting" alt="" coords="247,5,435,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a57340b8b258222535db8169d22882de5" title="freemind.view.mindmapview.\lMainView.paintSelected" alt="" coords="249,173,433,214"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#aa300f4921cd3c7f3e9de0b974b315597" title="freemind.view.mindmapview.\lMainView.paintDragOver" alt="" coords="249,238,433,279"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a0e2ea17b8daaa20959e549b0ce40e01b" title="freemind.view.mindmapview.\lMainView.convertPointToMap" alt="" coords="245,303,437,345"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a12fec98186245d8f3025d0e3e381b030" title="freemind.view.mindmapview.\lMainView.convertPointFromMap" alt="" coords="237,369,445,410"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#adf0c5a798384a7677a5835add37c4853" title="freemind.view.mindmapview.\lMainView.dropPosition" alt="" coords="249,434,433,475"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a2739aba630ca20138b64fded6ed1ae96" title="freemind.view.mindmapview.\lMainView.isInVerticalRegion" alt="" coords="248,565,435,606"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#ae5f19d4b20affed6d98d2c9b883c7ae9" title="freemind.view.mindmapview.\lMainView.isInFollowLinkRegion" alt="" coords="493,627,696,669"/>
+<area shape="rect" id="node18" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#aa6f6de94208c80cc22766a19d95fc2bf" title="freemind.view.mindmapview.\lMainView.getIconWidth" alt="" coords="249,499,433,541"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#ad3262ba7ad8b0cc204fcacc625898827" title="freemind.view.mindmapview.\lMainView.dropAsSibling" alt="" coords="503,562,687,603"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a619dcc20a2d74fef4602c1e9b0566e0b" title="freemind.view.mindmapview.\lMainView.setDraggedOver" alt="" coords="756,497,940,538"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_controller.html#a0d80e509df9c98a56cc9ed25ae85a81e" title="freemind.modes.browsemode.\lBrowseController.plainClick" alt="" coords="751,693,945,734"/>
+<area shape="rect" id="node15" href="$classfreemind_1_1modes_1_1filemode_1_1_file_controller.html#a8f10cd59c609befac7f99d02a55d3a5b" title="freemind.modes.filemode.\lFileController.plainClick" alt="" coords="763,758,933,799"/>
+<area shape="rect" id="node16" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a07dab19a52b0529e7c55b63239aa83fb" title="freemind.modes.mindmapmode.\lMindMapController.plainClick" alt="" coords="745,562,951,603"/>
+<area shape="rect" id="node17" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a620c594533902911a0979895329e7fc5" title="freemind.view.mindmapview.\lMainView.updateCursor" alt="" coords="756,627,940,669"/>
+<area shape="rect" id="node19" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a0b04e1ec011e4eaf215c918bdf81b4a7" title="freemind.view.mindmapview.\lMainView.getTextWidth" alt="" coords="503,497,687,538"/>
+</map>

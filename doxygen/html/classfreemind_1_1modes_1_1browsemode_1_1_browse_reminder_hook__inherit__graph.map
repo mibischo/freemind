@@ -1,0 +1,9 @@
+<map id="freemind.modes.browsemode.BrowseReminderHook" name="freemind.modes.browsemode.BrowseReminderHook">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html" title="freemind.modes.common.plugins.\lReminderHookBase" alt="" coords="89,369,305,410"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1extensions_1_1_permanent_node_hook_adapter.html" title="freemind.extensions.Permanent\lNodeHookAdapter" alt="" coords="95,278,300,319"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1extensions_1_1_node_hook_adapter.html" title="freemind.extensions.Node\lHookAdapter" alt="" coords="5,187,176,229"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1extensions_1_1_hook_adapter.html" title="freemind.extensions.Hook\lAdapter" alt="" coords="5,97,176,138"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1extensions_1_1_mind_map_hook.html" title="freemind.extensions.Mind\lMapHook" alt="" coords="111,6,281,47"/>
+<area shape="rect" id="node7" href="$interfacefreemind_1_1extensions_1_1_node_hook.html" title="freemind.extensions.NodeHook" alt="" coords="201,104,404,131"/>
+<area shape="rect" id="node8" href="$interfacefreemind_1_1extensions_1_1_permanent_node_hook.html" title="freemind.extensions.Permanent\lNodeHook" alt="" coords="201,187,407,229"/>
+</map>

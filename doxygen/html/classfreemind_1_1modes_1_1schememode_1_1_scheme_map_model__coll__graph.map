@@ -1,0 +1,6 @@
+<map id="freemind.modes.schememode.SchemeMapModel" name="freemind.modes.schememode.SchemeMapModel">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_map_adapter.html" title="freemind.modes.MapAdapter" alt="" coords="237,173,424,200"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map.html" title="freemind.modes.MindMap" alt="" coords="152,83,323,109"/>
+<area shape="rect" id="node7" href="$interfacefreemind_1_1modes_1_1_mode_controller.html" title="freemind.modes.ModeController" alt="" coords="432,83,637,109"/>
+<area shape="rect" id="node8" href="$interfacefreemind_1_1common_1_1_text_translator.html" title="freemind.common.TextTranslator" alt="" coords="429,5,640,32"/>
+</map>

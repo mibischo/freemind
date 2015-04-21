@@ -1,0 +1,12 @@
+<map id="freemind.extensions.NodeHookAdapter" name="freemind.extensions.NodeHookAdapter">
+<area shape="rect" id="node5" href="$classfreemind_1_1extensions_1_1_permanent_node_hook_adapter.html" title="freemind.extensions.Permanent\lNodeHookAdapter" alt="" coords="717,103,923,145"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1mindmapmode_1_1hooks_1_1_mind_map_node_hook_adapter.html" title="freemind.modes.mindmapmode.hooks.\lMindMapNodeHookAdapter" alt="" coords="697,169,943,210"/>
+<area shape="rect" id="node2" href="$classfreemind_1_1extensions_1_1_hook_adapter.html" title="freemind.extensions.Hook\lAdapter" alt="" coords="239,107,411,149"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1extensions_1_1_mind_map_hook.html" title="freemind.extensions.Mind\lMapHook" alt="" coords="5,137,176,178"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1extensions_1_1_node_hook.html" title="freemind.extensions.NodeHook" alt="" coords="224,173,427,200"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1extensions_1_1_permanent_node_hook_substitute_unknown.html" title="freemind.extensions.Permanent\lNodeHookSubstituteUnknown" alt="" coords="1013,5,1219,46"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase" alt="" coords="1007,70,1225,111"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html" title="freemind.modes.common.plugins.\lReminderHookBase" alt="" coords="1007,135,1225,177"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1mindmapmode_1_1hooks_1_1_permanent_mind_map_node_hook_adapter.html" title="freemind.modes.mindmapmode.hooks.\lPermanentMindMapNodeHookAdapter" alt="" coords="993,201,1239,242"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_reminder_hook.html" title="freemind.modes.browsemode.\lBrowseReminderHook" alt="" coords="1288,135,1483,177"/>
+</map>

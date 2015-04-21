@@ -1,0 +1,9 @@
+<map id="freemind.modes.LinkAdapter" name="freemind.modes.LinkAdapter">
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html" title="freemind.modes.ArrowLink\lAdapter" alt="" coords="854,70,1029,111"/>
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_line_adapter.html" title="freemind.modes.LineAdapter" alt="" coords="380,52,567,79"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_line.html" title="freemind.modes.MindMapLine" alt="" coords="133,77,328,104"/>
+<area shape="rect" id="node5" href="$interfacefreemind_1_1modes_1_1_mind_map_link.html" title="freemind.modes.MindMapLink" alt="" coords="376,103,571,129"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_arrow_link_target.html" title="freemind.modes.ArrowLink\lTarget" alt="" coords="1094,5,1269,46"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_arrow_link_model.html" title="freemind.modes.browsemode.\lBrowseArrowLinkModel" alt="" coords="1084,70,1279,111"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_arrow_link_model.html" title="freemind.modes.mindmapmode.\lMindMapArrowLinkModel" alt="" coords="1078,135,1285,177"/>
+</map>

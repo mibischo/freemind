@@ -1,0 +1,6 @@
+<map id="freemind.modes.filemode.FileEdgeModel" name="freemind.modes.filemode.FileEdgeModel">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_edge_adapter.html" title="freemind.modes.EdgeAdapter" alt="" coords="111,229,304,256"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_line_adapter.html" title="freemind.modes.LineAdapter" alt="" coords="5,155,192,181"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_line.html" title="freemind.modes.MindMapLine" alt="" coords="111,80,305,107"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1modes_1_1_mind_map_edge.html" title="freemind.modes.MindMapEdge" alt="" coords="217,155,417,181"/>
+</map>

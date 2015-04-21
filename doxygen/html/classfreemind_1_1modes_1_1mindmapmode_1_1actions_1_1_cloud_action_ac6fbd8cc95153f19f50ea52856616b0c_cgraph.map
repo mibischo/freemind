@@ -1,0 +1,6 @@
+<map id="freemind.modes.mindmapmode.actions.CloudAction.act" name="freemind.modes.mindmapmode.actions.CloudAction.act">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_general_action.html#a001e5af9fc4ec7981c6dd6b47390d1cd" title="freemind.modes.mindmapmode.actions.\lNodeGeneralAction.getNodeFromID" alt="" coords="320,5,573,46"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a2e1596af88d788e7e858f9ea4b33b7a2" title="freemind.modes.MindMapNode.get\lCloud" alt="" coords="335,70,558,111"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a83d7f4de5c123740d92dba20d891ff7b" title="freemind.modes.MindMapNode.isRoot" alt="" coords="325,136,568,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_abstract_xml_action.html#a4108859b703c219a6831b41de2b91ea0" title="freemind.modes.mindmapmode.actions.xml.\lAbstractXmlAction.getMindMapController" alt="" coords="307,187,586,229"/>
+</map>

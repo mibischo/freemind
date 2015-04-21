@@ -1,0 +1,9 @@
+<map id="freemind.modes.mindmapmode.MindMapMapModel.load" name="freemind.modes.mindmapmode.MindMapMapModel.load">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_tools.html#a55206ec2ccd451867a16151f61684a50" title="freemind.main.Tools.expand\lPlaceholders" alt="" coords="572,62,756,103"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_map_adapter.html#a9a1ea821a5eadf900d55028ad4028051" title="freemind.modes.MapAdapter.getText" alt="" coords="547,179,781,205"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_map_adapter.html#abe5ce209c42667f0dd4ddbc1cbba0811" title="freemind.modes.MapAdapter.get\lFrame" alt="" coords="829,121,1040,162"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_map_model.html#ae4c268397ca492a2d0d786df912f5a8f" title="freemind.modes.mindmapmode.\lMindMapMapModel.tryToLock" alt="" coords="277,117,483,158"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_map_adapter.html#a9ca990ced9de0debfa407cbcadb99e24" title="freemind.modes.MapAdapter.setRoot" alt="" coords="261,233,499,260"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_map_adapter.html#a731a1d8929342846b0002a849e3b5f81" title="freemind.modes.MapAdapter.setFile" alt="" coords="265,284,495,311"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_map_adapter.html#a0f583aff9a1e7b2cc0da42f271082094" title="freemind.modes.MapAdapter.set\lFileTime" alt="" coords="275,335,485,377"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="freemind.modes.mindmapmode.actions.ApplyPatternAction.applyPattern" name="freemind.modes.mindmapmode.actions.ApplyPatternAction.applyPattern">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_abstract_xml_action.html#a4108859b703c219a6831b41de2b91ea0" title="freemind.modes.mindmapmode.actions.xml.\lAbstractXmlAction.getMindMapController" alt="" coords="307,5,586,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_mind_icon.html#acbc57718b7c488e95f1cf2b320c17171" title="freemind.modes.MindIcon.getName" alt="" coords="333,71,560,97"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_apply_pattern_action.html#a33bb4c4f576953a3df56eb1be12b4d75" title="freemind.modes.mindmapmode.actions.\lApplyPatternAction.edgeWidthStringToInt" alt="" coords="315,122,578,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_apply_pattern_action.html#aa37fa8c64ef2079a2f822c545fd7028c" title="freemind.modes.mindmapmode.actions.\lApplyPatternAction.getPattern" alt="" coords="320,187,573,229"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a96d14c3f37cf4ec6c2998c92061628d0" title="freemind.modes.MindMapNode.children\lUnfolded" alt="" coords="321,253,572,294"/>
+</map>

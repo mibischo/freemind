@@ -1,0 +1,9 @@
+<map id="freemind.modes.ArrowLinkAdapter.save" name="freemind.modes.ArrowLinkAdapter.save">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_link_adapter.html#ada916b231daadfdc0af24113b7c297a5" title="freemind.modes.LinkAdapter.get\lUniqueId" alt="" coords="230,5,439,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_link_adapter.html#a6b6d8926b3756b9321bd354973c9bcb1" title="freemind.modes.LinkAdapter.get\lDestinationLabel" alt="" coords="230,70,439,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_link_adapter.html#ad7bd5eed053ac23bd5d0f59530061497" title="freemind.modes.LinkAdapter.get\lReferenceText" alt="" coords="230,135,439,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#a7b2914f0d6c2f97796338f36d2c7853f" title="freemind.modes.ArrowLink\lAdapter.getStartInclination" alt="" coords="247,201,422,242"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#ad71da3b489d45aa9922ec4901501d34a" title="freemind.modes.ArrowLink\lAdapter.getEndInclination" alt="" coords="247,266,422,307"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#af134618d2692629cf8f67a8b872af74e" title="freemind.modes.ArrowLink\lAdapter.getStartArrow" alt="" coords="247,331,422,373"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#a766b6f2a5ffcd4a6fc9a4cd3e1077ed9" title="freemind.modes.ArrowLink\lAdapter.getEndArrow" alt="" coords="247,397,422,438"/>
+</map>

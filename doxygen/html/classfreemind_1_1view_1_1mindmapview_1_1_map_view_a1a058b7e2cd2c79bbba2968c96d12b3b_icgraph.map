@@ -1,0 +1,9 @@
+<map id="freemind.view.mindmapview.MapView.getRoot" name="freemind.view.mindmapview.MapView.getRoot">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a2ef78fbe4cc222759b088e217d70bc5f" title="freemind.view.mindmapview.\lMapView.moveToRoot" alt="" coords="237,5,421,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a22d972b7a2d6fdbae62c6df9a6093771" title="freemind.view.mindmapview.\lMapView.setZoom" alt="" coords="237,70,421,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a7d3874c8bf7080d9092ecb49b8f789fb" title="freemind.view.mindmapview.\lMapView.paint" alt="" coords="237,135,421,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a2deb288184367fe768436413f52784ec" title="freemind.view.mindmapview.\lMapView.preparePrinting" alt="" coords="469,246,653,287"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#aebabd6b4d1812481064a08e7cc911fd5" title="freemind.view.mindmapview.\lMapView.endPrinting" alt="" coords="469,311,653,353"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a28bd6f525ef76c4abc420fde5599ee07" title="freemind.view.mindmapview.\lMapView.getInnerBounds" alt="" coords="237,253,421,294"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#ae12f5dd3db1b51c84e0d9f9a549785b4" title="freemind.view.mindmapview.\lMapView.print" alt="" coords="701,279,885,321"/>
+</map>

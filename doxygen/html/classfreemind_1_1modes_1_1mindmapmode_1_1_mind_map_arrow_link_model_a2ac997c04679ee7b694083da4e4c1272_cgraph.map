@@ -1,0 +1,12 @@
+<map id="freemind.modes.mindmapmode.MindMapArrowLinkModel.toString" name="freemind.modes.mindmapmode.MindMapArrowLinkModel.toString">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_link_adapter.html#a789fc9bbc1f07e23f0fc044e5c0bbac9" title="freemind.modes.LinkAdapter.get\lSource" alt="" coords="270,70,479,111"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_line_adapter.html#a7e22dcb6baa951742148e13e447745e3" title="freemind.modes.LineAdapter.get\lTarget" alt="" coords="270,135,479,177"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#aa8b796136644de6d4e1a04a0d8765c09" title="freemind.modes.ArrowLink\lAdapter.save" alt="" coords="287,201,462,242"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_link_adapter.html#ada916b231daadfdc0af24113b7c297a5" title="freemind.modes.LinkAdapter.get\lUniqueId" alt="" coords="529,5,738,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_link_adapter.html#a6b6d8926b3756b9321bd354973c9bcb1" title="freemind.modes.LinkAdapter.get\lDestinationLabel" alt="" coords="529,70,738,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_link_adapter.html#ad7bd5eed053ac23bd5d0f59530061497" title="freemind.modes.LinkAdapter.get\lReferenceText" alt="" coords="529,135,738,177"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#a7b2914f0d6c2f97796338f36d2c7853f" title="freemind.modes.ArrowLink\lAdapter.getStartInclination" alt="" coords="546,201,721,242"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#ad71da3b489d45aa9922ec4901501d34a" title="freemind.modes.ArrowLink\lAdapter.getEndInclination" alt="" coords="546,266,721,307"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#af134618d2692629cf8f67a8b872af74e" title="freemind.modes.ArrowLink\lAdapter.getStartArrow" alt="" coords="546,331,721,373"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#a766b6f2a5ffcd4a6fc9a4cd3e1077ed9" title="freemind.modes.ArrowLink\lAdapter.getEndArrow" alt="" coords="546,397,721,438"/>
+</map>

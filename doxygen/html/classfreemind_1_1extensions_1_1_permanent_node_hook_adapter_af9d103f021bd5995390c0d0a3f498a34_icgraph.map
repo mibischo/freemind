@@ -1,0 +1,7 @@
+<map id="freemind.extensions.PermanentNodeHookAdapter.setToolTip" name="freemind.extensions.PermanentNodeHookAdapter.setToolTip">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html#abe09e6af28b6e8d630ed2f588dbdc1f1" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase.addTooltip" alt="" coords="261,7,515,49"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html#a6f1ab83b36bd4dbfe6b80f16ae561770" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase.hideTooltip" alt="" coords="259,74,517,115"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html#ab60e4b4093367639ec58fe3041caa5f1" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase.showTooltip" alt="" coords="566,5,829,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html#a023980d1f77b9bc48eba272065773740" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase.invoke" alt="" coords="878,5,1109,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_map_node_position_holder_base.html#a8f5db56c357f6ea1d57151b52d1d9e8c" title="freemind.modes.common.plugins.\lMapNodePositionHolderBase.shutdown\lMapHook" alt="" coords="572,71,823,127"/>
+</map>

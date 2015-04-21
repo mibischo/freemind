@@ -1,0 +1,8 @@
+<map id="freemind.controller.filter.FilterController.showFilterToolbar" name="freemind.controller.filter.FilterController.showFilterToolbar">
+<area shape="rect" id="node2" href="$classfreemind_1_1controller_1_1filter_1_1_filter_controller.html#aee8b58c884b23c040dd2ce050a22ee5b" title="freemind.controller.filter.\lFilterController.isVisible" alt="" coords="264,9,424,50"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1controller_1_1filter_1_1_filter_controller.html#a412cf017ef38493bc85b8e83611c4a87" title="freemind.controller.filter.\lFilterController.getFilterToolbar" alt="" coords="473,38,671,79"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1controller_1_1filter_1_1_filter_controller.html#ac92c483a393a187ce7d46add6e0ba56c" title="freemind.controller.filter.\lFilterController.getMap" alt="" coords="264,126,424,167"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1controller_1_1filter_1_1_filter_controller.html#a6a63cecc8d3db29b59c4f203980d06a1" title="freemind.controller.filter.\lFilterController.getFilterConditionModel" alt="" coords="721,5,967,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1main_1_1_resources.html#aa7a8b63baf65c8894323e8172d67249a" title="freemind.main.Resources.get\lInstance" alt="" coords="749,70,939,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1main_1_1_resources.html#a5d9bbd5e6e5a09d88b1f99550cc02747" title="freemind.main.Resources.create\lInstance" alt="" coords="1017,70,1226,111"/>
+</map>

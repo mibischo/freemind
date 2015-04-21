@@ -1,0 +1,6 @@
+<map id="freemind.view.mindmapview.MapView.paint" name="freemind.view.mindmapview.MapView.paint">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a1a058b7e2cd2c79bbba2968c96d12b3b" title="freemind.view.mindmapview.\lMapView.getRoot" alt="" coords="237,5,421,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#afa4ecbe224e2777d9499d0091fbf5353" title="freemind.view.mindmapview.\lMapView.getController" alt="" coords="237,70,421,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a2b82df61003d8049ce82045e22dc7f0c" title="freemind.view.mindmapview.\lMapView.getZoom" alt="" coords="237,135,421,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#aede9c54e434fc0ce2c16faa2d81c9ed3" title="freemind.view.mindmapview.\lMapView.getModel" alt="" coords="237,201,421,242"/>
+</map>

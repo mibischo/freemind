@@ -1,0 +1,4 @@
+<map id="freemind.modes.mindmapmode.actions.BoldAction.act" name="freemind.modes.mindmapmode.actions.BoldAction.act">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_general_action.html#a001e5af9fc4ec7981c6dd6b47390d1cd" title="freemind.modes.mindmapmode.actions.\lNodeGeneralAction.getNodeFromID" alt="" coords="307,5,560,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_node_adapter.html#a263a77977e2c9277b68ab52ebb2df907" title="freemind.modes.NodeAdapter.isBold" alt="" coords="317,71,550,97"/>
+</map>

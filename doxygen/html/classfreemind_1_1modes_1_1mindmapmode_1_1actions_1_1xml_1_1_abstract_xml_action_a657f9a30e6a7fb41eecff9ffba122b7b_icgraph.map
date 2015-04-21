@@ -1,0 +1,6 @@
+<map id="freemind.modes.mindmapmode.actions.xml.AbstractXmlAction.getShortDescription" name="freemind.modes.mindmapmode.actions.xml.AbstractXmlAction.getShortDescription">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_general_action.html#a1cee83d5703331a9075a27b5ae8eb037" title="freemind.modes.mindmapmode.actions.\lNodeGeneralAction.execute" alt="" coords="333,70,587,111"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_bold_action.html#addaed1a57dda7a9b69ded244453d9bca" title="freemind.modes.mindmapmode.actions.\lBoldAction.setBold" alt="" coords="635,5,888,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_italic_action.html#aef6dfaa09fef0019e4817de010dde6f9" title="freemind.modes.mindmapmode.actions.\lItalicAction.setItalic" alt="" coords="635,70,888,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_underlined_action.html#a9cb1ca00bbf2ad0dfe9f875025ebe8b2" title="freemind.modes.mindmapmode.actions.\lUnderlinedAction.setUnderlined" alt="" coords="635,135,888,177"/>
+</map>

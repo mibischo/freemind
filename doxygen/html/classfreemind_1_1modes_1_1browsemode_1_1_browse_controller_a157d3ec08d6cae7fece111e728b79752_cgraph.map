@@ -1,0 +1,8 @@
+<map id="freemind.modes.browsemode.BrowseController.startupController" name="freemind.modes.browsemode.BrowseController.startupController">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa0eec8013abf4c9d499f5975e17ccf61" title="freemind.modes.Controller\lAdapter.invokeHooksRecursively" alt="" coords="272,55,483,97"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_controller_adapter.html#adc72366a174b6d383726b3640e4adb8f" title="freemind.modes.Controller\lAdapter.getRootNode" alt="" coords="291,121,464,162"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a58b4224be9532f92c590d0b089eeb6ee" title="freemind.modes.Controller\lAdapter.getMap" alt="" coords="565,150,739,191"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_node_adapter.html#ac92c0c07763e93e6a4b8838f09b09ba0" title="freemind.modes.NodeAdapter.children\lUnfolded" alt="" coords="531,5,773,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_node_adapter.html#afe0b53dcbb8a35fea92f00679814bce5" title="freemind.modes.NodeAdapter.get\lHooks" alt="" coords="545,70,759,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_node_adapter.html#a98cd6687f631b8794146a05a4052505d" title="freemind.modes.NodeAdapter.children" alt="" coords="821,12,1064,39"/>
+</map>

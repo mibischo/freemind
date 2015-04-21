@@ -1,0 +1,6 @@
+<map id="freemind.view.mindmapview.NodeView.getMainView" name="freemind.view.mindmapview.NodeView.getMainView">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_w_y_s_i_w_y_g.html#a2a7bf1483664254af3d840cf3d4589e2" title="freemind.view.mindmapview.\lEditNodeWYSIWYG.show" alt="" coords="257,5,441,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a6a28245d3b5169a24e281e661adaf393" title="freemind.view.mindmapview.\lNodeView.getTextFont" alt="" coords="257,70,441,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#ab979f690aed897891823d00daf7f337b" title="freemind.view.mindmapview.\lNodeView.getPreferredVisibleChild" alt="" coords="238,135,461,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a47a75d9a40aa3c879bb434dd0905ce52" title="freemind.view.mindmapview.\lNodeView.treeNodesRemoved" alt="" coords="510,135,706,177"/>
+</map>

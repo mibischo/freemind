@@ -1,0 +1,5 @@
+<map id="freemind.modes.common.listeners.CommonNodeMouseMotionListener.mouseReleased" name="freemind.modes.common.listeners.CommonNodeMouseMotionListener.mouseReleased">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_tools.html#ab8e9f68764dd5e87ada6f4bf024cab57" title="freemind.main.Tools.isLinux" alt="" coords="370,5,553,32"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1common_1_1listeners_1_1_common_node_mouse_motion_listener.html#a8ee776076bed284710a6a6bf316593c5" title="freemind.modes.common.listeners.\lCommonNodeMouseMotionListener.handle\lPopupMenu" alt="" coords="326,56,597,112"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1common_1_1listeners_1_1_common_node_mouse_motion_listener.html#a7431af4efa24c0f72cf25e5ce8d26142" title="freemind.modes.common.listeners.\lCommonNodeMouseMotionListener.stop\lTimerForDelayedSelection" alt="" coords="646,56,903,112"/>
+</map>

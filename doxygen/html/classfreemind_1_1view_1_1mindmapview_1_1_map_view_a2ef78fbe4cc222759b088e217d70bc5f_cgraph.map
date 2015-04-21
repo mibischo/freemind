@@ -1,0 +1,10 @@
+<map id="freemind.view.mindmapview.MapView.moveToRoot" name="freemind.view.mindmapview.MapView.moveToRoot">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a6a287ea2917b8376867f4f9fcdfd207e" title="freemind.view.mindmapview.\lMapView.selectAsTheOnlyOneSelected" alt="" coords="237,70,491,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a1a058b7e2cd2c79bbba2968c96d12b3b" title="freemind.view.mindmapview.\lMapView.getRoot" alt="" coords="272,135,456,177"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a5a9f825d7b8278c2ca2f544b7190d9cd" title="freemind.view.mindmapview.\lMapView.centerNode" alt="" coords="272,201,456,242"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a6004ba218aa8e7951f318dd7349ff5d3" title="freemind.view.mindmapview.\lMapView.getSelecteds" alt="" coords="544,5,728,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a83d9bda3de8fa5f26eb92d15dd4ac6ca" title="freemind.view.mindmapview.\lNodeView.getModel" alt="" coords="544,70,728,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#af8730dd34d99d5bf0aca6b1612c020cd" title="freemind.view.mindmapview.\lMapView.scrollNodeToVisible" alt="" coords="539,135,733,177"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a01d33e0507e62ecef0ff8ca647a4aee3" title="freemind.view.mindmapview.\lMapView.getSelected" alt="" coords="781,5,965,46"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a39c0195e565227698386956a0b091386" title="freemind.view.mindmapview.\lMapView.getViewportSize" alt="" coords="544,201,728,242"/>
+</map>

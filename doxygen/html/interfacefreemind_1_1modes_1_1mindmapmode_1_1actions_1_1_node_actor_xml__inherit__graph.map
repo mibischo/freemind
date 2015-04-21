@@ -1,0 +1,15 @@
+<map id="freemind.modes.mindmapmode.actions.NodeActorXml" name="freemind.modes.mindmapmode.actions.NodeActorXml">
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_bold_action.html" title="freemind.modes.mindmapmode.actions.\lBoldAction" alt="" coords="635,5,888,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cloud_action.html" title="freemind.modes.mindmapmode.actions.\lCloudAction" alt="" coords="635,70,888,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_style_action.html" title="freemind.modes.mindmapmode.actions.\lEdgeStyleAction" alt="" coords="635,135,888,177"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_width_action.html" title="freemind.modes.mindmapmode.actions.\lEdgeWidthAction" alt="" coords="635,201,888,242"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_font_family_action.html" title="freemind.modes.mindmapmode.actions.\lFontFamilyAction" alt="" coords="635,266,888,307"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_font_size_action.html" title="freemind.modes.mindmapmode.actions.\lFontSizeAction" alt="" coords="635,331,888,373"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_italic_action.html" title="freemind.modes.mindmapmode.actions.\lItalicAction" alt="" coords="635,397,888,438"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_move_node_action.html" title="freemind.modes.mindmapmode.actions.\lMoveNodeAction" alt="" coords="635,462,888,503"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_style_action.html" title="freemind.modes.mindmapmode.actions.\lNodeStyleAction" alt="" coords="635,527,888,569"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_remove_all_icons_action.html" title="freemind.modes.mindmapmode.actions.\lRemoveAllIconsAction" alt="" coords="635,593,888,634"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_remove_icon_action.html" title="freemind.modes.mindmapmode.actions.\lRemoveIconAction" alt="" coords="635,658,888,699"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_underlined_action.html" title="freemind.modes.mindmapmode.actions.\lUnderlinedAction" alt="" coords="635,723,888,765"/>
+<area shape="rect" id="node2" href="$interfacefreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_actor_xml.html" title="freemind.modes.mindmapmode.actions.xml.\lActorXml" alt="" coords="6,365,285,406"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="freemind.modes.MindMapNode.getBackgroundColor" name="freemind.modes.MindMapNode.getBackgroundColor">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_background_color_action.html#ae64b74400cffa27cc265ef1dbab3bda3" title="freemind.modes.mindmapmode.actions.\lNodeBackgroundColorAction.setNodeBackgroundColor" alt="" coords="277,5,616,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_style_pattern_factory.html#ad11f31b20e318d43dbe2e186d524374d" title="freemind.modes.StylePattern\lFactory.createPatternFromNode" alt="" coords="343,70,551,111"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_background_color_action.html#a022fdc00661b1fe53f7aadad54650b24" title="freemind.modes.mindmapmode.actions.\lNodeBackgroundColorAction.actionPerformed" alt="" coords="665,5,951,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_style_pattern_factory.html#a1d698a5cbbd493867bd06c8e45afc510" title="freemind.modes.StylePattern\lFactory.createPatternFromSelected" alt="" coords="693,70,923,111"/>
+</map>

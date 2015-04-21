@@ -1,0 +1,7 @@
+<map id="freemind.modes.mindmapmode.actions.UndoAction.add" name="freemind.modes.mindmapmode.actions.UndoAction.add">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_action_pair.html#af28db75a298a8eb47d428243838dea56" title="freemind.modes.mindmapmode.actions.xml.\lActionPair.getDoAction" alt="" coords="307,5,586,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_action_pair.html#aa15447f2a27bf3f2136f2a0618c02337" title="freemind.modes.mindmapmode.actions.xml.\lActionPair.getUndoAction" alt="" coords="307,70,586,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac028c6caf7a7b9875787be6933a201c0" title="freemind.modes.Controller\lAdapter.getFrame" alt="" coords="360,135,533,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a790a9689ef6a299ba97edf478113d9e8" title="freemind.modes.Controller\lAdapter.getController" alt="" coords="635,135,808,177"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac4f3de0d3e67a126df931304d9a96876" title="freemind.modes.Controller\lAdapter.getMode" alt="" coords="856,135,1029,177"/>
+</map>

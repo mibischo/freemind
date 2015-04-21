@@ -1,0 +1,12 @@
+<map id="freemind.main.HtmlTools.isHtmlNode" name="freemind.main.HtmlTools.isHtmlNode">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_html_tools.html#ac088e58958a5666ad99fb1ea46a87998" title="freemind.main.HtmlTools.to\lXhtml" alt="" coords="303,5,483,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1main_1_1_html_tools.html#a8db51d28417347fd559405f72cf4bdfc" title="freemind.main.HtmlTools.remove\lHtmlTagsFromString" alt="" coords="288,70,499,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1main_1_1_html_tools.html#a30d7f07467a27175ec63b63556898ef4" title="freemind.main.HtmlTools.html\lToPlain" alt="" coords="296,135,491,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1common_1_1actions_1_1_find_action.html#a843013af28adba7858195fd807f39160" title="freemind.modes.common.actions.\lFindAction.prepareTextContent" alt="" coords="284,201,503,242"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_use_plain_text_action.html#aa6f11cd96fc412eec041fa604b4fed29" title="freemind.modes.mindmapmode.actions.\lUsePlainTextAction.UsePlainTextAction" alt="" coords="266,266,521,307"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_use_rich_formatting_action.html#a1ee4610a869867a52fb8ebcbaea8af62" title="freemind.modes.mindmapmode.actions.\lUseRichFormattingAction.UseRichFormattingAction" alt="" coords="232,331,555,373"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_node_adapter.html#a153f18c313d65deb3f67228795f5ee72" title="freemind.modes.NodeAdapter.save" alt="" coords="282,397,505,424"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_w_y_s_i_w_y_g.html#a2a7bf1483664254af3d840cf3d4589e2" title="freemind.view.mindmapview.\lEditNodeWYSIWYG.show" alt="" coords="301,449,485,490"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#ac99de33714c927690e19b24c208fe8e6" title="freemind.view.mindmapview.\lMainView.getPreferredSize" alt="" coords="301,514,485,555"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a7bf876f7cf9d2f2407a14cc42efc8d48" title="freemind.view.mindmapview.\lMainView.getTextX" alt="" coords="603,514,787,555"/>
+</map>

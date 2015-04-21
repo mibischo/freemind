@@ -1,0 +1,25 @@
+<map id="freemind.modes.StylePattern.StylePattern" name="freemind.modes.StylePattern.StylePattern">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_style_pattern.html#afb32f6b45e643cb9346f6dc60b7ef7e7" title="freemind.modes.StylePattern.load\lPattern" alt="" coords="248,661,467,702"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1main_1_1_x_m_l_element.html#a568ed783fa37df4a0f26906f7c0a90f7" title="freemind.main.XMLElement.get\lStringAttribute" alt="" coords="537,5,740,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_style_pattern.html#a4932de1e34c9cc3982d6536704330f9e" title="freemind.modes.StylePattern.setName" alt="" coords="515,71,762,97"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1main_1_1_tools.html#a6e8fb446c296573a7ddccaa20069008f" title="freemind.main.Tools.safe\lEquals" alt="" coords="555,122,722,163"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_style_pattern.html#aff57fb776462e825d999afa235e71499" title="freemind.modes.StylePattern.set\lRecursive" alt="" coords="533,187,745,229"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1main_1_1_x_m_l_element.html#a4a4b50eda6e3bc70c4dbcb5a44ab068c" title="freemind.main.XMLElement.get\lChildren" alt="" coords="537,253,740,294"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1main_1_1_x_m_l_element.html#a65040cb53b31bb795f266ce203b8eb62" title="freemind.main.XMLElement.getName" alt="" coords="521,319,757,345"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_style_pattern.html#ac41eb3f188e657e7d321aa199a00df49" title="freemind.modes.StylePattern.set\lNodeColor" alt="" coords="533,370,745,411"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1main_1_1_tools.html#a429bb434d0b1775c46b29621432d48c1" title="freemind.main.Tools.xmlTo\lColor" alt="" coords="550,435,727,477"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_style_pattern.html#a90dfff1e010ecc20b54bd6046d392dec" title="freemind.modes.StylePattern.set\lNodeBackgroundColor" alt="" coords="533,501,745,542"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_style_pattern.html#a509e8a2e0f8358c2a1fb0eedbc0b4dc1" title="freemind.modes.StylePattern.set\lNodeStyle" alt="" coords="533,566,745,607"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1_style_pattern.html#a4eca9e4383c1b6d1d16fb877d6b39518" title="freemind.modes.StylePattern.set\lNodeIcon" alt="" coords="533,631,745,673"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1_style_pattern.html#a10a16f9e949e3a1b43fe80d1b5ea2fc7" title="freemind.modes.StylePattern.setText" alt="" coords="520,697,757,724"/>
+<area shape="rect" id="node15" href="$classfreemind_1_1modes_1_1_style_pattern.html#ab8603694d737f583d120209ed7b6c192" title="freemind.modes.StylePattern.set\lNodeFontFamily" alt="" coords="533,749,745,790"/>
+<area shape="rect" id="node16" href="$classfreemind_1_1modes_1_1_style_pattern.html#a01299bffbdc32fbd0cba75a1ff864914" title="freemind.modes.StylePattern.set\lNodeFontBold" alt="" coords="533,814,745,855"/>
+<area shape="rect" id="node17" href="$classfreemind_1_1modes_1_1_style_pattern.html#a0841498ac62b034637d67f5c50174736" title="freemind.modes.StylePattern.set\lNodeFontItalic" alt="" coords="533,879,745,921"/>
+<area shape="rect" id="node18" href="$classfreemind_1_1modes_1_1_style_pattern.html#ac900d06114671e113561fd47e7c9e910" title="freemind.modes.StylePattern.set\lNodeFontSize" alt="" coords="533,945,745,986"/>
+<area shape="rect" id="node19" href="$classfreemind_1_1modes_1_1_style_pattern.html#acaf1fa96e9afaaadcf508bc25544a56f" title="freemind.modes.StylePattern.set\lEdgeStyle" alt="" coords="533,1010,745,1051"/>
+<area shape="rect" id="node20" href="$classfreemind_1_1modes_1_1_style_pattern.html#a4b915281af47e9a38f5eaf7a0772c963" title="freemind.modes.StylePattern.set\lEdgeColor" alt="" coords="533,1075,745,1117"/>
+<area shape="rect" id="node21" href="$classfreemind_1_1modes_1_1_style_pattern.html#a4e0a36e411f21a341191776848b6d319" title="freemind.modes.StylePattern.set\lEdgeWidth" alt="" coords="533,1141,745,1182"/>
+<area shape="rect" id="node22" href="$classfreemind_1_1modes_1_1_style_pattern.html#a04e24659f829f7c1042f2ee34bfb6d15" title="freemind.modes.StylePattern.\lStylePattern" alt="" coords="541,1206,736,1247"/>
+<area shape="rect" id="node23" href="$classfreemind_1_1modes_1_1_style_pattern.html#a4bc8091d342d52f2f82ab1fffa0bac08" title="freemind.modes.StylePattern.getName" alt="" coords="515,1272,762,1299"/>
+<area shape="rect" id="node24" href="$classfreemind_1_1modes_1_1_style_pattern.html#a0e0fa0a2e6a2e3834f9b9f145a8c9696" title="freemind.modes.StylePattern.set\lChildrenStylePattern" alt="" coords="533,1323,745,1365"/>
+</map>

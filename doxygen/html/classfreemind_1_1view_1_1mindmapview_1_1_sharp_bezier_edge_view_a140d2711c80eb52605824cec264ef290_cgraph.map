@@ -1,0 +1,8 @@
+<map id="freemind.view.mindmapview.SharpBezierEdgeView.createStart" name="freemind.view.mindmapview.SharpBezierEdgeView.createStart">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a3b2dcf2335615744548cb2bc73dae8eb" title="freemind.view.mindmapview.\lNodeView.isRoot" alt="" coords="272,5,456,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a14a9b8b57fb6310bd976649022232315" title="freemind.view.mindmapview.\lEdgeView.getTarget" alt="" coords="736,122,920,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a23f37806d7a9a6c06a3e90fe29d72dd1" title="freemind.view.mindmapview.\lEdgeView.getMap" alt="" coords="504,122,688,163"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a0c7f5ea6a343477f2ad7b7a14d94e841" title="freemind.view.mindmapview.\lEdgeView.getWidth" alt="" coords="272,179,456,221"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a83d9bda3de8fa5f26eb92d15dd4ac6ca" title="freemind.view.mindmapview.\lNodeView.getModel" alt="" coords="504,5,688,46"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html#a7d2336fc583c15d56499a713049a1e20" title="freemind.view.mindmapview.\lEdgeView.getModel" alt="" coords="504,187,688,229"/>
+</map>

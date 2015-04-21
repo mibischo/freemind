@@ -1,0 +1,7 @@
+<map id="freemind.modes.MindMapNode.getIcons" name="freemind.modes.MindMapNode.getIcons">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_remove_all_icons_action.html#a7f5cbc7004241abd7bc47dd4cf722b18" title="freemind.modes.mindmapmode.actions.\lRemoveAllIconsAction.apply" alt="" coords="277,5,531,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_remove_all_icons_action.html#a072ae857a8eaed5ab842308e11086bc0" title="freemind.modes.mindmapmode.actions.\lRemoveAllIconsAction.act" alt="" coords="277,70,531,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_style_pattern_factory.html#ad11f31b20e318d43dbe2e186d524374d" title="freemind.modes.StylePattern\lFactory.createPatternFromNode" alt="" coords="300,135,508,177"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_remove_all_icons_action.html#aedcb0cf8f11b949aa8a479d07e48354f" title="freemind.modes.mindmapmode.actions.\lRemoveAllIconsAction.removeAllIcons" alt="" coords="579,5,832,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_style_pattern_factory.html#a1d698a5cbbd493867bd06c8e45afc510" title="freemind.modes.StylePattern\lFactory.createPatternFromSelected" alt="" coords="591,135,820,177"/>
+</map>

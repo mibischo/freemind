@@ -1,0 +1,14 @@
+<map id="freemind.modes.browsemode.BrowseController.plainClick" name="freemind.modes.browsemode.BrowseController.plainClick">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a2a1fbb955a04aa8c1bd2907a5c9fba0b" title="freemind.modes.Controller\lAdapter.getSelecteds" alt="" coords="1045,48,1219,89"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#ae5f19d4b20affed6d98d2c9b883c7ae9" title="freemind.view.mindmapview.\lMainView.isInFollowLinkRegion" alt="" coords="260,106,463,148"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_controller_adapter.html#abf2becf0dfe8dc6b94278fc0cdfd485e" title="freemind.modes.Controller\lAdapter.loadURL" alt="" coords="557,277,731,318"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac9fdc3cf2cabe07365ef9b3b0541144e" title="freemind.modes.Controller\lAdapter.getNodeView" alt="" coords="819,186,992,228"/>
+<area shape="rect" id="node12" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a986ec7be8de7b53db726ea54a983d8c9" title="freemind.modes.MindMapNode.has\lChildren" alt="" coords="248,296,475,337"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_controller.html#a493df1f0e14b9f410eed9727fd8e5dae" title="freemind.modes.browsemode.\lBrowseController.doubleClick" alt="" coords="264,361,459,402"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="1267,186,1440,228"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a762cc68bc869526c523fff22f926c845" title="freemind.view.mindmapview.\lMainView.getNodeView" alt="" coords="813,56,997,97"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a83d7f4de5c123740d92dba20d891ff7b" title="freemind.modes.MindMapNode.isRoot" alt="" coords="523,143,765,170"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a2739aba630ca20138b64fded6ed1ae96" title="freemind.view.mindmapview.\lMainView.isInVerticalRegion" alt="" coords="551,26,737,68"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac64063f2bd2905f220ddbf796e7ba667" title="freemind.modes.Controller\lAdapter.getSelected" alt="" coords="819,277,992,318"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa80374fa8f6d04254c8a8ed6ee7eaecb" title="freemind.modes.Controller\lAdapter.getSelectedView" alt="" coords="1045,261,1219,302"/>
+</map>

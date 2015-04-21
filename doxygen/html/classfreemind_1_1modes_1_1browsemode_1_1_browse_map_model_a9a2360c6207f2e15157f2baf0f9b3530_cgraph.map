@@ -1,0 +1,5 @@
+<map id="freemind.modes.browsemode.BrowseMapModel.BrowseMapModel" name="freemind.modes.browsemode.BrowseMapModel.BrowseMapModel">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_map_adapter.html#a9ca990ced9de0debfa407cbcadb99e24" title="freemind.modes.MapAdapter.setRoot" alt="" coords="293,5,531,32"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_map_adapter.html#abe5ce209c42667f0dd4ddbc1cbba0811" title="freemind.modes.MapAdapter.get\lFrame" alt="" coords="307,57,517,98"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mode_controller.html#ac4d06e5eade25da4c0f4c2d0b84df179" title="freemind.modes.ModeController.getMap" alt="" coords="286,123,538,149"/>
+</map>

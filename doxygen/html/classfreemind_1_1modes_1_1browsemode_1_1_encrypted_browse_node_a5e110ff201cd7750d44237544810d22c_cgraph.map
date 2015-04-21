@@ -1,0 +1,10 @@
+<map id="freemind.modes.browsemode.EncryptedBrowseNode.setFolded" name="freemind.modes.browsemode.EncryptedBrowseNode.setFolded">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1common_1_1dialogs_1_1_enter_password_dialog.html#ac7b31ee9e8941a1efc1221ed84905174" title="freemind.modes.common.dialogs.\lEnterPasswordDialog.getResult" alt="" coords="274,5,491,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1common_1_1dialogs_1_1_enter_password_dialog.html#a138138accb0d6ed85c9b1e5fd131d5be" title="freemind.modes.common.dialogs.\lEnterPasswordDialog.getPassword" alt="" coords="270,70,495,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_node_adapter.html#a0104abefd45d27be9c7354951abfdf0b" title="freemind.modes.NodeAdapter.\lNodeAdapter" alt="" coords="284,135,481,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1browsemode_1_1_encrypted_browse_node.html#a3ac51e940d049afe35f9c313dd48ffbe" title="freemind.modes.browsemode.\lEncryptedBrowseNode.updateIcon" alt="" coords="272,201,493,242"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_node_adapter.html#a56b346dade60475576ee6bd2f6a0ca83" title="freemind.modes.NodeAdapter.set\lStateIcon" alt="" coords="545,201,759,242"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_node_adapter.html#a1c0efd1aacb673a99529e643ae03362d" title="freemind.modes.NodeAdapter.getMap" alt="" coords="1099,183,1339,209"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_node_adapter.html#a94bf4cd757bac102b4df7e3a91760f6c" title="freemind.modes.NodeAdapter.addIcon" alt="" coords="808,208,1051,235"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_mind_icon.html#ab95077e3183a251ddafeb275d740cf02" title="freemind.modes.MindIcon.factory" alt="" coords="823,259,1036,285"/>
+</map>

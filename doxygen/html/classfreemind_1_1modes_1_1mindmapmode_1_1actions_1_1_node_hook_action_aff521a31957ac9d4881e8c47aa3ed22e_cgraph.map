@@ -1,0 +1,5 @@
+<map id="freemind.modes.mindmapmode.actions.NodeHookAction.invoke" name="freemind.modes.mindmapmode.actions.NodeHookAction.invoke">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_hook_action.html#a0655b6715118957ec661403ce98dd151" title="freemind.modes.mindmapmode.actions.\lNodeHookAction.addHook" alt="" coords="307,34,560,75"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_hook_action.html#a7a355ab6a1591f9987c2045069e98082" title="freemind.modes.mindmapmode.actions.\lNodeHookAction.createHookNodeAction" alt="" coords="608,5,864,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_node_hook_action.html#aec60319d28bb9fb19d3df1d18b73162f" title="freemind.modes.mindmapmode.actions.\lNodeHookAction.getController" alt="" coords="912,34,1165,75"/>
+</map>

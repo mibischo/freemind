@@ -1,0 +1,10 @@
+<map id="freemind.modes.mindmapmode.MindMapController.getHookFactory" name="freemind.modes.mindmapmode.MindMapController.getHookFactory">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#ac78869d675a325a43bfb9de0400238fd" title="freemind.modes.mindmapmode.\lMindMapController.startupController" alt="" coords="309,5,539,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a58e11c115388ee7d6953cb06e22f0970" title="freemind.modes.mindmapmode.\lMindMapController.shutdownController" alt="" coords="302,70,546,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#adb6077cc9a30923ad45d23b455afb32a" title="freemind.modes.mindmapmode.\lMindMapController.createNodeHook\lActions" alt="" coords="309,136,539,192"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a89d439c62494684a39a8e39f584a1eef" title="freemind.modes.mindmapmode.\lMindMapController.updateMenus" alt="" coords="318,217,530,258"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a0e0946ed430886e8802f67fedb731367" title="freemind.modes.mindmapmode.\lMindMapController.createNodeHook" alt="" coords="309,282,539,323"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a39c8d50367ab6baf259885a767cf1189" title="freemind.modes.mindmapmode.\lMindMapController.createModeControllerHook" alt="" coords="281,347,567,389"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a12ae798198983b60dd660dc4474c0e8e" title="freemind.modes.mindmapmode.\lMindMapController.init" alt="" coords="617,143,823,185"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a11e0166b8f320ecd143cc0129702144a" title="freemind.modes.mindmapmode.\lMindMapController.MindMapController" alt="" coords="872,143,1115,185"/>
+</map>

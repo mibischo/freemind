@@ -1,0 +1,8 @@
+<map id="freemind.modes.mindmapmode.MindMapArrowLinkModel.changeInclination" name="freemind.modes.mindmapmode.MindMapArrowLinkModel.changeInclination">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_line_adapter.html#a7e22dcb6baa951742148e13e447745e3" title="freemind.modes.LineAdapter.get\lTarget" alt="" coords="326,5,535,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_link_adapter.html#a789fc9bbc1f07e23f0fc044e5c0bbac9" title="freemind.modes.LinkAdapter.get\lSource" alt="" coords="326,70,535,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#ad71da3b489d45aa9922ec4901501d34a" title="freemind.modes.ArrowLink\lAdapter.getEndInclination" alt="" coords="343,135,518,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#a7b2914f0d6c2f97796338f36d2c7853f" title="freemind.modes.ArrowLink\lAdapter.getStartInclination" alt="" coords="343,201,518,242"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#a6fb4d58b2d4a0f9d9071a29737ad8e53" title="freemind.modes.ArrowLink\lAdapter.setStartInclination" alt="" coords="343,266,518,307"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html#ae13ab4298fb54917d007c76b14f40fb9" title="freemind.modes.ArrowLink\lAdapter.setEndInclination" alt="" coords="343,331,518,373"/>
+</map>

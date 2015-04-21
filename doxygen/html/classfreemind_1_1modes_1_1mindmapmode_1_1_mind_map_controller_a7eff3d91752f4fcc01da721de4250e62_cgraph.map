@@ -1,0 +1,13 @@
+<map id="freemind.modes.mindmapmode.MindMapController.processMenuCategory" name="freemind.modes.mindmapmode.MindMapController.processMenuCategory">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a38f5c812b666352db1e5c1396a77d2e3" title="freemind.modes.Controller\lAdapter.getText" alt="" coords="564,5,737,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a790a9689ef6a299ba97edf478113d9e8" title="freemind.modes.Controller\lAdapter.getController" alt="" coords="804,63,977,105"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1main_1_1_tools.html#afb66e36c6763ecade1a51fb45f87acc3" title="freemind.main.Tools.getField" alt="" coords="318,319,506,345"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac21db3e8ab66300a8f00ff582df0f1d1" title="freemind.modes.Controller\lAdapter.addCheckBox" alt="" coords="325,253,499,294"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a48772d79fc497db1b5a8bd39066234f4" title="freemind.modes.Controller\lAdapter.addRadioItem" alt="" coords="325,187,499,229"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a615cc613e04524875724fd9c28ffaab6" title="freemind.modes.Controller\lAdapter.add" alt="" coords="325,122,499,163"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac4f3de0d3e67a126df931304d9a96876" title="freemind.modes.Controller\lAdapter.getMode" alt="" coords="1035,63,1208,105"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1main_1_1_tools.html#a6e8fb446c296573a7ddccaa20069008f" title="freemind.main.Tools.safe\lEquals" alt="" coords="567,311,734,353"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1controller_1_1_structured_menu_holder.html#a01e78dfa5925d3b2691b562a48d61ed1" title="freemind.controller.Structured\lMenuHolder.addMenuItem" alt="" coords="555,231,747,273"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac028c6caf7a7b9875787be6933a201c0" title="freemind.modes.Controller\lAdapter.getFrame" alt="" coords="564,151,737,193"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1controller_1_1_structured_menu_holder.html#a322e1c666effe33660459b34cbc81f21" title="freemind.controller.Structured\lMenuHolder.addMenu" alt="" coords="795,231,987,273"/>
+</map>

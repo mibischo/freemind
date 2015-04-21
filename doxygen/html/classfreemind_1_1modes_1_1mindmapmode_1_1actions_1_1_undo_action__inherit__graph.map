@@ -1,0 +1,5 @@
+<map id="freemind.modes.mindmapmode.actions.UndoAction" name="freemind.modes.mindmapmode.actions.UndoAction">
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_redo_action.html" title="freemind.modes.mindmapmode.actions.\lRedoAction" alt="" coords="17,353,271,394"/>
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_abstract_xml_action.html" title="freemind.modes.mindmapmode.actions.xml.\lAbstractXmlAction" alt="" coords="5,171,283,213"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_freemind_action.html" title="freemind.modes.mindmapmode.actions.\lFreemindAction" alt="" coords="17,81,271,122"/>
+</map>

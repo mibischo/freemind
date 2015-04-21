@@ -1,0 +1,30 @@
+<map id="freemind.modes.NodeAdapter.save" name="freemind.modes.NodeAdapter.save">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_node_adapter.html#aa1ab0dd9c2a60c27b311bf1c4db4c96d" title="freemind.modes.NodeAdapter.get\lModeController" alt="" coords="293,5,507,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1main_1_1_html_tools.html#a4494792488d0ec9d4d332aef0372a769" title="freemind.main.HtmlTools.is\lHtmlNode" alt="" coords="311,70,489,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_node_adapter.html#a7239950c80ad5052479418d6a9cbe123" title="freemind.modes.NodeAdapter.convert\lToEncodedContent" alt="" coords="281,135,519,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_node_adapter.html#a2c1edf4d50f19b4c34bcaeb67204f235" title="freemind.modes.NodeAdapter.get\lXmlText" alt="" coords="293,201,507,242"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_node_adapter.html#ac17280276acb863a2e8934063738a5d6" title="freemind.modes.NodeAdapter.get\lXmlNoteText" alt="" coords="293,266,507,307"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_node_adapter.html#a50084ed816f2e2578f069bbfd7dff0f0" title="freemind.modes.NodeAdapter.get\lAdditionalInfo" alt="" coords="293,331,507,373"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_node_adapter.html#ad2a616d8b3c566361554e52252baffe5" title="freemind.modes.NodeAdapter.getEdge" alt="" coords="277,397,523,424"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_node_adapter.html#a1dcac53632a38c03bcc7ee59956e00d0" title="freemind.modes.NodeAdapter.get\lCloud" alt="" coords="293,449,507,490"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_node_adapter.html#ad59f5ae3aeb82c4ea527f1ca90780211" title="freemind.modes.NodeAdapter.is\lFolded" alt="" coords="297,514,503,555"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_node_adapter.html#a6b0619825df80b02e6edf46a5ceb8c12" title="freemind.modes.NodeAdapter.isRoot" alt="" coords="861,697,1096,724"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_node_adapter.html#a5c3cfa11677115e2c9082cf9baa6b406" title="freemind.modes.NodeAdapter.get\lParentNode" alt="" coords="585,631,799,673"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1_node_adapter.html#af7992c679012cefc89ffb31820da9723" title="freemind.modes.NodeAdapter.isLeft" alt="" coords="286,681,514,708"/>
+<area shape="rect" id="node20" href="$classfreemind_1_1modes_1_1_node_adapter.html#a1737dd57ad9015ec051d6dba6b518956" title="freemind.modes.NodeAdapter.get\lColor" alt="" coords="293,733,507,774"/>
+<area shape="rect" id="node21" href="$classfreemind_1_1modes_1_1_node_adapter.html#a7505ef3e9bf85461325f1cda492a3c70" title="freemind.modes.NodeAdapter.get\lBackgroundColor" alt="" coords="293,798,507,839"/>
+<area shape="rect" id="node22" href="$classfreemind_1_1modes_1_1_node_adapter.html#a0e04f255440e50ec1b71bd9ab12ea00e" title="freemind.modes.NodeAdapter.getLink" alt="" coords="281,864,519,891"/>
+<area shape="rect" id="node23" href="$classfreemind_1_1modes_1_1_node_adapter.html#ab3826a6c9789662da0cfc398f0b1cd8b" title="freemind.modes.NodeAdapter.get\lHistoryInformation" alt="" coords="293,915,507,957"/>
+<area shape="rect" id="node24" href="$classfreemind_1_1modes_1_1_node_adapter.html#a263a77977e2c9277b68ab52ebb2df907" title="freemind.modes.NodeAdapter.isBold" alt="" coords="283,981,517,1008"/>
+<area shape="rect" id="node25" href="$classfreemind_1_1modes_1_1_node_adapter.html#a4d89d6fa356e547665c96a34abc3838f" title="freemind.modes.NodeAdapter.is\lItalic" alt="" coords="297,1033,503,1074"/>
+<area shape="rect" id="node26" href="$classfreemind_1_1modes_1_1_node_adapter.html#a30b6d8823af61c82cc60dfcd04198ea3" title="freemind.modes.NodeAdapter.is\lUnderlined" alt="" coords="297,1098,503,1139"/>
+<area shape="rect" id="node27" href="$classfreemind_1_1modes_1_1_node_adapter.html#a536e2a0c22091a442a489dba580d0024" title="freemind.modes.NodeAdapter.get\lIcons" alt="" coords="293,1163,507,1205"/>
+<area shape="rect" id="node28" href="$classfreemind_1_1modes_1_1_node_adapter.html#abca2f91ad5ebc80fbfd114dd036b599f" title="freemind.modes.NodeAdapter.get\lActivatedHooks" alt="" coords="293,1229,507,1270"/>
+<area shape="rect" id="node29" href="$classfreemind_1_1modes_1_1_node_adapter.html#ac92c0c07763e93e6a4b8838f09b09ba0" title="freemind.modes.NodeAdapter.children\lUnfolded" alt="" coords="571,1207,813,1249"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1_node_adapter.html#ae335b180f84f9e8f53369831e4688edd" title="freemind.modes.NodeAdapter.get\lParent" alt="" coords="585,749,799,790"/>
+<area shape="rect" id="node15" href="$classfreemind_1_1modes_1_1_node_adapter.html#a2a2c77a85a16076cfff036fb02d01071" title="freemind.modes.NodeAdapter.setLeft" alt="" coords="574,815,810,841"/>
+<area shape="rect" id="node16" href="$classfreemind_1_1modes_1_1_node_adapter.html#ab7954ec3ce1543b94ac9fecac6acbd0a" title="freemind.modes.NodeAdapter.get\lChildCount" alt="" coords="871,778,1086,819"/>
+<area shape="rect" id="node18" href="$classfreemind_1_1modes_1_1_node_adapter.html#a0104abefd45d27be9c7354951abfdf0b" title="freemind.modes.NodeAdapter.\lNodeAdapter" alt="" coords="880,843,1077,885"/>
+<area shape="rect" id="node19" href="$classfreemind_1_1modes_1_1_node_adapter.html#a308580f9bbe28e10db844ed4dbc45698" title="freemind.modes.NodeAdapter.get\lChildAt" alt="" coords="871,909,1086,950"/>
+<area shape="rect" id="node17" href="$classfreemind_1_1modes_1_1_node_adapter.html#a98cd6687f631b8794146a05a4052505d" title="freemind.modes.NodeAdapter.children" alt="" coords="1144,960,1387,987"/>
+</map>

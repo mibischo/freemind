@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_base.html" title="freemind.view.mindmapview.\lEditNodeBase" alt="" coords="5,103,189,145"/>
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_dialog.html" title="freemind.view.mindmapview.\lEditNodeDialog" alt="" coords="239,5,423,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_external_application.html" title="freemind.view.mindmapview.\lEditNodeExternalApplication" alt="" coords="237,70,424,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_text_field.html" title="freemind.view.mindmapview.\lEditNodeTextField" alt="" coords="239,135,423,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_w_y_s_i_w_y_g.html" title="freemind.view.mindmapview.\lEditNodeWYSIWYG" alt="" coords="239,201,423,242"/>
+</map>

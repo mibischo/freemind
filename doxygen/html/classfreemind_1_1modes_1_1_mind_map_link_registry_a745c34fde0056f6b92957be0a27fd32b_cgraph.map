@@ -1,0 +1,8 @@
+<map id="freemind.modes.MindMapLinkRegistry.deregisterLinkTarget" name="freemind.modes.MindMapLinkRegistry.deregisterLinkTarget">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_mind_map_link_registry.html#a5bbe900744e7c0bf6aa8119b1bcbf3ba" title="freemind.modes.MindMapLink\lRegistry.getAllLinks" alt="" coords="248,70,443,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_mind_map_link_registry.html#a4164d108c2f4553482c7fa7682f82462" title="freemind.modes.MindMapLink\lRegistry.getState" alt="" coords="733,67,928,109"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_mind_map_link_registry.html#a24dd5640f823d304545d30be964f6b11" title="freemind.modes.MindMapLink\lRegistry.deregisterLink" alt="" coords="248,187,443,229"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_mind_map_link_registry.html#a97d441a4cfe923233716b25e58a896ce" title="freemind.modes.MindMapLink\lRegistry.getAllLinksIntoMe" alt="" coords="491,5,685,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_mind_map_link_registry.html#a6e5d9240a70ae884a6b4328910b58b61" title="freemind.modes.MindMapLink\lRegistry.getAllLinksFromMe" alt="" coords="491,70,685,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_mind_map_link_registry.html#ad17fc1d5fabda5c5aa0f6301fb9f2a1a" title="freemind.modes.MindMapLink\lRegistry._registerLinkTarget" alt="" coords="491,187,685,229"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="freemind.modes.mindmapmode.MindMapController.createNodeHook" name="freemind.modes.mindmapmode.MindMapController.createNodeHook">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a9ff7d24ce632bc4cffa87d676902e4c1" title="freemind.modes.mindmapmode.\lMindMapController.getHookFactory" alt="" coords="285,5,512,46"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1extensions_1_1_hook_factory.html#a093ac502a267cc95d3c5d1681f1bf5e3" title="freemind.extensions.Hook\lFactory.createNodeHook" alt="" coords="313,70,485,111"/>
+<area shape="rect" id="node7" href="$interfacefreemind_1_1extensions_1_1_hook_factory.html#a82c168b8e406a2c9d04aba6f53e20dc1" title="freemind.extensions.Hook\lFactory.getInstanciationMethod" alt="" coords="297,135,501,177"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac028c6caf7a7b9875787be6933a201c0" title="freemind.modes.Controller\lAdapter.getFrame" alt="" coords="560,5,733,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a790a9689ef6a299ba97edf478113d9e8" title="freemind.modes.Controller\lAdapter.getController" alt="" coords="781,5,955,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac4f3de0d3e67a126df931304d9a96876" title="freemind.modes.Controller\lAdapter.getMode" alt="" coords="1003,5,1176,46"/>
+</map>

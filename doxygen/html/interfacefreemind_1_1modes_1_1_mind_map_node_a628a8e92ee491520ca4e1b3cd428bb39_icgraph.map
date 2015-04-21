@@ -1,0 +1,7 @@
+<map id="freemind.modes.MindMapNode.getFontSize" name="freemind.modes.MindMapNode.getFontSize">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_font_size_action.html#a6873ecc896799aedf06820ff698160de" title="freemind.modes.mindmapmode.actions.\lFontSizeAction.setFontSize" alt="" coords="277,5,531,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_font_size_action.html#a5e5e4128fbed078f4c6a5e53205147bc" title="freemind.modes.mindmapmode.actions.\lFontSizeAction.act" alt="" coords="277,70,531,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_style_pattern.html#aad8fbb72026e8d2aba5b55bf761994f6" title="freemind.modes.StylePattern.\lStylePattern" alt="" coords="307,135,501,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_style_pattern_factory.html#ad11f31b20e318d43dbe2e186d524374d" title="freemind.modes.StylePattern\lFactory.createPatternFromNode" alt="" coords="300,201,508,242"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_style_pattern_factory.html#a1d698a5cbbd493867bd06c8e45afc510" title="freemind.modes.StylePattern\lFactory.createPatternFromSelected" alt="" coords="579,201,808,242"/>
+</map>

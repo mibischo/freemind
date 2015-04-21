@@ -1,0 +1,6 @@
+<map id="freemind.view.mindmapview.MainView.isInFollowLinkRegion" name="freemind.view.mindmapview.MainView.isInFollowLinkRegion">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_controller.html#a0d80e509df9c98a56cc9ed25ae85a81e" title="freemind.modes.browsemode.\lBrowseController.plainClick" alt="" coords="263,5,457,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1filemode_1_1_file_controller.html#a8f10cd59c609befac7f99d02a55d3a5b" title="freemind.modes.filemode.\lFileController.plainClick" alt="" coords="275,70,445,111"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a07dab19a52b0529e7c55b63239aa83fb" title="freemind.modes.mindmapmode.\lMindMapController.plainClick" alt="" coords="257,135,463,177"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_main_view.html#a620c594533902911a0979895329e7fc5" title="freemind.view.mindmapview.\lMainView.updateCursor" alt="" coords="268,201,452,242"/>
+</map>

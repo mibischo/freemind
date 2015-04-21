@@ -1,0 +1,6 @@
+<map id="freemind.view.mindmapview.MapView.getSelecteds" name="freemind.view.mindmapview.MapView.getSelecteds">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a6a287ea2917b8376867f4f9fcdfd207e" title="freemind.view.mindmapview.\lMapView.selectAsTheOnlyOneSelected" alt="" coords="237,37,491,78"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a111b7e3a25f4c2d485bc5a9c1f322ec9" title="freemind.view.mindmapview.\lMapView.selectContinuous" alt="" coords="272,102,456,143"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a2ef78fbe4cc222759b088e217d70bc5f" title="freemind.view.mindmapview.\lMapView.moveToRoot" alt="" coords="539,5,723,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a6d86baeb9edcdb02ac8dbba6bb11caf0" title="freemind.view.mindmapview.\lMapView.selectBranch" alt="" coords="539,70,723,111"/>
+</map>

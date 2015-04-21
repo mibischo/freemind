@@ -1,0 +1,14 @@
+<map id="freemind.modes.schememode.SchemeController.saveAs" name="freemind.modes.schememode.SchemeController.saveAs">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ab49ddbbc4346e98636104f91c5be9731" title="freemind.modes.Controller\lAdapter.getFileChooser" alt="" coords="715,5,888,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a3910f2c486b15f33dde74e10e83a894d" title="freemind.modes.Controller\lAdapter.getView" alt="" coords="715,70,888,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a9ac61b938e23fed4d8cdbecad0c616e1" title="freemind.modes.Controller\lAdapter.save" alt="" coords="253,247,427,289"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a6ed0a38ebc4224f3b8737d587a8afafe" title="freemind.modes.Controller\lAdapter.updateMapModuleName" alt="" coords="696,449,907,490"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a9d7aa4ddcd49de78245f3228c88620ea" title="freemind.modes.Controller\lAdapter.getFileFilter" alt="" coords="955,5,1128,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a0f2f18df424edb56921345a80ff05074" title="freemind.modes.Controller\lAdapter.getModel" alt="" coords="715,383,888,425"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a169e24ac129ff25c6f6782ba680211ea" title="freemind.modes.Controller\lAdapter.saveAs" alt="" coords="475,247,648,289"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a38f5c812b666352db1e5c1396a77d2e3" title="freemind.modes.Controller\lAdapter.getText" alt="" coords="715,135,888,177"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a790a9689ef6a299ba97edf478113d9e8" title="freemind.modes.Controller\lAdapter.getController" alt="" coords="955,263,1128,305"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac028c6caf7a7b9875787be6933a201c0" title="freemind.modes.Controller\lAdapter.getFrame" alt="" coords="715,201,888,242"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1main_1_1_tools.html#a55206ec2ccd451867a16151f61684a50" title="freemind.main.Tools.expand\lPlaceholders" alt="" coords="709,266,893,307"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac4f3de0d3e67a126df931304d9a96876" title="freemind.modes.Controller\lAdapter.getMode" alt="" coords="1176,263,1349,305"/>
+</map>

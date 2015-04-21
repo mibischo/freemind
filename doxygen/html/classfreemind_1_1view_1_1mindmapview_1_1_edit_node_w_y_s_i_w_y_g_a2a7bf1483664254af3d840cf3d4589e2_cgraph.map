@@ -1,0 +1,9 @@
+<map id="freemind.view.mindmapview.EditNodeWYSIWYG.show" name="freemind.view.mindmapview.EditNodeWYSIWYG.show">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_base.html#af390fb171089617678e83f2afd33cfca" title="freemind.view.mindmapview.\lEditNodeBase.getFrame" alt="" coords="261,5,445,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1main_1_1_resources.html#aa7a8b63baf65c8894323e8172d67249a" title="freemind.main.Resources.get\lInstance" alt="" coords="258,70,449,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a83d9bda3de8fa5f26eb92d15dd4ac6ca" title="freemind.view.mindmapview.\lNodeView.getModel" alt="" coords="261,135,445,177"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html#a6bb9b51fb93810cfd6ee749cf84e3a2f" title="freemind.view.mindmapview.\lNodeView.getMainView" alt="" coords="261,201,445,242"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1main_1_1_html_tools.html#a4494792488d0ec9d4d332aef0372a769" title="freemind.main.HtmlTools.is\lHtmlNode" alt="" coords="264,266,443,307"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1view_1_1mindmapview_1_1_edit_node_base.html#a4026bfb5a1e55777fc26270a88d179e6" title="freemind.view.mindmapview.\lEditNodeBase.redispatchKeyEvents" alt="" coords="238,331,469,373"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1main_1_1_resources.html#a5d9bbd5e6e5a09d88b1f99550cc02747" title="freemind.main.Resources.create\lInstance" alt="" coords="518,70,727,111"/>
+</map>

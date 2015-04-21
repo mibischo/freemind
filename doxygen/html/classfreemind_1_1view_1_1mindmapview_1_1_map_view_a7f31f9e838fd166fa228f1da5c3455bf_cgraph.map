@@ -1,0 +1,8 @@
+<map id="freemind.view.mindmapview.MapView.MapView" name="freemind.view.mindmapview.MapView.MapView">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#afa4ecbe224e2777d9499d0091fbf5353" title="freemind.view.mindmapview.\lMapView.getController" alt="" coords="251,5,435,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a2239ba2ec6a2ecbc7bff5f10bef6c748" title="freemind.view.mindmapview.\lMapView.initRoot" alt="" coords="251,70,435,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1controller_1_1_controller.html#a4bd3a292615bc7e51891dfc714b4fe81" title="freemind.controller.Controller.get\lMapMouseMotionListener" alt="" coords="238,135,447,177"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1controller_1_1_controller.html#aefcba126e60f771277d3e3c7bb715b8a" title="freemind.controller.Controller.get\lMapMouseWheelListener" alt="" coords="238,201,447,242"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a01d33e0507e62ecef0ff8ca647a4aee3" title="freemind.view.mindmapview.\lMapView.getSelected" alt="" coords="251,266,435,307"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#aede9c54e434fc0ce2c16faa2d81c9ed3" title="freemind.view.mindmapview.\lMapView.getModel" alt="" coords="496,70,680,111"/>
+</map>

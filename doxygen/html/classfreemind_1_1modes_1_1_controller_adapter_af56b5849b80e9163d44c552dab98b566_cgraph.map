@@ -1,0 +1,6 @@
+<map id="freemind.modes.ControllerAdapter._setFolded" name="freemind.modes.ControllerAdapter._setFolded">
+<area shape="rect" id="node2" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a83d7f4de5c123740d92dba20d891ff7b" title="freemind.modes.MindMapNode.isRoot" alt="" coords="227,5,469,32"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a84c48f640cfd7b03794e30f297588f8f" title="freemind.modes.MindMapNode.is\lFolded" alt="" coords="241,57,455,98"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aca3fe2a888c4e084611476f3e024a27a" title="freemind.modes.Controller\lAdapter.nodeStructureChanged" alt="" coords="247,122,449,163"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a58b4224be9532f92c590d0b089eeb6ee" title="freemind.modes.Controller\lAdapter.getMap" alt="" coords="517,122,691,163"/>
+</map>

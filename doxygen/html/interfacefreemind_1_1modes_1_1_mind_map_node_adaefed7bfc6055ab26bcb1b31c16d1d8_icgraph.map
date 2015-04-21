@@ -1,0 +1,12 @@
+<map id="freemind.modes.MindMapNode.getEdge" name="freemind.modes.MindMapNode.getEdge">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_color_action.html#a53a285f59010597e55d879553774e5e1" title="freemind.modes.mindmapmode.actions.\lEdgeColorAction.setEdgeColor" alt="" coords="307,5,560,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_color_action.html#ade73623620e9dec8e81af9044b68617b" title="freemind.modes.mindmapmode.actions.\lEdgeColorAction.act" alt="" coords="307,70,560,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_style_action.html#abb651388429d28a71cb50fd5f2b78a02" title="freemind.modes.mindmapmode.actions.\lEdgeStyleAction.getStyle" alt="" coords="307,135,560,177"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_width_action.html#a1965ad43a282227a8459549c74ecb8c8" title="freemind.modes.mindmapmode.actions.\lEdgeWidthAction.getWidth" alt="" coords="307,201,560,242"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_width_action.html#abb2898d37d980107ee54b475713ee2d7" title="freemind.modes.mindmapmode.actions.\lEdgeWidthAction.act" alt="" coords="307,266,560,307"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_style_pattern.html#aad8fbb72026e8d2aba5b55bf761994f6" title="freemind.modes.StylePattern.\lStylePattern" alt="" coords="336,331,531,373"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_style_pattern_factory.html#ad11f31b20e318d43dbe2e186d524374d" title="freemind.modes.StylePattern\lFactory.createPatternFromNode" alt="" coords="329,397,537,438"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_color_action.html#a5e4c3afae6a6026cbee94f8d793ed084" title="freemind.modes.mindmapmode.actions.\lEdgeColorAction.actionPerformed" alt="" coords="608,5,861,46"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_edge_style_action.html#aefedb8c02c9da5d3f81c4fce1a8d352e" title="freemind.modes.mindmapmode.actions.\lEdgeStyleAction.setEdgeStyle" alt="" coords="608,135,861,177"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_style_pattern_factory.html#a1d698a5cbbd493867bd06c8e45afc510" title="freemind.modes.StylePattern\lFactory.createPatternFromSelected" alt="" coords="620,397,849,438"/>
+</map>

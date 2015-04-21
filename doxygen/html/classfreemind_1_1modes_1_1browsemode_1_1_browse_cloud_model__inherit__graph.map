@@ -1,0 +1,6 @@
+<map id="freemind.modes.browsemode.BrowseCloudModel" name="freemind.modes.browsemode.BrowseCloudModel">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_cloud_adapter.html" title="freemind.modes.CloudAdapter" alt="" coords="110,229,305,256"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_line_adapter.html" title="freemind.modes.LineAdapter" alt="" coords="5,155,192,181"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1_mind_map_line.html" title="freemind.modes.MindMapLine" alt="" coords="111,80,305,107"/>
+<area shape="rect" id="node6" href="$interfacefreemind_1_1modes_1_1_mind_map_cloud.html" title="freemind.modes.MindMapCloud" alt="" coords="217,155,420,181"/>
+</map>

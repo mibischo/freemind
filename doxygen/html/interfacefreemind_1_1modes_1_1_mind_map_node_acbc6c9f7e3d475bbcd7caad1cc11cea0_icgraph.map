@@ -1,0 +1,10 @@
+<map id="freemind.modes.MindMapNode.getParentNode" name="freemind.modes.MindMapNode.getParentNode">
+<area shape="rect" id="node2" href="$classfreemind_1_1main_1_1_tools.html#a36d54a8892ff77513f1374e9908b09a0" title="freemind.main.Tools.getNode\lTextHierarchy" alt="" coords="309,5,499,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#afef87502862565725f6dd53fafc39528" title="freemind.modes.common.plugins.\lReminderHookBase.displayState" alt="" coords="295,70,513,111"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_cut_action.html#ade6048f191a598458611415c4be35348" title="freemind.modes.mindmapmode.actions.\lCutAction.cut" alt="" coords="277,135,531,177"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_move_node_action.html#a7f2d8e44eda392657b8a584d0ac9db8c" title="freemind.modes.mindmapmode.actions.\lMoveNodeAction.moveNodeTo" alt="" coords="277,201,531,242"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html#a61a41cb3da1338db1df11730329360a6" title="freemind.view.mindmapview.\lMapView.getSelectedNodesSortedByY" alt="" coords="280,266,528,307"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#a55d608d82dd130f25694ba7bc5b94db2" title="freemind.modes.common.plugins.\lReminderHookBase.shutdownMapHook" alt="" coords="588,5,839,46"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base.html#a2bd0f73ed93c741fa3626b07094e7ea1" title="freemind.modes.common.plugins.\lReminderHookBase.invoke" alt="" coords="605,70,822,111"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1common_1_1plugins_1_1_reminder_hook_base_1_1_timer_blink_task.html#ab7fda264dd8c1b75a50b4151c11c6277" title="freemind.modes.common.plugins.\lReminderHookBase.TimerBlinkTask.action\lPerformed" alt="" coords="579,136,848,192"/>
+</map>

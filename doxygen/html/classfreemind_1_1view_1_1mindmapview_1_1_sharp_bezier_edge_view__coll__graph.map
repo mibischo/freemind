@@ -1,0 +1,7 @@
+<map id="freemind.view.mindmapview.SharpBezierEdgeView" name="freemind.view.mindmapview.SharpBezierEdgeView">
+<area shape="rect" id="node2" href="$classfreemind_1_1view_1_1mindmapview_1_1_edge_view.html" title="freemind.view.mindmapview.\lEdgeView" alt="" coords="1088,177,1272,219"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_view.html" title="freemind.view.mindmapview.\lNodeView" alt="" coords="725,148,909,189"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1view_1_1mindmapview_1_1_node_motion_listener_view.html" title="freemind.view.mindmapview.\lNodeMotionListenerView" alt="" coords="367,72,551,113"/>
+<area shape="rect" id="node9" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html" title="freemind.modes.MindMapNode" alt="" coords="358,189,559,215"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1view_1_1mindmapview_1_1_map_view.html" title="freemind.view.mindmapview.\lMapView" alt="" coords="367,356,551,397"/>
+</map>

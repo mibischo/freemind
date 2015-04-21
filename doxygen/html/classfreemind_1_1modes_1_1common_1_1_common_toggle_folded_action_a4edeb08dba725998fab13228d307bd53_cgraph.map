@@ -1,0 +1,5 @@
+<map id="freemind.modes.common.CommonToggleFoldedAction.toggleFolded" name="freemind.modes.common.CommonToggleFoldedAction.toggleFolded">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1common_1_1_common_toggle_folded_action.html#a49c2c77cf2f789749d7be6f3794f14eb" title="freemind.modes.common.Common\lToggleFoldedAction.getFoldingState" alt="" coords="278,5,509,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1common_1_1_common_toggle_folded_action.html#ac4b8cbc5ede660f004a9e50bdd9fbd61" title="freemind.modes.common.Common\lToggleFoldedAction.reset" alt="" coords="281,70,505,111"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html#a84c48f640cfd7b03794e30f297588f8f" title="freemind.modes.MindMapNode.is\lFolded" alt="" coords="558,5,773,46"/>
+</map>

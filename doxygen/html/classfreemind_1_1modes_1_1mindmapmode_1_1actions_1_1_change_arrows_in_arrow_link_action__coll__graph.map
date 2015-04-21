@@ -1,0 +1,13 @@
+<map id="freemind.modes.mindmapmode.actions.ChangeArrowsInArrowLinkAction" name="freemind.modes.mindmapmode.actions.ChangeArrowsInArrowLinkAction">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1mindmapmode_1_1actions_1_1_freemind_action.html" title="freemind.modes.mindmapmode.actions.\lFreemindAction" alt="" coords="1320,5,1573,46"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1modes_1_1mindmapmode_1_1actions_1_1xml_1_1_actor_xml.html" title="freemind.modes.mindmapmode.actions.xml.\lActorXml" alt="" coords="1307,70,1586,111"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_arrow_link_model.html" title="freemind.modes.mindmapmode.\lMindMapArrowLinkModel" alt="" coords="1343,135,1550,177"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1_arrow_link_adapter.html" title="freemind.modes.ArrowLink\lAdapter" alt="" coords="1081,135,1255,177"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1_link_adapter.html" title="freemind.modes.LinkAdapter" alt="" coords="733,143,920,169"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_line_adapter.html" title="freemind.modes.LineAdapter" alt="" coords="471,147,657,173"/>
+<area shape="rect" id="node9" href="$interfacefreemind_1_1modes_1_1_mind_map_line.html" title="freemind.modes.MindMapLine" alt="" coords="183,63,377,89"/>
+<area shape="rect" id="node15" href="$interfacefreemind_1_1modes_1_1_mind_map_link.html" title="freemind.modes.MindMapLink" alt="" coords="467,80,661,107"/>
+<area shape="rect" id="node11" href="$interfacefreemind_1_1modes_1_1_mind_map_node.html" title="freemind.modes.MindMapNode" alt="" coords="179,239,381,265"/>
+<area shape="rect" id="node14" href="$interfacefreemind_1_1main_1_1_free_mind_main.html" title="freemind.main.FreeMindMain" alt="" coords="185,172,375,199"/>
+<area shape="rect" id="node16" href="$interfacefreemind_1_1modes_1_1_mind_map_arrow_link.html" title="freemind.modes.MindMapArrowLink" alt="" coords="713,84,941,111"/>
+</map>

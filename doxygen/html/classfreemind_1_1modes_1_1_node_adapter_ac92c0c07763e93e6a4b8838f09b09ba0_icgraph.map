@@ -1,0 +1,15 @@
+<map id="freemind.modes.NodeAdapter.childrenUnfolded" name="freemind.modes.NodeAdapter.childrenUnfolded">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html#aa0eec8013abf4c9d499f5975e17ccf61" title="freemind.modes.Controller\lAdapter.invokeHooksRecursively" alt="" coords="344,37,555,78"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a88a12ec7324200f8b11ec226874f36f7" title="freemind.modes.Controller\lAdapter.processUnfinishedLinks\lInHooks" alt="" coords="345,103,553,159"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1attributeactors_1_1_mind_map_mode_attribute_controller.html#a8bc3cab44a013376ab959dda4dbd57b3" title="freemind.modes.mindmapmode.attributeactors.\lMindMapModeAttributeController.performRegistry\lSubtreeAttributes" alt="" coords="296,183,603,239"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_node_model.html#aff262f2f46906ae47d78310d0769adc3" title="freemind.modes.mindmapmode.\lMindMapNodeModel.collectColors" alt="" coords="340,263,559,305"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1_node_adapter.html#ad394af97b06c6df86a6a4f4a8077e77a" title="freemind.modes.NodeAdapter.has\lFoldedStrictDescendant" alt="" coords="340,329,559,370"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_node_adapter.html#a8e269a03d36fa08df4a6493a6f57b087" title="freemind.modes.NodeAdapter.children\lFolded" alt="" coords="328,394,571,435"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_node_adapter.html#a153f18c313d65deb3f67228795f5ee72" title="freemind.modes.NodeAdapter.save" alt="" coords="338,460,561,487"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_node_adapter.html#a1ea3fd8eafd95ae329f18b5ac0af6e35" title="freemind.modes.NodeAdapter.has\lExactlyOneVisibleChild" alt="" coords="340,511,559,553"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_node_adapter.html#a47c8495e7297d6c88fc5d5bc1dc871d0" title="freemind.modes.NodeAdapter.has\lVisibleChilds" alt="" coords="340,577,559,618"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_node_model.html#a5504cae1ff07ba3133f1ca9a26b56289" title="freemind.modes.schememode.\lSchemeNodeModel.getCodeMathStyle" alt="" coords="326,642,573,683"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_node_model.html#a0e396e5f1e670a35acb19c70e90d0207" title="freemind.modes.schememode.\lSchemeNodeModel.getCodeClassicStyle" alt="" coords="319,707,579,749"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_controller.html#a157d3ec08d6cae7fece111e728b79752" title="freemind.modes.browsemode.\lBrowseController.startupController" alt="" coords="656,5,875,46"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#ac78869d675a325a43bfb9de0400238fd" title="freemind.modes.mindmapmode.\lMindMapController.startupController" alt="" coords="651,70,880,111"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="freemind.modes.viewmodes.ViewControllerAdapter" name="freemind.modes.viewmodes.ViewControllerAdapter">
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_controller.html" title="freemind.modes.browsemode.\lBrowseController" alt="" coords="976,5,1171,46"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1filemode_1_1_file_controller.html" title="freemind.modes.filemode.\lFileController" alt="" coords="988,70,1159,111"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_controller.html" title="freemind.modes.schememode.\lSchemeController" alt="" coords="973,135,1173,177"/>
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1_controller_adapter.html" title="freemind.modes.Controller\lAdapter" alt="" coords="517,70,691,111"/>
+<area shape="rect" id="node3" href="$interfacefreemind_1_1modes_1_1_mode_controller.html" title="freemind.modes.ModeController" alt="" coords="264,48,469,75"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1common_1_1_text_translator.html" title="freemind.common.TextTranslator" alt="" coords="5,48,216,75"/>
+<area shape="rect" id="node5" href="$interfacefreemind_1_1modes_1_1_free_mind_file_dialog_1_1_directory_result_listener.html" title="freemind.modes.FreeMindFile\lDialog.DirectoryResultListener" alt="" coords="268,99,465,141"/>
+</map>

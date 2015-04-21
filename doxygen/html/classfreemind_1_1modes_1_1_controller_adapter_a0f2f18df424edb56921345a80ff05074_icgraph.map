@@ -1,0 +1,15 @@
+<map id="freemind.modes.ControllerAdapter.getModel" name="freemind.modes.ControllerAdapter.getModel">
+<area shape="rect" id="node2" href="$classfreemind_1_1modes_1_1browsemode_1_1_browse_controller.html#a720cf06a7cb32d88bd6aac61cb222488" title="freemind.modes.browsemode.\lBrowseController.getPopupForModel" alt="" coords="241,5,474,46"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a9ac61b938e23fed4d8cdbecad0c616e1" title="freemind.modes.Controller\lAdapter.save" alt="" coords="271,122,444,163"/>
+<area shape="rect" id="node4" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a169e24ac129ff25c6f6782ba680211ea" title="freemind.modes.Controller\lAdapter.saveAs" alt="" coords="553,25,727,66"/>
+<area shape="rect" id="node5" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a4914681b6e08d69530b9217e0e258424" title="freemind.modes.Controller\lAdapter.close" alt="" coords="553,273,727,314"/>
+<area shape="rect" id="node9" href="$classfreemind_1_1modes_1_1_controller_adapter.html#a158fc248d3a183c35160d3909df2d232" title="freemind.modes.Controller\lAdapter.createNodeTreeFromXml" alt="" coords="251,239,464,281"/>
+<area shape="rect" id="node10" href="$classfreemind_1_1modes_1_1_controller_adapter_1_1nodes_depth_comparator.html#ad0c44d0a4ccad99d08f08b39cb145ef2" title="freemind.modes.Controller\lAdapter.nodesDepthComparator.compare" alt="" coords="227,305,488,346"/>
+<area shape="rect" id="node11" href="$classfreemind_1_1modes_1_1_controller_adapter.html#ac5c287f338a863b0f78d6b6abbfb7c9c" title="freemind.modes.Controller\lAdapter.insertNodeInto" alt="" coords="271,370,444,411"/>
+<area shape="rect" id="node13" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#abfe8db01484c86a869c83b318abba37d" title="freemind.modes.mindmapmode.\lMindMapController.insertNodeInto" alt="" coords="249,435,466,477"/>
+<area shape="rect" id="node14" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#abffcce319e44cffa47317789b644ce02" title="freemind.modes.mindmapmode.\lMindMapController.removeNodeFrom\lParent" alt="" coords="240,501,475,557"/>
+<area shape="rect" id="node6" href="$classfreemind_1_1modes_1_1mindmapmode_1_1_mind_map_controller.html#a8f88d5df024dafa566f8e40e2551efc2" title="freemind.modes.mindmapmode.\lMindMapController.loadURL" alt="" coords="537,90,743,131"/>
+<area shape="rect" id="node7" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_controller.html#af7fb6df059a7f487d4d7f4c3bba73010" title="freemind.modes.schememode.\lSchemeController.saveAs" alt="" coords="540,155,740,197"/>
+<area shape="rect" id="node8" href="$classfreemind_1_1modes_1_1schememode_1_1_scheme_controller.html#ace2bfa2aa53f3213724978858dbfc039" title="freemind.modes.schememode.\lSchemeController.updateMenus" alt="" coords="793,185,999,226"/>
+<area shape="rect" id="node12" href="$classfreemind_1_1modes_1_1_controller_adapter.html#af91ddb53731864b704a9ca266be09814" title="freemind.modes.Controller\lAdapter.insertNodeInto" alt="" coords="553,370,727,411"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="freemind.modes.mindmapmode.hooks.MindMapNodeHookAdapter" name="freemind.modes.mindmapmode.hooks.MindMapNodeHookAdapter">
+<area shape="rect" id="node2" href="$classfreemind_1_1extensions_1_1_node_hook_adapter.html" title="freemind.extensions.Node\lHookAdapter" alt="" coords="110,187,281,229"/>
+<area shape="rect" id="node3" href="$classfreemind_1_1extensions_1_1_hook_adapter.html" title="freemind.extensions.Hook\lAdapter" alt="" coords="5,97,176,138"/>
+<area shape="rect" id="node4" href="$interfacefreemind_1_1extensions_1_1_mind_map_hook.html" title="freemind.extensions.Mind\lMapHook" alt="" coords="111,6,281,47"/>
+<area shape="rect" id="node5" href="$interfacefreemind_1_1extensions_1_1_node_hook.html" title="freemind.extensions.NodeHook" alt="" coords="201,104,404,131"/>
+</map>
