@@ -23,7 +23,6 @@ package freemind.modes;
 import java.awt.Color;
 
 import freemind.main.FreeMindMain;
-import freemind.main.Tools;
 import freemind.tools.IXmlTransformations;
 import freemind.tools.XmlTransformations;
 
@@ -64,7 +63,7 @@ public abstract class LineAdapter implements MindMapLine {
 			String stdColor = getFrame().getProperty(
 					getStandardColorPropertyString());
 			if (stdColor != null && stdColor.length() == 7) {
-				setStandardColor(Tools.xmlToColor(stdColor));
+				setStandardColor(xmlTransformator.xmlToColor(stdColor));
 			} else {
 				setStandardColor(Color.RED);
 			}

@@ -103,7 +103,7 @@ public class NodeBackgroundColorAction extends FreemindAction implements
 	public void act(XmlAction action) {
 		if (action instanceof NodeBackgroundColorFormatAction) {
 			NodeBackgroundColorFormatAction nodeColorAction = (NodeBackgroundColorFormatAction) action;
-			Color color = Tools.xmlToColor(nodeColorAction.getColor());
+			Color color = xmlTransformator.xmlToColor(nodeColorAction.getColor());
 			MindMapNode node = controller.getNodeFromID(nodeColorAction
 					.getNode());
 			Color oldColor = node.getBackgroundColor();

@@ -109,8 +109,8 @@ public class ChangeArrowLinkEndPoints extends FreemindAction implements
 	private ArrowLinkPointXmlAction createArrowLinkPointXmlAction(
 			MindMapArrowLink arrowLink, Point startPoint, Point endPoint) {
 		ArrowLinkPointXmlAction action = new ArrowLinkPointXmlAction();
-		action.setStartPoint(Tools.PointToXml(startPoint));
-		action.setEndPoint(Tools.PointToXml(endPoint));
+		action.setStartPoint(xmlTransformator.PointToXml(startPoint));
+		action.setEndPoint(xmlTransformator.PointToXml(endPoint));
 		action.setId(arrowLink.getUniqueId());
 		return action;
 	}

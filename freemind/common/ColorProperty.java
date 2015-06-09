@@ -84,7 +84,7 @@ public class ColorProperty extends PropertyBean implements PropertyControl,
 	}
 
 	public void setValue(String value) {
-		setColorValue(Tools.xmlToColor(value));
+		setColorValue(xmlTransformator.xmlToColor(value));
 	}
 
 	public String getValue() {

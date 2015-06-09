@@ -90,7 +90,7 @@ public class CloudColorAction extends FreemindAction implements ActorXml,
 	public void act(XmlAction action) {
 		if (action instanceof CloudColorXmlAction) {
 			CloudColorXmlAction nodeColorAction = (CloudColorXmlAction) action;
-			Color color = Tools.xmlToColor(nodeColorAction.getColor());
+			Color color = xmlTransformator.xmlToColor(nodeColorAction.getColor());
 			MindMapNode node = controller.getNodeFromID(nodeColorAction
 					.getNode());
 			// this is not necessary, as this action is not enabled if there is

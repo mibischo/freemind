@@ -155,16 +155,6 @@ public class Tools {
 		return executableExtensions.contains(getExtension(file));
 	}
 
-	public static String PointToXml(Point col) {
-		if (col == null)
-			return null; // throw new IllegalArgumentException("Point was
-		// null");
-		Vector l = new Vector();
-		l.add(Integer.toString(col.x));
-		l.add(Integer.toString(col.y));
-		return listToString((List) l);
-	}
-
 	public static Point xmlToPoint(String string) {
 		if (string == null)
 			return null;

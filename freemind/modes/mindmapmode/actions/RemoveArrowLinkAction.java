@@ -131,10 +131,10 @@ public class RemoveArrowLinkAction extends FreemindAction implements ActorXml {
 		if (link instanceof MindMapArrowLink) {
 			MindMapArrowLink arrowLink = (MindMapArrowLink) link;
 			action.setEndArrow(arrowLink.getEndArrow());
-			action.setEndInclination(Tools.PointToXml(arrowLink
+			action.setEndInclination(xmlTransformator.PointToXml(arrowLink
 					.getEndInclination()));
 			action.setStartArrow(arrowLink.getStartArrow());
-			action.setStartInclination(Tools.PointToXml(arrowLink
+			action.setStartInclination(xmlTransformator.PointToXml(arrowLink
 					.getStartInclination()));
 		}
 		return action;

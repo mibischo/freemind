@@ -85,7 +85,7 @@ public class ColorArrowLinkAction extends FreemindAction implements ActorXml {
 			ArrowLinkColorXmlAction colorAction = (ArrowLinkColorXmlAction) action;
 			MindMapLink link = getLinkRegistry().getLinkForId(
 					colorAction.getId());
-			((LineAdapter) link).setColor(Tools.xmlToColor(colorAction
+			((LineAdapter) link).setColor(xmlTransformator.xmlToColor(colorAction
 					.getColor()));
 			controller.nodeChanged(link.getSource());
 		}

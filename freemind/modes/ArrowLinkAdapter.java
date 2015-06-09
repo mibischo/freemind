@@ -138,7 +138,7 @@ public abstract class ArrowLinkAdapter extends LinkAdapter implements
 		}
 		if (getStartInclination() != null) {
 			arrowLink.setAttribute("STARTINCLINATION",
-					Tools.PointToXml(getStartInclination()));
+					xmlTransformator.PointToXml(getStartInclination()));
 		}
 		if (getEndInclination() != null) {
 			arrowLink.setAttribute("ENDINCLINATION",

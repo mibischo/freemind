@@ -25,7 +25,6 @@ import java.awt.Color;
 import freemind.controller.Controller;
 import freemind.main.FreeMind;
 import freemind.main.FreeMindMain;
-import freemind.main.Tools;
 import freemind.preferences.FreemindPropertyListener;
 import freemind.tools.IXmlTransformations;
 import freemind.tools.XmlTransformations;
@@ -131,7 +130,8 @@ public abstract class LinkAdapter extends LineAdapter implements MindMapLink {
 		public void propertyChanged(String propertyName, String newValue,
 				String oldValue) {
 			if (propertyName.equals(FreeMind.RESOURCES_LINK_COLOR)) {
-				LinkAdapter.standardColor = Tools.xmlToColor(newValue);
+				IXmlTransformations xmlTransformator = new XmlTransformations();
+				LinkAdapter.standardColor = xmlTransformator.xmlToColor(newValue);
 			}
 			if (propertyName.equals(RESOURCES_STANDARDLINKSTYLE)) {
 				LinkAdapter.standardStyle = newValue;
