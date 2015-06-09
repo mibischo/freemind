@@ -75,6 +75,8 @@ import freemind.modes.MindMapArrowLink;
 import freemind.modes.MindMapLink;
 import freemind.modes.MindMapNode;
 import freemind.preferences.FreemindPropertyListener;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 /**
  * This class represents the view of a whole MindMap (in analogy to class
@@ -267,6 +269,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 	private Color background = null;
 	private Rectangle boundingRectangle = null;
 	private boolean fitToPage = true;
+	protected IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	/** Used to identify a right click onto a link curve. */
 	private Vector/* of ArrowLinkViews */mArrowLinkViews = new Vector();
@@ -296,7 +299,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 			try {
 				String stdcolor = getController().getFrame().getProperty(
 						FreeMind.RESOURCES_BACKGROUND_COLOR);
-				standardMapBackgroundColor = Tools.xmlToColor(stdcolor);
+				standardMapBackgroundColor = xmlTransformator.xmlToColor(stdcolor);
 			} catch (Exception ex) {
 				freemind.main.Resources.getInstance().logException(ex);
 				standardMapBackgroundColor = Color.WHITE;
@@ -304,7 +307,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 			try {
 				String stdcolor = getController().getFrame().getProperty(
 						FreeMind.RESOURCES_NODE_TEXT_COLOR);
-				standardNodeTextColor = Tools.xmlToColor(stdcolor);
+				standardNodeTextColor = xmlTransformator.xmlToColor(stdcolor);
 			} catch (Exception ex) {
 				freemind.main.Resources.getInstance().logException(ex);
 				standardSelectColor = Color.WHITE;
@@ -313,7 +316,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 			try {
 				String stdcolor = getController().getFrame().getProperty(
 						FreeMind.RESOURCES_SELECTED_NODE_COLOR);
-				standardSelectColor = Tools.xmlToColor(stdcolor);
+				standardSelectColor = xmlTransformator.xmlToColor(stdcolor);
 			} catch (Exception ex) {
 				freemind.main.Resources.getInstance().logException(ex);
 				standardSelectColor = Color.BLUE.darker();
@@ -323,7 +326,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 			try {
 				String stdtextcolor = getController().getFrame().getProperty(
 						FreeMind.RESOURCES_SELECTED_NODE_RECTANGLE_COLOR);
-				standardSelectRectangleColor = Tools.xmlToColor(stdtextcolor);
+				standardSelectRectangleColor = xmlTransformator.xmlToColor(stdtextcolor);
 			} catch (Exception ex) {
 				freemind.main.Resources.getInstance().logException(ex);
 				standardSelectRectangleColor = Color.WHITE;
@@ -414,20 +417,20 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 			public void propertyChanged(String propertyName, String newValue,
 					String oldValue) {
 				if (propertyName.equals(FreeMind.RESOURCES_NODE_TEXT_COLOR)) {
-					standardNodeTextColor = Tools.xmlToColor(newValue);
+					standardNodeTextColor = xmlTransformator.xmlToColor(newValue);
 					controller.getMapModule().getView().getRoot().updateAll();
 				} else if (propertyName
 						.equals(FreeMind.RESOURCES_BACKGROUND_COLOR)) {
-					standardMapBackgroundColor = Tools.xmlToColor(newValue);
+					standardMapBackgroundColor = xmlTransformator.xmlToColor(newValue);
 					controller.getMapModule().getView()
 							.setBackground(standardMapBackgroundColor);
 				} else if (propertyName
 						.equals(FreeMind.RESOURCES_SELECTED_NODE_COLOR)) {
-					standardSelectColor = Tools.xmlToColor(newValue);
+					standardSelectColor = xmlTransformator.xmlToColor(newValue);
 					controller.getMapModule().getView().repaintSelecteds();
 				} else if (propertyName
 						.equals(FreeMind.RESOURCES_SELECTED_NODE_RECTANGLE_COLOR)) {
-					standardSelectRectangleColor = Tools.xmlToColor(newValue);
+					standardSelectRectangleColor = xmlTransformator.xmlToColor(newValue);
 					controller.getMapModule().getView().repaintSelecteds();
 				} else if (propertyName
 						.equals(FreeMind.RESOURCE_DRAW_RECTANGLE_FOR_SELECTION)) {

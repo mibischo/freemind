@@ -30,6 +30,8 @@ import freemind.main.FreeMindMain;
 import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.preferences.FreemindPropertyListener;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 public abstract class CloudAdapter extends LineAdapter implements MindMapCloud {
 
@@ -142,7 +144,8 @@ public abstract class CloudAdapter extends LineAdapter implements MindMapCloud {
 		public void propertyChanged(String propertyName, String newValue,
 				String oldValue) {
 			if (propertyName.equals(FreeMind.RESOURCES_CLOUD_COLOR)) {
-				CloudAdapter.standardColor = Tools.xmlToColor(newValue);
+				IXmlTransformations xmlTransformator = new XmlTransformations();
+				CloudAdapter.standardColor = xmlTransformator.xmlToColor(newValue);
 			}
 			if (propertyName.equals(RESOURCES_STANDARDCLOUDSTYLE)) {
 				CloudAdapter.standardStyle = newValue;

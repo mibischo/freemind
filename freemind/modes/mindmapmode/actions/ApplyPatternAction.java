@@ -74,12 +74,12 @@ public class ApplyPatternAction extends NodeGeneralAction implements
 		}
 		if (pattern.getPatternNodeColor() != null) {
 			getMindMapController().setNodeColor(node,
-					Tools.xmlToColor(pattern.getPatternNodeColor().getValue()));
+					xmlTransformator.xmlToColor(pattern.getPatternNodeColor().getValue()));
 		}
 		if (pattern.getPatternNodeBackgroundColor() != null) {
 			getMindMapController().setNodeBackgroundColor(
 					node,
-					Tools.xmlToColor(pattern.getPatternNodeBackgroundColor()
+					xmlTransformator.xmlToColor(pattern.getPatternNodeBackgroundColor()
 							.getValue()));
 		}
 		// Perhaps already fixed?:
@@ -146,7 +146,7 @@ public class ApplyPatternAction extends NodeGeneralAction implements
 
 		if (pattern.getPatternEdgeColor() != null) {
 			getMindMapController().setEdgeColor(node,
-					Tools.xmlToColor(pattern.getPatternEdgeColor().getValue()));
+					xmlTransformator.xmlToColor(pattern.getPatternEdgeColor().getValue()));
 		}
 		if (pattern.getPatternEdgeStyle() != null) {
 			getMindMapController().setEdgeStyle(node,

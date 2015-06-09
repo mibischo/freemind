@@ -100,7 +100,7 @@ public class CloudAction extends NodeGeneralAction implements NodeActorXml,
 					node.setCloud(new MindMapCloudModel(node,
 							getMindMapController().getFrame()));
 					if (nodecloudAction.getColor() != null) {
-						Color color = Tools.xmlToColor(nodecloudAction
+						Color color = xmlTransformator.xmlToColor(nodecloudAction
 								.getColor());
 						((MindMapCloudModel) node.getCloud()).setColor(color);
 					}

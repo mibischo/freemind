@@ -68,6 +68,9 @@ import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
+
 /**
  * XMLElement is a representation of an XML object. The object is able to parse
  * XML code.
@@ -3202,5 +3205,7 @@ public class XMLElement {
 		String msg = "Unknown or invalid entity: &" + name + ";";
 		return new XMLParseException(this.getName(), this.parserLineNr, msg);
 	}
+	
+	protected IXmlTransformations xmlTransformator = new XmlTransformations();
 
 }

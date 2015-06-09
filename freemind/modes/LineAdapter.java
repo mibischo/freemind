@@ -35,7 +35,7 @@ public abstract class LineAdapter implements MindMapLine {
 	public static final int DEFAULT_WIDTH = -1;
 	protected int NORMAL_WIDTH = 1;
 	
-	protected IXmlTransformations xmlTransformator = new XmlTransformations();
+	public IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	// recursive attributes. may be accessed directly by the save() method.
 	protected Color color;

@@ -45,6 +45,7 @@ import freemind.tools.XmlTransformations;
 
 public class EdgeColorAction extends AbstractAction implements ActorXml {
 	private final MindMapController controller;
+	private IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	public EdgeColorAction(MindMapController controller) {
 		super(controller.getText("edge_color"));
@@ -86,7 +87,7 @@ public class EdgeColorAction extends AbstractAction implements ActorXml {
 	public void act(XmlAction action) {
 		if (action instanceof EdgeColorFormatAction) {
 			EdgeColorFormatAction edgeAction = (EdgeColorFormatAction) action;
-			Color color = Tools.xmlToColor(edgeAction.getColor());
+			Color color = .xmlToColor(edgeAction.getColor());
 			MindMapNode node = controller.getNodeFromID(edgeAction.getNode());
 			Color oldColor = ((EdgeAdapter) node.getEdge()).getRealColor();
 			if (!Tools.safeEquals(color, oldColor)) {

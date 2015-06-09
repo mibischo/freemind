@@ -155,39 +155,6 @@ public class Tools {
 		return executableExtensions.contains(getExtension(file));
 	}
 
-	public static String colorToXml(Color col) {
-		// if (col == null) throw new IllegalArgumentException("Color was
-		// null");
-		if (col == null)
-			return null;
-		String red = Integer.toHexString(col.getRed());
-		if (col.getRed() < 16)
-			red = "0" + red;
-		String green = Integer.toHexString(col.getGreen());
-		if (col.getGreen() < 16)
-			green = "0" + green;
-		String blue = Integer.toHexString(col.getBlue());
-		if (col.getBlue() < 16)
-			blue = "0" + blue;
-		return "#" + red + green + blue;
-	}
-
-	public static Color xmlToColor(String string) {
-		if (string == null)
-			return null;
-		string = string.trim();
-		if (string.length() == 7) {
-
-			int red = Integer.parseInt(string.substring(1, 3), 16);
-			int green = Integer.parseInt(string.substring(3, 5), 16);
-			int blue = Integer.parseInt(string.substring(5, 7), 16);
-			return new Color(red, green, blue);
-		} else {
-			throw new IllegalArgumentException("No xml color given by '"
-					+ string + "'.");
-		}
-	}
-
 	public static String PointToXml(Point col) {
 		if (col == null)
 			return null; // throw new IllegalArgumentException("Point was

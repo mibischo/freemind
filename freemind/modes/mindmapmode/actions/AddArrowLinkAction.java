@@ -99,7 +99,7 @@ public class AddArrowLinkAction extends FreemindAction implements ActorXml {
 					proposedId));
 			// check for other attributes:
 			if (arrowAction.getColor() != null) {
-				linkModel.setColor(Tools.xmlToColor(arrowAction.getColor()));
+				linkModel.setColor(xmlTransformator.xmlToColor(arrowAction.getColor()));
 			}
 			if (arrowAction.getEndArrow() != null) {
 				linkModel.setEndArrow(arrowAction.getEndArrow());

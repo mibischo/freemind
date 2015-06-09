@@ -33,6 +33,8 @@ import java.util.ListIterator;
 
 import freemind.main.Tools;
 import freemind.main.XMLElement;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 // Daniel: this seems like a description of what pattern should do rather
 // than of that what it actually does.
@@ -72,6 +74,7 @@ public class StylePattern {
 
 	/** Inhertitable patterns, fc, 3.12.2003. */
 	private StylePattern mChildrenStylePattern;
+	private IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	/**
 	 * Empty constructor
@@ -396,13 +399,13 @@ public class StylePattern {
 			if (child.getName().equals("node")) {
 				if (child.getStringAttribute("color") != null
 						&& child.getStringAttribute("color").length() == 7) {
-					setNodeColor(Tools.xmlToColor(child
+					setNodeColor(xmlTransformator.xmlToColor(child
 							.getStringAttribute("color")));
 				}
 				if (child.getStringAttribute("background_color") != null
 						&& child.getStringAttribute("background_color")
 								.length() == 7) {
-					setNodeBackgroundColor(Tools.xmlToColor(child
+					setNodeBackgroundColor(xmlTransformator.xmlToColor(child
 							.getStringAttribute("background_color")));
 				}
 				if (child.getStringAttribute("style") != null) {
@@ -450,7 +453,7 @@ public class StylePattern {
 					setEdgeStyle(child.getStringAttribute("style"));
 				}
 				if (child.getStringAttribute("color") != null) {
-					setEdgeColor(Tools.xmlToColor(child
+					setEdgeColor(xmlTransformator.xmlToColor(child
 							.getStringAttribute("color")));
 				}
 				if (child.getStringAttribute("width") != null) {

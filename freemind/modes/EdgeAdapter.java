@@ -28,6 +28,8 @@ import freemind.main.FreeMindMain;
 import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.preferences.FreemindPropertyListener;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 public abstract class EdgeAdapter extends LineAdapter implements MindMapEdge {
 
@@ -166,10 +168,12 @@ public abstract class EdgeAdapter extends LineAdapter implements MindMapEdge {
 
 	protected static class EdgeAdapterListener implements
 			FreemindPropertyListener {
+		
 		public void propertyChanged(String propertyName, String newValue,
 				String oldValue) {
 			if (propertyName.equals(FreeMind.RESOURCES_EDGE_COLOR)) {
-				EdgeAdapter.standardColor = Tools.xmlToColor(newValue);
+				IXmlTransformations xmlTransformator = new XmlTransformations();
+				EdgeAdapter.standardColor = xmlTransformator.xmlToColor(newValue);
 			}
 			if (propertyName.equals(FreeMind.RESOURCES_EDGE_STYLE)) {
 				EdgeAdapter.standardStyle = newValue;

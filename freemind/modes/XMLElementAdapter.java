@@ -305,7 +305,7 @@ public abstract class XMLElementAdapter extends XMLElement {
 			if (name.equals("STYLE")) {
 				edge.setStyle(sValue);
 			} else if (name.equals("COLOR")) {
-				edge.setColor(Tools.xmlToColor(sValue));
+				edge.setColor(xmlTransformator.xmlToColor(sValue));
 			} else if (name.equals("WIDTH")) {
 				if (sValue.equals(EdgeAdapter.EDGE_WIDTH_THIN_STRING)) {
 					edge.setWidth(EdgeAdapter.WIDTH_THIN);
@@ -321,7 +321,7 @@ public abstract class XMLElementAdapter extends XMLElement {
 			if (name.equals("STYLE")) {
 				cloud.setStyle(sValue);
 			} else if (name.equals("COLOR")) {
-				cloud.setColor(Tools.xmlToColor(sValue));
+				cloud.setColor(xmlTransformator.xmlToColor(sValue));
 			} else if (name.equals("WIDTH")) {
 				cloud.setWidth(Integer.parseInt(sValue));
 			}
@@ -335,7 +335,7 @@ public abstract class XMLElementAdapter extends XMLElement {
 			} else if (name.equals("ID")) {
 				arrowLink.setUniqueId(sValue);
 			} else if (name.equals("COLOR")) {
-				arrowLink.setColor(Tools.xmlToColor(sValue));
+				arrowLink.setColor(xmlTransformator.xmlToColor(sValue));
 			} else if (name.equals("DESTINATION")) {
 				arrowLink.setDestinationLabel(sValue);
 			} else if (name.equals("REFERENCETEXT")) {
@@ -452,11 +452,11 @@ public abstract class XMLElementAdapter extends XMLElement {
 			node.setLeft(sValue.equals("left"));
 		} else if (name.equals("COLOR")) {
 			if (sValue.length() == 7) {
-				node.setColor(Tools.xmlToColor(sValue));
+				node.setColor(xmlTransformator.xmlToColor(sValue));
 			}
 		} else if (name.equals("BACKGROUND_COLOR")) {
 			if (sValue.length() == 7) {
-				node.setBackgroundColor(Tools.xmlToColor(sValue));
+				node.setBackgroundColor(xmlTransformator.xmlToColor(sValue));
 			}
 		} else if (name.equals("LINK")) {
 			node.setLink(sValue);
