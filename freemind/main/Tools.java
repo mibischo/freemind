@@ -155,10 +155,6 @@ public class Tools {
 		return executableExtensions.contains(getExtension(file));
 	}
 	
-	public static String BooleanToXml(boolean col) {
-		return (col) ? "true" : "false";
-	}
-
 	public static boolean xmlToBoolean(String string) {
 		if (string == null)
 			return false;
