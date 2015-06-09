@@ -27,6 +27,8 @@ import freemind.main.FreeMind;
 import freemind.main.FreeMindMain;
 import freemind.main.Tools;
 import freemind.preferences.FreemindPropertyListener;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 public abstract class LinkAdapter extends LineAdapter implements MindMapLink {
 
@@ -34,11 +36,12 @@ public abstract class LinkAdapter extends LineAdapter implements MindMapLink {
 	private static Color standardColor = null;
 	private static String standardStyle = null;
 	private static LinkAdapterListener listener = null;
-
+	
 	String destinationLabel;
 	String referenceText;
 	MindMapNode source;
 	private String uniqueId;
+	protected IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	public LinkAdapter(MindMapNode source, MindMapNode target,
 			FreeMindMain frame) {

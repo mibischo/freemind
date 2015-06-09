@@ -24,6 +24,7 @@ import java.awt.Color;
 
 import freemind.main.FreeMindMain;
 import freemind.main.Tools;
+import freemind.tools.XmlTransformations;
 
 public abstract class LineAdapter implements MindMapLine {
 
@@ -32,6 +33,8 @@ public abstract class LineAdapter implements MindMapLine {
 
 	public static final int DEFAULT_WIDTH = -1;
 	protected int NORMAL_WIDTH = 1;
+	
+	protected IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	// recursive attributes. may be accessed directly by the save() method.
 	protected Color color;

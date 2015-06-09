@@ -62,6 +62,8 @@ import freemind.main.XMLElement;
 import freemind.modes.attributes.Attribute;
 import freemind.modes.attributes.NodeAttributeTableModel;
 import freemind.preferences.FreemindPropertyListener;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 import freemind.view.mindmapview.NodeView;
 import freemind.view.mindmapview.NodeViewVisitor;
 
@@ -122,6 +124,8 @@ public abstract class NodeAdapter implements MindMapNode {
 	protected boolean underlined = false;
 
 	private FilterInfo filterInfo = new FilterInfo();
+	
+	protected IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	private MindMapNode parent;
 	/**

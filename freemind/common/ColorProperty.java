@@ -37,6 +37,8 @@ import com.jgoodies.forms.builder.DefaultFormBuilder;
 
 import freemind.controller.Controller;
 import freemind.main.Tools;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 public class ColorProperty extends PropertyBean implements PropertyControl,
 		ActionListener {
@@ -52,6 +54,8 @@ public class ColorProperty extends PropertyBean implements PropertyControl,
 	private final String defaultColor;
 
 	private final TextTranslator mTranslator;
+	
+	private IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	/**
 	 * @param defaultColor
@@ -84,7 +88,8 @@ public class ColorProperty extends PropertyBean implements PropertyControl,
 	}
 
 	public String getValue() {
-		return Tools.colorToXml(getColorValue());
+		IXmlTransformations xmlTransformator = new XmlTransformations();
+		return xmlTransformator.colorToXml(getColorValue());
 	}
 
 	public void layout(DefaultFormBuilder builder, TextTranslator pTranslator) {
@@ -137,7 +142,7 @@ public class ColorProperty extends PropertyBean implements PropertyControl,
 			result = Color.WHITE;
 		}
 		mButton.setBackground(result);
-		mButton.setText(Tools.colorToXml(result));
+		mButton.setText(xmlTransformator.colorToXml(result));
 	}
 
 	/**

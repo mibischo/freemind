@@ -48,6 +48,8 @@ import freemind.main.HtmlTools;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.ModeController;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 /**
  * @author Daniel Polansky
@@ -58,6 +60,7 @@ public class EditNodeWYSIWYG extends EditNodeBase {
 	private KeyEvent firstEvent;
 
 	private static HTMLDialog htmlEditorWindow;
+	private IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	private static class HTMLDialog extends EditDialog {
 		private static final long serialVersionUID = 2862979626489782521L;
@@ -260,7 +263,7 @@ public class EditNodeWYSIWYG extends EditNodeBase {
 				rule += "font-weight: bold; ";
 			}
 			final Color nodeTextColor = node.getTextColor();
-			rule += "color: " + Tools.colorToXml(nodeTextColor) + ";";
+			rule += "color: " + xmlTransformator.colorToXml(nodeTextColor) + ";";
 			rule += "}\n";
 			rule += "p {";
 			rule += "margin-top:0;";

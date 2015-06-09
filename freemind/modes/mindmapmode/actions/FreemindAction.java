@@ -29,6 +29,7 @@ import javax.swing.ImageIcon;
 
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.actions.xml.ActorXml;
+import freemind.tools.IXmlTransformations;
 
 /**
  * @author foltin
@@ -43,6 +44,7 @@ public abstract class FreemindAction extends AbstractAction {
 	private Icon actionIcon;
 	private static Icon selectedIcon;
 	private final MindMapController pMindMapController;
+	private IXmlTransformations xmlTransformator;
 
 	/**
 	 * @param title
@@ -53,6 +55,7 @@ public abstract class FreemindAction extends AbstractAction {
 		super(title, icon);
 		this.actionIcon = icon;
 		this.pMindMapController = mindMapController;
+		this.xmlTransformator = new XmlTransformations();
 
 	}
 

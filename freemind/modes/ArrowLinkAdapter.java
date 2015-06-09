@@ -128,7 +128,7 @@ public abstract class ArrowLinkAdapter extends LinkAdapter implements
 			arrowLink.setAttribute("ID", getUniqueId());
 		}
 		if (color != null) {
-			arrowLink.setAttribute("COLOR", Tools.colorToXml(color));
+			arrowLink.setAttribute("COLOR", xmlTransformator.colorToXml(color));
 		}
 		if (getDestinationLabel() != null) {
 			arrowLink.setAttribute("DESTINATION", getDestinationLabel());
