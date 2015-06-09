@@ -48,6 +48,8 @@ import freemind.controller.actions.generated.instance.PatternPropertyBase;
 import freemind.controller.actions.generated.instance.Patterns;
 import freemind.main.Resources;
 import freemind.main.Tools;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 /**
  * This class constructs patterns from files or from nodes and saves them back.
@@ -60,6 +62,8 @@ public class StylePatternFactory {
 	public static List loadPatterns(File file) throws Exception {
 		return loadPatterns(new BufferedReader(new FileReader(file)));
 	}
+	
+	private static IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	/**
 	 * @return a List of Pattern elements.
@@ -143,12 +147,12 @@ public class StylePatternFactory {
 
 		if (node.getColor() != null) {
 			PatternNodeColor subPattern = new PatternNodeColor();
-			subPattern.setValue(Tools.colorToXml(node.getColor()));
+			subPattern.setValue(xmlTransformator.colorToXml(node.getColor()));
 			pattern.setPatternNodeColor(subPattern);
 		}
 		if (node.getBackgroundColor() != null) {
 			PatternNodeBackgroundColor subPattern = new PatternNodeBackgroundColor();
-			subPattern.setValue(Tools.colorToXml(node.getBackgroundColor()));
+			subPattern.setValue(xmlTransformator.colorToXml(node.getBackgroundColor()));
 			pattern.setPatternNodeBackgroundColor(subPattern);
 		}
 		if (node.getStyle() != null) {

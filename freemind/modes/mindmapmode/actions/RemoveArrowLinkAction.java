@@ -127,7 +127,7 @@ public class RemoveArrowLinkAction extends FreemindAction implements ActorXml {
 		action.setNode(link.getSource().getObjectId(controller));
 		action.setDestination(link.getTarget().getObjectId(controller));
 		action.setNewId(link.getUniqueId());
-		action.setColor(Tools.colorToXml(link.getColor()));
+		action.setColor(xmlTransformator.colorToXml(link.getColor()));
 		if (link instanceof MindMapArrowLink) {
 			MindMapArrowLink arrowLink = (MindMapArrowLink) link;
 			action.setEndArrow(arrowLink.getEndArrow());

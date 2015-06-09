@@ -105,7 +105,7 @@ public abstract class CloudAdapter extends LineAdapter implements MindMapCloud {
 			cloud.setAttribute("STYLE", style);
 		}
 		if (color != null) {
-			cloud.setAttribute("COLOR", Tools.colorToXml(color));
+			cloud.setAttribute("COLOR", xmlTransformator.colorToXml(color));
 		}
 		if (width != DEFAULT_WIDTH) {
 			cloud.setAttribute("WIDTH", Integer.toString(width));

@@ -1196,7 +1196,7 @@ public abstract class NodeAdapter implements MindMapNode {
 			}
 		}
 		if (color != null) {
-			node.setAttribute("COLOR", Tools.colorToXml(getColor()));
+			node.setAttribute("COLOR", xmlTransformator.colorToXml(getColor()));
 		}
 
 		// new background color.

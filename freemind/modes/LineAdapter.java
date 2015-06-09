@@ -24,6 +24,7 @@ import java.awt.Color;
 
 import freemind.main.FreeMindMain;
 import freemind.main.Tools;
+import freemind.tools.IXmlTransformations;
 import freemind.tools.XmlTransformations;
 
 public abstract class LineAdapter implements MindMapLine {

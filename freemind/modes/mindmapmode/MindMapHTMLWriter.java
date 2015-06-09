@@ -15,6 +15,8 @@ import freemind.main.HtmlTools;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.MindIcon;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 class MindMapHTMLWriter {
 	private Writer fileout;
@@ -578,9 +580,10 @@ class MindMapHTMLWriter {
 
 	private String fontStyle(MindMapNodeModel model) throws IOException {
 		String fontStyle = "";
+		IXmlTransformations xmlTransformator = new XmlTransformations();
 
 		if (model.getColor() != null) {
-			fontStyle += "color: " + Tools.colorToXml(model.getColor()) + ";";
+			fontStyle += "color: " + xmlTransformator.colorToXml(model.getColor()) + ";";
 		}
 
 		if (model.getFont() != null && model.getFont().getSize() != 0) {

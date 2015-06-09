@@ -98,7 +98,7 @@ public class ColorArrowLinkAction extends FreemindAction implements ActorXml {
 	private ArrowLinkColorXmlAction createArrowLinkColorXmlAction(
 			MindMapLink arrowLink, Color color) {
 		ArrowLinkColorXmlAction action = new ArrowLinkColorXmlAction();
-		action.setColor(Tools.colorToXml(color));
+		action.setColor(xmlTransformator.colorToXml(color));
 		action.setId(arrowLink.getUniqueId());
 		return action;
 	}

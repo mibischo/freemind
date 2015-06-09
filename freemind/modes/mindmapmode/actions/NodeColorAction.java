@@ -78,7 +78,7 @@ public class NodeColorAction extends FreemindAction implements ActorXml {
 			Color color) {
 		NodeColorFormatAction nodeAction = new NodeColorFormatAction();
 		nodeAction.setNode(node.getObjectId(controller));
-		nodeAction.setColor(Tools.colorToXml(color));
+		nodeAction.setColor(xmlTransformator.colorToXml(color));
 		return nodeAction;
 	}
 

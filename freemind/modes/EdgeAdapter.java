@@ -127,7 +127,7 @@ public abstract class EdgeAdapter extends LineAdapter implements MindMapEdge {
 				edge.setAttribute("STYLE", style);
 			}
 			if (color != null) {
-				edge.setAttribute("COLOR", Tools.colorToXml(color));
+				edge.setAttribute("COLOR", xmlTransformator.colorToXml(color));
 			}
 			if (width != WIDTH_PARENT) {
 				if (width == WIDTH_THIN)

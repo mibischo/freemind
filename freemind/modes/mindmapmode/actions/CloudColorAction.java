@@ -83,7 +83,7 @@ public class CloudColorAction extends FreemindAction implements ActorXml,
 			Color color) {
 		CloudColorXmlAction nodeAction = new CloudColorXmlAction();
 		nodeAction.setNode(node.getObjectId(controller));
-		nodeAction.setColor(Tools.colorToXml(color));
+		nodeAction.setColor(xmlTransformator.colorToXml(color));
 		return nodeAction;
 	}
 

@@ -84,7 +84,7 @@ public class CloudAction extends NodeGeneralAction implements NodeActorXml,
 		AddCloudXmlAction nodecloudAction = new AddCloudXmlAction();
 		nodecloudAction.setNode(getNodeID(selected));
 		nodecloudAction.setEnabled(enable);
-		nodecloudAction.setColor(Tools.colorToXml(color));
+		nodecloudAction.setColor(xmlTransformator.colorToXml(color));
 		return nodecloudAction;
 	}
 

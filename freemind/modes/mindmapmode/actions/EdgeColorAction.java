@@ -40,6 +40,8 @@ import freemind.modes.mindmapmode.MindMapEdgeModel;
 import freemind.modes.mindmapmode.MindMapNodeModel;
 import freemind.modes.mindmapmode.actions.xml.ActionPair;
 import freemind.modes.mindmapmode.actions.xml.ActorXml;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 public class EdgeColorAction extends AbstractAction implements ActorXml {
 	private final MindMapController controller;
@@ -99,7 +101,8 @@ public class EdgeColorAction extends AbstractAction implements ActorXml {
 		EdgeColorFormatAction edgeAction = new EdgeColorFormatAction();
 		edgeAction.setNode(node.getObjectId(controller));
 		if (color != null) {
-			edgeAction.setColor(Tools.colorToXml(color));
+			IXmlTransformations xmlTransformer = new XmlTransformations();
+			edgeAction.setColor(xmlTransformer.colorToXml(color));
 		}
 		return edgeAction;
 	}
