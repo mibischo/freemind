@@ -185,7 +185,7 @@ public class StylePatternFactory {
 		}
 		if (node.getEdge().getColor() != null) {
 			PatternEdgeColor subPattern = new PatternEdgeColor();
-			subPattern.setValue(Tools.colorToXml(node.getEdge().getColor()));
+			subPattern.setValue(xmlTransformator.colorToXml(node.getEdge().getColor()));
 			pattern.setPatternEdgeColor(subPattern);
 		}
 		if (node.getEdge().getStyle() != null) {
