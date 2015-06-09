@@ -360,7 +360,7 @@ public class FreeMindApplet extends JApplet implements FreeMindMain {
 		}
 		mFreeMindCommon.loadUIProperties(userProps);
 		userProps.put(FreeMind.RESOURCE_DRAW_RECTANGLE_FOR_SELECTION,
-				Tools.BooleanToXml(true));
+				"true");
 	}
 
 	/*

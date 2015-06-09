@@ -3206,6 +3206,6 @@ public class XMLElement {
 		return new XMLParseException(this.getName(), this.parserLineNr, msg);
 	}
 	
-	protected IXmlTransformations xmlTransformator = new XmlTransformations();
+	public IXmlTransformations xmlTransformator = new XmlTransformations();
 
 }

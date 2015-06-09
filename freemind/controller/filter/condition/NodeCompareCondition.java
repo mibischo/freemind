@@ -58,7 +58,7 @@ class NodeCompareCondition extends CompareConditionAdapter {
 		child.setName(NAME);
 		super.saveAttributes(child);
 		child.setIntAttribute(COMPARATION_RESULT, comparationResult);
-		child.setAttribute(SUCCEED, Tools.BooleanToXml(succeed));
+		child.setAttribute(SUCCEED, element.xmlTransformator.BooleanToXml(succeed));
 		element.addChild(child);
 	}
 

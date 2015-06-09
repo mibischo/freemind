@@ -78,7 +78,7 @@ public class AttributeCompareCondition extends CompareConditionAdapter {
 		super.saveAttributes(child);
 		child.setAttribute(ATTRIBUTE, attribute);
 		child.setIntAttribute(COMPARATION_RESULT, comparationResult);
-		child.setAttribute(SUCCEED, Tools.BooleanToXml(succeed));
+		child.setAttribute(SUCCEED, element.xmlTransformator.BooleanToXml(succeed));
 		element.addChild(child);
 
 	}

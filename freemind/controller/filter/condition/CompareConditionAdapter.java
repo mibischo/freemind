@@ -63,7 +63,7 @@ abstract class CompareConditionAdapter extends NodeCondition {
 	public void saveAttributes(XMLElement child) {
 		super.saveAttributes(child);
 		child.setAttribute(VALUE, conditionValue);
-		child.setAttribute(IGNORE_CASE, Tools.BooleanToXml(ignoreCase));
+		child.setAttribute(IGNORE_CASE, child.xmlTransformator.BooleanToXml(ignoreCase));
 	}
 
 	public String createDescription(String attribute, int comparationResult,
