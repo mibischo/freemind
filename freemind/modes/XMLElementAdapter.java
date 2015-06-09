@@ -341,9 +341,9 @@ public abstract class XMLElementAdapter extends XMLElement {
 			} else if (name.equals("REFERENCETEXT")) {
 				arrowLink.setReferenceText((sValue));
 			} else if (name.equals("STARTINCLINATION")) {
-				arrowLink.setStartInclination(Tools.xmlToPoint(sValue));
+				arrowLink.setStartInclination(xmlTransformator.xmlToPoint(sValue));
 			} else if (name.equals("ENDINCLINATION")) {
-				arrowLink.setEndInclination(Tools.xmlToPoint(sValue));
+				arrowLink.setEndInclination(xmlTransformator.xmlToPoint(sValue));
 			} else if (name.equals("STARTARROW")) {
 				arrowLink.setStartArrow(sValue);
 			} else if (name.equals("ENDARROW")) {

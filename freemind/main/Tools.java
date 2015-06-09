@@ -154,27 +154,7 @@ public class Tools {
 	public static boolean executableByExtension(String file) {
 		return executableExtensions.contains(getExtension(file));
 	}
-
-	public static Point xmlToPoint(String string) {
-		if (string == null)
-			return null;
-		// fc, 3.11.2004: bug fix for alpha release of FM
-		if (string.startsWith("java.awt.Point")) {
-			string = string.replaceAll(
-					"java\\.awt\\.Point\\[x=(-*[0-9]*),y=(-*[0-9]*)\\]",
-					"$1;$2");
-		}
-		List l = stringToList(string);
-		ListIterator it = l.listIterator(0);
-		if (l.size() != 2)
-			throw new IllegalArgumentException(
-					"A point must consist of two numbers (and not: '" + string
-							+ "').");
-		int x = Integer.parseInt((String) it.next());
-		int y = Integer.parseInt((String) it.next());
-		return new Point(x, y);
-	}
-
+	
 	public static String BooleanToXml(boolean col) {
 		return (col) ? "true" : "false";
 	}

@@ -105,14 +105,14 @@ public class AddArrowLinkAction extends FreemindAction implements ActorXml {
 				linkModel.setEndArrow(arrowAction.getEndArrow());
 			}
 			if (arrowAction.getEndInclination() != null) {
-				linkModel.setEndInclination(Tools.xmlToPoint(arrowAction
+				linkModel.setEndInclination(xmlTransformator.xmlToPoint(arrowAction
 						.getEndInclination()));
 			}
 			if (arrowAction.getStartArrow() != null) {
 				linkModel.setStartArrow(arrowAction.getStartArrow());
 			}
 			if (arrowAction.getStartInclination() != null) {
-				linkModel.setStartInclination(Tools.xmlToPoint(arrowAction
+				linkModel.setStartInclination(xmlTransformator.xmlToPoint(arrowAction
 						.getStartInclination()));
 			}
 			// register link.
