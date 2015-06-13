@@ -173,7 +173,7 @@ public class TimeList extends MindMapHookAdapter implements
 		COLUMN_DATE = getResourceString("plugins/TimeList.xml_Date");
 		COLUMN_NOTES = getResourceString("plugins/TimeList.xml_Notes");
 
-		showAllNodes = Tools.xmlToBoolean(getResourceString("show_all_nodes"));
+		showAllNodes = xmlTransformator.xmlToBoolean(getResourceString("show_all_nodes"));
 		dialog = new JDialog(getController().getFrame().getJFrame(), false /* unmodal */);
 		String windowTitle;
 		if (showAllNodes) {

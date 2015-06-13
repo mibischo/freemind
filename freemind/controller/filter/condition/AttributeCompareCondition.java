@@ -28,6 +28,8 @@ import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.MindMapNode;
 import freemind.modes.attributes.AttributeTableModel;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 /**
  * @author Dimitri Polivaev 12.07.2005
@@ -40,6 +42,8 @@ public class AttributeCompareCondition extends CompareConditionAdapter {
 	private String attribute;
 	private int comparationResult;
 	private boolean succeed;
+	
+	
 
 	/**
      */
@@ -87,9 +91,9 @@ public class AttributeCompareCondition extends CompareConditionAdapter {
 		return new AttributeCompareCondition(
 				element.getStringAttribute(ATTRIBUTE),
 				element.getStringAttribute(AttributeCompareCondition.VALUE),
-				Tools.xmlToBoolean(element
+				xmlTransformator.xmlToBoolean(element
 						.getStringAttribute(AttributeCompareCondition.IGNORE_CASE)),
-				element.getIntAttribute(COMPARATION_RESULT), Tools
+				element.getIntAttribute(COMPARATION_RESULT), xmlTransformator
 						.xmlToBoolean(element.getStringAttribute(SUCCEED)));
 	}
 

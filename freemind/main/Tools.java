@@ -155,14 +155,6 @@ public class Tools {
 		return executableExtensions.contains(getExtension(file));
 	}
 	
-	public static boolean xmlToBoolean(String string) {
-		if (string == null)
-			return false;
-		if (string.equals("true"))
-			return true;
-		return false;
-	}
-
 	/**
 	 * Converts a String in the format "value;value;value" to a List with the
 	 * values (as strings)

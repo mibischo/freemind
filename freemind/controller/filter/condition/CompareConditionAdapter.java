@@ -26,6 +26,8 @@ package freemind.controller.filter.condition;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.main.XMLElement;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 abstract class CompareConditionAdapter extends NodeCondition {
 
@@ -33,7 +35,7 @@ abstract class CompareConditionAdapter extends NodeCondition {
 	static final String VALUE = "value";
 	private String conditionValue;
 	private boolean ignoreCase;
-
+	
 	CompareConditionAdapter(String value, boolean ignoreCase) {
 		super();
 		this.conditionValue = value;

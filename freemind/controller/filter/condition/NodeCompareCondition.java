@@ -64,10 +64,10 @@ class NodeCompareCondition extends CompareConditionAdapter {
 
 	static Condition load(XMLElement element) {
 		return new NodeCompareCondition(element.getStringAttribute(VALUE),
-				Tools.xmlToBoolean(element
+				xmlTransformator.xmlToBoolean(element
 						.getStringAttribute(NodeCompareCondition.IGNORE_CASE)),
 				element.getIntAttribute(COMPARATION_RESULT),
-				Tools.xmlToBoolean(element.getStringAttribute(SUCCEED)));
+				xmlTransformator.xmlToBoolean(element.getStringAttribute(SUCCEED)));
 	}
 
 	protected String createDesctiption() {

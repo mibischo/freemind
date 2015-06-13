@@ -334,7 +334,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 			try {
 				String drawCircle = getController().getFrame().getProperty(
 						FreeMind.RESOURCE_DRAW_RECTANGLE_FOR_SELECTION);
-				standardDrawRectangleForSelection = Tools
+				standardDrawRectangleForSelection = xmlTransformator
 						.xmlToBoolean(drawCircle);
 			} catch (Exception ex) {
 				freemind.main.Resources.getInstance().logException(ex);
@@ -344,7 +344,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 			try {
 				String printOnWhite = getController().getFrame().getProperty(
 						FreeMind.RESOURCE_PRINT_ON_WHITE_BACKGROUND);
-				printOnWhiteBackground = Tools.xmlToBoolean(printOnWhite);
+				printOnWhiteBackground = xmlTransformator.xmlToBoolean(printOnWhite);
 			} catch (Exception ex) {
 				freemind.main.Resources.getInstance().logException(ex);
 				printOnWhiteBackground = true;
@@ -434,12 +434,12 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 					controller.getMapModule().getView().repaintSelecteds();
 				} else if (propertyName
 						.equals(FreeMind.RESOURCE_DRAW_RECTANGLE_FOR_SELECTION)) {
-					standardDrawRectangleForSelection = Tools
+					standardDrawRectangleForSelection = xmlTransformator
 							.xmlToBoolean(newValue);
 					controller.getMapModule().getView().repaintSelecteds();
 				} else if (propertyName
 						.equals(FreeMind.RESOURCE_PRINT_ON_WHITE_BACKGROUND)) {
-					printOnWhiteBackground = Tools.xmlToBoolean(newValue);
+					printOnWhiteBackground = xmlTransformator.xmlToBoolean(newValue);
 				}
 			}
 		};

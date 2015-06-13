@@ -27,6 +27,8 @@ import java.net.URL;
 import java.util.Properties;
 
 import freemind.modes.ModeController;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 /**
  * Implments MindMapHook as an Adapter class. Implementation is straight
@@ -40,6 +42,7 @@ public class HookAdapter implements MindMapHook {
 	private String name;
 	private Properties properties;
 	private ModeController controller;
+	protected IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	// Logging:
 	protected java.util.logging.Logger logger;

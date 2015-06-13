@@ -26,6 +26,8 @@ package freemind.controller.filter.condition;
 import javax.swing.JComponent;
 
 import freemind.main.XMLElement;
+import freemind.tools.IXmlTransformations;
+import freemind.tools.XmlTransformations;
 
 /**
  * @author dimitri 15.05.2005
@@ -33,6 +35,8 @@ import freemind.main.XMLElement;
 public abstract class NodeCondition implements Condition {
 	private JComponent renderer;
 	private String description;
+	
+	static IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	protected NodeCondition() {
 	}
