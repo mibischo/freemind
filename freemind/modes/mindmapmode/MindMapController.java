@@ -254,7 +254,7 @@ public class MindMapController extends ControllerAdapter implements
 					.show().getResult();
 			if (showResult != JOptionPane.OK_OPTION) {
 				getFrame().out(
-						Tools.expandPlaceholders(getText("file_not_reloaded"),
+						expander.expand(getText("file_not_reloaded"),
 								getMap().getFile().toString()));
 				mReturnValue = false;
 				return;

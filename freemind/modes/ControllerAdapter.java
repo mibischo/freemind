@@ -89,6 +89,8 @@ import freemind.main.XMLParseException;
 import freemind.modes.FreeMindFileDialog.DirectoryResultListener;
 import freemind.modes.attributes.AttributeController;
 import freemind.modes.common.listeners.MindMapMouseWheelEventHandler;
+import freemind.tools.IPlaceholderExpander;
+import freemind.tools.PlaceholderExpander;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
 import freemind.view.mindmapview.NodeView;
@@ -118,6 +120,7 @@ public abstract class ControllerAdapter implements ModeController,
 	private HashSet mNodeSelectionListeners = new HashSet();
 	private HashSet mNodeLifetimeListeners = new HashSet();
 	private File lastCurrentDir = null;
+	protected IPlaceholderExpander expander = new PlaceholderExpander();
 
 	/**
 	 * Instantiation order: first me and then the model.
@@ -527,7 +530,7 @@ public abstract class ControllerAdapter implements ModeController,
 					freemind.main.Resources.getInstance().logException(e);
 					// give "not found" message
 					getFrame().out(
-							Tools.expandPlaceholders(getText("link_not_found"),
+							expander.expand(getText("link_not_found"),
 									target));
 				}
 				return;
@@ -579,7 +582,7 @@ public abstract class ControllerAdapter implements ModeController,
 					} catch (Exception e) {
 						freemind.main.Resources.getInstance().logException(e);
 						getFrame().out(
-								Tools.expandPlaceholders(
+								expander.expand(
 										getText("link_not_found"), ref));
 						return;
 					}
@@ -949,7 +952,7 @@ public abstract class ControllerAdapter implements ModeController,
 			}
 		} catch (Exception e) { // Throwed by tryToLock
 			getFrame().getController().informationMessage(
-					Tools.expandPlaceholders(
+					expander.expand(
 							getText("locking_failed_by_save_as"), f.getName()));
 			return false;
 		}

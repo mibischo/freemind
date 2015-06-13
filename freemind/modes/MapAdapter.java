@@ -47,6 +47,8 @@ import freemind.controller.filter.condition.NoFilteringCondition;
 import freemind.main.FreeMindMain;
 import freemind.main.Tools;
 import freemind.main.XMLParseException;
+import freemind.tools.IPlaceholderExpander;
+import freemind.tools.PlaceholderExpander;
 
 public abstract class MapAdapter extends DefaultTreeModel implements MindMap {
 
@@ -66,6 +68,7 @@ public abstract class MapAdapter extends DefaultTreeModel implements MindMap {
 	protected final ModeController mModeController;
 	private HashSet mMapSourceChangedObserverSet = new HashSet();
 	private Timer mTimerForFileChangeObservation;
+	protected IPlaceholderExpander expander = new PlaceholderExpander();
 
 	public MapAdapter(FreeMindMain frame, ModeController modeController) {
 		super(null);

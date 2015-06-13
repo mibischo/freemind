@@ -410,14 +410,6 @@ public class Tools {
 				|| (color1 == null && color2 == null);
 	}
 
-	public static String firstLetterCapitalized(String text) {
-		if (text == null || text.length() == 0) {
-			return text;
-		}
-		return text.substring(0, 1).toUpperCase()
-				+ text.substring(1, text.length());
-	}
-
 	public static void setHidden(File file, boolean hidden,
 			boolean synchronously) {
 		// According to Web articles, UNIX systems do not have attribute hidden
@@ -442,44 +434,6 @@ public class Tools {
 				freemind.main.Resources.getInstance().logException(e);
 			}
 		}
-	}
-
-	/**
-	 * Example: expandPlaceholders("Hello $1.","Dolly"); => "Hello Dolly."
-	 */
-	public static String expandPlaceholders(String message, String s1) {
-		String result = message;
-		if (s1 != null) {
-			s1 = s1.replaceAll("\\\\", "\\\\\\\\"); // Replace \ with \\
-			result = result.replaceAll("\\$1", s1);
-		}
-		return result;
-	}
-
-	public static String expandPlaceholders(String message, String s1, String s2) {
-		String result = message;
-		if (s1 != null) {
-			result = result.replaceAll("\\$1", s1);
-		}
-		if (s2 != null) {
-			result = result.replaceAll("\\$2", s2);
-		}
-		return result;
-	}
-
-	public static String expandPlaceholders(String message, String s1,
-			String s2, String s3) {
-		String result = message;
-		if (s1 != null) {
-			result = result.replaceAll("\\$1", s1);
-		}
-		if (s2 != null) {
-			result = result.replaceAll("\\$2", s2);
-		}
-		if (s3 != null) {
-			result = result.replaceAll("\\$3", s3);
-		}
-		return result;
 	}
 
 	public static class IntHolder {

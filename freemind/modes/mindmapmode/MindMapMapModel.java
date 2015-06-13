@@ -293,7 +293,7 @@ public class MindMapMapModel extends MapAdapter {
 			scheduleTimerForAutomaticSaving();
 			return true;
 		} catch (FileNotFoundException e) {
-			String message = Tools.expandPlaceholders(getText("save_failed"),
+			String message = expander.expand(getText("save_failed"),
 					file.getName());
 			if (!isInternal)
 				getFrame().getController().errorMessage(message);
@@ -356,7 +356,7 @@ public class MindMapMapModel extends MapAdapter {
 		String lockingUserOfOldLock = lockManager.popLockingUserOfOldLock();
 		if (lockingUserOfOldLock != null) {
 			getFrame().getController().informationMessage(
-					Tools.expandPlaceholders(
+					expander.expand(
 							getText("locking_old_lock_removed"),
 							file.getName(), lockingUserOfOldLock));
 		}
@@ -375,7 +375,7 @@ public class MindMapMapModel extends MapAdapter {
 
 	public void load(File file) throws FileNotFoundException, IOException {
 		if (!file.exists()) {
-			throw new FileNotFoundException(Tools.expandPlaceholders(
+			throw new FileNotFoundException(expander.expand(
 					getText("file_not_found"), file.getPath()));
 		}
 		if (!file.canWrite()) {
@@ -386,7 +386,7 @@ public class MindMapMapModel extends MapAdapter {
 				String lockingUser = tryToLock(file);
 				if (lockingUser != null) {
 					getFrame().getController().informationMessage(
-							Tools.expandPlaceholders(
+							expander.expand(
 									getText("map_locked_by_open"),
 									file.getName(), lockingUser));
 					readOnly = true;
@@ -396,7 +396,7 @@ public class MindMapMapModel extends MapAdapter {
 			} catch (Exception e) { // Thrown by tryToLock
 				freemind.main.Resources.getInstance().logException(e);
 				getFrame().getController().informationMessage(
-						Tools.expandPlaceholders(
+						expander.expand(
 								getText("locking_failed_by_open"),
 								file.getName()));
 				readOnly = true;

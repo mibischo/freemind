@@ -691,7 +691,7 @@ public class PasteAction extends AbstractAction implements ActorXml {
 						visibleText += " > ";
 					}
 					visibleText += textPartIdx == 0 ? textParts[textPartIdx]
-							: Tools.firstLetterCapitalized(textParts[textPartIdx]
+							: firstLetterCapitalized(textParts[textPartIdx]
 									.replaceAll("^~*", ""));
 				}
 			}
@@ -757,6 +757,14 @@ public class PasteAction extends AbstractAction implements ActorXml {
 			}
 		}
 		return pastedNode;
+	}
+	
+	private String firstLetterCapitalized(String text) {
+		if (text == null || text.length() == 0) {
+			return text;
+		}
+		return text.substring(0, 1).toUpperCase()
+				+ text.substring(1, text.length());
 	}
 
 	/**
