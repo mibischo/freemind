@@ -547,7 +547,7 @@ public abstract class ControllerAdapter implements ModeController,
 			String ref = absolute.getRef();
 			if (ref != null) {
 				// remove ref from absolute:
-				absolute = Tools.getURLWithoutReference(absolute);
+				absolute = getURLWithoutReference(absolute);
 			}
 			String extension = Tools.getExtension(absolute.toString());
 			if ((extension != null)
@@ -601,6 +601,18 @@ public abstract class ControllerAdapter implements ModeController,
 			getFrame().setWaitingCursor(false);
 		}
 	}
+	
+	/**
+	 * Returns the same URL as input with the addition, that the reference part
+	 * "#..." is filtered out.
+	 * 
+	 * @throws MalformedURLException
+	 */
+	private URL getURLWithoutReference(URL input)
+			throws MalformedURLException {
+		return new URL(input.toString().replaceFirst("#.*", ""));
+	}
+
 
 	public MindMapNode createNodeTreeFromXml(Reader pReader, HashMap pIDToTarget)
 			throws XMLParseException, IOException {

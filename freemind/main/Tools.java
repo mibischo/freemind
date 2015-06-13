@@ -688,17 +688,7 @@ public class Tools {
 		return inputString;
 	}
 
-	/**
-	 * Returns the same URL as input with the addition, that the reference part
-	 * "#..." is filtered out.
-	 * 
-	 * @throws MalformedURLException
-	 */
-	public static URL getURLWithoutReference(URL input)
-			throws MalformedURLException {
-		return new URL(input.toString().replaceFirst("#.*", ""));
-	}
-
+	
 	public static void copyStream(InputStream in, OutputStream out,
 			boolean pCloseOutput) throws IOException {
 		byte[] buf = new byte[1024];
