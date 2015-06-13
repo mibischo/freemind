@@ -11,8 +11,8 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.PBEParameterSpec;
 
-import freemind.main.Base64Coding;
 import freemind.main.Tools;
+import freemind.tools.Base64Coding;
 
 public abstract class DesEncrypter implements IDesEncrypter {
 

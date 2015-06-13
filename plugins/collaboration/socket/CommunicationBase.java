@@ -33,6 +33,8 @@ import freemind.controller.actions.generated.instance.XmlAction;
 import freemind.main.Tools;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.actions.xml.ActionPair;
+import freemind.tools.Compression;
+import freemind.tools.ICompression;
 
 /**
  * @author foltin
@@ -80,6 +82,7 @@ public abstract class CommunicationBase extends TerminateableThread {
 	private int mCurrentState = STATE_IDLE;
 	private String mCurrentStateMutex = "lockme";
 	private StringBuffer mCurrentCommand = new StringBuffer();
+	private ICompression compression = new Compression();
 
 	/**
 	 * @param pMessage
@@ -90,7 +93,7 @@ public abstract class CommunicationBase extends TerminateableThread {
 			printCommand("Send", pCommand);
 			final String marshalledText = Tools.marshall(pCommand);
 			logger.fine(getName() + " :Sending " + marshalledText);
-			String text = Tools.compress(marshalledText);
+			String text = compression.compress(marshalledText);
 			// split into pieces, as the writeUTF method is only able to send
 			// 65535 bytes...
 			int index = 0;
@@ -121,7 +124,7 @@ public abstract class CommunicationBase extends TerminateableThread {
 				mCurrentCommand.append(text);
 				final String textValue = mCurrentCommand.toString();
 				mCurrentCommand.setLength(0);
-				final String decompressedText = Tools.decompress(textValue);
+				final String decompressedText = compression.decompress(textValue);
 				logger.fine(getName() + " :Received " + decompressedText);
 				final CollaborationActionBase command = (CollaborationActionBase) Tools
 						.unMarshall(decompressedText);

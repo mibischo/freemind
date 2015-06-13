@@ -91,6 +91,8 @@ import freemind.controller.actions.generated.instance.MindmapLastStateStorage;
 import freemind.main.FreeMindStarter.ProxyAuthenticator;
 import freemind.modes.ModeController;
 import freemind.preferences.FreemindPropertyListener;
+import freemind.tools.Compression;
+import freemind.tools.ICompression;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
 
@@ -970,11 +972,14 @@ public class FreeMind extends JFrame implements FreeMindMain {
 	}
 
 	private void setupProxy() {
+		
+		
 		// proxy settings
 		if("true".equals(props.getProperty(PROXY_USE_SETTINGS))) {
 			if ("true".equals(props.getProperty(PROXY_IS_AUTHENTICATED))) {
+				ICompression compression = new Compression();
 				Authenticator.setDefault(new ProxyAuthenticator(props
-						.getProperty(PROXY_USER), Tools.decompress(props
+						.getProperty(PROXY_USER), compression.decompress(props
 						.getProperty(PROXY_PASSWORD))));
 			}
 			System.setProperty("http.proxyHost", props.getProperty(PROXY_HOST));

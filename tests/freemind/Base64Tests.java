@@ -23,7 +23,7 @@
 
 package tests.freemind;
 
-import freemind.main.Base64Coding;
+import freemind.tools.Base64Coding;
 
 /**
  * @author foltin

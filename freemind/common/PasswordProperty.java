@@ -23,6 +23,8 @@ package freemind.common;
 import javax.swing.JPasswordField;
 
 import freemind.main.Tools;
+import freemind.tools.Compression;
+import freemind.tools.ICompression;
 
 /**
  * @author foltin
@@ -34,6 +36,9 @@ public class PasswordProperty extends StringProperty {
 	 * @param pDescription
 	 * @param pLabel
 	 */
+	
+	ICompression compression = new Compression();
+	
 	public PasswordProperty(String pDescription, String pLabel) {
 		super(pDescription, pLabel);
 	}
@@ -43,11 +48,11 @@ public class PasswordProperty extends StringProperty {
 	}
 
 	public String getValue() {
-		return Tools.compress(mTextField.getText());
+		return compression.compress(mTextField.getText());
 	}
 
 	public void setValue(String value) {
-		String pwInPlain = Tools.decompress(value);
+		String pwInPlain = compression.decompress(value);
 		super.setValue(pwInPlain);
 	}
 	

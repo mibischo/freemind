@@ -38,12 +38,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import freemind.common.TextTranslator;
-import freemind.main.Base64Coding;
 import freemind.main.FreeMind;
 import freemind.main.FreeMindMain;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.common.dialogs.EnterPasswordDialog;
+import freemind.tools.Base64Coding;
 
 /**
  * @author foltin

@@ -39,8 +39,8 @@ import javax.imageio.ImageIO;
 import org.openstreetmap.gui.jmapviewer.Tile;
 import org.openstreetmap.gui.jmapviewer.TileController;
 
-import freemind.main.Base64Coding;
 import freemind.main.Tools;
+import freemind.tools.Base64Coding;
 
 public class TileImage implements ImageObserver {
 
