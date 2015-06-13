@@ -55,6 +55,7 @@ import javax.swing.event.ListDataEvent;
 import javax.swing.event.ListDataListener;
 
 import freemind.controller.MapModuleManager.MapModuleChangeObserver;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.MindMap;
@@ -69,7 +70,7 @@ import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
 import freemind.view.mindmapview.NodeView;
 
-public class AssignAttributeDialog extends JDialog implements
+public class AssignAttributeDialog extends AbstractDialog implements
 		AttributesListener, MapModuleChangeObserver {
 	private static class ClonedComboBoxModel extends AbstractListModel
 			implements ComboBoxModel {
@@ -390,7 +391,7 @@ public class AssignAttributeDialog extends JDialog implements
 		replaceBtn.addActionListener(new ReplaceValueAction());
 		replaceBtn.setMaximumSize(maxButtonDimension);
 
-		Tools.addEscapeActionToDialog(this);
+		addEscapeActionToDialog(this);
 
 		final String pattern = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 		final JLabel patternLabel = new JLabel(pattern);

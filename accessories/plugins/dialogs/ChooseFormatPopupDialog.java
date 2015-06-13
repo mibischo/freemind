@@ -41,13 +41,14 @@ import javax.swing.JScrollPane;
 import freemind.common.TextTranslator;
 import freemind.controller.actions.generated.instance.Pattern;
 import freemind.controller.actions.generated.instance.WindowConfigurationStorage;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.dialogs.StylePatternFrame;
 import freemind.modes.mindmapmode.dialogs.StylePatternFrame.StylePatternFrameType;
 
 /** */
-public class ChooseFormatPopupDialog extends JDialog implements TextTranslator,
+public class ChooseFormatPopupDialog extends AbstractDialog implements TextTranslator,
 		KeyListener {
 
 	public static final int CANCEL = -1;
@@ -105,7 +106,7 @@ public class ChooseFormatPopupDialog extends JDialog implements TextTranslator,
 				cancelPressed();
 			}
 		};
-		Tools.addEscapeActionToDialog(this, action);
+		addEscapeActionToDialog(this, action);
 		pack();
 		mController.decorateDialog(this, WINDOW_PREFERENCE_STORAGE_PROPERTY);
 

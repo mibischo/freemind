@@ -488,7 +488,7 @@ public class MindMapMapModel extends MapAdapter {
 			}
 			if (mapStart.startsWith(EXPECTED_START_STRINGS[i])) {
 				// actual version:
-				reader = Tools.getActualReader(pReaderCreator.createReader());
+				reader = getActualReader(pReaderCreator.createReader());
 				break;
 			}
 		}
@@ -518,7 +518,7 @@ public class MindMapMapModel extends MapAdapter {
 				this.getModeController()
 						.getFrame()
 						.out("Error on conversion. Continue without conversion. Some elements may be lost!");
-				reader = Tools.getActualReader(pReaderCreator.createReader());
+				reader = getActualReader(pReaderCreator.createReader());
 			}
 		}
 		try {
@@ -547,6 +547,16 @@ public class MindMapMapModel extends MapAdapter {
 				reader.close();
 			}
 		}
+	}
+	
+	/**
+	 * Creates a default reader that just reads the given file.
+	 * 
+	 * @throws FileNotFoundException
+	 */
+	private Reader getActualReader(Reader pReader)
+			throws FileNotFoundException {
+		return new BufferedReader(pReader);
 	}
 
 	/**

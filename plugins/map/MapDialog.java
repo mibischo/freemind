@@ -58,6 +58,7 @@ import freemind.controller.actions.generated.instance.MapLocationStorage;
 import freemind.controller.actions.generated.instance.MapWindowConfigurationStorage;
 import freemind.controller.actions.generated.instance.Place;
 import freemind.controller.actions.generated.instance.TableColumnSetting;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
@@ -335,7 +336,7 @@ public class MapDialog extends MindMapHookAdapter implements
 		mCloseAction = new CloseAction();
 		// the action title is changed by the following method, thus we create
 		// another close action.
-		Tools.addEscapeActionToDialog(mMapDialog, new CloseAction());
+		AbstractDialog.addEscapeActionToDialog(mMapDialog, new CloseAction());
 		mMapDialog.setSize(400, 400);
 
 		map = new JCursorMapViewer(getMindMapController(), mMapDialog,

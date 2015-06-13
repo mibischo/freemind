@@ -37,10 +37,11 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JToolBar;
 
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
 import freemind.view.mindmapview.MapView;
 
-public class PreviewDialog extends JDialog implements ActionListener {
+public class PreviewDialog extends AbstractDialog implements ActionListener {
 	private final static double DEFAULT_ZOOM_FACTOR_STEP = 0.1;
 	private JLabel pageNumber;
 
@@ -74,7 +75,7 @@ public class PreviewDialog extends JDialog implements ActionListener {
 		ok.addActionListener(this);
 		dialog.add(ok);
 		getContentPane().add(dialog, "South");
-		Tools.addEscapeActionToDialog(this);
+		addEscapeActionToDialog(this);
 	}
 
 	private JButton getButton(String iconName) {

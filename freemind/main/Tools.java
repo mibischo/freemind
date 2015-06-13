@@ -609,17 +609,7 @@ public class Tools {
 	public static String replaceUtf8AndIllegalXmlChars(String fileContents) {
 		return HtmlTools.removeInvalidXmlCharacters(fileContents);
 	}
-
-	/**
-	 * Creates a default reader that just reads the given file.
-	 * 
-	 * @throws FileNotFoundException
-	 */
-	public static Reader getActualReader(Reader pReader)
-			throws FileNotFoundException {
-		return new BufferedReader(pReader);
-	}
-
+	
 	/**
 	 * In case of trouble, the method returns null.
 	 * 
@@ -683,35 +673,6 @@ public class Tools {
 		}
 		System.err.println("END OF Transferable");
 		System.err.println();
-	}
-
-	public static void addEscapeActionToDialog(final JDialog dialog) {
-		class EscapeAction extends AbstractAction {
-			private static final long serialVersionUID = 238333614987438806L;
-
-			public void actionPerformed(ActionEvent e) {
-				dialog.dispose();
-			};
-		}
-		addEscapeActionToDialog(dialog, new EscapeAction());
-	}
-
-	public static void addEscapeActionToDialog(JDialog dialog, Action action) {
-		addKeyActionToDialog(dialog, action, "ESCAPE", "end_dialog");
-	}
-
-	public static void addKeyActionToDialog(JDialog dialog, Action action,
-			String keyStroke, String actionId) {
-		action.putValue(Action.NAME, actionId);
-		// Register keystroke
-		dialog.getRootPane()
-				.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
-				.put(KeyStroke.getKeyStroke(keyStroke),
-						action.getValue(Action.NAME));
-
-		// Register action
-		dialog.getRootPane().getActionMap()
-				.put(action.getValue(Action.NAME), action);
 	}
 
 	/**

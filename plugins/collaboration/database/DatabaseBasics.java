@@ -51,6 +51,7 @@ import freemind.common.PropertyBean;
 import freemind.common.PropertyControl;
 import freemind.controller.Controller;
 import freemind.controller.MapModuleManager.MapTitleContributor;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.MindMap;
@@ -157,7 +158,7 @@ public abstract class DatabaseBasics extends MindMapNodeHookAdapter implements
 		public abstract boolean isValid();
 	}
 
-	public static class FormDialog extends JDialog implements
+	public static class FormDialog extends AbstractDialog implements
 			PropertyChangeListener {
 		private final MindMapController mController2;
 		private boolean mSuccess = false;
@@ -238,8 +239,8 @@ public abstract class DatabaseBasics extends MindMapNodeHookAdapter implements
 					closeWindow();
 				}
 			};
-			Tools.addEscapeActionToDialog(this, action);
-			Tools.addKeyActionToDialog(this, actionSuccess, "ENTER",
+			addEscapeActionToDialog(this, action);
+			addKeyActionToDialog(this, actionSuccess, "ENTER",
 					"ok_dialog");
 
 			pack();

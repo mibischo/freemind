@@ -45,6 +45,7 @@ import javax.swing.JPopupMenu;
 import javax.swing.text.JTextComponent;
 
 import freemind.controller.Controller;
+import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMindCommon;
 import freemind.main.FreeMindMain;
 import freemind.main.Resources;
@@ -77,7 +78,7 @@ public class EditNodeBase {
 		this.text = text;
 	}
 
-	abstract static class EditDialog extends JDialog {
+	abstract static class EditDialog extends AbstractDialog {
 		private static final long serialVersionUID = 6064679828160694117L;
 		private EditNodeBase base;
 

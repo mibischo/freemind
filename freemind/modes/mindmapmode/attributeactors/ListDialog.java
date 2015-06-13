@@ -52,10 +52,11 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
 
 import freemind.controller.filter.util.SortedListModel;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 
-public class ListDialog extends JDialog {
+public class ListDialog extends AbstractDialog {
 	private final class TextChangeListener implements DocumentListener {
 		private void update() {
 			updateButtons();
@@ -179,7 +180,7 @@ public class ListDialog extends JDialog {
 		Frame frame = JOptionPane.getFrameForComponent(frameComp);
 		dialog = new ListDialog(frame, locationComp, labelText, title,
 				possibleValues, longValue);
-		Tools.addEscapeActionToDialog(dialog);
+		addEscapeActionToDialog(dialog);
 		dialog.show();
 	}
 

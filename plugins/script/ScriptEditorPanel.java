@@ -58,6 +58,7 @@ import plugins.script.ScriptingEngine.ErrorHandler;
 import freemind.controller.BlindIcon;
 import freemind.controller.StructuredMenuHolder;
 import freemind.controller.actions.generated.instance.ScriptEditorWindowConfigurationStorage;
+import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMindMain;
 import freemind.main.Resources;
 import freemind.main.Tools;
@@ -72,7 +73,7 @@ import freemind.main.Tools;
  *         <li>show line/column numbers in status bar</li>
  *         </ul>
  */
-public class ScriptEditorPanel extends JDialog {
+public class ScriptEditorPanel extends AbstractDialog {
 	/**
 	 * 
 	 */
@@ -271,7 +272,7 @@ public class ScriptEditorPanel extends JDialog {
 				disposeDialog(true);
 			}
 		});
-		Tools.addEscapeActionToDialog(this, new AbstractAction() {
+		addEscapeActionToDialog(this, new AbstractAction() {
 			public void actionPerformed(ActionEvent arg0) {
 				disposeDialog(true);
 			}

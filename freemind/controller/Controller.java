@@ -89,6 +89,7 @@ import freemind.controller.MapModuleManager.MapModuleChangeObserver;
 import freemind.controller.actions.generated.instance.MindmapLastStateStorage;
 import freemind.controller.filter.FilterController;
 import freemind.controller.printpreview.PreviewDialog;
+import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMind;
 import freemind.main.FreeMindCommon;
 import freemind.main.FreeMindMain;
@@ -1842,7 +1843,7 @@ public class Controller implements MapModuleChangeObserver {
 					options.closeWindow();
 				}
 			};
-			Tools.addEscapeActionToDialog(dialog, action);
+			AbstractDialog.addEscapeActionToDialog(dialog, action);
 			dialog.setVisible(true);
 
 		}

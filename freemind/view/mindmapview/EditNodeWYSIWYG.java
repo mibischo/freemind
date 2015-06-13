@@ -70,7 +70,7 @@ public class EditNodeWYSIWYG extends EditNodeBase {
 			super(base);
 			createEditorPanel();
 			getContentPane().add(htmlEditorPanel, BorderLayout.CENTER);
-			Tools.addEscapeActionToDialog(this, new CancelAction());
+			addEscapeActionToDialog(this, new CancelAction());
 			final JButton okButton = new JButton();
 			final JButton cancelButton = new JButton();
 			final JButton splitButton = new JButton();
@@ -97,9 +97,9 @@ public class EditNodeWYSIWYG extends EditNodeBase {
 				}
 			});
 
-			Tools.addKeyActionToDialog(this, new SubmitAction(), "alt ENTER",
+			addKeyActionToDialog(this, new SubmitAction(), "alt ENTER",
 					"submit");
-			Tools.addKeyActionToDialog(this, new SubmitAction(),
+			addKeyActionToDialog(this, new SubmitAction(),
 					"control ENTER", "submit");
 			JPanel buttonPane = new JPanel();
 			buttonPane.add(okButton);

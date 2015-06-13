@@ -41,6 +41,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import freemind.controller.Controller;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 
@@ -152,7 +153,7 @@ public class OptionalDontShowMeAgainDialog {
 				close(JOptionPane.OK_OPTION);
 			}
 		};
-		Tools.addEscapeActionToDialog(mDialog, cancelAction);
+		AbstractDialog.addEscapeActionToDialog(mDialog, cancelAction);
 		mDialog.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent pE) {
 				close(JOptionPane.CANCEL_OPTION);

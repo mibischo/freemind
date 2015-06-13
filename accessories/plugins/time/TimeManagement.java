@@ -53,6 +53,7 @@ import javax.swing.WindowConstants;
 
 import freemind.controller.MapModuleManager.MapModuleChangeObserver;
 import freemind.controller.StructuredMenuHolder;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.modes.Mode;
@@ -239,7 +240,7 @@ public class TimeManagement extends MindMapHookAdapter implements
 			}
 		});
 		Action closeAction = new CloseAction();
-		Tools.addEscapeActionToDialog(dialog, closeAction);
+		AbstractDialog.addEscapeActionToDialog(dialog, closeAction);
 		/** Menu **/
 		StructuredMenuHolder menuHolder = new StructuredMenuHolder();
 		JMenuBar menu = new JMenuBar();

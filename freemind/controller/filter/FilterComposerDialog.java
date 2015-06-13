@@ -62,6 +62,7 @@ import freemind.controller.filter.condition.ConditionNotSatisfiedDecorator;
 import freemind.controller.filter.condition.ConjunctConditions;
 import freemind.controller.filter.condition.DisjunctConditions;
 import freemind.controller.filter.util.ExtendedComboBoxModel;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.FreeMindFileDialog;
@@ -75,7 +76,7 @@ import freemind.modes.attributes.AttributeRegistry;
  * @author dimitri
  * 
  */
-public class FilterComposerDialog extends JDialog {
+public class FilterComposerDialog extends AbstractDialog {
 	private static final Dimension maxButtonDimension = new Dimension(1000,
 			1000);
 
@@ -685,7 +686,7 @@ public class FilterComposerDialog extends JDialog {
 		conditionScrollPane.setPreferredSize(new Dimension(500, 200));
 		getContentPane().add(conditionScrollPane, BorderLayout.CENTER);
 
-		Tools.addEscapeActionToDialog(this);
+		addEscapeActionToDialog(this);
 		pack();
 	}
 

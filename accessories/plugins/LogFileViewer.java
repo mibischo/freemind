@@ -50,6 +50,7 @@ import freemind.controller.MapModuleManager.MapModuleChangeObserver;
 import freemind.controller.MenuItemSelectedListener;
 import freemind.controller.StructuredMenuHolder;
 import freemind.controller.actions.generated.instance.LogFileViewerConfigurationStorage;
+import freemind.dialog.AbstractDialog;
 import freemind.extensions.HookRegistration;
 import freemind.main.FreeMind;
 import freemind.main.LogFileLogHandler;
@@ -249,7 +250,7 @@ public class LogFileViewer extends MindMapHookAdapter implements
 		mCloseAction = new CloseAction();
 		// the action title is changed by the following method, thus we create
 		// another close action.
-		Tools.addEscapeActionToDialog(mLogFileViewer, new CloseAction());
+		AbstractDialog.addEscapeActionToDialog(mLogFileViewer, new CloseAction());
 
 		/** Menu **/
 		StructuredMenuHolder menuHolder = new StructuredMenuHolder();

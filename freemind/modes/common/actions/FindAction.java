@@ -42,6 +42,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMind;
 import freemind.main.HtmlTools;
 import freemind.main.Resources;
@@ -157,7 +158,7 @@ public class FindAction extends AbstractAction {
 				close(JOptionPane.OK_OPTION);
 			}
 		};
-		Tools.addEscapeActionToDialog(mDialog, cancelAction);
+		AbstractDialog.addEscapeActionToDialog(mDialog, cancelAction);
 		mDialog.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent pE) {
 				close(JOptionPane.CANCEL_OPTION);

@@ -76,6 +76,7 @@ import freemind.controller.StructuredMenuHolder;
 import freemind.controller.actions.generated.instance.TimeWindowColumnSetting;
 import freemind.controller.actions.generated.instance.TimeWindowConfigurationStorage;
 import freemind.controller.actions.generated.instance.WindowConfigurationStorage;
+import freemind.dialog.AbstractDialog;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
 import freemind.modes.MindIcon;
@@ -188,7 +189,7 @@ public class TimeList extends MindMapHookAdapter implements
 				disposeDialog();
 			}
 		});
-		Tools.addEscapeActionToDialog(dialog, new AbstractAction() {
+		AbstractDialog.addEscapeActionToDialog(dialog, new AbstractAction() {
 			public void actionPerformed(ActionEvent arg0) {
 				disposeDialog();
 			}

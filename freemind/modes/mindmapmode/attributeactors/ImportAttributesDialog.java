@@ -50,6 +50,7 @@ import javax.swing.tree.TreeSelectionModel;
 import freemind.controller.Controller;
 import freemind.controller.MapModuleManager;
 import freemind.controller.filter.util.SortedComboBoxModel;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.MindIcon;
@@ -58,7 +59,7 @@ import freemind.modes.attributes.AttributeRegistry;
 import freemind.modes.attributes.AttributeRegistryElement;
 import freemind.view.MapModule;
 
-class ImportAttributesDialog extends JDialog implements TreeSelectionListener {
+class ImportAttributesDialog extends AbstractDialog implements TreeSelectionListener {
 	private JTree tree;
 	private JScrollPane scrollPane;
 	private DefaultMutableTreeNode topNode;
@@ -199,7 +200,7 @@ class ImportAttributesDialog extends JDialog implements TreeSelectionListener {
 
 		getContentPane().add(buttons, BorderLayout.SOUTH);
 
-		Tools.addEscapeActionToDialog(this);
+		addEscapeActionToDialog(this);
 	}
 
 	public void show() {

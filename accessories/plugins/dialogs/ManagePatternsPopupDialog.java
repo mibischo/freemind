@@ -64,6 +64,7 @@ import freemind.common.TextTranslator;
 import freemind.controller.StructuredMenuHolder;
 import freemind.controller.actions.generated.instance.ManageStyleEditorWindowConfigurationStorage;
 import freemind.controller.actions.generated.instance.Pattern;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.modes.StylePatternFactory;
@@ -72,7 +73,7 @@ import freemind.modes.mindmapmode.dialogs.StylePatternFrame;
 import freemind.modes.mindmapmode.dialogs.StylePatternFrame.StylePatternFrameType;
 
 /** */
-public class ManagePatternsPopupDialog extends JDialog implements
+public class ManagePatternsPopupDialog extends AbstractDialog implements
 		TextTranslator, KeyListener {
 	private static Pattern sLastSelectedPattern = null;
 
@@ -277,7 +278,7 @@ public class ManagePatternsPopupDialog extends JDialog implements
 				cancelPressed();
 			}
 		};
-		Tools.addEscapeActionToDialog(this, cancelAction);
+		addEscapeActionToDialog(this, cancelAction);
 		// // recover latest pattern:
 		int i = 0;
 		if (sLastSelectedPattern != null) {

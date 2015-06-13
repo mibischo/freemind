@@ -35,10 +35,11 @@ import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 
 import freemind.common.TextTranslator;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
 
 /** */
-public class EnterPasswordDialog extends JDialog {
+public class EnterPasswordDialog extends AbstractDialog {
 
 	public static final int CANCEL = -1;
 
@@ -103,7 +104,7 @@ public class EnterPasswordDialog extends JDialog {
 			}
 
 		});
-		Tools.addEscapeActionToDialog(this, new AbstractAction() {
+		addEscapeActionToDialog(this, new AbstractAction() {
 			public void actionPerformed(ActionEvent pE) {
 				cancelPressed();
 			}

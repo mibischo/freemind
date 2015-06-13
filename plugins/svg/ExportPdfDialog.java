@@ -22,6 +22,7 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
 import freemind.controller.Controller;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
 
 /**
@@ -30,7 +31,7 @@ import freemind.main.Tools;
  *         Class is responsible for a dialog to input all pdf export parameters
  *         like page orientation or format
  */
-public class ExportPdfDialog extends JDialog {
+public class ExportPdfDialog extends AbstractDialog {
 
 	private static final String PORTRAIT = "portrait";
 
@@ -184,7 +185,7 @@ public class ExportPdfDialog extends JDialog {
 		initDefaults();
 
 		// add escape action
-		freemind.main.Tools.addEscapeActionToDialog(this);
+		addEscapeActionToDialog(this);
 
 		// finish dialog
 		this.setLocationRelativeTo(this.getParent());

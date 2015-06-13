@@ -48,6 +48,7 @@ import javax.swing.border.EmptyBorder;
 import freemind.controller.Controller;
 import freemind.controller.MapModuleManager.MapModuleChangeObserver;
 import freemind.controller.filter.util.SortedListModel;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.MapRegistry;
@@ -58,7 +59,7 @@ import freemind.view.MapModule;
 /**
  * @author Dimitri Polivaev 10.07.2005
  */
-public class AttributeManagerDialog extends JDialog implements
+public class AttributeManagerDialog extends AbstractDialog implements
 		MapModuleChangeObserver {
 	private JTable view;
 	private MapRegistry registry;
@@ -270,7 +271,7 @@ public class AttributeManagerDialog extends JDialog implements
 		southButtons.add(importBtn);
 		southButtons.add(Box.createHorizontalGlue());
 
-		Tools.addEscapeActionToDialog(this);
+		addEscapeActionToDialog(this);
 		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		addWindowListener(new ClosingListener());
 		c.getMapModuleManager().addListener(this);
