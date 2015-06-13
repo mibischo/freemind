@@ -945,7 +945,7 @@ public abstract class ControllerAdapter implements ModeController,
 			String lockingUser = getModel().tryToLock(f);
 			if (lockingUser != null) {
 				getFrame().getController().informationMessage(
-						Tools.expandPlaceholders(
+						expander.expand(
 								getText("map_locked_by_save_as"), f.getName(),
 								lockingUser));
 				return false;
