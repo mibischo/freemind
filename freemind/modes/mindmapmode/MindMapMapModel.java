@@ -651,7 +651,7 @@ public class MindMapMapModel extends MapAdapter {
 					System.currentTimeMillis()).getBytes());
 			semaphoreOutputStream.close();
 			semaphoreOutputStream = null;
-			Tools.setHidden(inSemaphoreFile, true, /* synchro= */false); // Exception
+			setHidden(inSemaphoreFile, true, /* synchro= */false); // Exception
 																			// free
 			if (lock != null)
 				lock.release();
@@ -717,7 +717,7 @@ public class MindMapMapModel extends MapAdapter {
 				return;
 			}
 			try {
-				Tools.setHidden(lockedSemaphoreFile, false, /* synchro= */true); // Exception
+				setHidden(lockedSemaphoreFile, false, /* synchro= */true); // Exception
 																					// free
 				// ^ We unhide the file before overwriting because JavaRE1.4.2
 				// does
@@ -726,6 +726,32 @@ public class MindMapMapModel extends MapAdapter {
 				// I guess.
 
 				writeSemaphoreFile(lockedSemaphoreFile);
+			} catch (Exception e) {
+				freemind.main.Resources.getInstance().logException(e);
+			}
+		}
+	}
+	
+	private void setHidden(File file, boolean hidden,
+			boolean synchronously) {
+		// According to Web articles, UNIX systems do not have attribute hidden
+		// in general, rather, they consider files starting with . as hidden.
+		String osNameStart = System.getProperty("os.name").substring(0, 3);
+		if (osNameStart.equals("Win")) {
+			try {
+				Runtime.getRuntime().exec(
+						"attrib " + (hidden ? "+" : "-") + "H \""
+								+ file.getAbsolutePath() + "\"");
+				// Synchronize the effect, because it is asynchronous in
+				// general.
+				if (!synchronously) {
+					return;
+				}
+				int timeOut = 10;
+				while (file.isHidden() != hidden && timeOut > 0) {
+					Thread.sleep(10/* miliseconds */);
+					timeOut--;
+				}
 			} catch (Exception e) {
 				freemind.main.Resources.getInstance().logException(e);
 			}

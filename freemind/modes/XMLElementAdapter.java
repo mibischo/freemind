@@ -442,7 +442,7 @@ public abstract class XMLElementAdapter extends XMLElement {
 				node.setHistoryInformation(new HistoryInformation());
 			}
 			node.getHistoryInformation().setLastModifiedAt(
-					Tools.xmlToDate(sValue));
+					xmlTransformator.xmlToDate(sValue));
 		} else if (name.equals("FOLDED")) {
 			if (sValue.equals("true")) {
 				node.setFolded(true);

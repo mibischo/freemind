@@ -112,6 +112,7 @@ import freemind.controller.actions.generated.instance.XmlAction;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.tools.Base64Coding;
+import freemind.tools.Holders;
 import freemind.view.mindmapview.NodeView;
 
 /**
@@ -405,39 +406,8 @@ public class Tools {
 				.equals(string2.toLowerCase()))
 				|| (string1 == null && string2 == null);
 	}
-
-	public static boolean safeEquals(Color color1, Color color2) {
-		return (color1 != null && color2 != null && color1.equals(color2))
-				|| (color1 == null && color2 == null);
-	}
-
-	public static void setHidden(File file, boolean hidden,
-			boolean synchronously) {
-		// According to Web articles, UNIX systems do not have attribute hidden
-		// in general, rather, they consider files starting with . as hidden.
-		String osNameStart = System.getProperty("os.name").substring(0, 3);
-		if (osNameStart.equals("Win")) {
-			try {
-				Runtime.getRuntime().exec(
-						"attrib " + (hidden ? "+" : "-") + "H \""
-								+ file.getAbsolutePath() + "\"");
-				// Synchronize the effect, because it is asynchronous in
-				// general.
-				if (!synchronously) {
-					return;
-				}
-				int timeOut = 10;
-				while (file.isHidden() != hidden && timeOut > 0) {
-					Thread.sleep(10/* miliseconds */);
-					timeOut--;
-				}
-			} catch (Exception e) {
-				freemind.main.Resources.getInstance().logException(e);
-			}
-		}
-	}
-
-	public static boolean safeEquals(BooleanHolder holder, BooleanHolder holder2) {
+	
+	public static boolean safeEquals(Holders.BooleanHolder holder, Holders.BooleanHolder holder2) {
 		return (holder == null && holder2 == null)
 				|| (holder != null && holder2 != null && holder.getValue() == holder2
 						.getValue());
