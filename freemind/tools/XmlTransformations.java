@@ -102,6 +102,10 @@ public class XmlTransformations implements IXmlTransformations{
 			return new Date(System.currentTimeMillis());
 		}
 	}
+	
+	public String dateToString(Date date) {
+		return Long.toString(date.getTime());
+	}
 
 	
 	

@@ -437,21 +437,6 @@ public class Tools {
 		}
 	}
 
-	/**
-	 * Extracts a long from xml. Only useful for dates.
-	 */
-	public static Date xmlToDate(String xmlString) {
-		try {
-			return new Date(Long.valueOf(xmlString).longValue());
-		} catch (Exception e) {
-			return new Date(System.currentTimeMillis());
-		}
-	}
-
-	public static String dateToString(Date date) {
-		return Long.toString(date.getTime());
-	}
-
 	public static boolean safeEquals(BooleanHolder holder, BooleanHolder holder2) {
 		return (holder == null && holder2 == null)
 				|| (holder != null && holder2 != null && holder.getValue() == holder2

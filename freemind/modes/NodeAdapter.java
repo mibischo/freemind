@@ -1231,9 +1231,9 @@ public abstract class NodeAdapter implements MindMapNode {
 		// history information, fc, 11.4.2005
 		if (historyInformation != null) {
 			node.setAttribute(XMLElementAdapter.XML_NODE_HISTORY_CREATED_AT,
-					Tools.dateToString(getHistoryInformation().getCreatedAt()));
+					xmlTransformator.dateToString(getHistoryInformation().getCreatedAt()));
 			node.setAttribute(
-					XMLElementAdapter.XML_NODE_HISTORY_LAST_MODIFIED_AT, Tools
+					XMLElementAdapter.XML_NODE_HISTORY_LAST_MODIFIED_AT, xmlTransformator
 							.dateToString(getHistoryInformation()
 									.getLastModifiedAt()));
 		}

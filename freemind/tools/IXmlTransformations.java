@@ -24,5 +24,7 @@ public interface IXmlTransformations {
 	public boolean xmlToBoolean(String string);
 	
 	public Date xmlToDate(String xmlString);
+
+	String dateToString(Date date);
 	
 }
