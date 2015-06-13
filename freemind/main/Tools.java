@@ -436,24 +436,6 @@ public class Tools {
 		}
 	}
 
-	/**
-     */
-	public static String toBase64(byte[] byteBuffer) {
-		return new String(Base64Coding.encode64(byteBuffer));
-	}
-
-	/** Method to be called from XSLT */
-	public static String toBase64(String text) {
-		return toBase64(text.getBytes());
-	}
-
-	/**
-	 * @throws IOException
-	 */
-	public static byte[] fromBase64(String base64String) {
-		return Base64Coding.decode64(base64String);
-	}
-
 	public static String compress(String message) {
 		byte[] input = uTF8StringToByteArray(message);
 		// Create the compressor with highest level of compression
@@ -483,11 +465,11 @@ public class Tools {
 
 		// Get the compressed data
 		byte[] compressedData = bos.toByteArray();
-		return toBase64(compressedData);
+		return Base64Coding.encode64(compressedData);
 	}
 
 	public static String decompress(String compressedMessage) {
-		byte[] compressedData = fromBase64(compressedMessage);
+		byte[] compressedData = Base64Coding.decode64(compressedMessage);
 		// Create the decompressor and give it the data to compress
 		Inflater decompressor = new Inflater();
 		decompressor.setInput(compressedData);

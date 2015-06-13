@@ -39,6 +39,7 @@ import javax.imageio.ImageIO;
 import org.openstreetmap.gui.jmapviewer.Tile;
 import org.openstreetmap.gui.jmapviewer.TileController;
 
+import freemind.main.Base64Coding;
 import freemind.main.Tools;
 
 public class TileImage implements ImageObserver {
@@ -117,8 +118,7 @@ public class TileImage implements ImageObserver {
 
 	public void load(String pCodedImage) {
 		try {
-			mImage = ImageIO.read(new ByteArrayInputStream(Tools
-					.fromBase64(pCodedImage)));
+			mImage = ImageIO.read(new ByteArrayInputStream(Base64Coding.decode64(pCodedImage)));
 			mTilesPresent = false;
 			mImageCreated = true;
 		} catch (IOException e) {
@@ -141,7 +141,7 @@ public class TileImage implements ImageObserver {
 			ByteArrayOutputStream stream = new ByteArrayOutputStream();
 			ImageIO.write(mImage, "png", stream);
 			stream.close();
-			return Tools.toBase64(stream.toByteArray());
+			return Base64Coding.encode64(stream.toByteArray());
 		} catch (Exception e) {
 			freemind.main.Resources.getInstance().logException(e);
 		}

@@ -38,6 +38,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import freemind.common.TextTranslator;
+import freemind.main.Base64Coding;
 import freemind.main.FreeMind;
 import freemind.main.FreeMindMain;
 import freemind.main.Resources;
@@ -155,7 +156,7 @@ public class SignedScriptHandler {
 			instance.initSign((PrivateKey) mKeyStore.getKey(keyName, password));
 			instance.update(content.mScript.getBytes());
 			byte[] signature = instance.sign();
-			content.mSignature = Tools.toBase64(signature);
+			content.mSignature = Base64Coding.encode64(signature);
 			// System.out.println("Signed: " +content);
 			return content.toString();
 		} catch (Exception e) {
@@ -211,8 +212,7 @@ public class SignedScriptHandler {
 							.getCertificate(content.mKeyName));
 				}
 				instanceVerify.update(content.mScript.getBytes());
-				boolean verify = instanceVerify.verify(Tools
-						.fromBase64(content.mSignature));
+				boolean verify = instanceVerify.verify(Base64Coding.decode64(content.mSignature));
 				// System.out.println("Signature result: " + verify);
 				return verify;
 			} catch (Exception e) {
