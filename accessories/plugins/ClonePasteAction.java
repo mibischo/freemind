@@ -64,6 +64,8 @@ import freemind.modes.mindmapmode.actions.NodeHookAction;
 import freemind.modes.mindmapmode.actions.xml.ActionFilter;
 import freemind.modes.mindmapmode.actions.xml.ActionPair;
 import freemind.modes.mindmapmode.hooks.MindMapNodeHookAdapter;
+import freemind.tools.IListStringConverter;
+import freemind.tools.ListStringConverter;
 import freemind.view.mindmapview.NodeView;
 
 /**
@@ -78,13 +80,15 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 	/**
 	 * 
 	 */
+	private static IListStringConverter converter = new ListStringConverter();
+	
 	public ClonePasteAction() {
 	}
 
 	public void invoke(MindMapNode pNode) {
 		super.invoke(pNode);
 		Vector mindMapNodes = getMindMapNodes();
-		logger.fine("Clones for nodes: " + Tools.listToString(mindMapNodes));
+		logger.fine("Clones for nodes: " + converter.listToString(mindMapNodes));
 		// now, construct the plugin for those nodes:
 		for (Iterator itPastedNodes = mindMapNodes.iterator(); itPastedNodes
 				.hasNext();) {
@@ -698,7 +702,7 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 				MindMapNode pluginNode = (MindMapNode) it.next();
 				strings.add(printNodeId(pluginNode));
 			}
-			return Tools.listToString(strings);
+			return converter.listToString(strings);
 		}
 
 		/**
