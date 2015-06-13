@@ -69,7 +69,7 @@ import freemind.controller.NodeMouseMotionListener;
 import freemind.main.FreeMind;
 import freemind.main.Resources;
 import freemind.main.Tools;
-import freemind.main.Tools.Pair;
+import freemind.tools.Holders.Pair;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapArrowLink;
 import freemind.modes.MindMapLink;

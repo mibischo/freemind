@@ -24,7 +24,7 @@ import freemind.main.FreeMind;
 import freemind.main.FreeMindMain.StartupDoneListener;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
-import freemind.main.Tools.BooleanHolder;
+import freemind.tools.Holders.BooleanHolder;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;

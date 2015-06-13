@@ -59,7 +59,7 @@ import freemind.main.FreeMind;
 import freemind.main.FreeMindMain.VersionInformation;
 import freemind.main.Resources;
 import freemind.main.Tools;
-import freemind.main.Tools.IntHolder;
+import freemind.tools.Holders.IntHolder;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;

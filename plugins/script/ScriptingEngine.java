@@ -41,7 +41,7 @@ import freemind.main.FreeMind;
 import freemind.main.FreeMindMain;
 import freemind.main.FreeMindSecurityManager;
 import freemind.main.Tools;
-import freemind.main.Tools.BooleanHolder;
+import freemind.tools.Holders.BooleanHolder;
 import freemind.modes.MindMapNode;
 import freemind.modes.attributes.NodeAttributeTableModel;
 import freemind.modes.mindmapmode.MindMapController;

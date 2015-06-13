@@ -55,6 +55,7 @@ import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
+import freemind.tools.Holders;
 
 /**
  * @author foltin
@@ -79,7 +80,7 @@ public class EditNodeTextField extends EditNodeBase {
 	protected JComponent mParent;
 	private final JComponent mFocusListener;
 	protected static java.util.logging.Logger logger = null;
-	private Tools.IntHolder mEventSource;
+	private Holders.IntHolder mEventSource;
 	private UndoManager mUndoManager;
 
 	public EditNodeTextField(final NodeView node, final String text,
@@ -156,7 +157,7 @@ public class EditNodeTextField extends EditNodeBase {
 
 		// textField.selectAll(); // no selection on edit (PN)
 
-		mEventSource = new Tools.IntHolder();
+		mEventSource = new Holders.IntHolder();
 		mEventSource.setValue(EDIT);
 
 		// create the listener

@@ -47,6 +47,7 @@ import com.inet.jortho.SpellChecker;
 
 import freemind.main.Tools;
 import freemind.modes.ModeController;
+import freemind.tools.Holders;
 
 /**
  * @author foltin
@@ -56,7 +57,7 @@ public class EditNodeDialog extends EditNodeBase {
 	private KeyEvent firstEvent;
 
 	/** Private variable to hold the last value of the "Enter confirms" state. */
-	private static Tools.BooleanHolder booleanHolderForConfirmState;
+	private static Holders.BooleanHolder booleanHolderForConfirmState;
 
 	public EditNodeDialog(final NodeView node, final String text,
 			final KeyEvent firstEvent, ModeController controller,
@@ -124,7 +125,7 @@ public class EditNodeDialog extends EditNodeBase {
 			Tools.setLabelAndMnemonic(enterConfirms, getText("enter_confirms"));
 
 			if (booleanHolderForConfirmState == null) {
-				booleanHolderForConfirmState = new Tools.BooleanHolder();
+				booleanHolderForConfirmState = new Holders.BooleanHolder();
 				booleanHolderForConfirmState.setValue(enterConfirms
 						.isSelected());
 			} else {

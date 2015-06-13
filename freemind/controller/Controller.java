@@ -105,6 +105,7 @@ import freemind.modes.mindmapmode.attributeactors.AttributeManagerDialog;
 import freemind.preferences.FreemindPropertyListener;
 import freemind.preferences.layout.OptionPanel;
 import freemind.preferences.layout.OptionPanel.OptionPanelFeedback;
+import freemind.tools.Holders;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
 
@@ -1211,7 +1212,7 @@ public class Controller implements MapModuleChangeObserver {
 			userZoom.setEditable(!fitToPage.isSelected());
 			final JButton okButton = new JButton();
 			Tools.setLabelAndMnemonic(okButton, getResourceString("ok"));
-			final Tools.IntHolder eventSource = new Tools.IntHolder();
+			final Holders.IntHolder eventSource = new Holders.IntHolder();
 			JPanel panel = new JPanel();
 
 			GridBagLayout gridbag = new GridBagLayout();

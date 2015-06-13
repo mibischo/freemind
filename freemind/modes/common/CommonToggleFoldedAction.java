@@ -32,6 +32,7 @@ import javax.swing.AbstractAction;
 import freemind.main.Tools;
 import freemind.modes.ControllerAdapter;
 import freemind.modes.MindMapNode;
+import freemind.tools.Holders;
 
 /**
  * @author foltin
@@ -86,7 +87,7 @@ public class CommonToggleFoldedAction extends AbstractAction {
 		 * Retrieve the information whether or not all nodes have the same
 		 * folding state.
 		 */
-		Tools.BooleanHolder state = null;
+		Holders.BooleanHolder state = null;
 		boolean allNodeHaveSameFoldedStatus = true;
 		for (ListIterator it = iterator; it.hasNext();) {
 			MindMapNode node = (MindMapNode) it.next();
@@ -95,7 +96,7 @@ public class CommonToggleFoldedAction extends AbstractAction {
 				continue;
 			}
 			if (state == null) {
-				state = new Tools.BooleanHolder();
+				state = new Holders.BooleanHolder();
 				state.setValue(node.isFolded());
 			} else {
 				if (node.isFolded() != state.getValue()) {

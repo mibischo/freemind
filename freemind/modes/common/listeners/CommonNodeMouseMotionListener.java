@@ -32,6 +32,7 @@ import javax.swing.SwingUtilities;
 import freemind.controller.NodeMouseMotionListener.NodeMouseMotionObserver;
 import freemind.main.Tools;
 import freemind.modes.ModeController;
+import freemind.tools.Holders;
 import freemind.view.mindmapview.MainView;
 import freemind.view.mindmapview.NodeView;
 
@@ -47,10 +48,10 @@ public class CommonNodeMouseMotionListener implements NodeMouseMotionObserver {
 	private static java.util.logging.Logger logger;
 
 	/** time in ms, overwritten by property time_for_delayed_selection */
-	private static Tools.IntHolder timeForDelayedSelection;
+	private static Holders.IntHolder timeForDelayedSelection;
 
 	/** overwritten by property delayed_selection_enabled */
-	private static Tools.BooleanHolder delayedSelectionEnabled;
+	private static Holders.BooleanHolder delayedSelectionEnabled;
 
 	/**
 	 * And a static method to reread this holder. This is used when the
@@ -58,9 +59,9 @@ public class CommonNodeMouseMotionListener implements NodeMouseMotionObserver {
 	 */
 	public void updateSelectionMethod() {
 		if (timeForDelayedSelection == null) {
-			timeForDelayedSelection = new Tools.IntHolder();
+			timeForDelayedSelection = new Holders.IntHolder();
 		}
-		delayedSelectionEnabled = new Tools.BooleanHolder();
+		delayedSelectionEnabled = new Holders.BooleanHolder();
 		delayedSelectionEnabled.setValue(c.getFrame()
 				.getProperty("selection_method")
 				.equals("selection_method_direct") ? false : true);
