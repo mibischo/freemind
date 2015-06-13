@@ -204,7 +204,7 @@ public class ScriptingRegistration implements HookRegistration,
 		/* Is there a startup groovy script? */
 		String startupScriptFile = System.getProperty("startup_groovy_script");
 		if (startupScriptFile != null && !startupScriptFile.isEmpty()) {
-			String expandFileName = Tools.expandFileName(startupScriptFile);
+			String expandFileName = expandFileName(startupScriptFile);
 			ScriptingEngine.logger.info("Starting script at " + expandFileName);
 			String scriptString = Tools.getFile(new File(expandFileName));
 			if (scriptString != null && !scriptString.isEmpty()) {
@@ -218,6 +218,17 @@ public class ScriptingRegistration implements HookRegistration,
 				ScriptingEngine.logger.warning("Starting script not found!");
 			}
 		}
+	}
+	
+	/**
+	 * Replaces a ~ in a filename with the users home directory
+	 */
+	private String expandFileName(String file) {
+		// replace ~ with the users home dir
+		if (file.startsWith("~")) {
+			file = System.getProperty("user.home") + file.substring(1);
+		}
+		return file;
 	}
 
 }

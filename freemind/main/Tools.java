@@ -155,38 +155,7 @@ public class Tools {
 		return executableExtensions.contains(getExtension(file));
 	}
 	
-	/**
-	 * Converts a String in the format "value;value;value" to a List with the
-	 * values (as strings)
-	 */
-	public static List stringToList(String string) {
-		StringTokenizer tok = new StringTokenizer(string, ";");
-		List list = new LinkedList();
-		while (tok.hasMoreTokens()) {
-			list.add(tok.nextToken());
-		}
-		return list;
-	}
-
-	public static String listToString(List list) {
-		ListIterator it = list.listIterator(0);
-		String str = new String();
-		while (it.hasNext()) {
-			str += it.next().toString() + ";";
-		}
-		return str;
-	}
-
-	/**
-	 * Replaces a ~ in a filename with the users home directory
-	 */
-	public static String expandFileName(String file) {
-		// replace ~ with the users home dir
-		if (file.startsWith("~")) {
-			file = System.getProperty("user.home") + file.substring(1);
-		}
-		return file;
-	}
+	
 
 	public static Set getAvailableFontFamilyNames() {
 		if (availableFontFamilyNames == null) {
