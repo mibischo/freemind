@@ -23,6 +23,8 @@
 
 package freemind.modes.mindmapmode.actions;
 
+import java.awt.Color;
+
 import javax.swing.AbstractAction;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -45,7 +47,7 @@ public abstract class FreemindAction extends AbstractAction {
 	private Icon actionIcon;
 	private static Icon selectedIcon;
 	private final MindMapController pMindMapController;
-	protected IXmlTransformations xmlTransformator;
+	protected IXmlTransformations xmlTransformator = new XmlTransformations();
 
 	/**
 	 * @param title
@@ -56,8 +58,15 @@ public abstract class FreemindAction extends AbstractAction {
 		super(title, icon);
 		this.actionIcon = icon;
 		this.pMindMapController = mindMapController;
-		this.xmlTransformator = new XmlTransformations();
-
+		
+	}
+	
+	public FreemindAction(String title,
+			MindMapController mindMapController) {
+		super(title);
+		this.actionIcon = null;
+		this.pMindMapController = mindMapController;
+		
 	}
 
 	/**
@@ -82,4 +91,11 @@ public abstract class FreemindAction extends AbstractAction {
 	public MindMapController getMindMapController() {
 		return pMindMapController;
 	}
+	
+	protected boolean safeEquals(Color color1, Color color2) {
+		return (color1 != null && color2 != null && color1.equals(color2))
+				|| (color1 == null && color2 == null);
+	}
+	
+	
 }

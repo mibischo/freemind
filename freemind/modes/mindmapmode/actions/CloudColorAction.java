@@ -102,7 +102,7 @@ public class CloudColorAction extends FreemindAction implements ActorXml,
 			if (node.getCloud() != null) {
 				selectedColor = node.getCloud().getColor();
 			}
-			if (!Tools.safeEquals(color, selectedColor)) {
+			if (!safeEquals(color, selectedColor)) {
 				((LineAdapter) node.getCloud()).setColor(color); // null
 				controller.nodeChanged(node);
 			}

@@ -63,7 +63,7 @@ public class NodeColorAction extends FreemindAction implements ActorXml {
 	}
 
 	public void setNodeColor(MindMapNode node, Color color) {
-		if (Tools.safeEquals(color, node.getColor())) {
+		if (safeEquals(color, node.getColor())) {
 			return;
 		}
 		NodeColorFormatAction doAction = createNodeColorFormatAction(node,
@@ -89,7 +89,7 @@ public class NodeColorAction extends FreemindAction implements ActorXml {
 			MindMapNode node = controller.getNodeFromID(nodeColorAction
 					.getNode());
 			Color oldColor = node.getColor();
-			if (!Tools.safeEquals(color, oldColor)) {
+			if (safeEquals(color, oldColor)) {
 				node.setColor(color); // null
 				controller.nodeChanged(node);
 			}

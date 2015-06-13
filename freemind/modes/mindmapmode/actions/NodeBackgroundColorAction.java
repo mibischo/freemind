@@ -107,7 +107,7 @@ public class NodeBackgroundColorAction extends FreemindAction implements
 			MindMapNode node = controller.getNodeFromID(nodeColorAction
 					.getNode());
 			Color oldColor = node.getBackgroundColor();
-			if (!Tools.safeEquals(color, oldColor)) {
+			if (safeEquals(color, oldColor)) {
 				node.setBackgroundColor(color); // null
 				controller.nodeChanged(node);
 			}
