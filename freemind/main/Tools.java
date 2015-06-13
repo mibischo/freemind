@@ -214,11 +214,6 @@ public class Tools {
 				.trim() : "";
 	}
 
-	public static String removeExtension(String s) {
-		int i = s.lastIndexOf('.');
-		return (i > 0 && i < s.length() - 1) ? s.substring(0, i) : "";
-	}
-
 	public static boolean isAbsolutePath(String path) {
 		// On Windows, we cannot just ask if the file name starts with file
 		// separator.

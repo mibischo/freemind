@@ -92,7 +92,7 @@ public class ImportExplorerFavoritesAction extends AbstractAction {
 					favoritesFound = true;
 					try {
 						MindMapNode node = addNode(target,
-								Tools.removeExtension(list[i].getName()));
+								removeExtension(list[i].getName()));
 						// For each line: Is it URL? => Set it as link
 						BufferedReader in = new BufferedReader(new FileReader(
 								list[i]));
@@ -123,6 +123,16 @@ public class ImportExplorerFavoritesAction extends AbstractAction {
 				target.getChildCount(), target.isNewChildLeft());
 		controller.setNodeText(node, nodeContent);
 		return node;
+	}
+	
+	/**
+	 * Helper moved here from Tools
+	 * @param s
+	 * @return
+	 */
+	private String removeExtension(String s) {
+		int i = s.lastIndexOf('.');
+		return (i > 0 && i < s.length() - 1) ? s.substring(0, i) : "";
 	}
 
 }
