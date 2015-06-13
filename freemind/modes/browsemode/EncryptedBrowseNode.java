@@ -29,7 +29,8 @@ import java.util.HashMap;
 import javax.swing.ImageIcon;
 
 import freemind.main.FreeMindMain;
-import freemind.main.Tools.SingleDesEncrypter;
+import freemind.encryption.IDesEncrypter;
+import freemind.encryption.SingleDesEncrypter;
 import freemind.main.XMLParseException;
 import freemind.modes.ControllerAdapter;
 import freemind.modes.MapAdapter;
@@ -56,6 +57,8 @@ public class EncryptedBrowseNode extends BrowseNodeModel {
 	static protected java.util.logging.Logger logger;
 
 	private final ModeController mModeController;
+	
+	private IDesEncrypter encrypter;
 
 	/**
 	 */
@@ -99,7 +102,7 @@ public class EncryptedBrowseNode extends BrowseNodeModel {
 		if (pwdDialog.getResult() == EnterPasswordDialog.CANCEL) {
 			return;
 		}
-		SingleDesEncrypter encrypter = new SingleDesEncrypter(
+		encrypter = new SingleDesEncrypter(
 				pwdDialog.getPassword());
 		// Decrypt
 		String decrypted = encrypter.decrypt(encryptedContent);

@@ -31,7 +31,8 @@ import javax.swing.tree.MutableTreeNode;
 
 import freemind.main.FreeMindMain;
 import freemind.main.HtmlTools;
-import freemind.main.Tools.SingleDesEncrypter;
+import freemind.encryption.IDesEncrypter;
+import freemind.encryption.SingleDesEncrypter;
 import freemind.main.XMLElement;
 import freemind.modes.MindIcon;
 import freemind.modes.MindMap;
@@ -70,6 +71,8 @@ public class EncryptedMindMapNode extends MindMapNodeModel {
 	private static ImageIcon decryptedIcon;
 
 	private boolean isShuttingDown = false;
+	
+	private IDesEncrypter encrypter;
 
 	/**
      */
@@ -342,7 +345,7 @@ public class EncryptedMindMapNode extends MindMapNodeModel {
 		try {
 			// Create encrypter/decrypter class
 			// FIXME: Use char[] instead of toString.
-			SingleDesEncrypter encrypter = new SingleDesEncrypter(password);
+			encrypter = new SingleDesEncrypter(password);
 
 			// Encrypt
 			String encrypted = encrypter.encrypt(childXml.toString());
@@ -357,7 +360,7 @@ public class EncryptedMindMapNode extends MindMapNodeModel {
 	 * @return null if the password is wrong.
 	 */
 	private String decryptXml(String encryptedString, StringBuffer pwd) {
-		SingleDesEncrypter encrypter = new SingleDesEncrypter(pwd);
+		encrypter = new SingleDesEncrypter(pwd);
 
 		// // Decrypt
 		String decrypted = encrypter.decrypt(encryptedString);
