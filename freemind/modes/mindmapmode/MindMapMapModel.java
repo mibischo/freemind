@@ -22,6 +22,7 @@ package freemind.modes.mindmapmode;
 
 import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.GraphicsEnvironment;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -493,7 +494,7 @@ public class MindMapMapModel extends MapAdapter {
 			}
 		}
 		if (reader == null) {
-			if (pAskUserBeforeUpdate && !Tools.isHeadless()) {
+			if (pAskUserBeforeUpdate && !isHeadless()) {
 				int showResult = new OptionalDontShowMeAgainDialog(
 						mModeController.getFrame().getJFrame(),
 						mModeController.getSelectedView(),
@@ -548,6 +549,14 @@ public class MindMapMapModel extends MapAdapter {
 			}
 		}
 	}
+	
+	/**
+	 * @return
+	 */
+	private boolean isHeadless() {
+		return GraphicsEnvironment.getLocalGraphicsEnvironment().isHeadless();
+	}
+
 	
 	/**
 	 * Creates a default reader that just reads the given file.
