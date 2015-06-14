@@ -50,6 +50,7 @@ import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.Socket;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.text.MessageFormat;
 import java.util.Arrays;
 import java.util.Collections;
@@ -92,6 +93,7 @@ import freemind.main.FreeMindStarter.ProxyAuthenticator;
 import freemind.modes.ModeController;
 import freemind.preferences.FreemindPropertyListener;
 import freemind.tools.Compression;
+import freemind.tools.Constants;
 import freemind.tools.ICompression;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
@@ -968,7 +970,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 //				for (int i = 0; i < languages.length; i++) {
 //					System.out.println(new File("dictionary_" + languages[i] + ".ortho").exists());
 //				}
-				String decodedPath = Tools.getFreeMindBasePath();
+				String decodedPath = getFreeMindBasePath();
 				URL url = null;
 				if (new File (decodedPath).exists()) {
 					url = new URL("file", null, decodedPath);
@@ -981,6 +983,25 @@ public class FreeMind extends JFrame implements FreeMindMain {
 				
 			}
 		}
+	}
+	
+	private String getFreeMindBasePath()
+			throws UnsupportedEncodingException {
+		String path = FreeMindStarter.class.getProtectionDomain()
+				.getCodeSource().getLocation().getPath();
+		String decodedPath = URLDecoder.decode(path, "UTF-8");
+		logger.info("Path: " + decodedPath);
+		if (decodedPath.endsWith(Constants.CONTENTS_JAVA_FREEMIND_JAR)) {
+			decodedPath = decodedPath.substring(0, decodedPath.length()
+					- Constants.CONTENTS_JAVA_FREEMIND_JAR.length());
+			decodedPath = decodedPath + Constants.FREE_MIND_APP_CONTENTS_RESOURCES_JAVA;
+			logger.info("macPath: " + decodedPath);
+		} else if (decodedPath.endsWith(Constants.FREEMIND_LIB_FREEMIND_JAR)) {
+			decodedPath = decodedPath.substring(0, decodedPath.length()
+					- Constants.FREEMIND_LIB_FREEMIND_JAR.length());
+			logger.info("reducded Path: " + decodedPath);
+		}
+		return decodedPath;
 	}
 
 	private void setupProxy() {
