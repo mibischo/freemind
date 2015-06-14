@@ -92,20 +92,11 @@ public class Tools {
 	 * 
 	 */
 	
-
 	private static java.util.logging.Logger logger = null;
 	static {
 		logger = freemind.main.Resources.getInstance().getLogger("Tools");
 	}
 
-	/**
-	 * This is a correction of a method getFile of a class URL. Namely, on
-	 * Windows it returned file paths like /C: etc., which are not valid on
-	 * Windows. This correction is heuristic to a great extend. One of the
-	 * reasons is that file:// is basically no protocol at all, but rather
-	 * something every browser and every system uses slightly differently.
-	 */
-	
 	/**
 	 * Tests a string to be equals with "true".
 	 * 
@@ -211,25 +202,6 @@ public class Tools {
 		}
 		pVector.set(dst, pVector.set(src, pVector.get(dst)));
 	}
-
-	
-//	public static void addFocusPrintTimer() {
-//		Timer timer = new Timer(1000, new ActionListener() {
-//
-//			public void actionPerformed(ActionEvent pE) {
-//				logger.info("Component: "
-//						+ KeyboardFocusManager.getCurrentKeyboardFocusManager()
-//								.getFocusOwner()
-//						+ ", Window: "
-//						+ KeyboardFocusManager.getCurrentKeyboardFocusManager()
-//								.getFocusedWindow());
-//			}
-//		});
-//		timer.start();
-//
-//	}
-
-	
 
 	public static void correctJSplitPaneKeyMap() {
 		InputMap map = (InputMap) UIManager.get("SplitPane.ancestorInputMap");
