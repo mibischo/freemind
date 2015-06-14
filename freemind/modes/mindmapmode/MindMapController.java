@@ -22,6 +22,7 @@ package freemind.modes.mindmapmode;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.EventQueue;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
@@ -45,6 +46,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Collections;
@@ -2310,8 +2312,25 @@ public class MindMapController extends ControllerAdapter implements
 	public boolean mapSourceChanged(MindMap pMap) throws Exception {
 		// ask the user, if he wants to reload the map.
 		MapSourceChangeDialog runnable = new MapSourceChangeDialog();
-		Tools.invokeAndWait(runnable);
+		invokeAndWait(runnable);
 		return runnable.getReturnValue();
+	}
+	
+	/**
+	 * Call this method, if you don't know, if you are in the event thread or
+	 * not. It checks this and calls the invokeandwait or the runnable directly.
+	 * 
+	 * @param pRunnable
+	 * @throws InterruptedException
+	 * @throws InvocationTargetException
+	 */
+	private void invokeAndWait(Runnable pRunnable)
+			throws InvocationTargetException, InterruptedException {
+		if (EventQueue.isDispatchThread()) {
+			pRunnable.run();
+		} else {
+			EventQueue.invokeAndWait(pRunnable);
+		}
 	}
 
 	public void setNodeHookFactory(HookFactory pNodeHookFactory) {

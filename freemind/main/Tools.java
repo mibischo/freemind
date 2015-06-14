@@ -124,16 +124,12 @@ public class Tools {
 	/**
 	 * 
 	 */
-	public static final String FREEMIND_LIB_FREEMIND_JAR = "lib/freemind.jar";
+	
 
 	private static java.util.logging.Logger logger = null;
 	static {
 		logger = freemind.main.Resources.getInstance().getLogger("Tools");
 	}
-
-	public static final String CONTENTS_JAVA_FREEMIND_JAR = "Contents/Java/freemind.jar";
-
-	public static final String FREE_MIND_APP_CONTENTS_RESOURCES_JAVA = "Contents/Resources/Java/";
 
 	// public static final Set executableExtensions = new HashSet ({ "exe",
 	// "com", "vbs" });
@@ -1206,22 +1202,7 @@ public class Tools {
 		return returnValue;
 	}
 
-	/**
-	 * Call this method, if you don't know, if you are in the event thread or
-	 * not. It checks this and calls the invokeandwait or the runnable directly.
-	 * 
-	 * @param pRunnable
-	 * @throws InterruptedException
-	 * @throws InvocationTargetException
-	 */
-	public static void invokeAndWait(Runnable pRunnable)
-			throws InvocationTargetException, InterruptedException {
-		if (EventQueue.isDispatchThread()) {
-			pRunnable.run();
-		} else {
-			EventQueue.invokeAndWait(pRunnable);
-		}
-	}
+	
 
 	
 
