@@ -68,6 +68,7 @@ import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.modes.mindmapmode.MindMapNodeModel;
 import freemind.modes.mindmapmode.actions.xml.ActionPair;
 import freemind.modes.mindmapmode.actions.xml.ActorXml;
+import freemind.tools.RelativeUrlConverter;
 
 public class PasteAction extends AbstractAction implements ActorXml {
 
@@ -253,7 +254,7 @@ public class PasteAction extends AbstractAction implements ActorXml {
 				MindMapNode node = mMindMapController.newNode(file.getName(),
 						target.getMap());
 				node.setLeft(isLeft);
-				node.setLink(Tools.fileToRelativeUrlString(file,
+				node.setLink(RelativeUrlConverter.fileToRelativeUrlString(file,
 						mMindMapController.getModel().getFile()));
 				insertNodeInto((MindMapNodeModel) node, target, asSibling,
 						isLeft, false);

@@ -38,6 +38,7 @@ import freemind.main.Tools;
 import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.tools.OsHelper;
 import freemind.tools.ReaderProvider;
+import freemind.tools.RelativeUrlConverter;
 
 /**
  * @author foltin
@@ -195,7 +196,7 @@ public class ToolsTests extends FreeMindTestBase {
 
 	protected void testCorrectRelativism(File input, String expected,
 			File mapFile) throws MalformedURLException {
-		String relative = Tools.fileToRelativeUrlString(input, mapFile);
+		String relative = RelativeUrlConverter.fileToRelativeUrlString(input, mapFile);
 		assertEquals("Correct relative result", expected, relative);
 		URL u = new URL(Tools.fileToUrl(mapFile), relative);
 		URL e = Tools.fileToUrl(input);

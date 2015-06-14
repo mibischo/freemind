@@ -37,6 +37,7 @@ import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.modes.mindmapmode.MindMapNodeModel;
 import freemind.tools.FileExtensions;
+import freemind.tools.RelativeUrlConverter;
 
 /** */
 public class ExportBranchAction extends AbstractAction {
@@ -109,7 +110,7 @@ public class ExportBranchAction extends AbstractAction {
 			 */
 			MindMapNodeModel parent = (MindMapNodeModel) node.getParentNode();
 			// set a link from the new root to the old map
-			String linkToNewMapString = Tools.fileToRelativeUrlString(
+			String linkToNewMapString = RelativeUrlConverter.fileToRelativeUrlString(
 					mMindMapController.getModel().getFile(), chosenFile);
 			mMindMapController.setLink(node, linkToNewMapString);
 			int nodePosition = parent.getChildPosition(node);
@@ -130,7 +131,7 @@ public class ExportBranchAction extends AbstractAction {
 			// TODO: Keep formatting of node.
 			mMindMapController.setNodeText(newNode, node.getText());
 
-			String linkString = Tools.fileToRelativeUrlString(chosenFile, mMindMapController.getModel().getFile());
+			String linkString = RelativeUrlConverter.fileToRelativeUrlString(chosenFile, mMindMapController.getModel().getFile());
 			mMindMapController.setLink(newNode, linkString);
 			mMindMapController.newMap(map);
 			// old map should not be save automatically!!

@@ -220,6 +220,7 @@ import freemind.modes.mindmapmode.listeners.MindMapNodeMotionListener;
 import freemind.tools.FileExtensions;
 import freemind.tools.OsHelper;
 import freemind.tools.ReaderProvider;
+import freemind.tools.RelativeUrlConverter;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MainView;
 import freemind.view.mindmapview.MapView;
@@ -1715,7 +1716,7 @@ public class MindMapController extends ControllerAdapter implements
 		int returnVal = chooser.showOpenDialog(getFrame().getContentPane());
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
 			input = chooser.getSelectedFile();
-			relative = Tools.fileToRelativeUrlString(input, getMap().getFile());
+			relative = RelativeUrlConverter.fileToRelativeUrlString(input, getMap().getFile());
 		}
 		return relative;
 	}

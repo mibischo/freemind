@@ -58,6 +58,7 @@ import freemind.modes.MindIcon;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
+import freemind.tools.RelativeUrlConverter;
 
 /**
  * @author foltin
@@ -351,7 +352,7 @@ public class ExportWithXSLT extends ExportHook {
 			Transformer trans = transFact.newTransformer(xsltSource);
 			// set parameter:
 			// relative directory <filename>_files
-			trans.setParameter("destination_dir", Tools.fileToRelativeUrlString(new File(resultFile.getAbsolutePath()
+			trans.setParameter("destination_dir", RelativeUrlConverter.fileToRelativeUrlString(new File(resultFile.getAbsolutePath()
 					+ "_files/"), resultFile) + "/");
 			trans.setParameter("area_code", areaCode);
 			trans.setParameter("folding_type", getController().getFrame()
