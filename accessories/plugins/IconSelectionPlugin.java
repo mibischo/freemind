@@ -30,6 +30,7 @@ import java.util.Vector;
 
 import javax.swing.Action;
 
+import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMind;
 import freemind.main.Tools;
 import freemind.modes.MindIcon;
@@ -71,7 +72,7 @@ public class IconSelectionPlugin extends MindMapNodeHookAdapter {
 		final MapView mapView = controller.getView();
 		mapView.scrollNodeToVisible(focussed, 0);
 		selectionDialog.pack();
-		Tools.setDialogLocationRelativeTo(selectionDialog, focussed);
+		AbstractDialog.setDialogLocationRelativeTo(selectionDialog, focussed);
 		selectionDialog.setModal(true);
 		selectionDialog.show();
 		// process result:

@@ -1,8 +1,14 @@
 package freemind.dialog;
 
+import java.awt.Component;
+import java.awt.Container;
 import java.awt.Dialog;
+import java.awt.Dimension;
 import java.awt.Frame;
 import java.awt.GraphicsConfiguration;
+import java.awt.Insets;
+import java.awt.Point;
+import java.awt.Toolkit;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 
@@ -12,7 +18,9 @@ import javax.swing.Action;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.KeyStroke;
+
 import freemind.tools.OsHelper;
+import freemind.view.mindmapview.NodeView;
 
 public abstract class AbstractDialog extends JDialog {
 	
@@ -292,6 +300,93 @@ public abstract class AbstractDialog extends JDialog {
 	
 	public static String removeMnemonic(String rawLabel) {
 		return rawLabel.replaceFirst("&([^ ])", "$1");
+	}
+	
+
+	public static void setDialogLocationRelativeTo(JDialog dialog, Component c) {
+		if (c == null) {
+			// perhaps, the component is not yet existing.
+			return;
+		}
+		if (c instanceof NodeView) {
+			final NodeView nodeView = (NodeView) c;
+			nodeView.getMap().scrollNodeToVisible(nodeView);
+			c = nodeView.getMainView();
+		}
+		final Point compLocation = c.getLocationOnScreen();
+		final int cw = c.getWidth();
+		final int ch = c.getHeight();
+
+		final Container parent = dialog.getParent();
+		final Point parentLocation = parent.getLocationOnScreen();
+		final int pw = parent.getWidth();
+		final int ph = parent.getHeight();
+
+		final int dw = dialog.getWidth();
+		final int dh = dialog.getHeight();
+
+		final Toolkit defaultToolkit = Toolkit.getDefaultToolkit();
+		final Dimension screenSize = defaultToolkit.getScreenSize();
+		final Insets screenInsets = defaultToolkit.getScreenInsets(dialog
+				.getGraphicsConfiguration());
+
+		final int minX = Math.max(parentLocation.x, screenInsets.left);
+		final int minY = Math.max(parentLocation.y, screenInsets.top);
+
+		final int maxX = Math.min(parentLocation.x + pw, screenSize.width
+				- screenInsets.right);
+		final int maxY = Math.min(parentLocation.y + ph, screenSize.height
+				- screenInsets.bottom);
+
+		int dx, dy;
+
+		if (compLocation.x + cw < minX) {
+			dx = minX;
+		} else if (compLocation.x > maxX) {
+			dx = maxX - dw;
+		} else // component X on screen
+		{
+			final int leftSpace = compLocation.x - minX;
+			final int rightSpace = maxX - (compLocation.x + cw);
+			if (leftSpace > rightSpace) {
+				if (leftSpace > dw) {
+					dx = compLocation.x - dw;
+				} else {
+					dx = minX;
+				}
+			} else {
+				if (rightSpace > dw) {
+					dx = compLocation.x + cw;
+				} else {
+					dx = maxX - dw;
+				}
+			}
+		}
+
+		if (compLocation.y + ch < minY) {
+			dy = minY;
+		} else if (compLocation.y > maxY) {
+			dy = maxY - dh;
+		} else // component Y on screen
+		{
+			final int topSpace = compLocation.y - minY;
+			final int bottomSpace = maxY - (compLocation.y + ch);
+			if (topSpace > bottomSpace) {
+				if (topSpace > dh) {
+					dy = compLocation.y - dh;
+				} else {
+					dy = minY;
+				}
+			} else {
+				if (bottomSpace > dh) {
+					dy = compLocation.y + ch;
+				} else {
+					dy = maxY - dh;
+				}
+			}
+		}
+
+		dialog.setLocation(dx, dy);
 	}
 
 }

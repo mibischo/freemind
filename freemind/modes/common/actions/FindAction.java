@@ -206,7 +206,7 @@ public class FindAction extends AbstractAction {
 				new Insets(5, 5, 0, 0), 0, 0));
 		mDialog.getRootPane().setDefaultButton(okButton);
 		mDialog.pack();
-		Tools.setDialogLocationRelativeTo(mDialog, controller.getSelectedView());
+		AbstractDialog.setDialogLocationRelativeTo(mDialog, controller.getSelectedView());
 		mDialog.setVisible(true);
 	}
 

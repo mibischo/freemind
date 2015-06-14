@@ -43,10 +43,11 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.border.BevelBorder;
 
+import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMindMain;
 import freemind.modes.IconInformation;
 
-public class IconSelectionPopupDialog extends JDialog implements KeyListener,
+public class IconSelectionPopupDialog extends AbstractDialog implements KeyListener,
 		MouseListener {
 	private Vector icons;
 	private int result;

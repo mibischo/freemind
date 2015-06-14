@@ -98,13 +98,6 @@ public class Tools {
 		logger = freemind.main.Resources.getInstance().getLogger("Tools");
 	}
 
-	// public static final Set executableExtensions = new HashSet ({ "exe",
-	// "com", "vbs" });
-
-	// The Java programming language provides a shortcut syntax for creating and
-	// initializing an array. Here's an example of this syntax:
-	// boolean[] answers = { true, false, true, true, false };
-
 	/**
 	 * This is a correction of a method getFile of a class URL. Namely, on
 	 * Windows it returned file paths like /C: etc., which are not valid on

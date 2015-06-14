@@ -45,6 +45,7 @@ import javax.swing.JTextArea;
 
 import com.inet.jortho.SpellChecker;
 
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
 import freemind.modes.ModeController;
 import freemind.tools.FontHelper;
@@ -332,7 +333,7 @@ public class EditNodeDialog extends EditNodeBase {
 
 		// set position
 		getView().scrollNodeToVisible(getNode(), 0);
-		Tools.setDialogLocationRelativeTo(dialog, getNode());
+		AbstractDialog.setDialogLocationRelativeTo(dialog, getNode());
 		dialog.show();
 	}
 }

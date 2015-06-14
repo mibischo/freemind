@@ -207,7 +207,7 @@ public class OptionalDontShowMeAgainDialog {
 		mDialog.getRootPane().setDefaultButton(okButton);
 		mDialog.pack();
 		if(mComponent != null) {
-			Tools.setDialogLocationRelativeTo(mDialog, mComponent);
+			AbstractDialog.setDialogLocationRelativeTo(mDialog, mComponent);
 		}
 		mDialog.setVisible(true);
 		return this;

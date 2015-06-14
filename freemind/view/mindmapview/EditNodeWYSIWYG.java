@@ -43,6 +43,7 @@ import accessories.plugins.NodeNoteRegistration.SimplyHtmlResources;
 import com.inet.jortho.SpellChecker;
 import com.lightdev.app.shtm.SHTMLPanel;
 
+import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMindMain;
 import freemind.main.HtmlTools;
 import freemind.main.Resources;
@@ -297,7 +298,7 @@ public class EditNodeWYSIWYG extends EditNodeBase {
 
 			htmlEditorWindow.pack();
 
-			Tools.setDialogLocationRelativeTo(htmlEditorWindow, node);
+			AbstractDialog.setDialogLocationRelativeTo(htmlEditorWindow, node);
 
 			String content = node.getModel().toString();
 			if (!HtmlTools.isHtmlNode(content)) {
