@@ -119,45 +119,6 @@ public class Tools {
 	public static boolean executableByExtension(String file) {
 		return executableExtensions.contains(getExtension(file));
 	}
-	
-	
-
-	public static Set getAvailableFontFamilyNames() {
-		if (availableFontFamilyNames == null) {
-			String[] envFonts = getAvailableFonts();
-			availableFontFamilyNames = new HashSet();
-			for (int i = 0; i < envFonts.length; i++) {
-				availableFontFamilyNames.add(envFonts[i]);
-			}
-			// Add this one explicitly, Java defaults to it if the font is not
-			availableFontFamilyNames.add("dialog");
-		}
-		return availableFontFamilyNames;
-	}
-
-	/**
-     */
-	private static String[] getAvailableFonts() {
-		if (sEnvFonts == null) {
-			GraphicsEnvironment gEnv = GraphicsEnvironment
-					.getLocalGraphicsEnvironment();
-			sEnvFonts = gEnv.getAvailableFontFamilyNames();
-		}
-		return sEnvFonts;
-	}
-
-	public static Vector getAvailableFontFamilyNamesAsVector() {
-		String[] envFonts = getAvailableFonts();
-		Vector availableFontFamilyNames = new Vector();
-		for (int i = 0; i < envFonts.length; i++) {
-			availableFontFamilyNames.add(envFonts[i]);
-		}
-		return availableFontFamilyNames;
-	}
-
-	public static boolean isAvailableFontFamily(String fontFamilyName) {
-		return getAvailableFontFamilyNames().contains(fontFamilyName);
-	}
 
 	/**
 	 * Returns the lowercase of the extension of a file. Example:

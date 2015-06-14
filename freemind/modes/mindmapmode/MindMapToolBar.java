@@ -34,6 +34,8 @@ import freemind.controller.FreeMindToolBar;
 import freemind.controller.StructuredMenuHolder;
 import freemind.controller.ZoomListener;
 import freemind.main.Tools;
+import freemind.tools.FontHelper;
+import freemind.tools.IFontHelper;
 
 public class MindMapToolBar extends FreeMindToolBar implements ZoomListener {
 
@@ -67,6 +69,7 @@ public class MindMapToolBar extends FreeMindToolBar implements ZoomListener {
 	private ItemListener sizeListener;
 	private JComboBox zoom;
 	private String userDefinedZoom;
+	private IFontHelper fontHelper = new FontHelper();
 
 	protected static java.util.logging.Logger logger = null;
 	
@@ -78,7 +81,7 @@ public class MindMapToolBar extends FreeMindToolBar implements ZoomListener {
 					this.getClass().getName());
 		}
 		this.setRollover(true);
-		fonts = new FreeMindComboBox(Tools.getAvailableFontFamilyNamesAsVector());
+		fonts = new FreeMindComboBox(fontHelper.getAvailableFontFamilyNamesAsVector());
 		fonts.setFocusable(false);
 		size = new FreeMindComboBox(sizes);
 		size.setFocusable(false);

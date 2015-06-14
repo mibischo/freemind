@@ -38,6 +38,9 @@ import javax.swing.JProgressBar;
 import javax.swing.JRootPane;
 import javax.swing.SwingUtilities;
 
+import freemind.tools.FontHelper;
+import freemind.tools.IFontHelper;
+
 /**
  * Class to put a splash during launching the application.
  */
@@ -53,6 +56,7 @@ public class FreeMindSplashModern extends JFrame implements IFreeMindSplash {
 		private long mTotalTime = 0;
 		private String lastTaskId = null;
 		private JLabel mImageJLabel = null;
+		
 
 		public void progress(final int act, String messageId, Object[] pMessageParameters) {
 			MessageFormat formatter = new MessageFormat(
@@ -110,6 +114,7 @@ public class FreeMindSplashModern extends JFrame implements IFreeMindSplash {
 	private JProgressBar mProgressBar;
 	private static Logger logger;
 	private ImageIcon mIcon;
+	private IFontHelper fontHelper;
 
 	public FeedBack getFeedBack() {
 		return feedBack;
@@ -121,7 +126,7 @@ public class FreeMindSplashModern extends JFrame implements IFreeMindSplash {
 		if (logger == null) {
 			logger = frame.getLogger(this.getClass().getName());
 		}
-
+		fontHelper = new FontHelper();
 		this.feedBack = new FeedBackImpl();
 
 		// http://www.kde-look.org/content/show.php?content=76812
@@ -142,7 +147,7 @@ public class FreeMindSplashModern extends JFrame implements IFreeMindSplash {
 					10);
 			private Font versionTextFont = null;
 			{
-				Set availableFontFamilyNames = Tools
+				Set availableFontFamilyNames = fontHelper
 						.getAvailableFontFamilyNames();
 				versionTextFont = availableFontFamilyNames
 						.contains("Century Gothic") ? new Font(
