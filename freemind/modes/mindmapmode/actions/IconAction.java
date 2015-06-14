@@ -218,7 +218,7 @@ public class IconAction extends FreemindAction implements ActorXml,
 		final String keystrokeResourceName = icon.getKeystrokeResourceName();
 		final String keyStrokeDescription = getMindMapController().getFrame()
 				.getAdjustableProperty(keystrokeResourceName);
-		return Tools.getKeyStroke(keyStrokeDescription);
+		return getKeyStroke(keyStrokeDescription);
 	}
 
 	public String getDescription() {

@@ -148,17 +148,6 @@ public class Tools {
 		return inputString;
 	}
 
-	public static KeyStroke getKeyStroke(final String keyStrokeDescription) {
-		if (keyStrokeDescription == null) {
-			return null;
-		}
-		final KeyStroke keyStroke = KeyStroke
-				.getKeyStroke(keyStrokeDescription);
-		if (keyStroke != null)
-			return keyStroke;
-		return KeyStroke.getKeyStroke("typed " + keyStrokeDescription);
-	}
-
 	public static void restoreAntialiasing(Graphics2D g, Object renderingHint) {
 		if (RenderingHints.KEY_ANTIALIASING.isCompatibleValue(renderingHint)) {
 			g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, renderingHint);

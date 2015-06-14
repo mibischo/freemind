@@ -28,6 +28,7 @@ import java.awt.Color;
 import javax.swing.AbstractAction;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.KeyStroke;
 
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.actions.xml.ActorXml;
@@ -96,6 +97,18 @@ public abstract class FreemindAction extends AbstractAction {
 		return (color1 != null && color2 != null && color1.equals(color2))
 				|| (color1 == null && color2 == null);
 	}
+	
+	protected KeyStroke getKeyStroke(final String keyStrokeDescription) {
+		if (keyStrokeDescription == null) {
+			return null;
+		}
+		final KeyStroke keyStroke = KeyStroke
+				.getKeyStroke(keyStrokeDescription);
+		if (keyStroke != null)
+			return keyStroke;
+		return KeyStroke.getKeyStroke("typed " + keyStrokeDescription);
+	}
+
 	
 	
 }

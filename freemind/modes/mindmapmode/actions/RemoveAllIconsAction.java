@@ -106,7 +106,7 @@ public class RemoveAllIconsAction extends NodeGeneralAction implements
 	}
 
 	public KeyStroke getKeyStroke() {
-		return Tools.getKeyStroke(getMindMapController().getFrame()
+		return getKeyStroke(getMindMapController().getFrame()
 				.getAdjustableProperty(getKeystrokeResourceName()));
 	}
 
