@@ -218,7 +218,7 @@ public class EditServer extends Thread {
 			SwingUtilities.invokeLater(new Runnable() {
 				public void run() {
 					try {
-						Vector urls = Tools.urlStringToUrls(script);
+						Vector urls = urlStringToUrls(script);
 						for (Iterator it = urls.iterator(); it.hasNext();) {
 							URL urli = (URL) it.next();
 							mFrame.getController().getModeController()
@@ -237,6 +237,23 @@ public class EditServer extends Thread {
 			return true;
 		}
 	} // }}}
+	
+
+	private Vector/* <URL> */urlStringToUrls(String pUrls) {
+		String[] urls = pUrls.split("\n");
+		Vector ret = new Vector();
+		for (int i = 0; i < urls.length; i++) {
+			String url = urls[i];
+			try {
+				ret.add(new URL(url));
+			} catch (MalformedURLException e) {
+				freemind.main.Resources.getInstance().logException(e);
+			}
+		}
+		return ret;
+	}
+
+	
 
 	// }}}
 }
