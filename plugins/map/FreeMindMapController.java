@@ -2523,7 +2523,7 @@ public class FreeMindMapController extends JMapController implements
 			return;
 		}
 		Action[] specialKeyActions = { mZoomInAction, mZoomOutAction };
-		Tools.invokeActionsToKeyboardLayoutDependantCharacters(pEvent,
+		invokeActionsToKeyboardLayoutDependantCharacters(pEvent,
 				specialKeyActions, mMapDialog);
 		if (!pEvent.isConsumed() && !pEvent.isActionKey()
 				&& (Character.isLetter(pEvent.getKeyChar()))
@@ -2535,6 +2535,38 @@ public class FreeMindMapController extends JMapController implements
 		}
 
 	}
+	
+	/**
+	 * copied from HomePane.java 15 mai 2006
+	 * 
+	 * Sweet Home 3D, Copyright (c) 2006 Emmanuel PUYBARET / eTeks
+	 * <info@eteks.com>
+	 * 
+	 * - This listener manages accelerator keys that may require the use of
+	 * shift key depending on keyboard layout (like + - or ?)
+	 */
+	private void invokeActionsToKeyboardLayoutDependantCharacters(
+			KeyEvent pEvent, Action[] specialKeyActions, Object pObject) {
+		// on purpose without shift.
+		int modifiersMask = KeyEvent.ALT_MASK | KeyEvent.CTRL_MASK
+				| KeyEvent.META_MASK;
+		for (int i = 0; i < specialKeyActions.length; i++) {
+			Action specialKeyAction = specialKeyActions[i];
+			KeyStroke actionKeyStroke = (KeyStroke) specialKeyAction
+					.getValue(Action.ACCELERATOR_KEY);
+			if (pEvent.getKeyChar() == actionKeyStroke.getKeyChar()
+					&& (pEvent.getModifiers() & modifiersMask) == (actionKeyStroke
+							.getModifiers() & modifiersMask)
+					&& specialKeyAction.isEnabled()) {
+				specialKeyAction.actionPerformed(new ActionEvent(pObject,
+						ActionEvent.ACTION_PERFORMED, (String) specialKeyAction
+								.getValue(Action.ACTION_COMMAND_KEY)));
+				pEvent.consume();
+			}
+		}
+	}
+
+	
 
 	public void keyReleased(KeyEvent pEvent) {
 	}
