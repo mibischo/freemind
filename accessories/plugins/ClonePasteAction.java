@@ -64,6 +64,7 @@ import freemind.modes.mindmapmode.actions.NodeHookAction;
 import freemind.modes.mindmapmode.actions.xml.ActionFilter;
 import freemind.modes.mindmapmode.actions.xml.ActionPair;
 import freemind.modes.mindmapmode.hooks.MindMapNodeHookAdapter;
+import freemind.tools.IDGenerator;
 import freemind.tools.IListStringConverter;
 import freemind.tools.ListStringConverter;
 import freemind.view.mindmapview.NodeView;
@@ -300,7 +301,7 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 		}
 
 		public String generateNewCloneId(String pProposedID) {
-			return Tools.generateID(pProposedID, mCloneIdsMap, "CLONE_");
+			return IDGenerator.generate(pProposedID, mCloneIdsMap, "CLONE_");
 		}
 
 		/**

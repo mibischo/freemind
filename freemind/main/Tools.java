@@ -105,9 +105,7 @@ public class Tools {
 	// initializing an array. Here's an example of this syntax:
 	// boolean[] answers = { true, false, true, true, false };
 
-	// bug fix from Dimitri.
-	public static Random ran = new Random();
-
+	
 	public static boolean isAbsolutePath(String path) {
 		// On Windows, we cannot just ask if the file name starts with file
 		// separator.

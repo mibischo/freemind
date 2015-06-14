@@ -27,6 +27,7 @@ import java.util.ListIterator;
 import java.util.Vector;
 
 import freemind.main.Tools;
+import freemind.tools.IDGenerator;
 
 /**
  * Interface for the registry, which manages the ids of nodes and the existing
@@ -121,14 +122,14 @@ public class MindMapLinkRegistry {
 	 * labeled.
 	 */
 	public String generateUniqueID(String proposedID) {
-		return Tools.generateID(proposedID, mIdToLinks, "ID_");
+		return IDGenerator.generate(proposedID, mIdToLinks, "ID_");
 	}
 
 	/**
 	 * This can be used, if the id has to be known, before a link can be labled.
 	 */
 	public String generateUniqueLinkId(String proposedID) {
-		return Tools.generateID(proposedID, mIdToLink, "Arrow_ID_");
+		return IDGenerator.generate(proposedID, mIdToLink, "Arrow_ID_");
 	}
 
 	public String registerLinkTarget(MindMapNode pTarget) {
