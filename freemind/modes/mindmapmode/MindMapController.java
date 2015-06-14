@@ -213,6 +213,7 @@ import freemind.modes.mindmapmode.hooks.MindMapHookFactory;
 import freemind.modes.mindmapmode.listeners.MindMapMouseMotionManager;
 import freemind.modes.mindmapmode.listeners.MindMapNodeDropListener;
 import freemind.modes.mindmapmode.listeners.MindMapNodeMotionListener;
+import freemind.tools.OsHelper;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MainView;
 import freemind.view.mindmapview.MapView;
@@ -2033,7 +2034,7 @@ public class MindMapController extends ControllerAdapter implements
 		boolean extend = e.isControlDown();
 		// Fixes Cannot select multiple single nodes *
 		// https://sourceforge.net/tracker/?func=detail&atid=107118&aid=1675829&group_id=7118
-		if (Tools.isMacOsX()) {
+		if (OsHelper.isMacOsX()) {
 			extend |= e.isMetaDown();
 		}
 		boolean range = e.isShiftDown();

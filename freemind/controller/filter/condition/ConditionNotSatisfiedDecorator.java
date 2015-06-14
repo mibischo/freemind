@@ -30,6 +30,7 @@ import javax.swing.JLabel;
 
 import freemind.controller.Controller;
 import freemind.controller.filter.FilterController;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.main.XMLElement;
@@ -71,7 +72,7 @@ public class ConditionNotSatisfiedDecorator implements Condition {
 	 */
 	public JComponent getListCellRendererComponent() {
 		JCondition component = new JCondition();
-		final String not = Tools.removeMnemonic(Resources.getInstance()
+		final String not = AbstractDialog.removeMnemonic(Resources.getInstance()
 				.getResourceString("filter_not"));
 		String text = not + ' ';
 		component.add(new JLabel(text));

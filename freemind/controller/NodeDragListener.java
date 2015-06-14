@@ -34,6 +34,7 @@ import java.awt.event.InputEvent;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
+import freemind.tools.OsHelper;
 import freemind.view.mindmapview.MainView;
 
 /**
@@ -73,7 +74,7 @@ public class NodeDragListener implements DragGestureListener {
 		Cursor cursor = getCursorByAction(e.getDragAction());
 
 		int modifiersEx = e.getTriggerEvent().getModifiersEx();
-		boolean macLinkAction = Tools.isMacOsX()
+		boolean macLinkAction = OsHelper.isMacOsX()
 				&& ((modifiersEx & InputEvent.BUTTON1_DOWN_MASK) != 0)
 				&& e.getTriggerEvent().isMetaDown();
 		boolean otherOsLinkAction = (modifiersEx & InputEvent.BUTTON3_DOWN_MASK) != 0;

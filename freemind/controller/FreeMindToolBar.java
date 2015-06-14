@@ -29,7 +29,9 @@ import javax.swing.Action;
 import javax.swing.JButton;
 import javax.swing.JToolBar;
 
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
+import freemind.tools.OsHelper;
 
 /**
  * @author Stefan Zechmeister
@@ -72,7 +74,7 @@ public class FreeMindToolBar extends JToolBar {
 	public JButton add(Action arg0) {
 		final Object actionName = arg0.getValue(Action.NAME);
 		arg0.putValue(Action.SHORT_DESCRIPTION,
-				Tools.removeMnemonic(actionName.toString()));
+				AbstractDialog.removeMnemonic(actionName.toString()));
 		JButton returnValue = super.add(arg0);
 		returnValue.setName(actionName.toString());
 		returnValue.setText("");
@@ -80,7 +82,7 @@ public class FreeMindToolBar extends JToolBar {
 		returnValue.setFocusable(false);
 
 		// fc, 20.6.2004: try to make the toolbar looking good under Mac OS X.
-		if (Tools.isMacOsX()) {
+		if (OsHelper.isMacOsX()) {
 			returnValue.setBorderPainted(false);
 		}
 		returnValue.setContentAreaFilled(false);

@@ -93,7 +93,7 @@ public class FilterComposerDialog extends AbstractDialog {
 		 */
 		AddConditionAction() {
 			super();
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("filter_add"));
 		}
 
@@ -147,7 +147,7 @@ public class FilterComposerDialog extends AbstractDialog {
 		 */
 		DeleteConditionAction() {
 			super();
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("filter_delete"));
 		}
 
@@ -179,7 +179,7 @@ public class FilterComposerDialog extends AbstractDialog {
 		 */
 		CreateNotSatisfiedConditionAction() {
 			super();
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("filter_not"));
 		}
 
@@ -213,7 +213,7 @@ public class FilterComposerDialog extends AbstractDialog {
 		 */
 		CreateConjunctConditionAction() {
 			super();
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("filter_and"));
 		}
 
@@ -241,7 +241,7 @@ public class FilterComposerDialog extends AbstractDialog {
 		 */
 		CreateDisjunctConditionAction() {
 			super();
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("filter_or"));
 		}
 

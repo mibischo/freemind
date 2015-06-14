@@ -46,6 +46,7 @@ import freemind.dialog.AbstractDialog;
 import freemind.main.HtmlTools;
 import freemind.main.Resources;
 import freemind.main.Tools;
+import freemind.tools.OsHelper;
 
 /**
  * @author foltin
@@ -132,7 +133,7 @@ public class StructuredMenuHolder {
 	 * @param holder
 	 */
 	private void adjustTooltips(StructuredMenuItemHolder holder) {
-		if (Tools.isMacOsX()) {
+		if (OsHelper.isMacOsX()) {
 			// remove html tags from tooltips:
 			String toolTipText = holder.getMenuItem().getToolTipText();
 			if (toolTipText != null) {
@@ -263,7 +264,7 @@ public class StructuredMenuHolder {
 			StructuredMenuListener listener = new StructuredMenuListener();
 
 			public void addMenuItem(StructuredMenuItemHolder holder) {
-				Tools.setLabelAndMnemonic(holder.getMenuItem(), null);
+				AbstractDialog.setLabelAndMnemonic(holder.getMenuItem(), null);
 				JMenuItem menuItem = holder.getMenuItem();
 				adjustMenuItem(menuItem);
 				myItem.add(menuItem);

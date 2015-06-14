@@ -95,6 +95,7 @@ import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
 import freemind.modes.common.plugins.MapNodePositionHolderBase;
 import freemind.modes.mindmapmode.MindMapController;
+import freemind.tools.OsHelper;
 import freemind.view.mindmapview.EditNodeBase;
 import freemind.view.mindmapview.EditNodeTextField;
 import freemind.view.mindmapview.NodeView;
@@ -1653,7 +1654,7 @@ public class FreeMindMapController extends JMapController implements
 			return;
 		}
 		// is button 1?
-		if (e.getButton() == MouseEvent.BUTTON1 || Tools.isMacOsX()
+		if (e.getButton() == MouseEvent.BUTTON1 || OsHelper.isMacOsX()
 				&& e.getModifiersEx() == MAC_MOUSE_BUTTON1_MASK) {
 			setCursorPosition(e);
 		}
@@ -1744,7 +1745,7 @@ public class FreeMindMapController extends JMapController implements
 			return;
 		}
 		if (e.getButton() == movementMouseButton
-				|| (Tools.isMacOsX() && e.getModifiersEx() == MAC_MOUSE_BUTTON1_MASK)) {
+				|| (OsHelper.isMacOsX() && e.getModifiersEx() == MAC_MOUSE_BUTTON1_MASK)) {
 			if (e.isShiftDown()) {
 				// rectangular select:
 				mIsRectangularSelect = true;
@@ -1891,7 +1892,7 @@ public class FreeMindMapController extends JMapController implements
 			return;
 		}
 
-		if (e.getButton() == movementMouseButton || Tools.isMacOsX()
+		if (e.getButton() == movementMouseButton || OsHelper.isMacOsX()
 				&& e.getButton() == MouseEvent.BUTTON1) {
 			final Coordinate coordinates = getCoordinateFromMouseEvent(e);
 			if (isMapNodeMoving) {
@@ -2110,7 +2111,7 @@ public class FreeMindMapController extends JMapController implements
 		// Mac OSX simulates with ctrl + mouse 1 the second mouse button hence
 		// no dragging events get fired.
 		//
-		if (Tools.isMacOsX()) {
+		if (OsHelper.isMacOsX()) {
 			if (isMapNodeMoving) {
 				lastDragPoint = e.getPoint();
 				return;

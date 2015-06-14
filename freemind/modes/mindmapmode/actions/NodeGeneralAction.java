@@ -34,6 +34,7 @@ import javax.swing.ImageIcon;
 
 import freemind.controller.actions.generated.instance.CompoundAction;
 import freemind.controller.actions.generated.instance.XmlAction;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.modes.NodeAdapter;
@@ -77,7 +78,7 @@ public class NodeGeneralAction extends AbstractXmlAction {
 	protected void setName(String name) {
 		if (name != null) {
 			putValue(Action.NAME, name);
-			putValue(Action.SHORT_DESCRIPTION, Tools.removeMnemonic(name));
+			putValue(Action.SHORT_DESCRIPTION, AbstractDialog.removeMnemonic(name));
 		}
 
 	}

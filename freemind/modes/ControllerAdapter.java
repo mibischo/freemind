@@ -79,6 +79,7 @@ import freemind.controller.MindMapNodesSelection;
 import freemind.controller.StructuredMenuHolder;
 import freemind.controller.actions.generated.instance.MindmapLastStateStorage;
 import freemind.controller.actions.generated.instance.NodeListMember;
+import freemind.dialog.AbstractDialog;
 import freemind.extensions.PermanentNodeHook;
 import freemind.main.FreeMindCommon;
 import freemind.main.FreeMindMain;
@@ -90,6 +91,7 @@ import freemind.modes.FreeMindFileDialog.DirectoryResultListener;
 import freemind.modes.attributes.AttributeController;
 import freemind.modes.common.listeners.MindMapMouseWheelEventHandler;
 import freemind.tools.IPlaceholderExpander;
+import freemind.tools.OsHelper;
 import freemind.tools.PlaceholderExpander;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
@@ -863,7 +865,7 @@ public abstract class ControllerAdapter implements ModeController,
 	 */
 	public FreeMindFileDialog getFileChooser(FileFilter filter) {
 		FreeMindFileDialog chooser;
-		if (!Tools.isMacOsX()) {
+		if (!OsHelper.isMacOsX()) {
 			chooser = new FreeMindJFileDialog();
 		} else {
 			// only for mac
@@ -1003,7 +1005,7 @@ public abstract class ControllerAdapter implements ModeController,
 		if (!force && !getModel().isSaved()) {
 			String text = getText("save_unsaved") + "\n"
 					+ mapModuleManager.getMapModule().toString();
-			String title = Tools.removeMnemonic(getText("save"));
+			String title = AbstractDialog.removeMnemonic(getText("save"));
 			int returnVal = JOptionPane.showOptionDialog(getFrame()
 					.getContentPane(), text, title,
 					JOptionPane.YES_NO_CANCEL_OPTION,
@@ -1265,7 +1267,7 @@ public abstract class ControllerAdapter implements ModeController,
 		ControllerAdapter mc;
 
 		public SaveAction(ControllerAdapter modeController) {
-			super(Tools.removeMnemonic(getText("save")), new ImageIcon(
+			super(AbstractDialog.removeMnemonic(getText("save")), new ImageIcon(
 					getResource("images/filesave.png")));
 			mc = modeController;
 		}

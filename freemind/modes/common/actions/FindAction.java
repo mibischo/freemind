@@ -199,7 +199,7 @@ public class FindAction extends AbstractAction {
 						5, 0, 0), 0, 0));
 		JButton cancelButton = new JButton(
 				controller.getText("ExtendedFindDialog.cancel"));
-		Tools.setLabelAndMnemonic(cancelButton, null);
+		AbstractDialog.setLabelAndMnemonic(cancelButton, null);
 		cancelButton.addActionListener(cancelAction);
 		contentPane.add(cancelButton, new GridBagConstraints(3, 3, 1, 1, 1.0,
 				1.0, GridBagConstraints.WEST, GridBagConstraints.BOTH,

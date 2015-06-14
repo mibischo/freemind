@@ -331,8 +331,8 @@ public class AssignAttributeDialog extends AbstractDialog implements
 	private JCheckBox skipRootBtn;
 
 	public AssignAttributeDialog(MapView mapView) {
-		super(JOptionPane.getFrameForComponent(mapView), Tools
-				.removeMnemonic(Resources.getInstance().getResourceString(
+		super(JOptionPane.getFrameForComponent(mapView), 
+				removeMnemonic(Resources.getInstance().getResourceString(
 						"attributes_assign_dialog")), false);
 
 		final Border actionBorder = new MatteBorder(2, 2, 2, 2, Color.BLACK);

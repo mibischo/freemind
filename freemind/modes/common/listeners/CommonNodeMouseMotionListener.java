@@ -33,6 +33,7 @@ import freemind.controller.NodeMouseMotionListener.NodeMouseMotionObserver;
 import freemind.main.Tools;
 import freemind.modes.ModeController;
 import freemind.tools.Holders;
+import freemind.tools.OsHelper;
 import freemind.view.mindmapview.MainView;
 import freemind.view.mindmapview.NodeView;
 
@@ -164,7 +165,7 @@ public class CommonNodeMouseMotionListener implements NodeMouseMotionObserver {
 		 * For Mac see 
 		 * https://developer.apple.com/library/mac/#documentation/Java/Conceptual/Java14Development/07-NativePlatformIntegration/NativePlatformIntegration.html
 		 * */
-		if(Tools.isLinux() || Tools.isMacOsX()) {
+		if(OsHelper.isLinux() || OsHelper.isMacOsX()) {
 			ev = mMousePressedEvent;
 		} 
 		handlePopupMenu(ev);

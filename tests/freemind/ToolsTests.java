@@ -36,6 +36,7 @@ import freemind.main.FreeMindSecurityManager;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
 import freemind.modes.mindmapmode.MindMapMapModel;
+import freemind.tools.OsHelper;
 
 /**
  * @author foltin
@@ -126,7 +127,7 @@ public class ToolsTests extends FreeMindTestBase {
 	 * To be tested under windows
 	 */
 	public void testRelativeUrlsWindows() throws Exception {
-		if (Tools.isWindows()) {
+		if (OsHelper.isWindows()) {
 			String pathname = WINDOWS_PATH_WITH_SPECIAL_CHAR;
 			File input = new File(pathname);
 			String expected = pathname;
@@ -136,7 +137,7 @@ public class ToolsTests extends FreeMindTestBase {
 	}
 
 	public void testGetPrefix() throws Exception {
-		if (Tools.isWindows()) {
+		if (OsHelper.isWindows()) {
 			  assertEquals("c:\\", 
 					Tools.getPrefix(WINDOWS_PATH_C_USERS_TMP_IM_MM).toString());
 		} else {

@@ -66,6 +66,7 @@ import freemind.modes.Mode;
 import freemind.modes.ModeController.NodeSelectionListener;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.hooks.MindMapHookAdapter;
+import freemind.tools.OsHelper;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.NodeView;
 
@@ -622,7 +623,7 @@ public class MapDialog extends MindMapHookAdapter implements
 			mSearchTerm.setText("");
 			mSearchTerm.dispatchEvent(pEvent);
 			/* Special for mac, as otherwise, everything is selected... GRRR. */
-			if (Tools.isMacOsX()) {
+			if (OsHelper.isMacOsX()) {
 				EventQueue.invokeLater(new Runnable() {
 					public void run() {
 						mSearchTerm.setCaretPosition(mSearchTerm.getDocument()

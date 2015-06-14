@@ -1,9 +1,11 @@
 package freemind.tools;
 
-public class OsHelper implements IOsHelper {
+import java.io.File;
+
+public class OsHelper{
 	
 	
-	public boolean isMacOsX() {
+	public static boolean isMacOsX() {
 		boolean underMac = false;
 		String osName = System.getProperty("os.name");
 		if (osName.startsWith("Mac OS")) {
@@ -12,7 +14,7 @@ public class OsHelper implements IOsHelper {
 		return underMac;
 	}
 
-	public boolean isLinux() {
+	public static boolean isLinux() {
 		boolean underLinux = false;
 		String osName = System.getProperty("os.name");
 		if (osName.startsWith("Linux")) {
@@ -21,8 +23,12 @@ public class OsHelper implements IOsHelper {
 		return underLinux;
 	}
 	
-	public boolean isWindows() {
+	public static boolean isWindows() {
 		return System.getProperty("os.name").substring(0, 3).equals("Win");
+	}
+	
+	public static boolean isUnix() {
+		return (File.separatorChar == '/') || isMacOsX();
 	}
 
 }

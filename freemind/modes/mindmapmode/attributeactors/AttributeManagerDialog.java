@@ -75,7 +75,7 @@ public class AttributeManagerDialog extends AbstractDialog implements
 	private class ApplyAction extends AbstractAction {
 		ApplyAction() {
 			super();
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("apply"));
 		}
 
@@ -108,7 +108,7 @@ public class AttributeManagerDialog extends AbstractDialog implements
 	private class OKAction extends AbstractAction {
 		OKAction() {
 			super();
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("ok"));
 		}
 
@@ -128,7 +128,7 @@ public class AttributeManagerDialog extends AbstractDialog implements
 	private class CancelAction extends AbstractAction {
 		CancelAction() {
 			super();
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("cancel"));
 		}
 
@@ -147,7 +147,7 @@ public class AttributeManagerDialog extends AbstractDialog implements
 
 	private class ImportAction extends AbstractAction {
 		ImportAction() {
-			Tools.setLabelAndMnemonic(this, Resources.getInstance()
+			setLabelAndMnemonic(this, Resources.getInstance()
 					.getResourceString("attributes_import"));
 		}
 
