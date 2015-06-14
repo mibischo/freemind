@@ -39,6 +39,7 @@ import freemind.main.XMLElement;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.actions.xml.ActionPair;
+import freemind.tools.SystemInfo;
 import freemind.view.mindmapview.NodeView;
 
 /**
@@ -106,7 +107,7 @@ public class DatabaseStarter extends DatabaseBasics implements
 			logger.info("Connecting to " + url);
 			Connection connection = DriverManager.getConnection(url, "sa", "");
 			mUpdateThread = new UpdateThread(connection, controller);
-			mUpdateThread.setHost(Tools.getHostName());
+			mUpdateThread.setHost(SystemInfo.getHostName());
 			mUpdateThread.setPort(portProperty.getValue());
 			mUpdateThread.setupTables(password);
 			logger.info("Starting update thread...");

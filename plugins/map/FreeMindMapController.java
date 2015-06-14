@@ -99,6 +99,7 @@ import freemind.modes.mindmapmode.MindMapController;
 import freemind.tools.OsHelper;
 import freemind.tools.PointConverter;
 import freemind.tools.ReaderProvider;
+import freemind.tools.SystemInfo;
 import freemind.view.mindmapview.EditNodeBase;
 import freemind.view.mindmapview.EditNodeTextField;
 import freemind.view.mindmapview.NodeView;
@@ -2408,7 +2409,7 @@ public class FreeMindMapController extends JMapController implements
 			logger.fine("Searching for " + b.toString());
 			URL url = new URL(b.toString());
 			URLConnection urlConnection = url.openConnection();
-			if (Tools.isAboveJava4()) {
+			if (SystemInfo.isAboveJava4()) {
 				urlConnection.setConnectTimeout(Resources.getInstance()
 						.getIntProperty(OSM_NOMINATIM_CONNECT_TIMEOUT_IN_MS,
 								10000));

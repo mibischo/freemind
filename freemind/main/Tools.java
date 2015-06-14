@@ -80,6 +80,7 @@ import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.tools.Holders;
 import freemind.tools.OsHelper;
+import freemind.tools.SystemInfo;
 import freemind.view.mindmapview.NodeView;
 
 /**
@@ -421,17 +422,9 @@ public class Tools {
 		return pFile.toURI().toURL();
 	}
 
-	public static boolean isBelowJava6() {
-		return JAVA_VERSION.compareTo("1.6.0") < 0;
-	}
-
-	public static boolean isAboveJava4() {
-		return JAVA_VERSION.compareTo("1.4.0") > 0;
-	}
-
 	public static File urlToFile(URL pUrl) throws URISyntaxException {
 		// fix for java1.4 and java5 only.
-		if (isBelowJava6()) {
+		if (SystemInfo.isBelowJava6()) {
 			return new File(urlGetFile(pUrl));
 		}
 		return new File(new URI(pUrl.toString()));
@@ -462,28 +455,16 @@ public class Tools {
 		}
 	}
 
-	public static String getHostName() {
-		String hostname = "UNKNOWN";
-		try {
-			InetAddress addr = InetAddress.getLocalHost();
-			hostname = addr.getHostName();
-		} catch (UnknownHostException e) {
-		}
-		return hostname;
-	}
-
-	public static String getUserName() {
-		// Get host name
-		String hostname = getHostName();
-		return System.getProperty("user.name") + "@" + hostname;
-	}
-
 	public static String marshall(XmlAction action) {
 		return XmlBindingTools.getInstance().marshall(action);
 	}
 
 	public static XmlAction unMarshall(String inputString) {
 		return XmlBindingTools.getInstance().unMarshall(inputString);
+	}
+	
+	public static XmlAction deepCopy(XmlAction action) {
+		return (XmlAction) unMarshall(marshall(action));
 	}
 	
 	public static Vector getVectorWithSingleElement(Object obj) {
@@ -589,10 +570,6 @@ public class Tools {
 	}
 
 	
-	public static XmlAction deepCopy(XmlAction action) {
-		return (XmlAction) unMarshall(marshall(action));
-	}
-
 	public static String generateID(String proposedID, HashMap hashMap,
 			String prefix) {
 		String myProposedID = new String((proposedID != null) ? proposedID : "");

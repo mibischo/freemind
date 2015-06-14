@@ -95,6 +95,7 @@ import freemind.preferences.FreemindPropertyListener;
 import freemind.tools.Compression;
 import freemind.tools.Constants;
 import freemind.tools.ICompression;
+import freemind.tools.SystemInfo;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
 
@@ -634,7 +635,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 
 				if (url.getProtocol().equals("file")) {
 					final File file = Tools.urlToFile(url);
-					if (!Tools.isBelowJava6()) {
+					if (!SystemInfo.isBelowJava6()) {
 						Class desktopClass = Class.forName("java.awt.Desktop");
 						Method getDesktopMethod = desktopClass.getMethod(
 								"getDesktop", new Class[] {});

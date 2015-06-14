@@ -45,6 +45,7 @@ import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;
+import freemind.tools.SystemInfo;
 import freemind.view.mindmapview.NodeView;
 
 /**
@@ -251,7 +252,7 @@ public class MindMapMaster extends SocketBasics implements PermanentNodeHook,
 	 */
 	private void signalEndOfSession() {
 		CollaborationGoodbye goodbye = new CollaborationGoodbye();
-		goodbye.setUserId(Tools.getUserName());
+		goodbye.setUserId(SystemInfo.getUserName());
 		synchronized (mConnections) {
 			for (int i = 0; i < mConnections.size(); i++) {
 				final ServerCommunication serverCommunication = (ServerCommunication) mConnections
@@ -398,7 +399,7 @@ public class MindMapMaster extends SocketBasics implements PermanentNodeHook,
 	 * @see plugins.collaboration.socket.SocketBasics#getUsers()
 	 */
 	public String getUsers() {
-		StringBuffer users = new StringBuffer(Tools.getUserName());
+		StringBuffer users = new StringBuffer(SystemInfo.getUserName());
 		synchronized (mConnections) {
 			for (int i = 0; i < mConnections.size(); i++) {
 				users.append(',');
@@ -413,7 +414,7 @@ public class MindMapMaster extends SocketBasics implements PermanentNodeHook,
 	public CollaborationUserInformation getMasterInformation() {
 		CollaborationUserInformation userInfo = new CollaborationUserInformation();
 		userInfo.setUserIds(getUsers());
-		userInfo.setMasterHostname(Tools.getHostName());
+		userInfo.setMasterHostname(SystemInfo.getHostName());
 		userInfo.setMasterPort(getPort());
 		userInfo.setMasterIp(getHostIpAsString());
 		return userInfo;

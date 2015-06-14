@@ -51,6 +51,7 @@ import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.modes.mindmapmode.MindMapNodeModel;
 import freemind.modes.mindmapmode.actions.xml.ActionFilter.FinalActionFilter;
 import freemind.modes.mindmapmode.actions.xml.ActionPair;
+import freemind.tools.SystemInfo;
 
 public class UpdateThread extends Thread implements ResultHandler,
 		FinalActionFilter {
@@ -343,7 +344,7 @@ public class UpdateThread extends Thread implements ResultHandler,
 
 	private String getUserName() {
 		// Get host name
-		String hostname = Tools.getHostName();
+		String hostname = SystemInfo.getHostName();
 
 		return System.getProperty("user.name") + "@" + hostname;
 	}

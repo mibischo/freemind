@@ -49,6 +49,7 @@ import freemind.modes.NodeAdapter;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.modes.mindmapmode.MindMapNodeModel;
+import freemind.tools.SystemInfo;
 
 /**
  * @author foltin
@@ -110,7 +111,7 @@ public class ClientCommunication extends CommunicationBase {
 			}
 			// send hello:
 			CollaborationHello helloCommand = new CollaborationHello();
-			helloCommand.setUserId(Tools.getUserName());
+			helloCommand.setUserId(SystemInfo.getUserName());
 			helloCommand.setPassword(mPassword);
 			send(helloCommand);
 			setCurrentState(STATE_WAIT_FOR_WELCOME);
@@ -306,7 +307,7 @@ public class ClientCommunication extends CommunicationBase {
 			if (!mReceivedGoodbye) {
 				// Send only, if own goodbye.
 				CollaborationGoodbye goodbye = new CollaborationGoodbye();
-				goodbye.setUserId(Tools.getUserName());
+				goodbye.setUserId(SystemInfo.getUserName());
 				send(goodbye);
 				// in between, the socket has been closed.
 			}

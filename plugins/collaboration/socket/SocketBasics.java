@@ -62,6 +62,7 @@ import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.actions.xml.ActionFilter.FirstActionFilter;
 import freemind.modes.mindmapmode.actions.xml.ActionPair;
 import freemind.modes.mindmapmode.hooks.MindMapNodeHookAdapter;
+import freemind.tools.SystemInfo;
 import freemind.view.MapModule;
 
 public abstract class SocketBasics extends MindMapNodeHookAdapter implements
@@ -114,7 +115,7 @@ public abstract class SocketBasics extends MindMapNodeHookAdapter implements
 
 	public SocketBasics() {
 		super();
-		mUserName = Tools.getUserName();
+		mUserName = SystemInfo.getUserName();
 	}
 
 	/**
