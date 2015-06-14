@@ -262,7 +262,7 @@ public class FreeMindApplet extends JApplet implements FreeMindMain {
 		c = new Controller(this);
 		c.init();
 
-		c.optionAntialiasAction
+		c.getMenuBar().getOptionAntialiasAction()
 				.changeAntialias(getProperty(FreeMindCommon.RESOURCE_ANTIALIAS));
 
 		// Create the MenuBar

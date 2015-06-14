@@ -70,6 +70,9 @@ public class FreeMindToolBar extends JToolBar {
 	 * @see javax.swing.JToolBar#add(javax.swing.Action)
 	 */
 	public JButton add(Action arg0) {
+		if (arg0 == null)
+			return null;
+		
 		final Object actionName = arg0.getValue(Action.NAME);
 		arg0.putValue(Action.SHORT_DESCRIPTION,
 				Tools.removeMnemonic(actionName.toString()));

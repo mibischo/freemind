@@ -268,7 +268,7 @@ public class MapModuleManager {
 		setMapModule(getMapModule(), getMapModule().getMode());
 	}
 
-	void nextMapModule() {
+	public void nextMapModule() {
 		int index;
 		int size = mapModuleVector.size();
 		if (getMapModule() != null)
@@ -284,7 +284,7 @@ public class MapModuleManager {
 		}
 	}
 
-	void previousMapModule() {
+	public void previousMapModule() {
 		int index;
 		int size = mapModuleVector.size();
 		if (getMapModule() != null)

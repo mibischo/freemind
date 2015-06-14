@@ -25,10 +25,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
 import java.awt.HeadlessException;
-import java.awt.Insets;
 import java.awt.KeyboardFocusManager;
 import java.awt.RenderingHints;
 import java.awt.Window;
@@ -36,8 +33,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.print.PageFormat;
@@ -65,30 +60,25 @@ import java.util.logging.Logger;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
 import javax.swing.JColorChooser;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
-import javax.swing.JTextField;
 import javax.swing.JToolBar;
-import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import freemind.common.BooleanProperty;
 import freemind.controller.MapModuleManager.MapModuleChangeObserver;
+import freemind.controller.action.HideAllAttributesAction;
+import freemind.controller.action.ShowAllAttributesAction;
+import freemind.controller.action.ShowSelectedAttributesAction;
 import freemind.controller.actions.generated.instance.MindmapLastStateStorage;
 import freemind.controller.filter.FilterController;
-import freemind.controller.printpreview.PreviewDialog;
 import freemind.main.FreeMind;
 import freemind.main.FreeMindCommon;
 import freemind.main.FreeMindMain;
@@ -98,9 +88,7 @@ import freemind.modes.MindMap;
 import freemind.modes.Mode;
 import freemind.modes.ModeController;
 import freemind.modes.ModesCreator;
-import freemind.modes.attributes.AttributeRegistry;
 import freemind.modes.attributes.AttributeTableLayoutModel;
-import freemind.modes.browsemode.BrowseMode;
 import freemind.modes.mindmapmode.attributeactors.AttributeManagerDialog;
 import freemind.preferences.FreemindPropertyListener;
 import freemind.preferences.layout.OptionPanel;
@@ -147,68 +135,64 @@ public class Controller implements MapModuleChangeObserver {
 	private MapMouseWheelListener mapMouseWheelListener;
 	private ModesCreator mModescreator = new ModesCreator(this);
 	private PageFormat pageFormat = null;
+
+	public void setPageFormat(PageFormat pageFormat) {
+		this.pageFormat = pageFormat;
+	}
+
 	private PrinterJob printerJob = null;
+
+	public PrinterJob getPrinterJob() {
+		return printerJob;
+	}
+
 	private Icon bswatch = new BackgroundSwatch();// needed for BackgroundAction
 	private boolean antialiasEdges = false;
 	private boolean antialiasAll = false;
 	private Map fontMap = new HashMap();
+	private MenuBar menuBar;
+
+	public MenuBar getMenuBar() {
+		return menuBar;
+	}
 
 	private FilterController mFilterController;
 
 	boolean isPrintingAllowed = true;
 	boolean menubarVisible = true;
+
+	public boolean isMenubarVisible() {
+		return menubarVisible;
+	}
+
+	public boolean isToolbarVisible() {
+		return toolbarVisible;
+	}
+
 	boolean toolbarVisible = true;
 	boolean leftToolbarVisible = true;
 
-	public CloseAction close;
-	public Action print;
-	public Action printDirect;
-	public Action printPreview;
-	public Action page;
-	public Action quit;
-
-	public Action showAllAttributes = new ShowAllAttributesAction();
-	public Action showSelectedAttributes = new ShowSelectedAttributesAction();
-	public Action hideAllAttributes = new HideAllAttributesAction();
-
-	public OptionAntialiasAction optionAntialiasAction;
-	public Action optionHTMLExportFoldingAction;
-	public Action optionSelectionMechanismAction;
-
-	public Action about;
-	public Action faq;
-	public Action keyDocumentation;
-	public Action webDocu;
-	public Action documentation;
-	public Action license;
-	public Action showFilterToolbarAction;
-	public Action showAttributeManagerAction;
-	public Action navigationPreviousMap;
-	public Action navigationNextMap;
-	public Action navigationMoveMapLeftAction;
-	public Action navigationMoveMapRightAction;
-
-	public Action moveToRoot;
-	public Action toggleMenubar;
-	public Action toggleToolbar;
-	public Action toggleLeftToolbar;
-
-	public Action zoomIn;
-	public Action zoomOut;
-
-	public Action showSelectionAsRectangle;
-	public PropertyAction propertyAction;
-	public OpenURLAction freemindUrl;
+	public boolean isLeftToolbarVisible() {
+		return leftToolbarVisible;
+	}
 
 	private static final float[] zoomValues = { 25 / 100f, 50 / 100f,
 			75 / 100f, 100 / 100f, 150 / 100f, 200 / 100f, 300 / 100f,
 			400 / 100f };
 
+	public static float[] getZoomvalues() {
+		return zoomValues;
+	}
+
 	private static Vector propertyChangeListeners = new Vector();
 
-	private AttributeManagerDialog attributeDialog = null;
 	private Vector mTabbedPaneMapModules;
 	private JTabbedPane mTabbedPane;
+
+	public JTabbedPane getmTabbedPane() {
+		return mTabbedPane;
+	}
+
 	private boolean mTabbedPaneSelectionUpdate = true;
 
 	//
@@ -233,45 +217,6 @@ public class Controller implements MapModuleChangeObserver {
 		mapMouseMotionListener = new MapMouseMotionListener(this);
 		mapMouseWheelListener = new MapMouseWheelListener(this);
 
-		close = new CloseAction(this);
-
-		print = new PrintAction(this, true);
-		printDirect = new PrintAction(this, false);
-		printPreview = new PrintPreviewAction(this);
-		page = new PageAction(this);
-		quit = new QuitAction(this);
-		about = new AboutAction(this);
-		freemindUrl = new OpenURLAction(this, getResourceString("FreeMind"),
-				getProperty("webFreeMindLocation"));
-		faq = new OpenURLAction(this, getResourceString("FAQ"),
-				getProperty("webFAQLocation"));
-		keyDocumentation = new KeyDocumentationAction(this);
-		webDocu = new OpenURLAction(this, getResourceString("webDocu"),
-				getProperty("webDocuLocation"));
-		documentation = new DocumentationAction(this);
-		license = new LicenseAction(this);
-		navigationPreviousMap = new NavigationPreviousMapAction(this);
-		navigationNextMap = new NavigationNextMapAction(this);
-		navigationMoveMapLeftAction = new NavigationMoveMapLeftAction(this);
-		navigationMoveMapRightAction = new NavigationMoveMapRightAction(this);
-		showFilterToolbarAction = new ShowFilterToolbarAction(this);
-		showAttributeManagerAction = new ShowAttributeDialogAction(this);
-		toggleMenubar = new ToggleMenubarAction(this);
-		toggleToolbar = new ToggleToolbarAction(this);
-		toggleLeftToolbar = new ToggleLeftToolbarAction(this);
-		optionAntialiasAction = new OptionAntialiasAction(this);
-		optionHTMLExportFoldingAction = new OptionHTMLExportFoldingAction(this);
-		optionSelectionMechanismAction = new OptionSelectionMechanismAction(
-				this);
-
-		zoomIn = new ZoomInAction(this);
-		zoomOut = new ZoomOutAction(this);
-		propertyAction = new PropertyAction(this);
-
-		showSelectionAsRectangle = new ShowSelectionAsRectangleAction(this);
-
-		moveToRoot = new MoveToRootAction(this);
-
 		// Create the ToolBar
 		northToolbarPanel = new JPanel(new BorderLayout());
 		toolbar = new MainToolBar(this);
@@ -281,7 +226,9 @@ public class Controller implements MapModuleChangeObserver {
 		northToolbarPanel.add(toolbar, BorderLayout.NORTH);
 		northToolbarPanel.add(filterToolbar, BorderLayout.SOUTH);
 
-		setAllActions(false);
+		menuBar = new MenuBar(this);
+
+		menuBar.setAllActions(false);
 
 	}
 
@@ -434,7 +381,7 @@ public class Controller implements MapModuleChangeObserver {
 		return getMapModuleManager().getMapModule();
 	}
 
-	private JToolBar getToolBar() {
+	public JToolBar getToolBar() {
 		return toolbar;
 	}
 
@@ -593,7 +540,7 @@ public class Controller implements MapModuleChangeObserver {
 		ModeController newModeController;
 		if (newMapModule != null) {
 			getFrame().setView(newMapModule.getView());
-			setAllActions(true);
+			menuBar.setAllActions(true);
 			if ((getView().getSelected() == null)) {
 				// moveToRoot();
 				getView().selectAsTheOnlyOneSelected(getView().getRoot());
@@ -611,7 +558,7 @@ public class Controller implements MapModuleChangeObserver {
 		} else {
 			newModeController = newMode.getDefaultModeController();
 			getFrame().setView(null);
-			setAllActions(false);
+			menuBar.setAllActions(false);
 		}
 		setTitle();
 		JToolBar newToolBar = newModeController.getModeToolBar();
@@ -635,7 +582,7 @@ public class Controller implements MapModuleChangeObserver {
 		}
 		toolbar.validate();
 		toolbar.repaint();
-		MenuBar menuBar = getFrame().getFreeMindMenuBar();
+		menuBar = getFrame().getFreeMindMenuBar();
 		menuBar.updateMenus(newModeController);
 		menuBar.revalidate();
 		menuBar.repaint();
@@ -651,12 +598,7 @@ public class Controller implements MapModuleChangeObserver {
 	}
 
 	public void numberOfOpenMapInformation(int number, int pIndex) {
-		navigationPreviousMap.setEnabled(number > 0);
-		navigationNextMap.setEnabled(number > 0);
-		logger.info("number " + number + ", pIndex " + pIndex);
-		navigationMoveMapLeftAction.setEnabled(number > 1 && pIndex > 0);
-		navigationMoveMapRightAction.setEnabled(number > 1
-				&& pIndex < number - 1);
+		menuBar.numberOfOpenMapInformation(number, pIndex);
 	}
 
 	/**
@@ -758,7 +700,7 @@ public class Controller implements MapModuleChangeObserver {
 	 * _works_ now. So let it alone or fix it to be understandable, if you have
 	 * the time ;-)
 	 */
-	void moveToRoot() {
+	public void moveToRoot() {
 		if (getMapModule() != null) {
 			getView().moveToRoot();
 		}
@@ -952,33 +894,10 @@ public class Controller implements MapModuleChangeObserver {
 	}
 
 	//
-	// Actions management
-	//
-
-	/**
-	 * Manage the availabilty of all Actions dependend of whether there is a map
-	 * or not
-	 */
-	public void setAllActions(boolean enabled) {
-		print.setEnabled(enabled && isPrintingAllowed);
-		printDirect.setEnabled(enabled && isPrintingAllowed);
-		printPreview.setEnabled(enabled && isPrintingAllowed);
-		page.setEnabled(enabled && isPrintingAllowed);
-		close.setEnabled(enabled);
-		moveToRoot.setEnabled(enabled);
-		showAllAttributes.setEnabled(enabled);
-		showSelectedAttributes.setEnabled(enabled);
-		hideAllAttributes.setEnabled(enabled);
-		showAttributeManagerAction.setEnabled(enabled);
-		((MainToolBar) getToolBar()).setAllActions(enabled);
-		showSelectionAsRectangle.setEnabled(enabled);
-	}
-
-	//
 	// program/map control
 	//
 
-	private void quit() {
+	public void quit() {
 		String currentMapRestorable = (getModel() != null) ? getModel()
 				.getRestorable() : null;
 		// collect all maps:
@@ -1060,7 +979,7 @@ public class Controller implements MapModuleChangeObserver {
 		System.exit(0);
 	}
 
-	private boolean acquirePrinterJobAndPageFormat() {
+	public boolean acquirePrinterJobAndPageFormat() {
 		if (printerJob == null) {
 			try {
 				printerJob = PrinterJob.getPrinterJob();
@@ -1095,6 +1014,10 @@ public class Controller implements MapModuleChangeObserver {
 	// Inner Classes
 	// //////////
 
+	public boolean isPrintingAllowed() {
+		return isPrintingAllowed;
+	}
+
 	/**
 	 * Manages the history of visited maps. Maybe explicitly closed maps should
 	 * be removed from History too?
@@ -1103,173 +1026,6 @@ public class Controller implements MapModuleChangeObserver {
 	//
 	// program/map control
 	//
-
-	private class QuitAction extends AbstractAction {
-		QuitAction(Controller controller) {
-			super(controller.getResourceString("quit"));
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			quit();
-		}
-	}
-
-	/** This closes only the current map */
-	public static class CloseAction extends AbstractAction {
-		private final Controller controller;
-
-		CloseAction(Controller controller) {
-			Tools.setLabelAndMnemonic(this,
-					controller.getResourceString("close"));
-			this.controller = controller;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			controller.close(false);
-		}
-	}
-
-	private class PrintAction extends AbstractAction {
-		Controller controller;
-		boolean isDlg;
-
-		PrintAction(Controller controller, boolean isDlg) {
-			super(isDlg ? controller.getResourceString("print_dialog")
-					: controller.getResourceString("print"), new ImageIcon(
-					getResource("images/fileprint.png")));
-			this.controller = controller;
-			setEnabled(false);
-			this.isDlg = isDlg;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			if (!acquirePrinterJobAndPageFormat()) {
-				return;
-			}
-
-			printerJob.setPrintable(getView(), pageFormat);
-
-			if (!isDlg || printerJob.printDialog()) {
-				try {
-					frame.setWaitingCursor(true);
-					printerJob.print();
-					storePageFormat();
-				} catch (Exception ex) {
-					freemind.main.Resources.getInstance().logException(ex);
-				} finally {
-					frame.setWaitingCursor(false);
-				}
-			}
-		}
-	}
-
-	private class PrintPreviewAction extends AbstractAction {
-		Controller controller;
-
-		PrintPreviewAction(Controller controller) {
-			super(controller.getResourceString("print_preview"));
-			this.controller = controller;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			if (!acquirePrinterJobAndPageFormat()) {
-				return;
-			}
-			PreviewDialog previewDialog = new PreviewDialog(
-					controller.getResourceString("print_preview_title"),
-					getView());
-			previewDialog.pack();
-			previewDialog.setLocationRelativeTo(JOptionPane
-					.getFrameForComponent(getView()));
-			previewDialog.setVisible(true);
-		}
-	}
-
-	private class PageAction extends AbstractAction {
-		Controller controller;
-
-		PageAction(Controller controller) {
-			super(controller.getResourceString("page"));
-			this.controller = controller;
-			setEnabled(false);
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			if (!acquirePrinterJobAndPageFormat()) {
-				return;
-			}
-
-			// Ask about custom printing settings
-			final JDialog dialog = new JDialog((JFrame) getFrame(),
-					getResourceString("printing_settings"), /* modal= */true);
-			final JCheckBox fitToPage = new JCheckBox(
-					getResourceString("fit_to_page"), Resources.getInstance()
-							.getBoolProperty("fit_to_page"));
-			final JLabel userZoomL = new JLabel(getResourceString("user_zoom"));
-			final JTextField userZoom = new JTextField(
-					getProperty("user_zoom"), 3);
-			userZoom.setEditable(!fitToPage.isSelected());
-			final JButton okButton = new JButton();
-			Tools.setLabelAndMnemonic(okButton, getResourceString("ok"));
-			final Tools.IntHolder eventSource = new Tools.IntHolder();
-			JPanel panel = new JPanel();
-
-			GridBagLayout gridbag = new GridBagLayout();
-			GridBagConstraints c = new GridBagConstraints();
-
-			eventSource.setValue(0);
-			okButton.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					eventSource.setValue(1);
-					dialog.dispose();
-				}
-			});
-			fitToPage.addItemListener(new ItemListener() {
-				public void itemStateChanged(ItemEvent e) {
-					userZoom.setEditable(e.getStateChange() == ItemEvent.DESELECTED);
-				}
-			});
-
-			// c.weightx = 0.5;
-			c.gridx = 0;
-			c.gridy = 0;
-			c.gridwidth = 2;
-			gridbag.setConstraints(fitToPage, c);
-			panel.add(fitToPage);
-			c.gridy = 1;
-			c.gridwidth = 1;
-			gridbag.setConstraints(userZoomL, c);
-			panel.add(userZoomL);
-			c.gridx = 1;
-			c.gridwidth = 1;
-			gridbag.setConstraints(userZoom, c);
-			panel.add(userZoom);
-			c.gridy = 2;
-			c.gridx = 0;
-			c.gridwidth = 3;
-			c.insets = new Insets(10, 0, 0, 0);
-			gridbag.setConstraints(okButton, c);
-			panel.add(okButton);
-			panel.setLayout(gridbag);
-			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-			dialog.setContentPane(panel);
-			dialog.setLocationRelativeTo((JFrame) getFrame());
-			dialog.getRootPane().setDefaultButton(okButton);
-			dialog.pack(); // calculate the size
-			dialog.setVisible(true);
-
-			if (eventSource.getValue() == 1) {
-				setProperty("user_zoom", userZoom.getText());
-				setProperty("fit_to_page", fitToPage.isSelected() ? "true"
-						: "false");
-			} else
-				return;
-
-			// Ask user for page format (e.g., portrait/landscape)
-			pageFormat = printerJob.pageDialog(pageFormat);
-			storePageFormat();
-		}
-	}
 
 	public interface LocalLinkConverter {
 		/**
@@ -1294,215 +1050,6 @@ public class Controller implements MapModuleChangeObserver {
 	//
 	// Help
 	//
-
-	private class DocumentationAction extends AbstractAction {
-		Controller controller;
-
-		DocumentationAction(Controller controller) {
-			super(controller.getResourceString("documentation"));
-			this.controller = controller;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			try {
-				String map = controller.getFrame().getResourceString(
-						"browsemode_initial_map");
-				// if the current language does not provide its own translation,
-				// POSTFIX_TRANSLATE_ME is appended:
-				map = Tools.removeTranslateComment(map);
-				URL url = null;
-				if (map != null && map.startsWith(".")) {
-					url = localDocumentationLinkConverter.convertLocalLink(map);
-				} else {
-					url = Tools.fileToUrl(new File(map));
-				}
-				final URL endUrl = url;
-				// invokeLater is necessary, as the mode changing removes
-				// all
-				// menus (inclusive this action!).
-				SwingUtilities.invokeLater(new Runnable() {
-					public void run() {
-						try {
-							createNewMode(BrowseMode.MODENAME);
-							controller.getModeController().load(endUrl);
-						} catch (Exception e1) {
-							freemind.main.Resources.getInstance().logException(
-									e1);
-						}
-					}
-				});
-			} catch (MalformedURLException e1) {
-				// TODO Auto-generated catch block
-				freemind.main.Resources.getInstance().logException(e1);
-			}
-		}
-	}
-
-	private class KeyDocumentationAction extends AbstractAction {
-		Controller controller;
-
-		KeyDocumentationAction(Controller controller) {
-			super(controller.getResourceString("KeyDoc"));
-			this.controller = controller;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			String urlText = controller.getFrame().getResourceString(
-					"pdfKeyDocLocation");
-			// if the current language does not provide its own translation,
-			// POSTFIX_TRANSLATE_ME is appended:
-			urlText = Tools.removeTranslateComment(urlText);
-			try {
-				URL url = null;
-				if (urlText != null && urlText.startsWith(".")) {
-					url = localDocumentationLinkConverter
-							.convertLocalLink(urlText);
-				} else {
-					url = Tools.fileToUrl(new File(urlText));
-				}
-				logger.info("Opening key docs under " + url);
-				controller.getFrame().openDocument(url);
-			} catch (Exception e2) {
-				freemind.main.Resources.getInstance().logException(e2);
-				return;
-			}
-		}
-	}
-
-	private class AboutAction extends AbstractAction {
-		Controller controller;
-
-		AboutAction(Controller controller) {
-			super(controller.getResourceString("about"));
-			this.controller = controller;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			JOptionPane.showMessageDialog(getView(),
-					controller.getResourceString("about_text")
-							+ getFrame().getFreemindVersion(),
-					controller.getResourceString("about"),
-					JOptionPane.INFORMATION_MESSAGE);
-		}
-	}
-
-	private class LicenseAction extends AbstractAction {
-		Controller controller;
-
-		LicenseAction(Controller controller) {
-			super(controller.getResourceString("license"));
-			this.controller = controller;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			JOptionPane.showMessageDialog(getView(),
-					controller.getResourceString("license_text"),
-					controller.getResourceString("license"),
-					JOptionPane.INFORMATION_MESSAGE);
-		}
-	}
-
-	//
-	// Map navigation
-	//
-
-	private class NavigationPreviousMapAction extends AbstractAction {
-		NavigationPreviousMapAction(Controller controller) {
-			super(controller.getResourceString("previous_map"), new ImageIcon(
-					getResource("images/1leftarrow.png")));
-			setEnabled(false);
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			mapModuleManager.previousMapModule();
-		}
-	}
-
-	private class ShowAttributeDialogAction extends AbstractAction {
-		private Controller c;
-
-		ShowAttributeDialogAction(Controller c) {
-			super(c.getResourceString("attributes_dialog"), new ImageIcon(
-					getResource("images/showAttributes.gif")));
-			this.c = c;
-		}
-
-		private AttributeManagerDialog getAttributeDialog() {
-			if (attributeDialog == null) {
-				attributeDialog = new AttributeManagerDialog(c);
-			}
-			return attributeDialog;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			if (getAttributeDialog().isVisible() == false
-					&& getMapModule() != null) {
-				getAttributeDialog().pack();
-				getAttributeDialog().show();
-			}
-		}
-	}
-
-	private class ShowFilterToolbarAction extends AbstractAction {
-		ShowFilterToolbarAction(Controller controller) {
-			super(getResourceString("filter_toolbar"), new ImageIcon(
-					getResource("images/filter.gif")));
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			if (!getFilterController().isVisible()) {
-				getFilterController().showFilterToolbar(true);
-			} else {
-				getFilterController().showFilterToolbar(false);
-			}
-		}
-	}
-
-	private class NavigationNextMapAction extends AbstractAction {
-		NavigationNextMapAction(Controller controller) {
-			super(controller.getResourceString("next_map"), new ImageIcon(
-					getResource("images/1rightarrow.png")));
-			setEnabled(false);
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			mapModuleManager.nextMapModule();
-		}
-	}
-
-	private class NavigationMoveMapLeftAction extends AbstractAction {
-		NavigationMoveMapLeftAction(Controller controller) {
-			super(controller.getResourceString("move_map_left"), new ImageIcon(
-					getResource("images/draw-arrow-back.png")));
-			setEnabled(false);
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			if (mTabbedPane != null) {
-				int selectedIndex = mTabbedPane.getSelectedIndex();
-				int previousIndex = (selectedIndex > 0) ? (selectedIndex - 1)
-						: (mTabbedPane.getTabCount() - 1);
-				moveTab(selectedIndex, previousIndex);
-			}
-		}
-	}
-
-	private class NavigationMoveMapRightAction extends AbstractAction {
-		NavigationMoveMapRightAction(Controller controller) {
-			super(controller.getResourceString("move_map_right"),
-					new ImageIcon(getResource("images/draw-arrow-forward.png")));
-			setEnabled(false);
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			if (mTabbedPane != null) {
-				int selectedIndex = mTabbedPane.getSelectedIndex();
-				int previousIndex = (selectedIndex >= mTabbedPane.getTabCount() - 1) ? 0
-						: (selectedIndex + 1);
-				moveTab(selectedIndex, previousIndex);
-			}
-		}
-	}
 
 	public void moveTab(int src, int dst) {
 		// snippet taken from
@@ -1542,187 +1089,6 @@ public class Controller implements MapModuleChangeObserver {
 	// Node navigation
 	//
 
-	private class MoveToRootAction extends AbstractAction {
-		MoveToRootAction(Controller controller) {
-			super(controller.getResourceString("move_to_root"));
-			setEnabled(false);
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			moveToRoot();
-		}
-	}
-
-	private class ToggleMenubarAction extends AbstractAction implements
-			MenuItemSelectedListener {
-		ToggleMenubarAction(Controller controller) {
-			super(controller.getResourceString("toggle_menubar"));
-			setEnabled(true);
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			menubarVisible = !menubarVisible;
-			setMenubarVisible(menubarVisible);
-		}
-
-		public boolean isSelected(JMenuItem pCheckItem, Action pAction) {
-			return menubarVisible;
-		}
-	}
-
-	private class ToggleToolbarAction extends AbstractAction implements
-			MenuItemSelectedListener {
-		ToggleToolbarAction(Controller controller) {
-			super(controller.getResourceString("toggle_toolbar"));
-			setEnabled(true);
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			toolbarVisible = !toolbarVisible;
-			setToolbarVisible(toolbarVisible);
-		}
-
-		public boolean isSelected(JMenuItem pCheckItem, Action pAction) {
-			logger.info("ToggleToolbar was asked for selectedness.");
-			return toolbarVisible;
-		}
-	}
-
-	private class ToggleLeftToolbarAction extends AbstractAction implements
-			MenuItemSelectedListener {
-		ToggleLeftToolbarAction(Controller controller) {
-			super(controller.getResourceString("toggle_left_toolbar"));
-			setEnabled(true);
-		}
-
-		public void actionPerformed(ActionEvent event) {
-			leftToolbarVisible = !leftToolbarVisible;
-			setLeftToolbarVisible(leftToolbarVisible);
-		}
-
-		public boolean isSelected(JMenuItem pCheckItem, Action pAction) {
-			return leftToolbarVisible;
-		}
-	}
-
-	protected class ZoomInAction extends AbstractAction {
-		public ZoomInAction(Controller controller) {
-			super(controller.getResourceString("zoom_in"));
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			// logger.info("ZoomInAction actionPerformed");
-			float currentZoom = getView().getZoom();
-			for (int i = 0; i < zoomValues.length; i++) {
-				float val = zoomValues[i];
-				if (val > currentZoom) {
-					setZoom(val);
-					return;
-				}
-			}
-			setZoom(zoomValues[zoomValues.length - 1]);
-		}
-	}
-
-	protected class ZoomOutAction extends AbstractAction {
-		public ZoomOutAction(Controller controller) {
-			super(controller.getResourceString("zoom_out"));
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			float currentZoom = getView().getZoom();
-			float lastZoom = zoomValues[0];
-			for (int i = 0; i < zoomValues.length; i++) {
-				float val = zoomValues[i];
-				if (val >= currentZoom) {
-					setZoom(lastZoom);
-					return;
-				}
-				lastZoom = val;
-			}
-			setZoom(lastZoom);
-		}
-	}
-
-	protected class ShowSelectionAsRectangleAction extends AbstractAction
-			implements MenuItemSelectedListener {
-		public ShowSelectionAsRectangleAction(Controller controller) {
-			super(controller.getResourceString("selection_as_rectangle"));
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			// logger.info("ShowSelectionAsRectangleAction action Performed");
-			toggleSelectionAsRectangle();
-		}
-
-		public boolean isSelected(JMenuItem pCheckItem, Action pAction) {
-			return isSelectionAsRectangle();
-		}
-	}
-
-	private class ShowAllAttributesAction extends AbstractAction {
-		public ShowAllAttributesAction() {
-			super(Resources.getInstance().getResourceString(
-					"attributes_show_all"));
-		};
-
-		public void actionPerformed(ActionEvent e) {
-			final MindMap map = getMap();
-			setAttributeViewType(map);
-		}
-
-		public void setAttributeViewType(final MindMap map) {
-			final AttributeRegistry attributes = map.getRegistry()
-					.getAttributes();
-			if (attributes.getAttributeViewType() != AttributeTableLayoutModel.SHOW_ALL) {
-				attributes
-						.setAttributeViewType(AttributeTableLayoutModel.SHOW_ALL);
-			}
-		}
-	}
-
-	private class HideAllAttributesAction extends AbstractAction {
-		public HideAllAttributesAction() {
-			super(Resources.getInstance().getResourceString(
-					"attributes_hide_all"));
-		};
-
-		public void actionPerformed(ActionEvent e) {
-			final MindMap map = getMap();
-			setAttributeViewType(map);
-		}
-
-		public void setAttributeViewType(final MindMap map) {
-			final AttributeRegistry attributes = map.getRegistry()
-					.getAttributes();
-			if (attributes.getAttributeViewType() != AttributeTableLayoutModel.HIDE_ALL) {
-				attributes
-						.setAttributeViewType(AttributeTableLayoutModel.HIDE_ALL);
-			}
-		}
-	}
-
-	private class ShowSelectedAttributesAction extends AbstractAction {
-		public ShowSelectedAttributesAction() {
-			super(Resources.getInstance().getResourceString(
-					"attributes_show_selected"));
-		};
-
-		public void actionPerformed(ActionEvent e) {
-			MindMap map = getMap();
-			setAttributeViewType(map);
-		}
-
-		void setAttributeViewType(MindMap map) {
-			final AttributeRegistry attributes = map.getRegistry()
-					.getAttributes();
-			if (attributes.getAttributeViewType() != AttributeTableLayoutModel.SHOW_SELECTED) {
-				attributes
-						.setAttributeViewType(AttributeTableLayoutModel.SHOW_SELECTED);
-			}
-		}
-	}
-
 	//
 	// Preferences
 	//
@@ -1741,7 +1107,7 @@ public class Controller implements MapModuleChangeObserver {
 		}
 	}
 
-	private boolean isSelectionAsRectangle() {
+	public boolean isSelectionAsRectangle() {
 		return getProperty(FreeMind.RESOURCE_DRAW_RECTANGLE_FOR_SELECTION)
 				.equalsIgnoreCase(BooleanProperty.TRUE_VALUE);
 	}
@@ -1778,186 +1144,9 @@ public class Controller implements MapModuleChangeObserver {
 		Controller.propertyChangeListeners.remove(listener);
 	}
 
-	/**
-	 * @author foltin
-	 * 
-	 */
-	public class PropertyAction extends AbstractAction {
-
-		private final Controller controller;
-
-		/**
-		 *
-		 */
-		public PropertyAction(Controller controller) {
-			super(controller.getResourceString("property_dialog"));
-			this.controller = controller;
-		}
-
-		public void actionPerformed(ActionEvent arg0) {
-			JDialog dialog = new JDialog(getFrame().getJFrame(), true /* modal */);
-			dialog.setResizable(true);
-			dialog.setUndecorated(false);
-			final OptionPanel options = new OptionPanel((FreeMind) getFrame(),
-					dialog, new OptionPanelFeedback() {
-
-						public void writeProperties(Properties props) {
-							Vector sortedKeys = new Vector();
-							sortedKeys.addAll(props.keySet());
-							Collections.sort(sortedKeys);
-							boolean propertiesChanged = false;
-							for (Iterator i = sortedKeys.iterator(); i
-									.hasNext();) {
-								String key = (String) i.next();
-								// save only changed keys:
-								String newProperty = props.getProperty(key);
-								propertiesChanged = propertiesChanged
-										|| !newProperty.equals(controller
-												.getProperty(key));
-								controller.setProperty(key, newProperty);
-							}
-
-							if (propertiesChanged) {
-								JOptionPane
-										.showMessageDialog(
-												null,
-												getResourceString("option_changes_may_require_restart"));
-								controller.getFrame().saveProperties(false);
-							}
-						}
-					});
-			options.buildPanel();
-			options.setProperties();
-			dialog.setTitle("Freemind Properties");
-			dialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-			dialog.addWindowListener(new WindowAdapter() {
-				public void windowClosing(WindowEvent event) {
-					options.closeWindow();
-				}
-			});
-			Action action = new AbstractAction() {
-
-				public void actionPerformed(ActionEvent arg0) {
-					options.closeWindow();
-				}
-			};
-			Tools.addEscapeActionToDialog(dialog, action);
-			dialog.setVisible(true);
-
-		}
-
-	}
-
 	private class BackgroundSwatch extends ColorSwatch {
 		Color getColor() {
 			return getView().getBackground();
-		}
-	}
-
-	public class OptionAntialiasAction extends AbstractAction implements
-			FreemindPropertyListener {
-		OptionAntialiasAction(Controller controller) {
-			Controller.addPropertyChangeListener(this);
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			String command = e.getActionCommand();
-			changeAntialias(command);
-		}
-
-		/**
-	     */
-		public void changeAntialias(String command) {
-			if (command == null) {
-				return;
-			}
-			if (command.equals("antialias_none")) {
-				setAntialiasEdges(false);
-				setAntialiasAll(false);
-			}
-			if (command.equals("antialias_edges")) {
-				setAntialiasEdges(true);
-				setAntialiasAll(false);
-			}
-			if (command.equals("antialias_all")) {
-				setAntialiasEdges(true);
-				setAntialiasAll(true);
-			}
-			if (getView() != null)
-				getView().repaint();
-		}
-
-		public void propertyChanged(String propertyName, String newValue,
-				String oldValue) {
-			if (propertyName.equals(FreeMindCommon.RESOURCE_ANTIALIAS)) {
-				changeAntialias(newValue);
-			}
-		}
-	}
-
-	private class OptionHTMLExportFoldingAction extends AbstractAction {
-		OptionHTMLExportFoldingAction(Controller controller) {
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			setProperty("html_export_folding", e.getActionCommand());
-		}
-	}
-
-	// switch auto properties for selection mechanism fc, 7.12.2003.
-	private class OptionSelectionMechanismAction extends AbstractAction
-			implements FreemindPropertyListener {
-		Controller c;
-
-		OptionSelectionMechanismAction(Controller controller) {
-			c = controller;
-			Controller.addPropertyChangeListener(this);
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			String command = e.getActionCommand();
-			changeSelection(command);
-		}
-
-		/**
-         */
-		private void changeSelection(String command) {
-			setProperty("selection_method", command);
-			// and update the selection method in the NodeMouseMotionListener
-			c.getNodeMouseMotionListener().updateSelectionMethod();
-			String statusBarString = c.getResourceString(command);
-			if (statusBarString != null) // should not happen
-				c.getFrame().out(statusBarString);
-		}
-
-		public void propertyChanged(String propertyName, String newValue,
-				String oldValue) {
-			if (propertyName.equals(FreeMind.RESOURCES_SELECTION_METHOD)) {
-				changeSelection(newValue);
-			}
-		}
-	}
-
-	// open faq url from freeminds page:
-	private class OpenURLAction extends AbstractAction {
-		Controller c;
-		private final String url;
-
-		OpenURLAction(Controller controller, String description, String url) {
-			super(description, new ImageIcon(
-					controller.getResource("images/Link.png")));
-			c = controller;
-			this.url = url;
-		}
-
-		public void actionPerformed(ActionEvent e) {
-			try {
-				c.getFrame().openDocument(new URL(url));
-			} catch (MalformedURLException ex) {
-				c.errorMessage(c.getResourceString("url_error") + "\n" + ex);
-			} catch (Exception ex) {
-				c.errorMessage(ex);
-			}
 		}
 	}
 
@@ -1970,16 +1159,7 @@ public class Controller implements MapModuleChangeObserver {
 	}
 
 	public void setAttributeViewType(MindMap map, String value) {
-		if (value.equals(AttributeTableLayoutModel.SHOW_SELECTED)) {
-			((ShowSelectedAttributesAction) showSelectedAttributes)
-					.setAttributeViewType(map);
-		} else if (value.equals(AttributeTableLayoutModel.HIDE_ALL)) {
-			((HideAllAttributesAction) hideAllAttributes)
-					.setAttributeViewType(map);
-		} else if (value.equals(AttributeTableLayoutModel.SHOW_ALL)) {
-			((ShowAllAttributesAction) showAllAttributes)
-					.setAttributeViewType(map);
-		}
+		menuBar.setAttributeViewType(map, value);
 	}
 
 	public Object setEdgesRenderingHint(Graphics2D g) {
@@ -2102,7 +1282,7 @@ public class Controller implements MapModuleChangeObserver {
 		obtainFocusForSelected();
 	}
 
-	protected void storePageFormat() {
+	public void storePageFormat() {
 		if (pageFormat.getOrientation() == PageFormat.LANDSCAPE) {
 			setProperty("page_orientation", "landscape");
 		} else if (pageFormat.getOrientation() == PageFormat.PORTRAIT) {

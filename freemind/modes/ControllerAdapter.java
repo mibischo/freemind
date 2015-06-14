@@ -1063,9 +1063,9 @@ public abstract class ControllerAdapter implements ModeController,
 	 */
 	protected void setAllActions(boolean enabled) {
 		// controller actions:
-		getController().zoomIn.setEnabled(enabled);
-		getController().zoomOut.setEnabled(enabled);
-		getController().showFilterToolbarAction.setEnabled(enabled);
+		getController().getMenuBar().getZoomIn().setEnabled(enabled);
+		getController().getMenuBar().getZoomOut().setEnabled(enabled);
+		getController().getMenuBar().getShowFilterToolbarAction().setEnabled(enabled);
 	}
 
 	//

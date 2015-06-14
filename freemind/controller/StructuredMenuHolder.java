@@ -432,6 +432,7 @@ public class StructuredMenuHolder {
 			if (category.equals("."))
 				continue;
 			Object nextObject = thisMap.get(category);
+			System.out.println(category);
 			if (nextObject instanceof SeparatorHolder) {
 				menuAdder.addSeparator();
 				continue;

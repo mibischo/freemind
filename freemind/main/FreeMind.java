@@ -353,7 +353,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 		// }
 		// });
 		
-		controller.optionAntialiasAction
+		controller.getMenuBar().getOptionAntialiasAction()
 				.changeAntialias(getProperty(FreeMindCommon.RESOURCE_ANTIALIAS));
 
 		setupSpellChecking();
@@ -1074,7 +1074,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 
 	private void setScreenBounds() {
 		// Create the MenuBar
-		menuBar = new MenuBar(controller);
+		menuBar = controller.getMenuBar();
 		setJMenuBar(menuBar);
 
 		// Create the scroll pane
@@ -1121,7 +1121,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 
 		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
-				controller.quit
+				controller.getMenuBar().getQuit()
 						.actionPerformed(new ActionEvent(this, 0, "quit"));
 			}
 
