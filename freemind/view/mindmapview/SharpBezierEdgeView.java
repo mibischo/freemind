@@ -27,6 +27,7 @@ import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 
 import freemind.main.Tools;
+import freemind.tools.PointConverter;
 
 /**
  * This class represents a sharp Edge of a MindMap.
@@ -108,7 +109,7 @@ public class SharpBezierEdgeView extends EdgeView {
 					deltaY = -deltaY;
 				}
 			}
-			Tools.convertPointToAncestor(mainView, start, source);
+			PointConverter.convertPointToAncestor(mainView, start, source);
 		} else {
 			final int delta = getMap().getZoomed(getWidth() / 2 + 1);
 			super.createStart();

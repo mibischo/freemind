@@ -40,6 +40,7 @@ import freemind.controller.MenuBar;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
+import freemind.tools.PointConverter;
 
 /**
  * Base class for all node views.
@@ -270,11 +271,11 @@ public abstract class MainView extends JLabel {
 	}
 
 	protected void convertPointToMap(Point p) {
-		Tools.convertPointToAncestor(this, p, getNodeView().getMap());
+		PointConverter.convertPointToAncestor(this, p, getNodeView().getMap());
 	}
 
 	protected void convertPointFromMap(Point p) {
-		Tools.convertPointFromAncestor(getNodeView().getMap(), p, this);
+		PointConverter.convertPointFromAncestor(getNodeView().getMap(), p, this);
 	}
 
 	protected int isDraggedOver = NodeView.DRAGGED_OVER_NO;

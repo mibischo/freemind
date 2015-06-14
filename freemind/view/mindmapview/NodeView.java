@@ -63,6 +63,7 @@ import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
 import freemind.modes.NodeAdapter;
 import freemind.preferences.FreemindPropertyListener;
+import freemind.tools.PointConverter;
 import freemind.view.mindmapview.attributeview.AttributeView;
 
 /**
@@ -506,7 +507,7 @@ public class NodeView extends JComponent implements TreeModelListener {
 	}
 
 	protected Point convertPointToMap(Point p) {
-		return Tools.convertPointToAncestor(this, p, getMap());
+		return PointConverter.convertPointToAncestor(this, p, getMap());
 	}
 
 	/**
@@ -1291,7 +1292,7 @@ public class NodeView extends JComponent implements TreeModelListener {
 				}
 				Point childPoint = new Point(0, childView.getMainView()
 						.getHeight() / 2);
-				Tools.convertPointToAncestor(childView.getMainView(),
+				PointConverter.convertPointToAncestor(childView.getMainView(),
 						childPoint, baseComponent);
 				final int gapToChild = Math.abs(childPoint.y - ownY);
 				if (gapToChild < yGap) {
@@ -1498,7 +1499,7 @@ public class NodeView extends JComponent implements TreeModelListener {
 			NodeView nodeView = (NodeView) component;
 			if (nodeView.isContentVisible()) {
 				Point p = new Point();
-				Tools.convertPointToAncestor(nodeView, p, this);
+				PointConverter.convertPointToAncestor(nodeView, p, this);
 				g.translate(p.x, p.y);
 				nodeView.paintCloud(g);
 				g.translate(-p.x, -p.y);

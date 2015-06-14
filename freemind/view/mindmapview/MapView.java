@@ -76,6 +76,7 @@ import freemind.modes.MindMapLink;
 import freemind.modes.MindMapNode;
 import freemind.preferences.FreemindPropertyListener;
 import freemind.tools.IXmlTransformations;
+import freemind.tools.PointConverter;
 import freemind.tools.XmlTransformations;
 
 /**
@@ -771,7 +772,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 
 	private int getMainViewY(NodeView node) {
 		Point newSelectedLocation = new Point();
-		Tools.convertPointToAncestor(node.getMainView(), newSelectedLocation,
+		PointConverter.convertPointToAncestor(node.getMainView(), newSelectedLocation,
 				this);
 		final int newY = newSelectedLocation.y;
 		return newY;
@@ -1044,7 +1045,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 				}
 			}
 			view.getContent().getLocation(point);
-			Tools.convertPointToAncestor(view, point, this);
+			PointConverter.convertPointToAncestor(view, point, this);
 			pointNodePairs.add(new Pair(new Integer(point.y), node));
 		}
 		// do the sorting:
@@ -1128,7 +1129,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 		Point oldRootContentLocation = rootContentLocation;
 		final NodeView root = getRoot();
 		Point newRootContentLocation = root.getContent().getLocation();
-		Tools.convertPointToAncestor(getRoot(), newRootContentLocation,
+		PointConverter.convertPointToAncestor(getRoot(), newRootContentLocation,
 				getParent());
 
 		final int deltaX = newRootContentLocation.x - oldRootContentLocation.x;
@@ -1170,7 +1171,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 		long startMilli = System.currentTimeMillis();
 		if (isValid()) {
 			getRoot().getContent().getLocation(rootContentLocation);
-			Tools.convertPointToAncestor(getRoot(), rootContentLocation,
+			PointConverter.convertPointToAncestor(getRoot(), rootContentLocation,
 					getParent());
 		}
 		final Graphics2D g2 = (Graphics2D) g;
@@ -1258,7 +1259,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 		final int arcWidth = 4;
 		final JComponent content = selected.getContent();
 		Point contentLocation = new Point();
-		Tools.convertPointToAncestor(content, contentLocation, this);
+		PointConverter.convertPointToAncestor(content, contentLocation, this);
 		g.drawRoundRect(contentLocation.x - arcWidth, contentLocation.y
 				- arcWidth, content.getWidth() + 2 * arcWidth,
 				content.getHeight() + 2 * arcWidth, 15, 15);
@@ -1634,7 +1635,7 @@ public class MapView extends JPanel implements Printable, Autoscroll {
 
 	public Point getNodeContentLocation(NodeView nodeView) {
 		Point contentXY = new Point(0, 0);
-		Tools.convertPointToAncestor(nodeView.getContent(), contentXY, this);
+		PointConverter.convertPointToAncestor(nodeView.getContent(), contentXY, this);
 		return contentXY;
 	}
 

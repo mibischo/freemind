@@ -28,6 +28,7 @@ import java.awt.Point;
 
 import freemind.main.Resources;
 import freemind.main.Tools;
+import freemind.tools.PointConverter;
 
 /**
  * Root layout.
@@ -99,7 +100,7 @@ public class VerticalRootNodeViewLayout extends NodeViewLayoutAdapter {
 			}
 		}
 		final Point p = new Point(destinationPoint);
-		Tools.convertPointFromAncestor(view, p, mainView);
+		PointConverter.convertPointFromAncestor(view, p, mainView);
 		double nWidth = mainView.getWidth() / 2f;
 		double nHeight = mainView.getHeight() / 2f;
 		final Point centerPoint = new Point((int) nWidth, (int) nHeight);

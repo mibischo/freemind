@@ -56,6 +56,7 @@ import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
 import freemind.tools.Holders;
+import freemind.tools.PointConverter;
 
 /**
  * @author foltin
@@ -214,7 +215,7 @@ public class EditNodeTextField extends EditNodeBase {
 			// changes
 			mPoint = new Point();
 
-			Tools.convertPointToAncestor(nodeView.getMainView(), mPoint,
+			PointConverter.convertPointToAncestor(nodeView.getMainView(), mPoint,
 					mapView);
 			if (xExtraWidth < 0) {
 				mPoint.x += xExtraWidth;

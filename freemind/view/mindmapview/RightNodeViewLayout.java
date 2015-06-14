@@ -29,6 +29,7 @@ import java.awt.Point;
 import javax.swing.JComponent;
 
 import freemind.main.Tools;
+import freemind.tools.PointConverter;
 
 /**
  * @author dimitri 05.06.2005
@@ -72,7 +73,7 @@ public class RightNodeViewLayout extends NodeViewLayoutAdapter {
 		final JComponent content = nodeView.getContent();
 		location.x = -LISTENER_VIEW_WIDTH;
 		location.y = 0;
-		Tools.convertPointToAncestor(content, location, nodeMotionView.getParent());
+		PointConverter.convertPointToAncestor(content, location, nodeMotionView.getParent());
 		nodeMotionView.setLocation(location);
 		nodeMotionView.setSize(LISTENER_VIEW_WIDTH, content.getHeight());
 	}

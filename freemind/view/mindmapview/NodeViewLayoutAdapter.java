@@ -28,6 +28,7 @@ import javax.swing.JComponent;
 
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
+import freemind.tools.PointConverter;
 
 /**
  * @author foltin
@@ -90,7 +91,7 @@ abstract public class NodeViewLayoutAdapter implements NodeViewLayout {
 		setUp(c);
 		layout();
 		Point location2 = view.getLocation();
-		Tools.convertPointToAncestor(view, location2, view.getMap());
+		PointConverter.convertPointToAncestor(view, location2, view.getMap());
 //		logger.info("Layouting node '" + view.getModel() + "' to " + location2);
 		layoutOtherItems();
 		shutDown();
@@ -384,7 +385,7 @@ abstract public class NodeViewLayoutAdapter implements NodeViewLayout {
 
 		Point location = movedView.getFoldingMarkPosition();
 		JComponent content = movedView.getContent();
-		Tools.convertPointToAncestor(content, location, pFoldingComponent.getParent());
+		PointConverter.convertPointToAncestor(content, location, pFoldingComponent.getParent());
 		pFoldingComponent.setCorrectedLocation(location);
 
 		Dimension preferredSize = pFoldingComponent.getPreferredSize();

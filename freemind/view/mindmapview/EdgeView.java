@@ -29,6 +29,7 @@ import java.awt.Stroke;
 import freemind.main.Tools;
 import freemind.modes.EdgeAdapter;
 import freemind.modes.MindMapEdge;
+import freemind.tools.PointConverter;
 
 /**
  * This class represents a single Edge of a MindMap.
@@ -60,12 +61,12 @@ public abstract class EdgeView {
 
 	protected void createEnd() {
 		end = getTarget().getMainViewInPoint();
-		Tools.convertPointToAncestor(this.target.getMainView(), end, source);
+		PointConverter.convertPointToAncestor(this.target.getMainView(), end, source);
 	}
 
 	protected void createStart() {
 		start = source.getMainViewOutPoint(getTarget(), end);
-		Tools.convertPointToAncestor(source.getMainView(), start, source);
+		PointConverter.convertPointToAncestor(source.getMainView(), start, source);
 	}
 
 	abstract protected void paint(Graphics2D g);

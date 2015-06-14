@@ -37,6 +37,7 @@ import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.modes.mindmapmode.MindMapMode;
 import freemind.modes.mindmapmode.MindMapNodeModel;
+import freemind.tools.PointConverter;
 import freemind.view.mindmapview.MapView;
 import freemind.view.mindmapview.MapView.ScrollPane;
 import freemind.view.mindmapview.NodeView;
@@ -225,7 +226,7 @@ public class LayoutTests extends FreeMindTestBase {
 		assertTrue(child2.getViewers().size() > 0);
 		NodeView nodeView = (NodeView) child2.getViewers().iterator().next();
 		Point point = nodeView.getMainView().getLocation();
-		Tools.convertPointToAncestor(nodeView, point, mMapView);
+		PointConverter.convertPointToAncestor(nodeView, point, mMapView);
 		return point.y;
 	}
 
@@ -233,7 +234,7 @@ public class LayoutTests extends FreeMindTestBase {
 		assertTrue(child2.getViewers().size() > 0);
 		NodeView nodeView = (NodeView) child2.getViewers().iterator().next();
 		Point point = nodeView.getMainView().getLocation();
-		Tools.convertPointToAncestor(nodeView, point, mScrollPane);
+		PointConverter.convertPointToAncestor(nodeView, point, mScrollPane);
 		return point.y;
 	}
 	

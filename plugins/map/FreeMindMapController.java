@@ -97,6 +97,7 @@ import freemind.modes.ModeController;
 import freemind.modes.common.plugins.MapNodePositionHolderBase;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.tools.OsHelper;
+import freemind.tools.PointConverter;
 import freemind.view.mindmapview.EditNodeBase;
 import freemind.view.mindmapview.EditNodeTextField;
 import freemind.view.mindmapview.NodeView;
@@ -1680,7 +1681,7 @@ public class FreeMindMapController extends JMapController implements
 		mMindMapController.setBlocked(true);
 		setMouseControl(false);
 		Point point = pEvent.getPoint();
-		Tools.convertPointToAncestor((Component) pEvent.getSource(), point, map);
+		PointConverter.convertPointToAncestor((Component) pEvent.getSource(), point, map);
 		storeMapPosition(getMap().getCursorPosition());
 		MapEditTextFieldControl editControl = new MapEditTextFieldControl(
 				nodeView, newNode, targetNode, false);
@@ -1723,7 +1724,7 @@ public class FreeMindMapController extends JMapController implements
 		mMindMapController.setBlocked(true);
 		setMouseControl(false);
 		Point point = pEvent.getPoint();
-		Tools.convertPointToAncestor((Component) pEvent.getSource(), point, map);
+		PointConverter.convertPointToAncestor((Component) pEvent.getSource(), point, map);
 		MapEditTextFieldControl editControl = new MapEditTextFieldControl(
 				nodeView, editNode, editNode, true);
 		EditNodeTextField textfield = new MapEditNoteTextField(nodeView,
