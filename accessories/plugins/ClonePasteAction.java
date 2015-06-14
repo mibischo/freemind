@@ -53,7 +53,7 @@ import freemind.extensions.HookRegistration;
 import freemind.main.FreeMind;
 import freemind.main.Resources;
 import freemind.main.Tools;
-import freemind.main.Tools.MindMapNodePair;
+import freemind.tools.MindMapNodePair;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
@@ -423,14 +423,14 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 			CompoundAction compound = new CompoundAction();
 			compound.addChoice(nodeAction);
 			for (Iterator it = correspondingNodes.iterator(); it.hasNext();) {
-				Tools.MindMapNodePair pair = (Tools.MindMapNodePair) it.next();
+				MindMapNodePair pair = (MindMapNodePair) it.next();
 				getNewCompoundAction(nodeAction, pair, compound);
 			}
 			return compound;
 		}
 
 		private void getNewCompoundAction(NodeAction nodeAction,
-				Tools.MindMapNodePair correspondingNodePair,
+				MindMapNodePair correspondingNodePair,
 				CompoundAction compound) {
 			// deep copy:
 			NodeAction copiedNodeAction = (NodeAction) Tools
@@ -476,7 +476,7 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 		}
 
 		public void changeNodeListMember(
-				Tools.MindMapNodePair correspondingNodePair,
+				MindMapNodePair correspondingNodePair,
 				NodeAction pAction, NodeListMember member) {
 			NodeAdapter memberNode = controller.getNodeFromID(member.getNode());
 			List correspondingMoveNodes = getCorrespondingNodes(pAction,
@@ -485,7 +485,7 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 				// search for this clone:
 				for (Iterator it = correspondingMoveNodes.iterator(); it
 						.hasNext();) {
-					Tools.MindMapNodePair pair = (Tools.MindMapNodePair) it
+					MindMapNodePair pair = (MindMapNodePair) it
 							.next();
 					if (pair.getCloneNode() == correspondingNodePair
 							.getCloneNode()) {
@@ -767,7 +767,7 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 				List/* pair of MindMapNodePair */shadowNodes = getCorrespondingNodes(
 						model, false);
 				for (Iterator it = shadowNodes.iterator(); it.hasNext();) {
-					Tools.MindMapNodePair shadowNode = (Tools.MindMapNodePair) it
+					MindMapNodePair shadowNode = (MindMapNodePair) it
 							.next();
 					MindMapNode correspondingNode = shadowNode
 							.getCorresponding();
