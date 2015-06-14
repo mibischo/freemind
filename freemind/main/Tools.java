@@ -269,7 +269,7 @@ public class Tools {
 	 *         windows, null otherwise
 	 */
 	public static String getPrefix(String pFileName) {
-		if (isWindows()) {
+		if (OsHelper.isWindows()) {
 			if (pFileName.matches("^[a-zA-Z]:\\\\.*")) {
 				return pFileName.substring(0, 3);
 			}
@@ -934,7 +934,7 @@ public class Tools {
 	}
 
 	public static boolean isUnix() {
-		return (File.separatorChar == '/') || isMacOsX();
+		return (File.separatorChar == '/') || OsHelper.isMacOsX();
 	}
 
 	// {{{ setPermissions() method
@@ -1240,18 +1240,6 @@ public class Tools {
 			logger.info("reducded Path: " + decodedPath);
 		}
 		return decodedPath;
-	}
-
-	public static Properties copyChangedProperties(Properties props2,
-			Properties defProps2) {
-		Properties toBeStored = new Properties();
-		for (Iterator it = props2.keySet().iterator(); it.hasNext();) {
-			String key = (String) it.next();
-			if (!safeEquals(props2.get(key), defProps2.get(key))) {
-				toBeStored.put(key, props2.get(key));
-			}
-		}
-		return toBeStored;
 	}
 
 }
