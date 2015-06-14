@@ -1144,18 +1144,7 @@ public class Tools {
 				+ pPaper.getImageableHeight();
 	}
 
-	/**
-	 * @return
-	 */
-	public static String getHostIpAsString() {
-		try {
-			return InetAddress.getLocalHost().getHostAddress();
-		} catch (UnknownHostException e) {
-			freemind.main.Resources.getInstance().logException(e);
-		}
-		return null;
-	}
-
+	
 	public static String printXmlAction(XmlAction pAction) {
 		final String classString = pAction.getClass().getName()
 				.replaceAll(".*\\.", "");

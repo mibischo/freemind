@@ -25,9 +25,11 @@ package plugins.collaboration.socket;
 
 import java.io.IOException;
 import java.io.Writer;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
+import java.net.UnknownHostException;
 import java.util.Vector;
 
 import javax.swing.SwingUtilities;
@@ -413,9 +415,23 @@ public class MindMapMaster extends SocketBasics implements PermanentNodeHook,
 		userInfo.setUserIds(getUsers());
 		userInfo.setMasterHostname(Tools.getHostName());
 		userInfo.setMasterPort(getPort());
-		userInfo.setMasterIp(Tools.getHostIpAsString());
+		userInfo.setMasterIp(getHostIpAsString());
 		return userInfo;
 	}
+	
+	/**
+	 * @return
+	 */
+	private String getHostIpAsString() {
+		try {
+			return InetAddress.getLocalHost().getHostAddress();
+		} catch (UnknownHostException e) {
+			freemind.main.Resources.getInstance().logException(e);
+		}
+		return null;
+	}
+
+	
 	public void processUnfinishedLinks() {
 	}
 
