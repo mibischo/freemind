@@ -35,7 +35,6 @@ import java.util.logging.Logger;
 
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
-import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JMenu;
@@ -61,7 +60,6 @@ import freemind.controller.actions.generated.instance.ScriptEditorWindowConfigur
 import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMindMain;
 import freemind.main.Resources;
-import freemind.main.Tools;
 
 /**
  * @author foltin TODO:

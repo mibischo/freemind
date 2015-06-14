@@ -28,7 +28,6 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 import freemind.main.FreeMindMain;
-import freemind.main.Tools;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.NodeAdapter;

@@ -32,7 +32,6 @@ import javax.swing.Action;
 
 import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMind;
-import freemind.main.Tools;
 import freemind.modes.MindIcon;
 import freemind.modes.MindMapNode;
 import freemind.modes.common.dialogs.IconSelectionPopupDialog;

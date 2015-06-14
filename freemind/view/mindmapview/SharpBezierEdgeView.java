@@ -26,7 +26,6 @@ import java.awt.geom.CubicCurve2D;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 
-import freemind.main.Tools;
 import freemind.tools.PointConverter;
 
 /**

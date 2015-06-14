@@ -17,7 +17,6 @@ import javax.swing.WindowConstants;
 import freemind.controller.Controller;
 import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMind;
-import freemind.main.Tools;
 import freemind.preferences.layout.OptionPanel;
 import freemind.preferences.layout.OptionPanel.OptionPanelFeedback;
 

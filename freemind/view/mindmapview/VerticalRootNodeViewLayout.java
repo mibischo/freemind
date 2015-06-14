@@ -27,7 +27,6 @@ import java.awt.Dimension;
 import java.awt.Point;
 
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.tools.PointConverter;
 
 /**

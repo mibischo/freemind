@@ -8,7 +8,6 @@ import java.net.URL;
 import java.util.StringTokenizer;
 
 import freemind.main.Resources;
-import freemind.main.Tools;
 
 public class UrlHelper {
 	

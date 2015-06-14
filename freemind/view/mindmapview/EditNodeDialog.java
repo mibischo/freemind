@@ -46,7 +46,6 @@ import javax.swing.JTextArea;
 import com.inet.jortho.SpellChecker;
 
 import freemind.dialog.AbstractDialog;
-import freemind.main.Tools;
 import freemind.modes.ModeController;
 import freemind.tools.FontHelper;
 import freemind.tools.Holders;

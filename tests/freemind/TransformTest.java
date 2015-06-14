@@ -38,7 +38,6 @@ import freemind.common.XmlBindingTools;
 import freemind.controller.actions.generated.instance.Plugin;
 import freemind.controller.actions.generated.instance.PluginAction;
 import freemind.controller.actions.generated.instance.PluginProperty;
-import freemind.main.Tools;
 
 public class TransformTest extends FreeMindTestBase {
 

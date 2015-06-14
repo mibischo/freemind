@@ -36,7 +36,6 @@ import javax.swing.JPopupMenu;
 import com.jgoodies.forms.builder.DefaultFormBuilder;
 
 import freemind.controller.Controller;
-import freemind.main.Tools;
 import freemind.tools.IXmlTransformations;
 import freemind.tools.XmlTransformations;
 

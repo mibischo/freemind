@@ -22,7 +22,6 @@ package freemind.common;
 
 import javax.swing.JPasswordField;
 
-import freemind.main.Tools;
 import freemind.tools.Compression;
 import freemind.tools.ICompression;
 

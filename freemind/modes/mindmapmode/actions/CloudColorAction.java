@@ -35,7 +35,6 @@ import freemind.controller.Controller;
 import freemind.controller.MenuItemEnabledListener;
 import freemind.controller.actions.generated.instance.CloudColorXmlAction;
 import freemind.controller.actions.generated.instance.XmlAction;
-import freemind.main.Tools;
 import freemind.modes.LineAdapter;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;

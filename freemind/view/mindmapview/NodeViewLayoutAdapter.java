@@ -26,7 +26,6 @@ import java.awt.Point;
 
 import javax.swing.JComponent;
 
-import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.tools.PointConverter;
 

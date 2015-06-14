@@ -27,7 +27,6 @@ import java.awt.Stroke;
 import freemind.controller.Controller;
 import freemind.main.FreeMind;
 import freemind.main.FreeMindMain;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.preferences.FreemindPropertyListener;
 import freemind.tools.IXmlTransformations;

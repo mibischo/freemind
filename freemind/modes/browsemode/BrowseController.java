@@ -44,7 +44,6 @@ import freemind.controller.MenuBar;
 import freemind.controller.MenuItemEnabledListener;
 import freemind.controller.StructuredMenuHolder;
 import freemind.extensions.HookFactory;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.main.XMLParseException;
 import freemind.modes.MapAdapter;

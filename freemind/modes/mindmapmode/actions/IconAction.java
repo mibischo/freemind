@@ -33,7 +33,6 @@ import javax.swing.KeyStroke;
 import freemind.controller.actions.generated.instance.AddIconAction;
 import freemind.controller.actions.generated.instance.XmlAction;
 import freemind.controller.filter.condition.IconContainedCondition;
-import freemind.main.Tools;
 import freemind.modes.IconInformation;
 import freemind.modes.MindIcon;
 import freemind.modes.MindMapNode;

@@ -30,7 +30,6 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 import freemind.controller.NodeMouseMotionListener.NodeMouseMotionObserver;
-import freemind.main.Tools;
 import freemind.modes.ModeController;
 import freemind.tools.Holders;
 import freemind.tools.OsHelper;

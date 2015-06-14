@@ -31,7 +31,6 @@ import javax.imageio.ImageIO;
 import org.openstreetmap.gui.jmapviewer.Coordinate;
 
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.MindMapNode;
 import freemind.modes.common.plugins.MapNodePositionHolderBase;

@@ -24,12 +24,9 @@
 package freemind.controller.filter.condition;
 
 import freemind.controller.Controller;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.MindMapNode;
 import freemind.modes.attributes.AttributeTableModel;
-import freemind.tools.IXmlTransformations;
-import freemind.tools.XmlTransformations;
 
 /**
  * @author Dimitri Polivaev 12.07.2005

@@ -30,7 +30,6 @@ import java.text.MessageFormat;
 
 import javax.swing.JFrame;
 
-import freemind.main.Tools;
 import freemind.modes.ModeController;
 import freemind.tools.ReaderProvider;
 

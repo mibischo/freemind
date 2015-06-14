@@ -43,7 +43,6 @@ import freemind.controller.actions.generated.instance.CollaborationWelcome;
 import freemind.controller.actions.generated.instance.CollaborationWhoAreYou;
 import freemind.controller.actions.generated.instance.CollaborationWrongCredentials;
 import freemind.extensions.PermanentNodeHook;
-import freemind.main.Tools;
 import freemind.modes.MapAdapter;
 import freemind.modes.NodeAdapter;
 import freemind.modes.mindmapmode.MindMapController;

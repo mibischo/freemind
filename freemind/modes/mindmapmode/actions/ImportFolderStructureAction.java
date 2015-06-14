@@ -27,7 +27,6 @@ import javax.swing.AbstractAction;
 import javax.swing.JFileChooser;
 
 import freemind.main.FreeMindMain;
-import freemind.main.Tools;
 import freemind.modes.FreeMindFileDialog;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;

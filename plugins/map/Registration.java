@@ -59,7 +59,6 @@ import freemind.main.FreeMind;
 import freemind.main.FreeMindMain.VersionInformation;
 import freemind.main.Resources;
 import freemind.main.Tools;
-import freemind.tools.Holders.IntHolder;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
@@ -70,6 +69,7 @@ import freemind.modes.mindmapmode.actions.xml.ActionPair;
 import freemind.modes.mindmapmode.actions.xml.ActorXml;
 import freemind.preferences.FreemindPropertyContributor;
 import freemind.preferences.layout.OptionPanel;
+import freemind.tools.Holders.IntHolder;
 
 public class Registration implements HookRegistration, ActorXml,
 		TileLoaderListener, MenuItemEnabledListener {

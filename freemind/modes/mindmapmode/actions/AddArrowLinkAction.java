@@ -29,7 +29,6 @@ import java.util.List;
 import freemind.controller.actions.generated.instance.AddArrowLinkXmlAction;
 import freemind.controller.actions.generated.instance.RemoveArrowLinkXmlAction;
 import freemind.controller.actions.generated.instance.XmlAction;
-import freemind.main.Tools;
 import freemind.modes.MindMapLinkRegistry;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapArrowLinkModel;

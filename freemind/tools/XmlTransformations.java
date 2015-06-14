@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Vector;
 
-import freemind.tools.IListStringConverter;
-
 public class XmlTransformations implements IXmlTransformations{
 	
 	IListStringConverter converter = new ListStringConverter();

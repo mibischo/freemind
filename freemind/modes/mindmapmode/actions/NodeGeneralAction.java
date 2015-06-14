@@ -35,7 +35,6 @@ import javax.swing.ImageIcon;
 import freemind.controller.actions.generated.instance.CompoundAction;
 import freemind.controller.actions.generated.instance.XmlAction;
 import freemind.dialog.AbstractDialog;
-import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.modes.NodeAdapter;
 import freemind.modes.mindmapmode.MindMapController;

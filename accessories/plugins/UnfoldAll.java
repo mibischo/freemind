@@ -28,7 +28,6 @@ import java.awt.event.MouseWheelEvent;
 import java.util.Iterator;
 
 import freemind.extensions.HookRegistration;
-import freemind.main.Tools;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;

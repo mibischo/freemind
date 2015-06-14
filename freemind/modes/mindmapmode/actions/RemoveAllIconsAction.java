@@ -32,7 +32,6 @@ import javax.swing.KeyStroke;
 import freemind.controller.actions.generated.instance.CompoundAction;
 import freemind.controller.actions.generated.instance.RemoveAllIconsXmlAction;
 import freemind.controller.actions.generated.instance.XmlAction;
-import freemind.main.Tools;
 import freemind.modes.IconInformation;
 import freemind.modes.MindIcon;
 import freemind.modes.MindMap;

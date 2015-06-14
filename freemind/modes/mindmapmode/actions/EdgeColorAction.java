@@ -27,12 +27,9 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.util.ListIterator;
 
-import javax.swing.AbstractAction;
-
 import freemind.controller.Controller;
 import freemind.controller.actions.generated.instance.EdgeColorFormatAction;
 import freemind.controller.actions.generated.instance.XmlAction;
-import freemind.main.Tools;
 import freemind.modes.EdgeAdapter;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;

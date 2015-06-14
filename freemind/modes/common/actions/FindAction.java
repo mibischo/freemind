@@ -46,7 +46,6 @@ import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMind;
 import freemind.main.HtmlTools;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.modes.ControllerAdapter;
 import freemind.modes.MindMapNode;
 

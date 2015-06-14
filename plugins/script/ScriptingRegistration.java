@@ -24,8 +24,6 @@ import freemind.main.FreeMind;
 import freemind.main.FreeMindMain.StartupDoneListener;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
-import freemind.tools.Holders.BooleanHolder;
-import freemind.tools.ReaderProvider;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
@@ -33,6 +31,8 @@ import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.actions.ApplyPatternAction.ExternalPatternAction;
 import freemind.preferences.FreemindPropertyContributor;
 import freemind.preferences.layout.OptionPanel;
+import freemind.tools.Holders.BooleanHolder;
+import freemind.tools.ReaderProvider;
 
 public class ScriptingRegistration implements HookRegistration,
 		ExternalPatternAction, StartupDoneListener {

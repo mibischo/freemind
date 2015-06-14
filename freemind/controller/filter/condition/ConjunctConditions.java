@@ -32,7 +32,6 @@ import freemind.controller.Controller;
 import freemind.controller.filter.FilterController;
 import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.MindMapNode;
 

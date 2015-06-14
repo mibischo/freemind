@@ -22,66 +22,19 @@ package freemind.main;
 
 //maybe move this class to another package like tools or something...
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
 import java.awt.EventQueue;
-import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.GraphicsEnvironment;
-import java.awt.Insets;
-import java.awt.Point;
 import java.awt.RenderingHints;
-import java.awt.Toolkit;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
 import java.awt.event.KeyEvent;
-import java.awt.print.Paper;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.net.InetAddress;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.net.UnknownHostException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Random;
-import java.util.Set;
-import java.util.StringTokenizer;
 import java.util.Vector;
 
 import javax.swing.InputMap;
-import javax.swing.JDialog;
 import javax.swing.KeyStroke;
-import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
 
 import freemind.common.XmlBindingTools;
-import freemind.controller.actions.generated.instance.CompoundAction;
 import freemind.controller.actions.generated.instance.XmlAction;
-import freemind.modes.MindMapNode;
-import freemind.modes.mindmapmode.MindMapController;
 import freemind.tools.Holders;
-import freemind.tools.OsHelper;
-import freemind.tools.SystemInfo;
-import freemind.view.mindmapview.NodeView;
 
 /**
  * @author foltin

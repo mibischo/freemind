@@ -23,7 +23,6 @@ package freemind.modes;
 import java.awt.Point;
 
 import freemind.main.FreeMindMain;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 
 public abstract class ArrowLinkAdapter extends LinkAdapter implements

@@ -47,7 +47,6 @@ import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMindMain;
 import freemind.main.HtmlTools;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.modes.ModeController;
 import freemind.tools.IXmlTransformations;
 import freemind.tools.XmlTransformations;

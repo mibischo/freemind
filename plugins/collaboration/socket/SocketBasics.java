@@ -37,7 +37,6 @@ import java.util.Vector;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.JButton;
-import javax.swing.JDialog;
 import javax.swing.WindowConstants;
 
 import com.jgoodies.forms.builder.DefaultFormBuilder;

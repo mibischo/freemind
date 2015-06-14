@@ -7,7 +7,6 @@ import java.net.URL;
 import javax.swing.AbstractAction;
 
 import freemind.controller.Controller;
-import freemind.controller.MenuBar;
 import freemind.main.Tools;
 import freemind.tools.UrlHelper;
 

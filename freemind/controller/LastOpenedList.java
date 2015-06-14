@@ -30,7 +30,6 @@ import java.util.ListIterator;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import freemind.main.Tools;
 import freemind.main.XMLParseException;
 import freemind.view.MapModule;
 

@@ -24,10 +24,7 @@
 package freemind.controller.filter.condition;
 
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
-import freemind.tools.IXmlTransformations;
-import freemind.tools.XmlTransformations;
 
 abstract class CompareConditionAdapter extends NodeCondition {
 

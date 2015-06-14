@@ -38,7 +38,6 @@ import javax.swing.SwingUtilities;
 import freemind.controller.Controller;
 import freemind.controller.MenuBar;
 import freemind.main.HtmlTools;
-import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.tools.PointConverter;
 

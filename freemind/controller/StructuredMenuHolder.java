@@ -45,7 +45,6 @@ import javax.swing.event.MenuListener;
 import freemind.dialog.AbstractDialog;
 import freemind.main.HtmlTools;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.tools.OsHelper;
 
 /**

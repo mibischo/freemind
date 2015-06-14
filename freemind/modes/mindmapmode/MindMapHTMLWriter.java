@@ -13,7 +13,6 @@ import java.util.ListIterator;
 import freemind.extensions.PermanentNodeHook;
 import freemind.main.HtmlTools;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.modes.MindIcon;
 import freemind.tools.IXmlTransformations;
 import freemind.tools.XmlTransformations;

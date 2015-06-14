@@ -53,7 +53,6 @@ import freemind.extensions.HookRegistration;
 import freemind.main.FreeMind;
 import freemind.main.Resources;
 import freemind.main.Tools;
-import freemind.tools.MindMapNodePair;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;

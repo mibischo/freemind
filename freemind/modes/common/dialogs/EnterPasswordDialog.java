@@ -36,7 +36,6 @@ import javax.swing.JPasswordField;
 
 import freemind.common.TextTranslator;
 import freemind.dialog.AbstractDialog;
-import freemind.main.Tools;
 
 /** */
 public class EnterPasswordDialog extends AbstractDialog {

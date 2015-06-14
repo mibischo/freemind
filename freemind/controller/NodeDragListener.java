@@ -32,7 +32,6 @@ import java.awt.dnd.DragSourceListener;
 import java.awt.event.InputEvent;
 
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.tools.OsHelper;
 import freemind.view.mindmapview.MainView;

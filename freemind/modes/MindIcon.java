@@ -32,7 +32,6 @@ import javax.swing.JLabel;
 import javax.swing.KeyStroke;
 
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.tools.UrlHelper;
 
 /**

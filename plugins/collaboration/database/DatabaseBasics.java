@@ -39,7 +39,6 @@ import java.util.Vector;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.JButton;
-import javax.swing.JDialog;
 import javax.swing.WindowConstants;
 
 import com.jgoodies.forms.builder.DefaultFormBuilder;
@@ -53,7 +52,6 @@ import freemind.controller.Controller;
 import freemind.controller.MapModuleManager.MapTitleContributor;
 import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;

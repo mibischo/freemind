@@ -35,7 +35,6 @@ import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
-import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
@@ -54,7 +53,6 @@ import javax.swing.text.Document;
 import freemind.controller.filter.util.SortedListModel;
 import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
-import freemind.main.Tools;
 
 public class ListDialog extends AbstractDialog {
 	private final class TextChangeListener implements DocumentListener {

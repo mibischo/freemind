@@ -52,7 +52,6 @@ import com.inet.jortho.SpellChecker;
 
 import freemind.main.FreeMindCommon;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
 import freemind.tools.Holders;

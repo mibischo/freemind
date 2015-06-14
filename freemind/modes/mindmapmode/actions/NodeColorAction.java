@@ -31,7 +31,6 @@ import java.util.ListIterator;
 import freemind.controller.Controller;
 import freemind.controller.actions.generated.instance.NodeColorFormatAction;
 import freemind.controller.actions.generated.instance.XmlAction;
-import freemind.main.Tools;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.MindMapNodeModel;

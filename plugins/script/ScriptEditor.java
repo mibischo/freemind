@@ -30,11 +30,11 @@ import plugins.script.ScriptEditorPanel.ScriptHolder;
 import plugins.script.ScriptEditorPanel.ScriptModel;
 import plugins.script.ScriptingEngine.ErrorHandler;
 import freemind.controller.actions.generated.instance.ScriptEditorWindowConfigurationStorage;
-import freemind.tools.Holders.BooleanHolder;
 import freemind.modes.MindMapNode;
 import freemind.modes.attributes.Attribute;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.hooks.MindMapHookAdapter;
+import freemind.tools.Holders.BooleanHolder;
 
 /**
  * @author foltin

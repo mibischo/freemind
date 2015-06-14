@@ -7,7 +7,6 @@ import javax.swing.Action;
 import javax.swing.JMenuItem;
 
 import freemind.controller.Controller;
-import freemind.controller.MenuBar;
 import freemind.controller.MenuItemSelectedListener;
 
 public class ToggleToolbarAction extends AbstractAction implements

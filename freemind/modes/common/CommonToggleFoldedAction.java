@@ -29,7 +29,6 @@ import java.util.logging.Logger;
 
 import javax.swing.AbstractAction;
 
-import freemind.main.Tools;
 import freemind.modes.ControllerAdapter;
 import freemind.modes.MindMapNode;
 import freemind.tools.Holders;

@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 import javax.swing.AbstractAction;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPopupMenu;
@@ -50,7 +49,6 @@ import freemind.dialog.AbstractDialog;
 import freemind.main.FreeMindCommon;
 import freemind.main.FreeMindMain;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.modes.ModeController;
 import freemind.tools.FontHelper;
 import freemind.tools.IFontHelper;

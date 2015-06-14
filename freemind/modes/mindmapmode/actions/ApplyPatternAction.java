@@ -33,7 +33,6 @@ import java.util.ListIterator;
 
 import freemind.controller.actions.generated.instance.Pattern;
 import freemind.controller.actions.generated.instance.PatternEdgeWidth;
-import freemind.main.Tools;
 import freemind.modes.EdgeAdapter;
 import freemind.modes.MindIcon;
 import freemind.modes.MindMapNode;

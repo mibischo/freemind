@@ -20,7 +20,6 @@ import javax.swing.JTextField;
 import freemind.controller.Controller;
 import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.tools.Holders;
 
 public class PageAction extends AbstractAction {

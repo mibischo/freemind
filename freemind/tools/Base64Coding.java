@@ -39,8 +39,6 @@ package freemind.tools;
 
 import java.io.ByteArrayOutputStream;
 
-import freemind.main.Resources;
-
 /**
  * Partial implementation of a Preference node.
  * 

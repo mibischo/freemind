@@ -26,7 +26,6 @@ import java.util.HashSet;
 import java.util.ListIterator;
 import java.util.Vector;
 
-import freemind.main.Tools;
 import freemind.tools.IDGenerator;
 
 /**

@@ -3,8 +3,6 @@ package freemind.tools;
 import java.util.HashMap;
 import java.util.Random;
 
-import freemind.main.Tools;
-
 public class IDGenerator {
 
 	public static Random ran = new Random();

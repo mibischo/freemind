@@ -28,9 +28,9 @@ import java.util.HashMap;
 
 import javax.swing.ImageIcon;
 
-import freemind.main.FreeMindMain;
 import freemind.encryption.IDesEncrypter;
 import freemind.encryption.SingleDesEncrypter;
+import freemind.main.FreeMindMain;
 import freemind.main.XMLParseException;
 import freemind.modes.ControllerAdapter;
 import freemind.modes.MapAdapter;

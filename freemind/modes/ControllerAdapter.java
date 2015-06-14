@@ -84,7 +84,6 @@ import freemind.extensions.PermanentNodeHook;
 import freemind.main.FreeMindCommon;
 import freemind.main.FreeMindMain;
 import freemind.main.Resources;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.main.XMLParseException;
 import freemind.modes.FreeMindFileDialog.DirectoryResultListener;

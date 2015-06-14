@@ -44,7 +44,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 
-import freemind.main.Tools;
 import freemind.tools.OsHelper;
 
 /**

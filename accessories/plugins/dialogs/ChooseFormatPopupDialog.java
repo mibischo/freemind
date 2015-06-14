@@ -42,7 +42,6 @@ import freemind.common.TextTranslator;
 import freemind.controller.actions.generated.instance.Pattern;
 import freemind.controller.actions.generated.instance.WindowConfigurationStorage;
 import freemind.dialog.AbstractDialog;
-import freemind.main.Tools;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.dialogs.StylePatternFrame;
 import freemind.modes.mindmapmode.dialogs.StylePatternFrame.StylePatternFrameType;

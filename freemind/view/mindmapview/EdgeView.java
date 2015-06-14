@@ -26,7 +26,6 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Stroke;
 
-import freemind.main.Tools;
 import freemind.modes.EdgeAdapter;
 import freemind.modes.MindMapEdge;
 import freemind.tools.PointConverter;

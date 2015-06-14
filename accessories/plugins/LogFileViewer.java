@@ -55,7 +55,6 @@ import freemind.extensions.HookRegistration;
 import freemind.main.FreeMind;
 import freemind.main.LogFileLogHandler;
 import freemind.main.LogFileLogHandler.LogReceiver;
-import freemind.main.Tools;
 import freemind.modes.MindMap;
 import freemind.modes.Mode;
 import freemind.modes.ModeController;

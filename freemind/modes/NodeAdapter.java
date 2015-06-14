@@ -57,7 +57,6 @@ import freemind.main.FreeMind;
 import freemind.main.FreeMindCommon;
 import freemind.main.FreeMindMain;
 import freemind.main.HtmlTools;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.attributes.Attribute;
 import freemind.modes.attributes.NodeAttributeTableModel;

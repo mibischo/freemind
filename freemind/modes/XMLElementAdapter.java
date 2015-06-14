@@ -27,7 +27,6 @@ import java.util.Vector;
 import freemind.extensions.PermanentNodeHook;
 import freemind.extensions.PermanentNodeHookSubstituteUnknown;
 import freemind.main.FreeMindMain;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.attributes.Attribute;
 import freemind.modes.attributes.AttributeRegistry;

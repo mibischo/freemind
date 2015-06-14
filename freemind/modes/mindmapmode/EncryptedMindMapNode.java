@@ -29,10 +29,10 @@ import java.util.Vector;
 import javax.swing.ImageIcon;
 import javax.swing.tree.MutableTreeNode;
 
-import freemind.main.FreeMindMain;
-import freemind.main.HtmlTools;
 import freemind.encryption.IDesEncrypter;
 import freemind.encryption.SingleDesEncrypter;
+import freemind.main.FreeMindMain;
+import freemind.main.HtmlTools;
 import freemind.main.XMLElement;
 import freemind.modes.MindIcon;
 import freemind.modes.MindMap;

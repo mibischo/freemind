@@ -45,7 +45,6 @@ import freemind.controller.filter.DefaultFilter;
 import freemind.controller.filter.Filter;
 import freemind.controller.filter.condition.NoFilteringCondition;
 import freemind.main.FreeMindMain;
-import freemind.main.Tools;
 import freemind.main.XMLParseException;
 import freemind.tools.IPlaceholderExpander;
 import freemind.tools.PlaceholderExpander;

@@ -33,7 +33,6 @@ import freemind.controller.Controller;
 import freemind.controller.FreeMindToolBar;
 import freemind.controller.StructuredMenuHolder;
 import freemind.controller.ZoomListener;
-import freemind.main.Tools;
 import freemind.tools.FontHelper;
 import freemind.tools.IFontHelper;
 

@@ -30,7 +30,6 @@ import javax.swing.JButton;
 import javax.swing.JToolBar;
 
 import freemind.dialog.AbstractDialog;
-import freemind.main.Tools;
 import freemind.tools.OsHelper;
 
 /**

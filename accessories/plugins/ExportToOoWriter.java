@@ -45,7 +45,6 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 import freemind.extensions.ExportHook;
-import freemind.main.Tools;
 
 /**
  * @author foltin

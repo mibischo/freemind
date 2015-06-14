@@ -28,7 +28,6 @@ import java.awt.Point;
 
 import javax.swing.JComponent;
 
-import freemind.main.Tools;
 import freemind.tools.PointConverter;
 
 /**
