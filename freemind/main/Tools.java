@@ -724,26 +724,6 @@ public class Tools {
 		convertPointToAncestor(source, point, destination);
 	}
 
-
-	public static class MindMapNodePair {
-		MindMapNode first;
-
-		MindMapNode second;
-
-		public MindMapNodePair(MindMapNode first, MindMapNode second) {
-			this.first = first;
-			this.second = second;
-		}
-
-		public MindMapNode getCorresponding() {
-			return first;
-		}
-
-		public MindMapNode getCloneNode() {
-			return second;
-		}
-	}
-
 	public static KeyStroke getKeyStroke(final String keyStrokeDescription) {
 		if (keyStrokeDescription == null) {
 			return null;

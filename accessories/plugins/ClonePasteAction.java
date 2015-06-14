@@ -591,6 +591,25 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 					node, startWithParent);
 			return correspondingNodes;
 		}
+		
+		public static class MindMapNodePair {
+			MindMapNode first;
+
+			MindMapNode second;
+
+			public MindMapNodePair(MindMapNode first, MindMapNode second) {
+				this.first = first;
+				this.second = second;
+			}
+
+			public MindMapNode getCorresponding() {
+				return first;
+			}
+
+			public MindMapNode getCloneNode() {
+				return second;
+			}
+		}
 
 		/**
 		 * This is the main method here. It returns to a given node its cloned
@@ -669,7 +688,7 @@ public class ClonePasteAction extends MindMapNodeHookAdapter {
 				}
 				// logger.fine("Found corresponding node " + printNodeId(target)
 				// + " on clone " + printNodeId(cloneNode));
-				returnValue.add(new Tools.MindMapNodePair(target, cloneNode));
+				returnValue.add(new MindMapNodePair(target, cloneNode));
 			}
 			return returnValue;
 		}

@@ -12,8 +12,6 @@ import javax.swing.Action;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.KeyStroke;
-
-import freemind.tools.IOsHelper;
 import freemind.tools.OsHelper;
 
 public abstract class AbstractDialog extends JDialog {
@@ -22,8 +20,6 @@ public abstract class AbstractDialog extends JDialog {
 	 * 
 	 */
 	private static final long serialVersionUID = -3131789143189146086L;
-	
-	private static IOsHelper osHelper = new OsHelper();
 	
 	public AbstractDialog() {
 		super();
@@ -285,7 +281,7 @@ public abstract class AbstractDialog extends JDialog {
 			char charAfterMnemoSign = rawLabel.charAt(mnemoSignIndex + 1);
 			if (charAfterMnemoSign != ' ') {
 				// no mnemonics under Mac OS:
-				if (!osHelper.isMacOsX()) {
+				if (!OsHelper.isMacOsX()) {
 					item.setMnemonic(charAfterMnemoSign);
 					// sets the underline to exactly this character.
 					item.setDisplayedMnemonicIndex(mnemoSignIndex);
