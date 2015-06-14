@@ -124,7 +124,7 @@ public class NodeNoteRegistration implements HookRegistration, ActorXml,
 				logger.fine("Old doc =\n'" + noteText
 						+ "', Current document: \n'" + documentText
 						+ "'. Comparison: '"
-						+ Tools.compareText(noteText, documentText) + "'.");
+						+ getMindMapController().compareText(noteText, documentText) + "'.");
 				if (!Tools.safeEquals(noteText, documentText)) {
 					logger.finest("Making map dirty.");
 					// make map dirty in order to enable automatic save on note

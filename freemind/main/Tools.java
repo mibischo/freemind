@@ -790,20 +790,20 @@ public class Tools {
 	/**
 	 * Logs the stacktrace via a dummy exception.
 	 */
-	public static void printStackTrace() {
-		freemind.main.Resources.getInstance().logException(
-				new IllegalArgumentException("HERE"));
-	}
+//	public static void printStackTrace() {
+//		freemind.main.Resources.getInstance().logException(
+//				new IllegalArgumentException("HERE"));
+//	}
 
 	/**
 	 * Logs the stacktrace into a string.
 	 */
-	public static String getStackTrace() {
-		IllegalArgumentException ex = new IllegalArgumentException("HERE");
-		ByteArrayOutputStream b = new ByteArrayOutputStream();
-		ex.printStackTrace(new PrintStream(b));
-		return b.toString();
-	}
+//	public static String getStackTrace() {
+//		IllegalArgumentException ex = new IllegalArgumentException("HERE");
+//		ByteArrayOutputStream b = new ByteArrayOutputStream();
+//		ex.printStackTrace(new PrintStream(b));
+//		return b.toString();
+//	}
 
 	/**
 	 * Adapts the font size inside of a component to the zoom
@@ -828,28 +828,6 @@ public class Tools {
 		return font;
 	}
 
-	public static String compareText(String pText1, String pText2) {
-		if (pText1 == null || pText2 == null) {
-			return "One of the Strings is null " + pText1 + ", " + pText2;
-		}
-		StringBuffer b = new StringBuffer();
-		if (pText1.length() > pText2.length()) {
-			b.append("First string is longer :"
-					+ pText1.substring(pText2.length()) + "\n");
-		}
-		if (pText1.length() < pText2.length()) {
-			b.append("Second string is longer :"
-					+ pText2.substring(pText1.length()) + "\n");
-		}
-		for (int i = 0; i < Math.min(pText1.length(), pText2.length()); i++) {
-			if (pText1.charAt(i) != pText2.charAt(i)) {
-				b.append("Difference at " + i + ": " + pText1.charAt(i) + "!="
-						+ pText2.charAt(i) + "\n");
-			}
-
-		}
-		return b.toString();
-	}
 
 	public static String getHostName() {
 		String hostname = "UNKNOWN";
@@ -874,31 +852,7 @@ public class Tools {
 	public static XmlAction unMarshall(String inputString) {
 		return XmlBindingTools.getInstance().unMarshall(inputString);
 	}
-
-	public static String getFileNameFromRestorable(String restoreable) {
-		StringTokenizer token = new StringTokenizer(restoreable, ":");
-		String fileName;
-		if (token.hasMoreTokens()) {
-			token.nextToken();
-			// fix for windows (??, fc, 25.11.2005).
-			fileName = token.nextToken("").substring(1);
-		} else {
-			fileName = null;
-		}
-		return fileName;
-	}
-
-	public static String getModeFromRestorable(String restoreable) {
-		StringTokenizer token = new StringTokenizer(restoreable, ":");
-		String mode;
-		if (token.hasMoreTokens()) {
-			mode = token.nextToken();
-		} else {
-			mode = null;
-		}
-		return mode;
-	}
-
+	
 	public static Vector getVectorWithSingleElement(Object obj) {
 		Vector nodes = new Vector();
 		nodes.add(obj);
@@ -913,63 +867,6 @@ public class Tools {
 		}
 		pVector.set(dst, pVector.set(src, pVector.get(dst)));
 	}
-
-	public static Object getField(Object[] pObjects, String pField)
-			throws IllegalArgumentException, SecurityException,
-			IllegalAccessException, NoSuchFieldException {
-		for (int i = 0; i < pObjects.length; i++) {
-			Object object = pObjects[i];
-			for (int j = 0; j < object.getClass().getFields().length; j++) {
-				Field f = object.getClass().getFields()[j];
-				if (Tools.safeEquals(pField, f.getName())) {
-					return object.getClass().getField(pField).get(object);
-				}
-			}
-		}
-		return null;
-	}
-
-	public static boolean isUnix() {
-		return (File.separatorChar == '/') || OsHelper.isMacOsX();
-	}
-
-	// {{{ setPermissions() method
-	/**
-	 * Sets numeric permissions of a file. On non-Unix platforms, does nothing.
-	 * From jEdit
-	 */
-	public static void setPermissions(String path, int permissions) {
-
-		if (permissions != 0) {
-			if (isUnix()) {
-				String[] cmdarray = { "chmod",
-						Integer.toString(permissions, 8), path };
-
-				try {
-					Process process = Runtime.getRuntime().exec(cmdarray);
-					process.getInputStream().close();
-					process.getOutputStream().close();
-					process.getErrorStream().close();
-					// Jun 9 2004 12:40 PM
-					// waitFor() hangs on some Java
-					// implementations.
-					/*
-					 * int exitCode = process.waitFor(); if(exitCode != 0)
-					 * Log.log
-					 * (Log.NOTICE,FileVFS.class,"chmod exited with code " +
-					 * exitCode);
-					 */
-				}
-
-				// Feb 4 2000 5:30 PM
-				// Catch Throwable here rather than Exception.
-				// Kaffe's implementation of Runtime.exec throws
-				// java.lang.InternalError.
-				catch (Throwable t) {
-				}
-			}
-		}
-	} // }}}
 
 	/**
 	 * @param pNode

@@ -38,6 +38,8 @@ import java.util.Vector;
 
 import javax.swing.SwingUtilities;
 
+import freemind.tools.OsHelper;
+
 /**
  * Inter-process communication.
  * <p>
@@ -87,9 +89,9 @@ public class EditServer extends Thread {
 			// access to user home dirs, people can't see your
 			// port file (and hence send arbitriary BeanShell code
 			// your way. Nasty.)
-			if (Tools.isUnix()) {
+			if (OsHelper.isUnix()) {
 				new File(portFile).createNewFile();
-				Tools.setPermissions(portFile, 0600);
+				setPermissions(portFile, 0600);
 			}
 
 			// Bind to any port on localhost; accept 2 simultaneous
@@ -123,6 +125,44 @@ public class EditServer extends Thread {
 			 * as NOTICE, not ERROR
 			 */
 			logger.info("" + io);
+		}
+	} // }}}
+	
+	// {{{ setPermissions() method
+	/**
+	 * Sets numeric permissions of a file. On non-Unix platforms, does nothing.
+	 * From jEdit
+	 */
+	private void setPermissions(String path, int permissions) {
+
+		if (permissions != 0) {
+			if (OsHelper.isUnix()) {
+				String[] cmdarray = { "chmod",
+						Integer.toString(permissions, 8), path };
+
+				try {
+					Process process = Runtime.getRuntime().exec(cmdarray);
+					process.getInputStream().close();
+					process.getOutputStream().close();
+					process.getErrorStream().close();
+					// Jun 9 2004 12:40 PM
+					// waitFor() hangs on some Java
+					// implementations.
+					/*
+					 * int exitCode = process.waitFor(); if(exitCode != 0)
+					 * Log.log
+					 * (Log.NOTICE,FileVFS.class,"chmod exited with code " +
+					 * exitCode);
+					 */
+				}
+
+				// Feb 4 2000 5:30 PM
+				// Catch Throwable here rather than Exception.
+				// Kaffe's implementation of Runtime.exec throws
+				// java.lang.InternalError.
+				catch (Throwable t) {
+				}
+			}
 		}
 	} // }}}
 

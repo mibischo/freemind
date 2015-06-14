@@ -120,8 +120,8 @@ public class LastOpenedList {
 				.tryToChangeToMapModule(
 						(String) mRestorableToMapName.get(restoreable));
 		if ((restoreable != null) && !(changedToMapModule)) {
-			String mode = Tools.getModeFromRestorable(restoreable);
-			String fileName = Tools.getFileNameFromRestorable(restoreable);
+			String mode = getModeFromRestorable(restoreable);
+			String fileName = getFileNameFromRestorable(restoreable);
 			if (mController.createNewMode(mode)) {
 				mController.getMode().restore(fileName);
 				return true;
@@ -129,6 +129,32 @@ public class LastOpenedList {
 		}
 		return false;
 	}
+
+	private String getFileNameFromRestorable(String restoreable) {
+		StringTokenizer token = new StringTokenizer(restoreable, ":");
+		String fileName;
+		if (token.hasMoreTokens()) {
+			token.nextToken();
+			// fix for windows (??, fc, 25.11.2005).
+			fileName = token.nextToken("").substring(1);
+		} else {
+			fileName = null;
+		}
+		return fileName;
+	}
+
+
+	private String getModeFromRestorable(String restoreable) {
+		StringTokenizer token = new StringTokenizer(restoreable, ":");
+		String mode;
+		if (token.hasMoreTokens()) {
+			mode = token.nextToken();
+		} else {
+			mode = null;
+		}
+		return mode;
+	}
+
 
 	ListIterator listIterator() {
 		return mlastOpenedList.listIterator();

@@ -46,6 +46,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -996,7 +997,7 @@ public class MindMapController extends ControllerAdapter implements
 				}
 				String keystroke = action.getKeyRef();
 				try {
-					Action theAction = (Action) Tools.getField(new Object[] {
+					Action theAction = (Action) getField(new Object[] {
 							this, getController() }, field);
 					String theCategory = categoryCopy + "/" + name;
 					if (obj instanceof MenuCheckedAction) {
@@ -1020,6 +1021,23 @@ public class MindMapController extends ControllerAdapter implements
 			} /* else exception */
 		}
 	}
+	
+
+	private Object getField(Object[] pObjects, String pField)
+			throws IllegalArgumentException, SecurityException,
+			IllegalAccessException, NoSuchFieldException {
+		for (int i = 0; i < pObjects.length; i++) {
+			Object object = pObjects[i];
+			for (int j = 0; j < object.getClass().getFields().length; j++) {
+				Field f = object.getClass().getFields()[j];
+				if (Tools.safeEquals(pField, f.getName())) {
+					return object.getClass().getField(pField).get(object);
+				}
+			}
+		}
+		return null;
+	}
+
 
 	public JPopupMenu getPopupMenu() {
 		return popupmenu;
@@ -2259,12 +2277,36 @@ public class MindMapController extends ControllerAdapter implements
 			return;
 		}
 		logger.fine("Old Note Text:'" + oldNoteText + ", new:'" + text + "'.");
-		logger.fine(Tools.compareText(oldNoteText, text));
+		logger.fine(compareText(oldNoteText, text));
 		EditNoteToNodeAction doAction = createEditNoteToNodeAction(node, text);
 		EditNoteToNodeAction undoAction = createEditNoteToNodeAction(node,
 				oldNoteText);
 		getActionFactory().doTransaction(ACCESSORIES_PLUGINS_NODE_NOTE,
 				new ActionPair(doAction, undoAction));
+	}
+	
+
+	public String compareText(String pText1, String pText2) {
+		if (pText1 == null || pText2 == null) {
+			return "One of the Strings is null " + pText1 + ", " + pText2;
+		}
+		StringBuffer b = new StringBuffer();
+		if (pText1.length() > pText2.length()) {
+			b.append("First string is longer :"
+					+ pText1.substring(pText2.length()) + "\n");
+		}
+		if (pText1.length() < pText2.length()) {
+			b.append("Second string is longer :"
+					+ pText2.substring(pText1.length()) + "\n");
+		}
+		for (int i = 0; i < Math.min(pText1.length(), pText2.length()); i++) {
+			if (pText1.charAt(i) != pText2.charAt(i)) {
+				b.append("Difference at " + i + ": " + pText1.charAt(i) + "!="
+						+ pText2.charAt(i) + "\n");
+			}
+
+		}
+		return b.toString();
 	}
 
 	public void registerPlugin(MindMapControllerPlugin pPlugin) {
