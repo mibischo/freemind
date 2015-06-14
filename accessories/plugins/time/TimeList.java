@@ -439,7 +439,7 @@ public class TimeList extends MindMapHookAdapter implements
 		String resourceString = getResourceString(stringProperty);
 		selectAction.putValue(AbstractAction.NAME,
 				resourceString.replaceAll("&", ""));
-		Tools.setLabelAndMnemonic(selectButton, resourceString);
+		AbstractDialog.setLabelAndMnemonic(selectButton, resourceString);
 	}
 
 	protected void exportSelectedRowsAndClose() {

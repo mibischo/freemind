@@ -186,7 +186,7 @@ public class ChooseFormatPopupDialog extends AbstractDialog implements TextTrans
 
 			});
 
-			Tools.setLabelAndMnemonic(jOKButton, mController.getText("ok"));
+			setLabelAndMnemonic(jOKButton, mController.getText("ok"));
 		}
 		return jOKButton;
 	}
@@ -205,7 +205,7 @@ public class ChooseFormatPopupDialog extends AbstractDialog implements TextTrans
 					cancelPressed();
 				}
 			});
-			Tools.setLabelAndMnemonic(jCancelButton,
+			setLabelAndMnemonic(jCancelButton,
 					mController.getText(("cancel")));
 		}
 		return jCancelButton;

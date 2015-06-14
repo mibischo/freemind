@@ -182,7 +182,7 @@ public class ExportToOoWriter extends ExportHook {
 				return false;
 			}
 			InputStream in = resource.openStream();
-			Tools.copyStream(in, out, false);
+			copyStream(in, out, false);
 			return true;
 		} catch (Exception e) {
 			logger.severe("File not found or could not be copied. "

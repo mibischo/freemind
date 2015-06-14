@@ -171,7 +171,7 @@ class ImportAttributesDialog extends AbstractDialog implements TreeSelectionList
 		buttons.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		JButton okBtn = new JButton();
-		Tools.setLabelAndMnemonic(okBtn, Resources.getInstance()
+		setLabelAndMnemonic(okBtn, Resources.getInstance()
 				.getResourceString("ok"));
 		okBtn.addActionListener(new ActionListener() {
 
@@ -183,7 +183,7 @@ class ImportAttributesDialog extends AbstractDialog implements TreeSelectionList
 		});
 
 		JButton cancelBtn = new JButton();
-		Tools.setLabelAndMnemonic(cancelBtn, Resources.getInstance()
+		setLabelAndMnemonic(cancelBtn, Resources.getInstance()
 				.getResourceString("cancel"));
 		cancelBtn.addActionListener(new ActionListener() {
 

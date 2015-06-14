@@ -218,24 +218,24 @@ public class ListDialog extends AbstractDialog {
 		this.data = data;
 		// Create and initialize the buttons.
 		final JButton closeButton = new JButton();
-		Tools.setLabelAndMnemonic(closeButton, Resources.getInstance()
+		setLabelAndMnemonic(closeButton, Resources.getInstance()
 				.getResourceString("close"));
 		closeButton.addActionListener(new CloseAction());
 		getRootPane().setDefaultButton(closeButton);
 
 		addButton = new JButton();
-		Tools.setLabelAndMnemonic(addButton, Resources.getInstance()
+		setLabelAndMnemonic(addButton, Resources.getInstance()
 				.getResourceString("add"));
 		AddAction addAction = new AddAction();
 		addButton.addActionListener(addAction);
 
 		renameButton = new JButton();
-		Tools.setLabelAndMnemonic(renameButton, Resources.getInstance()
+		setLabelAndMnemonic(renameButton, Resources.getInstance()
 				.getResourceString("rename"));
 		renameButton.addActionListener(new RenameAction());
 
 		deleteButton = new JButton();
-		Tools.setLabelAndMnemonic(deleteButton, Resources.getInstance()
+		setLabelAndMnemonic(deleteButton, Resources.getInstance()
 				.getResourceString("delete"));
 		deleteButton.addActionListener(new DeleteAction());
 		textField = new JTextField(20);

@@ -603,7 +603,7 @@ public class ManagePatternsPopupDialog extends AbstractDialog implements
 					cancelPressed();
 				}
 			});
-			Tools.setLabelAndMnemonic(jCancelButton, getText("cancel"));
+			setLabelAndMnemonic(jCancelButton, getText("cancel"));
 		}
 		return jCancelButton;
 	}

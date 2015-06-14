@@ -134,8 +134,8 @@ public class TransformTest extends FreeMindTestBase {
 		InputStream xmlSource = ClassLoader.getSystemResource(
 				mapFileToBeExported).openStream();
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
-		Tools.copyStream(xmlSource, out, true);
 		ExportWithXSLT exportHook = new ExportWithXSLT();
+		exportHook.copyStream(xmlSource, out, true);
 		MindMapControllerMock controller = new MindMapControllerMock(
 				mFreeMindMain, out.toString());
 		exportHook.setController(controller);
@@ -153,8 +153,9 @@ public class TransformTest extends FreeMindTestBase {
 		InputStream xmlSource = ClassLoader.getSystemResource(
 				mapFileToBeExported).openStream();
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
-		Tools.copyStream(xmlSource, out, true);
+		
 		ExportToOoWriter exportHook = new ExportToOoWriter();
+		exportHook.copyStream(xmlSource, out, true);
 		exportHook.setController(new MindMapControllerMock(mFreeMindMain, out
 				.toString()));
 

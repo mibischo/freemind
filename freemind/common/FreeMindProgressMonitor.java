@@ -35,6 +35,7 @@ import javax.swing.JProgressBar;
 
 import tests.freemind.FreeMindMainMock;
 import freemind.controller.actions.generated.instance.WindowConfigurationStorage;
+import freemind.dialog.AbstractDialog;
 import freemind.main.Resources;
 import freemind.main.Tools;
 
@@ -42,7 +43,7 @@ import freemind.main.Tools;
  * @author foltin
  * @date 01.04.2013
  */
-public class FreeMindProgressMonitor extends JDialog {
+public class FreeMindProgressMonitor extends AbstractDialog {
 
 	/**
 	 * 
@@ -61,7 +62,7 @@ public class FreeMindProgressMonitor extends JDialog {
 		mLabel = new JLabel("!");
 		mProgressBar = new JProgressBar();
 		mCancelButton = new JButton();
-		Tools.setLabelAndMnemonic(mCancelButton, getString(("cancel")));
+		setLabelAndMnemonic(mCancelButton, getString(("cancel")));
 		mCancelButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent pE) {

@@ -30,6 +30,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
@@ -196,7 +197,7 @@ public class ExportHook extends ModeControllerHookAdapter {
 					+ fileName);
 
 			// Transfer bytes from in to out
-			Tools.copyStream(in, out, true);
+			copyStream(in, out, true);
 		} catch (Exception e) {
 			logger.severe("File not found or could not be copied. "
 					+ "Was earching for " + prefix + fileName
@@ -225,7 +226,7 @@ public class ExportHook extends ModeControllerHookAdapter {
 					+ fileName);
 
 			// Transfer bytes from in to out
-			Tools.copyStream(in, out, true);
+			copyStream(in, out, true);
 		} catch (Exception e) {
 			logger.severe("File not found or could not be copied. "
 					+ "Was earching for " + dir + fileName
@@ -234,5 +235,18 @@ public class ExportHook extends ModeControllerHookAdapter {
 		}
 
 	}
-
+	
+	public void copyStream(InputStream in, OutputStream out,
+			boolean pCloseOutput) throws IOException {
+		byte[] buf = new byte[1024];
+		int len;
+		while ((len = in.read(buf)) > 0) {
+			out.write(buf, 0, len);
+		}
+		in.close();
+		if (pCloseOutput) {
+			out.close();
+		}
+	}
+	
 }

@@ -42,6 +42,7 @@ import javax.swing.JToolBar;
 import javax.swing.event.MenuEvent;
 import javax.swing.event.MenuListener;
 
+import freemind.dialog.AbstractDialog;
 import freemind.main.HtmlTools;
 import freemind.main.Resources;
 import freemind.main.Tools;
@@ -236,7 +237,7 @@ public class StructuredMenuHolder {
 		updateMenus(new MenuAdder() {
 
 			public void addMenuItem(StructuredMenuItemHolder holder) {
-				Tools.setLabelAndMnemonic(holder.getMenuItem(), null);
+				AbstractDialog.setLabelAndMnemonic(holder.getMenuItem(), null);
 				myItem.add(holder.getMenuItem());
 			}
 
@@ -362,7 +363,7 @@ public class StructuredMenuHolder {
 				mItemCounter = 0;
 				mMenuCounter++;
 			}
-			Tools.setLabelAndMnemonic(holder.getMenuItem(), null);
+			AbstractDialog.setLabelAndMnemonic(holder.getMenuItem(), null);
 			JMenuItem item = holder.getMenuItem();
 			adjustMenuItem(item);
 			listener.addItem(holder);

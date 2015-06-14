@@ -340,18 +340,18 @@ public class AssignAttributeDialog extends AbstractDialog implements
 		final Border btnBorder = new EmptyBorder(2, 2, 2, 2);
 
 		selectedBtn = new JRadioButton();
-		Tools.setLabelAndMnemonic(selectedBtn, Resources.getInstance()
+		setLabelAndMnemonic(selectedBtn, Resources.getInstance()
 				.getResourceString("attributes_for_selected"));
 		selectedBtn.setSelected(true);
 		visibleBtn = new JRadioButton();
-		Tools.setLabelAndMnemonic(visibleBtn, Resources.getInstance()
+		setLabelAndMnemonic(visibleBtn, Resources.getInstance()
 				.getResourceString("attributes_for_visible"));
 		final ButtonGroup group = new ButtonGroup();
 		group.add(selectedBtn);
 		group.add(visibleBtn);
 
 		skipRootBtn = new JCheckBox();
-		Tools.setLabelAndMnemonic(skipRootBtn, Resources.getInstance()
+		setLabelAndMnemonic(skipRootBtn, Resources.getInstance()
 				.getResourceString("attributes_skip_root"));
 		skipRootBtn.setSelected(true);
 
@@ -368,25 +368,25 @@ public class AssignAttributeDialog extends AbstractDialog implements
 		getContentPane().add(selectionBox, BorderLayout.NORTH);
 
 		final JButton addBtn = new JButton();
-		Tools.setLabelAndMnemonic(addBtn, Resources.getInstance()
+		setLabelAndMnemonic(addBtn, Resources.getInstance()
 				.getResourceString("filter_add"));
 		addBtn.addActionListener(new AddAction());
 		addBtn.setMaximumSize(maxButtonDimension);
 
 		JButton deleteAttributeBtn = new JButton();
-		Tools.setLabelAndMnemonic(deleteAttributeBtn, Resources.getInstance()
+		setLabelAndMnemonic(deleteAttributeBtn, Resources.getInstance()
 				.getResourceString("attribute_delete"));
 		deleteAttributeBtn.addActionListener(new DeleteAttributeAction());
 		deleteAttributeBtn.setMaximumSize(maxButtonDimension);
 
 		JButton deleteAttributeValueBtn = new JButton();
-		Tools.setLabelAndMnemonic(deleteAttributeValueBtn, Resources
+		setLabelAndMnemonic(deleteAttributeValueBtn, Resources
 				.getInstance().getResourceString("attribute_delete_value"));
 		deleteAttributeValueBtn.addActionListener(new DeleteValueAction());
 		deleteAttributeValueBtn.setMaximumSize(maxButtonDimension);
 
 		JButton replaceBtn = new JButton();
-		Tools.setLabelAndMnemonic(replaceBtn, Resources.getInstance()
+		setLabelAndMnemonic(replaceBtn, Resources.getInstance()
 				.getResourceString("attribute_replace"));
 		replaceBtn.addActionListener(new ReplaceValueAction());
 		replaceBtn.setMaximumSize(maxButtonDimension);
@@ -465,7 +465,7 @@ public class AssignAttributeDialog extends AbstractDialog implements
 		getContentPane().add(actionBox, BorderLayout.CENTER);
 
 		final JButton closeBtn = new JButton();
-		Tools.setLabelAndMnemonic(closeBtn, Resources.getInstance()
+		setLabelAndMnemonic(closeBtn, Resources.getInstance()
 				.getResourceString("close"));
 		closeBtn.addActionListener(new ActionListener() {
 

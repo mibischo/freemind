@@ -335,7 +335,7 @@ public class ScriptEditorPanel extends AbstractDialog {
 		// menu:
 		JMenuBar menuBar = new JMenuBar();
 		JMenu menu = new JMenu();
-		Tools.setLabelAndMnemonic(menu,
+		setLabelAndMnemonic(menu,
 				pFrame.getResourceString("plugins/ScriptEditor.menu_actions"));
 		if (pHasNewScriptFunctionality) {
 			addAction(
@@ -375,7 +375,7 @@ public class ScriptEditorPanel extends AbstractDialog {
 
 	private void addAction(JMenu menu, AbstractAction action) {
 		JMenuItem item = menu.add(action);
-		Tools.setLabelAndMnemonic(item,
+		setLabelAndMnemonic(item,
 				(String) action.getValue(AbstractAction.NAME));
 		item.setIcon(new BlindIcon(StructuredMenuHolder.ICON_SIZE));
 	}

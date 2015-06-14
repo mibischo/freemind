@@ -688,20 +688,6 @@ public class Tools {
 		return inputString;
 	}
 
-	
-	public static void copyStream(InputStream in, OutputStream out,
-			boolean pCloseOutput) throws IOException {
-		byte[] buf = new byte[1024];
-		int len;
-		while ((len = in.read(buf)) > 0) {
-			out.write(buf, 0, len);
-		}
-		in.close();
-		if (pCloseOutput) {
-			out.close();
-		}
-	}
-
 	public static Point convertPointToAncestor(Component c, Point p,
 			Component destination) {
 		int x, y;

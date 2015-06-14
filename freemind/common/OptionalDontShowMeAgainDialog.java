@@ -180,7 +180,7 @@ public class OptionalDontShowMeAgainDialog {
 			boxString = "OptionalDontShowMeAgainDialog.rememberMyDescision";
 		}
 		mDontShowAgainBox = new JCheckBox(mTextTranslator.getText(boxString));
-		Tools.setLabelAndMnemonic(mDontShowAgainBox, null);
+		AbstractDialog.setLabelAndMnemonic(mDontShowAgainBox, null);
 		mDialog.getContentPane().add(
 				mDontShowAgainBox,
 				new GridBagConstraints(0, 2, 3, 1, 1.0, 1.0,
@@ -188,7 +188,7 @@ public class OptionalDontShowMeAgainDialog {
 						new Insets(5, 5, 0, 0), 0, 0));
 		JButton okButton = new JButton(
 				mTextTranslator.getText("OptionalDontShowMeAgainDialog.ok"));
-		Tools.setLabelAndMnemonic(okButton, null);
+		AbstractDialog.setLabelAndMnemonic(okButton, null);
 		okButton.addActionListener(okAction);
 		mDialog.getContentPane().add(
 				okButton,
@@ -197,7 +197,7 @@ public class OptionalDontShowMeAgainDialog {
 						new Insets(5, 5, 0, 0), 0, 0));
 		JButton cancelButton = new JButton(
 				mTextTranslator.getText("OptionalDontShowMeAgainDialog.cancel"));
-		Tools.setLabelAndMnemonic(cancelButton, null);
+		AbstractDialog.setLabelAndMnemonic(cancelButton, null);
 		cancelButton.addActionListener(cancelAction);
 		mDialog.getContentPane().add(
 				cancelButton,

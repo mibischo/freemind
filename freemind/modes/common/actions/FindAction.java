@@ -186,13 +186,13 @@ public class FindAction extends AbstractAction {
 						.getText("ExtendedFindDialog.find_search_in_notes_too"));
 		mFindInNotesTooBox.setSelected(Resources.getInstance().getBoolProperty(
 				FreeMind.RESOURCES_SEARCH_IN_NOTES_TOO));
-		Tools.setLabelAndMnemonic(mFindInNotesTooBox, null);
+		AbstractDialog.setLabelAndMnemonic(mFindInNotesTooBox, null);
 		contentPane.add(mFindInNotesTooBox, new GridBagConstraints(0, 2, 3, 1,
 				1.0, 1.0, GridBagConstraints.WEST, GridBagConstraints.BOTH,
 				new Insets(5, 5, 0, 0), 0, 0));
 		JButton okButton = new JButton(
 				controller.getText("ExtendedFindDialog.ok"));
-		Tools.setLabelAndMnemonic(okButton, null);
+		AbstractDialog.setLabelAndMnemonic(okButton, null);
 		okButton.addActionListener(okAction);
 		contentPane.add(okButton, new GridBagConstraints(2, 3, 1, 1, 1.0, 1.0,
 				GridBagConstraints.WEST, GridBagConstraints.BOTH, new Insets(5,

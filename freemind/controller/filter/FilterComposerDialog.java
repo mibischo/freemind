@@ -622,19 +622,19 @@ public class FilterComposerDialog extends AbstractDialog {
 		CloseAction closeAction = new CloseAction();
 
 		btnOK = new JButton();
-		Tools.setLabelAndMnemonic(btnOK, Resources.getInstance()
+		setLabelAndMnemonic(btnOK, Resources.getInstance()
 				.getResourceString("ok"));
 		btnOK.addActionListener(closeAction);
 		btnOK.setMaximumSize(maxButtonDimension);
 
 		btnApply = new JButton();
-		Tools.setLabelAndMnemonic(btnApply, Resources.getInstance()
+		setLabelAndMnemonic(btnApply, Resources.getInstance()
 				.getResourceString("apply"));
 		btnApply.addActionListener(closeAction);
 		btnApply.setMaximumSize(maxButtonDimension);
 
 		btnCancel = new JButton();
-		Tools.setLabelAndMnemonic(btnCancel, Resources.getInstance()
+		setLabelAndMnemonic(btnCancel, Resources.getInstance()
 				.getResourceString("cancel"));
 		btnCancel.addActionListener(closeAction);
 		btnCancel.setMaximumSize(maxButtonDimension);
@@ -650,14 +650,14 @@ public class FilterComposerDialog extends AbstractDialog {
 		if (!c.getFrame().isApplet()) {
 			ActionListener saveAction = new SaveAction();
 			btnSave = new JButton();
-			Tools.setLabelAndMnemonic(btnSave, Resources.getInstance()
+			setLabelAndMnemonic(btnSave, Resources.getInstance()
 					.getResourceString("save"));
 			btnSave.addActionListener(saveAction);
 			btnSave.setMaximumSize(maxButtonDimension);
 
 			ActionListener loadAction = new LoadAction();
 			btnLoad = new JButton();
-			Tools.setLabelAndMnemonic(btnLoad, Resources.getInstance()
+			setLabelAndMnemonic(btnLoad, Resources.getInstance()
 					.getResourceString("load"));
 			btnLoad.addActionListener(loadAction);
 			btnLoad.setMaximumSize(maxButtonDimension);
