@@ -789,7 +789,7 @@ public class PasteAction extends AbstractAction implements ActorXml {
 				trans.setTransferable(HtmlTools.makeValidXml(textFromClipboard));
 				if (pUndoAction != null && !amountAlreadySet) {
 					pUndoAction
-							.setNodeAmount(Tools.countOccurrences(
+							.setNodeAmount(countOccurrences(
 									textFromClipboard,
 									ControllerAdapter.NODESEPARATOR) + 1);
 					amountAlreadySet = true;
@@ -915,6 +915,24 @@ public class PasteAction extends AbstractAction implements ActorXml {
 			freemind.main.Resources.getInstance().logException(e);
 		}
 		return null;
+	}
+	
+	/**
+	 * @param pString
+	 * @param pSearchString
+	 * @return the amount of occurrences of pSearchString in pString.
+	 */
+	private int countOccurrences(String pString, String pSearchString) {
+		int amount = 0;
+		while (true) {
+			final int index = pString.indexOf(pSearchString);
+			if (index < 0) {
+				break;
+			}
+			amount++;
+			pString = pString.substring(index + pSearchString.length());
+		}
+		return amount;
 	}
 
 	/*
