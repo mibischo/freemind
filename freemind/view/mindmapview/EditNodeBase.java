@@ -26,6 +26,7 @@ package freemind.view.mindmapview;
 import java.awt.BorderLayout;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
+import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
@@ -258,7 +259,7 @@ public class EditNodeBase {
 	}
 
 	public Clipboard getClipboard() {
-		return Tools.getClipboard();
+		return Toolkit.getDefaultToolkit().getSystemClipboard();
 	}
 
 	public EditControl getEditControl() {

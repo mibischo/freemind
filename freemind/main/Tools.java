@@ -1018,27 +1018,22 @@ public class Tools {
 						pNode.getParentNode(), pMindMapController)));
 	}
 
-	/**
-     */
-	public static Clipboard getClipboard() {
-		return Toolkit.getDefaultToolkit().getSystemClipboard();
-	}
-
-	public static void addFocusPrintTimer() {
-		Timer timer = new Timer(1000, new ActionListener() {
-
-			public void actionPerformed(ActionEvent pE) {
-				logger.info("Component: "
-						+ KeyboardFocusManager.getCurrentKeyboardFocusManager()
-								.getFocusOwner()
-						+ ", Window: "
-						+ KeyboardFocusManager.getCurrentKeyboardFocusManager()
-								.getFocusedWindow());
-			}
-		});
-		timer.start();
-
-	}
+	
+//	public static void addFocusPrintTimer() {
+//		Timer timer = new Timer(1000, new ActionListener() {
+//
+//			public void actionPerformed(ActionEvent pE) {
+//				logger.info("Component: "
+//						+ KeyboardFocusManager.getCurrentKeyboardFocusManager()
+//								.getFocusOwner()
+//						+ ", Window: "
+//						+ KeyboardFocusManager.getCurrentKeyboardFocusManager()
+//								.getFocusedWindow());
+//			}
+//		});
+//		timer.start();
+//
+//	}
 
 	
 

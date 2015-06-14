@@ -28,6 +28,7 @@ import java.awt.Cursor;
 import java.awt.EventQueue;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -1054,7 +1055,7 @@ public class FreeMindMapController extends JMapController implements
 						position, zoom);
 			}
 			// Put link into clipboard.
-			Tools.getClipboard().setContents(new StringSelection(link), null);
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(link), null);
 		}
 
 	}
@@ -1075,7 +1076,7 @@ public class FreeMindMapController extends JMapController implements
 				coordinates = getCoordinates(getMap().getCursorPosition());
 			}
 			// Put Coordinates into clipboard.
-			Tools.getClipboard().setContents(new StringSelection(coordinates),
+			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(coordinates),
 					null);
 		}
 
