@@ -219,6 +219,7 @@ import freemind.modes.mindmapmode.listeners.MindMapNodeDropListener;
 import freemind.modes.mindmapmode.listeners.MindMapNodeMotionListener;
 import freemind.tools.FileExtensions;
 import freemind.tools.OsHelper;
+import freemind.tools.ReaderProvider;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MainView;
 import freemind.view.mindmapview.MapView;
@@ -606,8 +607,8 @@ public class MindMapController extends ControllerAdapter implements
 				// try xslt script:
 				boolean success = false;
 				try {
-					loadPatterns(Tools.getUpdateReader(
-							Tools.getReaderFromFile(patternsFile),
+					loadPatterns(ReaderProvider.getUpdateReader(
+							ReaderProvider.getReaderFromFile(patternsFile),
 							"patterns_updater.xslt", getFrame()));
 					// save patterns directly:
 					StylePatternFactory.savePatterns(new FileWriter(

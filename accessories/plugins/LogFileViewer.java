@@ -63,6 +63,7 @@ import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.actions.xml.ActionHandler;
 import freemind.modes.mindmapmode.actions.xml.PrintActionHandler;
 import freemind.modes.mindmapmode.hooks.MindMapHookAdapter;
+import freemind.tools.ReaderProvider;
 import freemind.view.MapModule;
 
 public class LogFileViewer extends MindMapHookAdapter implements
@@ -232,7 +233,7 @@ public class LogFileViewer extends MindMapHookAdapter implements
 				.getFreemindDirectory()
 				+ File.separator
 				+ FreeMind.LOG_FILE_NAME + ".0";
-		String logFileContents = Tools.getFile(new File(pathname));
+		String logFileContents = ReaderProvider.getFile(new File(pathname));
 		// done.
 		getMindMapController().getController().getMapModuleManager()
 				.addListener(this);

@@ -98,6 +98,7 @@ import freemind.modes.common.plugins.MapNodePositionHolderBase;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.tools.OsHelper;
 import freemind.tools.PointConverter;
+import freemind.tools.ReaderProvider;
 import freemind.view.mindmapview.EditNodeBase;
 import freemind.view.mindmapview.EditNodeTextField;
 import freemind.view.mindmapview.NodeView;
@@ -2416,7 +2417,7 @@ public class FreeMindMapController extends JMapController implements
 								OSM_NOMINATIM_READ_TIMEOUT_IN_MS, 30000));
 			}
 			InputStream urlStream = urlConnection.getInputStream();
-			result = Tools.getFile(new InputStreamReader(urlStream));
+			result = ReaderProvider.getFile(new InputStreamReader(urlStream));
 			result = new String(result.getBytes(), "UTF-8");
 			logger.fine(result + " was received for search " + b);
 		} finally {

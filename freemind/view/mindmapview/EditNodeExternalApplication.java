@@ -32,6 +32,7 @@ import javax.swing.JFrame;
 
 import freemind.main.Tools;
 import freemind.modes.ModeController;
+import freemind.tools.ReaderProvider;
 
 /**
  * @author Daniel Polansky
@@ -86,7 +87,7 @@ public class EditNodeExternalApplication extends EditNodeBase {
 					// and with Vim though.
 
 					// c. Get the text from the temporary file
-					String content = Tools.getFile(temporaryFile);
+					String content = ReaderProvider.getFile(temporaryFile);
 					if (content == null) {
 						getEditControl().cancel();
 					}

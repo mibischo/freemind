@@ -25,6 +25,7 @@ import freemind.main.FreeMindMain.StartupDoneListener;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
 import freemind.tools.Holders.BooleanHolder;
+import freemind.tools.ReaderProvider;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
@@ -206,7 +207,7 @@ public class ScriptingRegistration implements HookRegistration,
 		if (startupScriptFile != null && !startupScriptFile.isEmpty()) {
 			String expandFileName = expandFileName(startupScriptFile);
 			ScriptingEngine.logger.info("Starting script at " + expandFileName);
-			String scriptString = Tools.getFile(new File(expandFileName));
+			String scriptString = ReaderProvider.getFile(new File(expandFileName));
 			if (scriptString != null && !scriptString.isEmpty()) {
 				ScriptingEngine.logger.info("Starting script " + scriptString);
 				try {

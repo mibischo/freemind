@@ -64,6 +64,7 @@ import freemind.modes.MindMapLinkRegistry;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
 import freemind.modes.NodeAdapter;
+import freemind.tools.ReaderProvider;
 
 public class MindMapMapModel extends MapAdapter {
 
@@ -511,7 +512,7 @@ public class MindMapMapModel extends MapAdapter {
 							"We should not open the reader " + pReaderCreator);
 				}
 			}
-			reader = Tools.getUpdateReader(pReaderCreator.createReader(),
+			reader = ReaderProvider.getUpdateReader(pReaderCreator.createReader(),
 					FREEMIND_VERSION_UPDATER_XSLT, getFrame());
 			if (reader == null) {
 				// something went wrong on update:

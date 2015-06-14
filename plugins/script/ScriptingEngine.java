@@ -42,6 +42,7 @@ import freemind.main.FreeMindMain;
 import freemind.main.FreeMindSecurityManager;
 import freemind.main.Tools;
 import freemind.tools.Holders.BooleanHolder;
+import freemind.tools.ReaderProvider;
 import freemind.modes.MindMapNode;
 import freemind.modes.attributes.NodeAttributeTableModel;
 import freemind.modes.mindmapmode.MindMapController;
@@ -87,7 +88,7 @@ public class ScriptingEngine extends MindMapHookAdapter {
 			MindMapNode pNode, BooleanHolder pBooleanHolder) {
 		// get cookies from base plugin:
 		ScriptingRegistration reg = (ScriptingRegistration) getPluginBaseClass();
-		String scriptContent = Tools.getFile(new File(pScriptLocation));
+		String scriptContent = ReaderProvider.getFile(new File(pScriptLocation));
 		if (scriptContent == null) {
 			return;
 		}
