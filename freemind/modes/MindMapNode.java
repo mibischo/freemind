@@ -42,6 +42,7 @@ import freemind.extensions.PermanentNodeHook;
 import freemind.main.XMLElement;
 import freemind.modes.attributes.Attribute;
 import freemind.modes.attributes.NodeAttributeTableModel;
+import freemind.modes.mindmapmode.MindMapController;
 import freemind.view.mindmapview.NodeView;
 import freemind.view.mindmapview.NodeViewVisitor;
 
@@ -445,4 +446,6 @@ public interface MindMapNode extends MutableTreeNode {
 	 * @return true, if one of its parents is folded. If itself is folded, doesn't matter.
 	 */
 	boolean hasFoldedParents();
+	
+	public String getNodeTextHierarchy(MindMapController pMindMapController);
 }

@@ -52,6 +52,7 @@ import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
 import freemind.modes.attributes.Attribute;
 import freemind.modes.attributes.NodeAttributeTableModel;
+import freemind.modes.mindmapmode.MindMapController;
 import freemind.view.mindmapview.NodeView;
 import freemind.view.mindmapview.NodeViewVisitor;
 
@@ -501,6 +502,13 @@ final class TestMindMapNode implements MindMapNode {
 	 */
 	public boolean hasVisibleChilds() {
 		return false;
+	}
+	
+	public String getNodeTextHierarchy(
+			MindMapController pMindMapController) {
+		return this.getShortText(pMindMapController)
+				+ ((this.isRoot()) ? "" : (" <- " + this.getParentNode().getNodeTextHierarchy(
+						pMindMapController)));
 	}
 
 }

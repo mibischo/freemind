@@ -61,6 +61,7 @@ import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.attributes.Attribute;
 import freemind.modes.attributes.NodeAttributeTableModel;
+import freemind.modes.mindmapmode.MindMapController;
 import freemind.preferences.FreemindPropertyListener;
 import freemind.tools.IXmlTransformations;
 import freemind.tools.XmlTransformations;
@@ -1508,6 +1509,13 @@ public abstract class NodeAdapter implements MindMapNode {
 			visitor.visit((NodeView) iterator.next());
 		}
 
+	}
+	
+	public String getNodeTextHierarchy(
+			MindMapController pMindMapController) {
+		return this.getShortText(pMindMapController)
+				+ ((this.isRoot()) ? "" : (" <- " + this.getParentNode().getNodeTextHierarchy(
+						pMindMapController)));
 	}
 	//
 	// Events

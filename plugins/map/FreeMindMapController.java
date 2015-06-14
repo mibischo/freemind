@@ -2465,7 +2465,7 @@ public class FreeMindMapController extends JMapController implements
 
 			logger.fine("Looking for hit on node " + posHolder);
 			if (posHolder != null) {
-				statusText = Tools.getNodeTextHierarchy(posHolder.getNode(),
+				statusText = posHolder.getNode().getNodeTextHierarchy(
 						mMapHook.getMindMapController()) + ". ";
 			}
 		}
