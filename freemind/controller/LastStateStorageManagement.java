@@ -28,6 +28,7 @@ import java.util.Map.Entry;
 import java.util.TreeMap;
 import java.util.Vector;
 
+import freemind.common.XmlBindingTools;
 import freemind.controller.actions.generated.instance.MindmapLastStateMapStorage;
 import freemind.controller.actions.generated.instance.MindmapLastStateStorage;
 import freemind.controller.actions.generated.instance.NodeListMember;
@@ -49,7 +50,7 @@ public class LastStateStorageManagement {
 					this.getClass().getName());
 		}
 		try {
-			XmlAction action = Tools.unMarshall(pXml);
+			XmlAction action = XmlBindingTools.getInstance().unMarshall(pXml);
 			if (action != null) {
 				if (action instanceof MindmapLastStateMapStorage) {
 					mLastStatesMap = (MindmapLastStateMapStorage) action;
@@ -66,7 +67,7 @@ public class LastStateStorageManagement {
 	}
 
 	public String getXml() {
-		return Tools.marshall(mLastStatesMap);
+		return XmlBindingTools.getInstance().marshall(mLastStatesMap);
 	}
 
 	public void clearTabIndices() {

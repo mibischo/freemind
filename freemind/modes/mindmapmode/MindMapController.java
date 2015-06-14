@@ -2129,11 +2129,11 @@ public class MindMapController extends ControllerAdapter implements
 	}
 
 	public String marshall(XmlAction action) {
-		return Tools.marshall(action);
+		return XmlBindingTools.getInstance().marshall(action);
 	}
 
 	public XmlAction unMarshall(String inputString) {
-		return Tools.unMarshall(inputString);
+		return XmlBindingTools.getInstance().unMarshall(inputString);
 	}
 
 	public void storeDialogPositions(JDialog dialog,

@@ -27,6 +27,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
 
+import freemind.common.XmlBindingTools;
 import freemind.controller.actions.generated.instance.CollaborationActionBase;
 import freemind.controller.actions.generated.instance.CollaborationTransaction;
 import freemind.controller.actions.generated.instance.XmlAction;
@@ -91,7 +92,7 @@ public abstract class CommunicationBase extends TerminateableThread {
 	public synchronized boolean send(CollaborationActionBase pCommand) {
 		try {
 			printCommand("Send", pCommand);
-			final String marshalledText = Tools.marshall(pCommand);
+			final String marshalledText = XmlBindingTools.getInstance().marshall(pCommand);
 			logger.fine(getName() + " :Sending " + marshalledText);
 			String text = compression.compress(marshalledText);
 			// split into pieces, as the writeUTF method is only able to send
@@ -126,8 +127,7 @@ public abstract class CommunicationBase extends TerminateableThread {
 				mCurrentCommand.setLength(0);
 				final String decompressedText = compression.decompress(textValue);
 				logger.fine(getName() + " :Received " + decompressedText);
-				final CollaborationActionBase command = (CollaborationActionBase) Tools
-						.unMarshall(decompressedText);
+				final CollaborationActionBase command = (CollaborationActionBase) XmlBindingTools.getInstance().unMarshall(decompressedText);
 				if (command != null) {
 					printCommand("Receive", command);
 					Runnable runnable = new Runnable() {

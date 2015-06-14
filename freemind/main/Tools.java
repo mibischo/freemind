@@ -337,16 +337,8 @@ public class Tools {
 		}
 	}
 
-	public static String marshall(XmlAction action) {
-		return XmlBindingTools.getInstance().marshall(action);
-	}
-
-	public static XmlAction unMarshall(String inputString) {
-		return XmlBindingTools.getInstance().unMarshall(inputString);
-	}
-	
 	public static XmlAction deepCopy(XmlAction action) {
-		return (XmlAction) unMarshall(marshall(action));
+		return (XmlAction) XmlBindingTools.getInstance().unMarshall(XmlBindingTools.getInstance().marshall(action));
 	}
 	
 	public static Vector getVectorWithSingleElement(Object obj) {
