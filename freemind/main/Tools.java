@@ -105,31 +105,6 @@ public class Tools {
 	// initializing an array. Here's an example of this syntax:
 	// boolean[] answers = { true, false, true, true, false };
 
-	
-	public static boolean isAbsolutePath(String path) {
-		// On Windows, we cannot just ask if the file name starts with file
-		// separator.
-		// If path contains ":" at the second position, then it is not relative,
-		// I guess.
-		// However, if it starts with separator, then it is absolute too.
-
-		// Possible problems: Not tested on Macintosh, but should work.
-		// Koh, 1.4.2004: Resolved problem: I tested on Mac OS X 10.3.3 and
-		// worked.
-
-		String osNameStart = System.getProperty("os.name").substring(0, 3);
-		String fileSeparator = System.getProperty("file.separator");
-		if (osNameStart.equals("Win")) {
-			return ((path.length() > 1) && path.substring(1, 2).equals(":"))
-					|| path.startsWith(fileSeparator);
-		} else if (osNameStart.equals("Mac")) {
-			// Koh:Panther (or Java 1.4.2) may change file path rule
-			return path.startsWith(fileSeparator);
-		} else {
-			return path.startsWith(fileSeparator);
-		}
-	}
-
 	/**
 	 * This is a correction of a method getFile of a class URL. Namely, on
 	 * Windows it returned file paths like /C: etc., which are not valid on

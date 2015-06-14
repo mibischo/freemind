@@ -502,7 +502,7 @@ public abstract class ControllerAdapter implements ModeController,
 		try {
 			logger.info("Trying to open " + relative);
 			URL absolute = null;
-			if (Tools.isAbsolutePath(relative)) {
+			if (OsHelper.isAbsolutePath(relative)) {
 				// Protocol can be identified by rexep pattern "[a-zA-Z]://.*".
 				// This should distinguish a protocol path from a file path on
 				// most platforms.

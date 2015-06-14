@@ -95,6 +95,7 @@ import freemind.preferences.FreemindPropertyListener;
 import freemind.tools.Compression;
 import freemind.tools.Constants;
 import freemind.tools.ICompression;
+import freemind.tools.OsHelper;
 import freemind.tools.SystemInfo;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
@@ -1295,7 +1296,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 			if (fileArgument.toLowerCase().endsWith(
 					freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION)) {
 
-				if (!Tools.isAbsolutePath(fileArgument)) {
+				if (!OsHelper.isAbsolutePath(fileArgument)) {
 					fileArgument = System.getProperty("user.dir")
 							+ System.getProperty("file.separator")
 							+ fileArgument;
