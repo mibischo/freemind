@@ -220,7 +220,7 @@ import freemind.modes.mindmapmode.listeners.MindMapNodeMotionListener;
 import freemind.tools.FileExtensions;
 import freemind.tools.OsHelper;
 import freemind.tools.ReaderProvider;
-import freemind.tools.RelativeUrlConverter;
+import freemind.tools.UrlHelper;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MainView;
 import freemind.view.mindmapview.MapView;
@@ -1329,7 +1329,7 @@ public class MindMapController extends ControllerAdapter implements
 			URL absolute = null;
 			try {
 				String relative = selected.getLink();
-				absolute = new URL(Tools.fileToUrl(getMap().getFile()),
+				absolute = new URL(UrlHelper.fileToUrl(getMap().getFile()),
 						relative);
 			} catch (MalformedURLException ex) {
 				JOptionPane.showMessageDialog(getView(),
@@ -1339,7 +1339,7 @@ public class MindMapController extends ControllerAdapter implements
 			}
 			try {
 				MindMapNodeModel node = getMindMapMapModel().loadTree(
-						Tools.urlToFile(absolute));
+						UrlHelper.urlToFile(absolute));
 				paste(node, selected);
 				invokeHooksRecursively(node, getMindMapMapModel());
 			} catch (Exception ex) {
@@ -1366,7 +1366,7 @@ public class MindMapController extends ControllerAdapter implements
 			URL absolute = null;
 			try {
 				String relative = selected.getLink();
-				absolute = new URL(Tools.fileToUrl(getMap().getFile()),
+				absolute = new URL(UrlHelper.fileToUrl(getMap().getFile()),
 						relative);
 			} catch (MalformedURLException ex) {
 				JOptionPane.showMessageDialog(getView(),
@@ -1375,7 +1375,7 @@ public class MindMapController extends ControllerAdapter implements
 			}
 			try {
 				MindMapNodeModel node = getMindMapMapModel().loadTree(
-						Tools.urlToFile(absolute));
+						UrlHelper.urlToFile(absolute));
 				for (ListIterator i = node.childrenUnfolded(); i.hasNext();) {
 					MindMapNodeModel importNode = (MindMapNodeModel) i.next();
 					paste(importNode, selected);
@@ -1716,7 +1716,7 @@ public class MindMapController extends ControllerAdapter implements
 		int returnVal = chooser.showOpenDialog(getFrame().getContentPane());
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
 			input = chooser.getSelectedFile();
-			relative = RelativeUrlConverter.fileToRelativeUrlString(input, getMap().getFile());
+			relative = UrlHelper.fileToRelativeUrlString(input, getMap().getFile());
 		}
 		return relative;
 	}

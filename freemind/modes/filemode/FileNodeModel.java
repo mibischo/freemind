@@ -32,6 +32,7 @@ import freemind.main.Tools;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.NodeAdapter;
+import freemind.tools.UrlHelper;
 
 /**
  * This class represents a single Node of a Tree. It contains direct handles to
@@ -160,7 +161,7 @@ public class FileNodeModel extends NodeAdapter {
 
 	public String getLink() {
 		try {
-			return Tools.fileToUrl(file).toString();
+			return UrlHelper.fileToUrl(file).toString();
 		} catch (MalformedURLException e) {
 			freemind.main.Resources.getInstance().logException(e);
 		}

@@ -38,7 +38,7 @@ import freemind.main.Tools;
 import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.tools.OsHelper;
 import freemind.tools.ReaderProvider;
-import freemind.tools.RelativeUrlConverter;
+import freemind.tools.UrlHelper;
 
 /**
  * @author foltin
@@ -112,14 +112,14 @@ public class ToolsTests extends FreeMindTestBase {
 		File input = new File(
 				UNIX_PATH_WITH_SPEACIAL_CHAR);
 		System.out.println("input file " + input);
-		URL url = Tools.fileToUrl(input);
+		URL url = UrlHelper.fileToUrl(input);
 		String externalForm = HtmlTools.unicodeToHTMLUnicodeEntity(
 				url.toExternalForm(), false);
 		System.out.println("External form: " + externalForm);
 		// convert back:
 		String unescapeHTMLUnicodeEntity = HtmlTools
 				.unescapeHTMLUnicodeEntity(externalForm);
-		File urlToFile = Tools.urlToFile(new URL(unescapeHTMLUnicodeEntity));
+		File urlToFile = UrlHelper.urlToFile(new URL(unescapeHTMLUnicodeEntity));
 		assertEquals("Forth and back should give the same",
 				input.getAbsolutePath(), urlToFile.getAbsolutePath());
 
@@ -196,10 +196,10 @@ public class ToolsTests extends FreeMindTestBase {
 
 	protected void testCorrectRelativism(File input, String expected,
 			File mapFile) throws MalformedURLException {
-		String relative = RelativeUrlConverter.fileToRelativeUrlString(input, mapFile);
+		String relative = UrlHelper.fileToRelativeUrlString(input, mapFile);
 		assertEquals("Correct relative result", expected, relative);
-		URL u = new URL(Tools.fileToUrl(mapFile), relative);
-		URL e = Tools.fileToUrl(input);
+		URL u = new URL(UrlHelper.fileToUrl(mapFile), relative);
+		URL e = UrlHelper.fileToUrl(input);
 		assertEquals("Correct absolute  result", e.toExternalForm(),
 				u.toExternalForm());
 	}
@@ -295,7 +295,7 @@ public class ToolsTests extends FreeMindTestBase {
 
 	public void testKeyDocumentationPathConversion() throws Exception {
 		String file = "c:\\home\\java\\freemind\\0_9_0\\bin\\dist\\doc/FM_Key_Mappings_Quick_Guide.pdf";
-		System.out.println(Tools.urlToFile(Tools.fileToUrl(new File(file))));
+		System.out.println(UrlHelper.urlToFile(UrlHelper.fileToUrl(new File(file))));
 	}
 	
 	public void testChangedProperties() throws Exception {

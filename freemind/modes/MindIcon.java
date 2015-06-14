@@ -33,6 +33,7 @@ import javax.swing.KeyStroke;
 
 import freemind.main.Resources;
 import freemind.main.Tools;
+import freemind.tools.UrlHelper;
 
 /**
  * This class represents a MindIcon than can be applied to a node or a whole
@@ -152,7 +153,7 @@ public class MindIcon implements Comparable, IconInformation {
 							.getFreemindDirectory(), "icons/" + getName()
 							+ ".png");
 					if (file.canRead()) {
-						imageURL = Tools.fileToUrl(file);
+						imageURL = UrlHelper.fileToUrl(file);
 					}
 				} catch (Exception e) {
 				}

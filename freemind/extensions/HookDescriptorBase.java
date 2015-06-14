@@ -35,6 +35,7 @@ import freemind.controller.actions.generated.instance.Plugin;
 import freemind.controller.actions.generated.instance.PluginClasspath;
 import freemind.main.FreeMindMain;
 import freemind.main.Tools;
+import freemind.tools.UrlHelper;
 
 /**
  * @author foltin
@@ -162,9 +163,9 @@ public class HookDescriptorBase {
 					file = new File(getPluginDirectory(), jarString);
 				}
 				// end new version by ewl.
-				logger.info("file " + Tools.fileToUrl(file) + " exists = "
+				logger.info("file " + UrlHelper.fileToUrl(file) + " exists = "
 						+ file.exists());
-				urls[j++] = Tools.fileToUrl(file);
+				urls[j++] = UrlHelper.fileToUrl(file);
 			}
 			ClassLoader loader = new URLClassLoader(urls,
 					frame.getFreeMindClassLoader());

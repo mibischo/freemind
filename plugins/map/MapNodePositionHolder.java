@@ -36,6 +36,7 @@ import freemind.main.XMLElement;
 import freemind.modes.MindMapNode;
 import freemind.modes.common.plugins.MapNodePositionHolderBase;
 import freemind.modes.mindmapmode.MindMapController;
+import freemind.tools.UrlHelper;
 import freemind.view.mindmapview.NodeView;
 
 /**
@@ -265,7 +266,7 @@ public class MapNodePositionHolder extends MapNodePositionHolderBase {
 	protected String getImageTag() {
 		String imageTag = "ERROR";
 		try {
-			imageTag = "<img src=\"" + Tools.fileToUrl(getTooltipFile(false))
+			imageTag = "<img src=\"" + UrlHelper.fileToUrl(getTooltipFile(false))
 					+ "\"/>";
 		} catch (MalformedURLException e) {
 			freemind.main.Resources.getInstance().logException(e);

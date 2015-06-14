@@ -112,23 +112,7 @@ public class Tools {
 	 * reasons is that file:// is basically no protocol at all, but rather
 	 * something every browser and every system uses slightly differently.
 	 */
-	public static String urlGetFile(URL url) {
-		if (OsHelper.isWindows() && isFile(url)) {
-			String fileName = url.toString().replaceFirst("^file:", "")
-					.replace('/', '\\');
-			return (fileName.indexOf(':') >= 0) ? fileName.replaceFirst(
-					"^\\\\*", "") : fileName;
-		} // Network path
-		else {
-			return url.getFile();
-		}
-	}
-
-	public static boolean isFile(URL url) {
-		return url.getProtocol().equals("file");
-	}
-
-
+	
 	/**
 	 * Tests a string to be equals with "true".
 	 * 
@@ -295,23 +279,6 @@ public class Tools {
 		return KeyStroke.getKeyStroke("typed " + keyStrokeDescription);
 	}
 
-	public static final String JAVA_VERSION = System
-			.getProperty("java.version");
-
-	public static URL fileToUrl(File pFile) throws MalformedURLException {
-		if (pFile == null)
-			return null;
-		return pFile.toURI().toURL();
-	}
-
-	public static File urlToFile(URL pUrl) throws URISyntaxException {
-		// fix for java1.4 and java5 only.
-		if (SystemInfo.isBelowJava6()) {
-			return new File(urlGetFile(pUrl));
-		}
-		return new File(new URI(pUrl.toString()));
-	}
-
 	public static void restoreAntialiasing(Graphics2D g, Object renderingHint) {
 		if (RenderingHints.KEY_ANTIALIASING.isCompatibleValue(renderingHint)) {
 			g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, renderingHint);
@@ -354,18 +321,6 @@ public class Tools {
 					+ src + ", " + dst + ", size= " + pVector.size());
 		}
 		pVector.set(dst, pVector.set(src, pVector.get(dst)));
-	}
-
-	/**
-	 * @param pNode
-	 * @param pMindMapController
-	 * @return
-	 */
-	public static String getNodeTextHierarchy(MindMapNode pNode,
-			MindMapController pMindMapController) {
-		return pNode.getShortText(pMindMapController)
-				+ ((pNode.isRoot()) ? "" : (" <- " + getNodeTextHierarchy(
-						pNode.getParentNode(), pMindMapController)));
 	}
 
 	

@@ -57,6 +57,7 @@ import freemind.modes.common.GotoLinkNodeAction;
 import freemind.modes.common.plugins.MapNodePositionHolderBase;
 import freemind.modes.common.plugins.NodeNoteBase;
 import freemind.modes.viewmodes.ViewControllerAdapter;
+import freemind.tools.UrlHelper;
 import freemind.view.mindmapview.MainView;
 
 public class BrowseController extends ViewControllerAdapter {
@@ -343,7 +344,7 @@ public class BrowseController extends ViewControllerAdapter {
 	public ModeController load(File url) throws IOException {
 		ModeController newModeController = super.load(url);
 		// decorator pattern.
-		((BrowseToolBar) newModeController.getModeToolBar()).setURLField(Tools
+		((BrowseToolBar) newModeController.getModeToolBar()).setURLField(UrlHelper
 				.fileToUrl(url).toString());
 		return newModeController;
 	}

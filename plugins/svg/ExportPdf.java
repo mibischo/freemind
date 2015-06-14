@@ -46,6 +46,7 @@ import org.w3c.dom.Element;
 import freemind.controller.Controller;
 import freemind.main.Tools;
 import freemind.modes.MindMapNode;
+import freemind.tools.UrlHelper;
 import freemind.view.mindmapview.MapView;
 
 /**
@@ -100,7 +101,7 @@ public class ExportPdf extends ExportVectorGraphic {
 			for (Iterator it = documentsToOpen.iterator(); it.hasNext();) {
 				File fileToOpen = (File) it.next();
 				getController().getFrame().openDocument(
-						Tools.fileToUrl(fileToOpen));
+						UrlHelper.fileToUrl(fileToOpen));
 			}
 		} catch (Exception e) {
 			freemind.main.Resources.getInstance().logException(e);

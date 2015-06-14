@@ -107,6 +107,7 @@ import freemind.preferences.FreemindPropertyListener;
 import freemind.preferences.layout.OptionPanel;
 import freemind.preferences.layout.OptionPanel.OptionPanelFeedback;
 import freemind.tools.Holders;
+import freemind.tools.UrlHelper;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
 
@@ -1287,7 +1288,7 @@ public class Controller implements MapModuleChangeObserver {
 			/* new handling for relative urls. fc, 29.10.2003. */
 			String applicationPath = frame.getFreemindBaseDir();
 			// remove "." and make url
-			return Tools
+			return UrlHelper
 					.fileToUrl(new File(applicationPath + map.substring(1)));
 			/* end: new handling for relative urls. fc, 29.10.2003. */
 		}
@@ -1316,7 +1317,7 @@ public class Controller implements MapModuleChangeObserver {
 				if (map != null && map.startsWith(".")) {
 					url = localDocumentationLinkConverter.convertLocalLink(map);
 				} else {
-					url = Tools.fileToUrl(new File(map));
+					url = UrlHelper.fileToUrl(new File(map));
 				}
 				final URL endUrl = url;
 				// invokeLater is necessary, as the mode changing removes
@@ -1360,7 +1361,7 @@ public class Controller implements MapModuleChangeObserver {
 					url = localDocumentationLinkConverter
 							.convertLocalLink(urlText);
 				} else {
-					url = Tools.fileToUrl(new File(urlText));
+					url = UrlHelper.fileToUrl(new File(urlText));
 				}
 				logger.info("Opening key docs under " + url);
 				controller.getFrame().openDocument(url);

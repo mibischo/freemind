@@ -94,6 +94,7 @@ import freemind.tools.FileExtensions;
 import freemind.tools.IPlaceholderExpander;
 import freemind.tools.OsHelper;
 import freemind.tools.PlaceholderExpander;
+import freemind.tools.UrlHelper;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
 import freemind.view.mindmapview.NodeView;
@@ -442,7 +443,7 @@ public abstract class ControllerAdapter implements ModeController,
 	public ModeController load(File file) throws FileNotFoundException,
 			IOException {
 		try {
-			return load(Tools.fileToUrl(file));
+			return load(UrlHelper.fileToUrl(file));
 		} catch (XMLParseException e) {
 			freemind.main.Resources.getInstance().logException(e);
 			throw new RuntimeException(e);
@@ -522,7 +523,7 @@ public abstract class ControllerAdapter implements ModeController,
 				// it works on Windows and Linux.
 
 				// absolute = new URL("file://"+relative); }
-				absolute = Tools.fileToUrl(new File(relative));
+				absolute = UrlHelper.fileToUrl(new File(relative));
 			} else if (relative.startsWith("#")) {
 				// inner map link, fc, 12.10.2004
 				logger.finest("found relative link to " + relative);

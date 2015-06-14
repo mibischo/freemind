@@ -65,6 +65,7 @@ import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
 import freemind.modes.NodeAdapter;
 import freemind.tools.ReaderProvider;
+import freemind.tools.UrlHelper;
 
 public class MindMapMapModel extends MapAdapter {
 
@@ -371,7 +372,7 @@ public class MindMapMapModel extends MapAdapter {
 	public void load(URL url) throws FileNotFoundException, IOException,
 			XMLParseException, URISyntaxException {
 		logger.info("Loading file: " + url.toString());
-		File file = Tools.urlToFile(url);
+		File file = UrlHelper.urlToFile(url);
 		load(file);
 	}
 

@@ -36,6 +36,8 @@ import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
+import freemind.tools.UrlHelper;
+
 /**
  * @author foltin
  * 
@@ -258,7 +260,7 @@ public class FreeMindCommon {
 	public ClassLoader getFreeMindClassLoader() {
 		ClassLoader classLoader = this.getClass().getClassLoader();
 		try {
-			return new URLClassLoader(new URL[] { Tools.fileToUrl(new File(
+			return new URLClassLoader(new URL[] { UrlHelper.fileToUrl(new File(
 					getFreemindBaseDir())) }, classLoader);
 		} catch (MalformedURLException e) {
 			freemind.main.Resources.getInstance().logException(e);

@@ -49,6 +49,7 @@ import freemind.main.Tools;
 import freemind.main.XMLParseException;
 import freemind.tools.IPlaceholderExpander;
 import freemind.tools.PlaceholderExpander;
+import freemind.tools.UrlHelper;
 
 public abstract class MapAdapter extends DefaultTreeModel implements MindMap {
 
@@ -151,7 +152,7 @@ public abstract class MapAdapter extends DefaultTreeModel implements MindMap {
 
 	public void load(File file) throws FileNotFoundException, IOException {
 		try {
-			load(Tools.fileToUrl(file));
+			load(UrlHelper.fileToUrl(file));
 		} catch (XMLParseException e) {
 			freemind.main.Resources.getInstance().logException(e);
 		} catch (URISyntaxException e) {
@@ -299,7 +300,7 @@ public abstract class MapAdapter extends DefaultTreeModel implements MindMap {
 	 * Return URL of the map (whether as local file or a web location)
 	 */
 	public URL getURL() throws MalformedURLException {
-		return getFile() != null ? Tools.fileToUrl(getFile()) : null;
+		return getFile() != null ? UrlHelper.fileToUrl(getFile()) : null;
 	}
 
 	protected void setFile(File file) {

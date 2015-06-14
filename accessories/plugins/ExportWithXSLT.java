@@ -58,7 +58,7 @@ import freemind.modes.MindIcon;
 import freemind.modes.MindMap;
 import freemind.modes.MindMapNode;
 import freemind.modes.ModeController;
-import freemind.tools.RelativeUrlConverter;
+import freemind.tools.UrlHelper;
 
 /**
  * @author foltin
@@ -129,7 +129,7 @@ public class ExportWithXSLT extends ExportHook {
 					if (Tools
 							.safeEquals(getResourceString("load_file"), "true")) {
 						getController().getFrame().openDocument(
-								Tools.fileToUrl(saveFile));
+								UrlHelper.fileToUrl(saveFile));
 					}
 				}
 			} catch (Exception e) {
@@ -352,7 +352,7 @@ public class ExportWithXSLT extends ExportHook {
 			Transformer trans = transFact.newTransformer(xsltSource);
 			// set parameter:
 			// relative directory <filename>_files
-			trans.setParameter("destination_dir", RelativeUrlConverter.fileToRelativeUrlString(new File(resultFile.getAbsolutePath()
+			trans.setParameter("destination_dir", UrlHelper.fileToRelativeUrlString(new File(resultFile.getAbsolutePath()
 					+ "_files/"), resultFile) + "/");
 			trans.setParameter("area_code", areaCode);
 			trans.setParameter("folding_type", getController().getFrame()

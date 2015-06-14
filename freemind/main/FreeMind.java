@@ -97,6 +97,7 @@ import freemind.tools.Constants;
 import freemind.tools.ICompression;
 import freemind.tools.OsHelper;
 import freemind.tools.SystemInfo;
+import freemind.tools.UrlHelper;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
 
@@ -635,7 +636,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 				browser_command = formatter.format(messageArguments);
 
 				if (url.getProtocol().equals("file")) {
-					final File file = Tools.urlToFile(url);
+					final File file = UrlHelper.urlToFile(url);
 					if (!SystemInfo.isBelowJava6()) {
 						Class desktopClass = Class.forName("java.awt.Desktop");
 						Method getDesktopMethod = desktopClass.getMethod(
@@ -686,7 +687,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 				if ("file".equals(url.getProtocol())) {
 					// Bug in the apple's open function. For files, a pure
 					// filename must be given.
-					final File file = Tools.urlToFile(url);
+					final File file = UrlHelper.urlToFile(url);
 					String[] command = {
 							getProperty("default_browser_command_mac_open"),
 							"file:" + file.getAbsolutePath() };
@@ -1097,7 +1098,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 		for (int i = 0; i < pArgs.length; i++) {
 			String fileName = pArgs[i];
 			try {
-				b.append(Tools.fileToUrl(new File(fileName)));
+				b.append(UrlHelper.fileToUrl(new File(fileName)));
 				b.append('\n');
 			} catch (MalformedURLException e) {
 				freemind.main.Resources.getInstance().logException(e);
@@ -1390,7 +1391,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 				logger.info("Loading " + filename);
 			}
 			controller.getModeController().load(
-					Tools.fileToUrl(new File(filename)));
+					UrlHelper.fileToUrl(new File(filename)));
 			// remove temporary property because we do not want to store in a
 			// file and survive restart
 			getProperties().remove(propertyKey);

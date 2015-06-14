@@ -31,6 +31,7 @@ import freemind.main.Tools;
 import freemind.modes.FreeMindFileDialog;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;
+import freemind.tools.UrlHelper;
 
 public class ImportFolderStructureAction extends AbstractAction {
 	// Logging:
@@ -91,7 +92,7 @@ public class ImportFolderStructureAction extends AbstractAction {
 					if (list[i].isDirectory()) {
 						// Insert a new node
 						MindMapNode node = addNode(target, list[i].getName(),
-								Tools.fileToUrl(list[i]).toString());
+								UrlHelper.fileToUrl(list[i]).toString());
 						importFolderStructure(list[i], node, false);
 					}
 				}
@@ -99,7 +100,7 @@ public class ImportFolderStructureAction extends AbstractAction {
 				for (int i = 0; i < list.length; i++) {
 					if (!list[i].isDirectory()) {
 						addNode(target, list[i].getName(),
-								Tools.fileToUrl(list[i]).toString());
+								UrlHelper.fileToUrl(list[i]).toString());
 					}
 				}
 			}
