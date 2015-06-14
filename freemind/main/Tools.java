@@ -971,20 +971,6 @@ public class Tools {
 		}
 	} // }}}
 
-	public static String arrayToUrls(String[] pArgs) {
-		StringBuffer b = new StringBuffer();
-		for (int i = 0; i < pArgs.length; i++) {
-			String fileName = pArgs[i];
-			try {
-				b.append(fileToUrl(new File(fileName)));
-				b.append('\n');
-			} catch (MalformedURLException e) {
-				freemind.main.Resources.getInstance().logException(e);
-			}
-		}
-		return b.toString();
-	}
-
 	/**
 	 * @param pNode
 	 * @param pMindMapController
