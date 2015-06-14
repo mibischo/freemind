@@ -43,6 +43,7 @@ import javax.swing.filechooser.FileFilter;
 import freemind.main.Tools;
 import freemind.modes.FreeMindFileDialog;
 import freemind.modes.ModeController;
+import freemind.tools.FileExtensions;
 import freemind.view.mindmapview.MapView;
 
 /**
@@ -86,7 +87,7 @@ public class ExportHook extends ModeControllerHookAdapter {
 
 		// |= Pressed O.K.
 		File chosenFile = chooser.getSelectedFile();
-		String ext = Tools.getExtension(chosenFile.getName());
+		String ext = FileExtensions.getExtension(chosenFile.getName());
 		if (!Tools.safeEqualsIgnoreCase(ext, type)) {
 			chosenFile = new File(chosenFile.getParent(), chosenFile.getName()
 					+ "." + type);
@@ -118,7 +119,7 @@ public class ExportHook extends ModeControllerHookAdapter {
 			if (f.isDirectory()) {
 				return true;
 			}
-			String extension = Tools.getExtension(f.getName());
+			String extension = FileExtensions.getExtension(f.getName());
 			return Tools.safeEqualsIgnoreCase(extension, type);
 		}
 

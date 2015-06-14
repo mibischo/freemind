@@ -71,6 +71,7 @@ import freemind.modes.MindIcon;
 import freemind.modes.MindMap;
 import freemind.modes.ModeController;
 import freemind.modes.attributes.AttributeRegistry;
+import freemind.tools.FileExtensions;
 
 /**
  * @author dimitri
@@ -336,7 +337,7 @@ public class FilterComposerDialog extends AbstractDialog {
 		public boolean accept(File f) {
 			if (f.isDirectory())
 				return true;
-			String extension = Tools.getExtension(f.getName());
+			String extension = FileExtensions.getExtension(f.getName());
 			if (extension != null) {
 				if (extension
 						.equals(FilterController.FREEMIND_FILTER_EXTENSION_WITHOUT_DOT)) {

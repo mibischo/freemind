@@ -104,41 +104,8 @@ public class Tools {
 	// initializing an array. Here's an example of this syntax:
 	// boolean[] answers = { true, false, true, true, false };
 
-	public static final Set executableExtensions = new HashSet(
-			Arrays.asList(new String[] { "exe", "com", "vbs", "bat", "lnk" }));
-
-	private static Set availableFontFamilyNames = null; // Keep set of platform
-
-	private static String sEnvFonts[] = null;
-
 	// bug fix from Dimitri.
 	public static Random ran = new Random();
-
-	// fonts
-
-	public static boolean executableByExtension(String file) {
-		return executableExtensions.contains(getExtension(file));
-	}
-
-	/**
-	 * Returns the lowercase of the extension of a file. Example:
-	 * getExtension("fork.pork.MM") ==
-	 * freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION_WITHOUT_DOT
-	 */
-	public static String getExtension(File f) {
-		return getExtension(f.toString());
-	}
-
-	/**
-	 * Returns the lowercase of the extension of a file name. Example:
-	 * getExtension("fork.pork.MM") ==
-	 * freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION_WITHOUT_DOT
-	 */
-	public static String getExtension(String s) {
-		int i = s.lastIndexOf('.');
-		return (i > 0 && i < s.length() - 1) ? s.substring(i + 1).toLowerCase()
-				.trim() : "";
-	}
 
 	public static boolean isAbsolutePath(String path) {
 		// On Windows, we cannot just ask if the file name starts with file
@@ -187,23 +154,7 @@ public class Tools {
 		return url.getProtocol().equals("file");
 	}
 
-	/**
-	 * @return "/" for absolute file names under Unix, "c:\\" or similar under
-	 *         windows, null otherwise
-	 */
-	public static String getPrefix(String pFileName) {
-		if (OsHelper.isWindows()) {
-			if (pFileName.matches("^[a-zA-Z]:\\\\.*")) {
-				return pFileName.substring(0, 3);
-			}
-		} else {
-			if (pFileName.startsWith(File.separator)) {
-				return File.separator;
-			}
-		}
-		return null;
-	}
-
+	
 	/**
 	 * This method converts an absolute url to an url relative to a given
 	 * base-url. Something like this should be included in the librarys, but I
@@ -650,12 +601,6 @@ public class Tools {
 		}
 	}
 
-	public static String getFileNameProposal(MindMapNode node) {
-		String rootText = node.getPlainTextContent();
-		rootText = rootText.replaceAll("[&:/\\\\\0%$#~\\?\\*]+", "");
-		return rootText;
-	}
-
 	public static void waitForEventQueue() {
 		try {
 			// wait until AWT thread starts
@@ -674,24 +619,6 @@ public class Tools {
 			freemind.main.Resources.getInstance().logException(e);
 		}
 	}
-
-	/**
-	 * Logs the stacktrace via a dummy exception.
-	 */
-//	public static void printStackTrace() {
-//		freemind.main.Resources.getInstance().logException(
-//				new IllegalArgumentException("HERE"));
-//	}
-
-	/**
-	 * Logs the stacktrace into a string.
-	 */
-//	public static String getStackTrace() {
-//		IllegalArgumentException ex = new IllegalArgumentException("HERE");
-//		ByteArrayOutputStream b = new ByteArrayOutputStream();
-//		ex.printStackTrace(new PrintStream(b));
-//		return b.toString();
-//	}
 
 	/**
 	 * Adapts the font size inside of a component to the zoom

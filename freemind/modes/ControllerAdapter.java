@@ -90,6 +90,7 @@ import freemind.main.XMLParseException;
 import freemind.modes.FreeMindFileDialog.DirectoryResultListener;
 import freemind.modes.attributes.AttributeController;
 import freemind.modes.common.listeners.MindMapMouseWheelEventHandler;
+import freemind.tools.FileExtensions;
 import freemind.tools.IPlaceholderExpander;
 import freemind.tools.OsHelper;
 import freemind.tools.PlaceholderExpander;
@@ -551,7 +552,7 @@ public abstract class ControllerAdapter implements ModeController,
 				// remove ref from absolute:
 				absolute = getURLWithoutReference(absolute);
 			}
-			String extension = Tools.getExtension(absolute.toString());
+			String extension = FileExtensions.getExtension(absolute.toString());
 			if ((extension != null)
 					&& extension
 							.equals(freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION_WITHOUT_DOT)) { // ----
@@ -938,7 +939,7 @@ public abstract class ControllerAdapter implements ModeController,
 			f = chooser.getSelectedFile();
 			lastCurrentDir = f.getParentFile();
 			// Force the extension to be .mm
-			String ext = Tools.getExtension(f.getName());
+			String ext = FileExtensions.getExtension(f.getName());
 			if (!ext.equals(freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION_WITHOUT_DOT)) {
 				f = new File(f.getParent(), f.getName()
 						+ freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION);
@@ -993,7 +994,13 @@ public abstract class ControllerAdapter implements ModeController,
 	 * 
 	 */
 	private String getFileNameProposal() {
-		return Tools.getFileNameProposal(getMap().getRootNode());
+		return getFileNameProposal(getMap().getRootNode());
+	}
+	
+	public String getFileNameProposal(MindMapNode node) {
+		String rootText = node.getPlainTextContent();
+		rootText = rootText.replaceAll("[&:/\\\\\0%$#~\\?\\*]+", "");
+		return rootText;
 	}
 
 	/**

@@ -216,6 +216,7 @@ import freemind.modes.mindmapmode.hooks.MindMapHookFactory;
 import freemind.modes.mindmapmode.listeners.MindMapMouseMotionManager;
 import freemind.modes.mindmapmode.listeners.MindMapNodeDropListener;
 import freemind.modes.mindmapmode.listeners.MindMapNodeMotionListener;
+import freemind.tools.FileExtensions;
 import freemind.tools.OsHelper;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MainView;
@@ -1419,7 +1420,7 @@ public class MindMapController extends ControllerAdapter implements
 		public boolean accept(File f) {
 			if (f.isDirectory())
 				return true;
-			String extension = Tools.getExtension(f.getName());
+			String extension = FileExtensions.getExtension(f.getName());
 			if (extension != null) {
 				if (extension
 						.equals(freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION_WITHOUT_DOT)) {

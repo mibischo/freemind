@@ -31,6 +31,7 @@ import freemind.main.Tools;
 import freemind.modes.FreeMindFileDialog;
 import freemind.modes.MindMapNode;
 import freemind.modes.mindmapmode.MindMapController;
+import freemind.tools.FileExtensions;
 
 public class ImportExplorerFavoritesAction extends AbstractAction {
 	private final MindMapController controller;
@@ -88,7 +89,7 @@ public class ImportExplorerFavoritesAction extends AbstractAction {
 			// For each .url file: add it
 			for (int i = 0; i < list.length; i++) {
 				if (!list[i].isDirectory()
-						&& Tools.getExtension(list[i]).equals("url")) {
+						&& FileExtensions.getExtension(list[i]).equals("url")) {
 					favoritesFound = true;
 					try {
 						MindMapNode node = addNode(target,

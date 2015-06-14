@@ -36,6 +36,7 @@ import freemind.modes.ModeController;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.modes.mindmapmode.MindMapNodeModel;
+import freemind.tools.FileExtensions;
 
 /** */
 public class ExportBranchAction extends AbstractAction {
@@ -66,7 +67,7 @@ public class ExportBranchAction extends AbstractAction {
 		// Open FileChooser to choose in which file the exported
 		// branch should be stored
 		FreeMindFileDialog chooser = mMindMapController.getFileChooser();
-		chooser.setSelectedFile(new File(Tools.getFileNameProposal(node)
+		chooser.setSelectedFile(new File(mMindMapController.getFileNameProposal(node)
 				+ freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION));
 		int returnVal = chooser.showSaveDialog(mMindMapController
 				.getSelectedView());
@@ -74,7 +75,7 @@ public class ExportBranchAction extends AbstractAction {
 			File chosenFile = chooser.getSelectedFile();
 			URL link;
 			// Force the extension to be .mm
-			String ext = Tools.getExtension(chosenFile.getName());
+			String ext = FileExtensions.getExtension(chosenFile.getName());
 			if (!ext.equals(freemind.main.FreeMindCommon.FREEMIND_FILE_EXTENSION_WITHOUT_DOT)) {
 				chosenFile = new File(
 						chosenFile.getParent(),
