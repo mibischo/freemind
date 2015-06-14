@@ -59,6 +59,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
+import java.util.StringTokenizer;
 import java.util.Vector;
 import java.util.logging.Logger;
 
@@ -109,6 +110,7 @@ import freemind.preferences.layout.OptionPanel.OptionPanelFeedback;
 import freemind.tools.FontHelper;
 import freemind.tools.Holders;
 import freemind.tools.IFontHelper;
+import freemind.tools.PageFormatter;
 import freemind.tools.UrlHelper;
 import freemind.view.MapModule;
 import freemind.view.mindmapview.MapView;
@@ -1022,16 +1024,12 @@ public class Controller implements MapModuleChangeObserver {
 		if (!pageFormatProperty.isEmpty()) {
 			logger.info("Page format (stored): " + pageFormatProperty);
 			final Paper storedPaper = new Paper();
-			Tools.setPageFormatFromString(storedPaper, pageFormatProperty);
+			PageFormatter.setPageFormatFromString(storedPaper, pageFormatProperty);
 			pageFormat.setPaper(storedPaper);
 		}
 		return true;
 	}
-
-	// ////////////
-	// Inner Classes
-	// //////////
-
+	
 	public boolean isPrintingAllowed() {
 		return isPrintingAllowed;
 	}
@@ -1311,7 +1309,7 @@ public class Controller implements MapModuleChangeObserver {
 			setProperty("page_orientation", "reverse_landscape");
 		}
 		setProperty(PAGE_FORMAT_PROPERTY,
-				Tools.getPageFormatAsString(pageFormat.getPaper()));
+				PageFormatter.getPageFormatAsString(pageFormat.getPaper()));
 	}
 
 }
