@@ -1,5 +1,6 @@
 package freemind.tools;
 
+import java.awt.Font;
 import java.awt.GraphicsEnvironment;
 import java.util.HashSet;
 import java.util.Set;
@@ -46,6 +47,31 @@ public class FontHelper implements IFontHelper {
 	public boolean isAvailableFontFamily(String fontFamilyName) {
 		return getAvailableFontFamilyNames().contains(fontFamilyName);
 	}
+	
+	/**
+	 * Adapts the font size inside of a component to the zoom
+	 * 
+	 * @param c
+	 *            component
+	 * @param zoom
+	 *            zoom factor
+	 * @param normalFontSize
+	 *            "unzoomed" normal font size.
+	 * @return a copy of the input font (if the size was effectively changed)
+	 *         with the correct scale.
+	 */
+	public Font updateFontSize(Font font, float zoom, int normalFontSize) {
+		if (font != null) {
+			float oldFontSize = font.getSize2D();
+			float newFontSize = normalFontSize * zoom;
+			if (oldFontSize != newFontSize) {
+				font = font.deriveFont(newFontSize);
+			}
+		}
+		return font;
+	}
+
+
 
 
 }

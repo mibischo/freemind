@@ -620,30 +620,6 @@ public class Tools {
 		}
 	}
 
-	/**
-	 * Adapts the font size inside of a component to the zoom
-	 * 
-	 * @param c
-	 *            component
-	 * @param zoom
-	 *            zoom factor
-	 * @param normalFontSize
-	 *            "unzoomed" normal font size.
-	 * @return a copy of the input font (if the size was effectively changed)
-	 *         with the correct scale.
-	 */
-	public static Font updateFontSize(Font font, float zoom, int normalFontSize) {
-		if (font != null) {
-			float oldFontSize = font.getSize2D();
-			float newFontSize = normalFontSize * zoom;
-			if (oldFontSize != newFontSize) {
-				font = font.deriveFont(newFontSize);
-			}
-		}
-		return font;
-	}
-
-
 	public static String getHostName() {
 		String hostname = "UNKNOWN";
 		try {
@@ -771,26 +747,6 @@ public class Tools {
 	}
 
 	
-	public static String printXmlAction(XmlAction pAction) {
-		final String classString = pAction.getClass().getName()
-				.replaceAll(".*\\.", "");
-		if (pAction instanceof CompoundAction) {
-			CompoundAction compound = (CompoundAction) pAction;
-			StringBuffer buf = new StringBuffer("[");
-			for (Iterator it = compound.getListChoiceList().iterator(); it
-					.hasNext();) {
-				if (buf.length() > 1) {
-					buf.append(',');
-				}
-				XmlAction subAction = (XmlAction) it.next();
-				buf.append(printXmlAction(subAction));
-			}
-			buf.append(']');
-			return classString + " " + buf.toString();
-		}
-		return classString;
-	}
-
 	public static XmlAction deepCopy(XmlAction action) {
 		return (XmlAction) unMarshall(marshall(action));
 	}

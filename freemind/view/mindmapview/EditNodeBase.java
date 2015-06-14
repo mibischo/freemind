@@ -52,6 +52,8 @@ import freemind.main.FreeMindMain;
 import freemind.main.Resources;
 import freemind.main.Tools;
 import freemind.modes.ModeController;
+import freemind.tools.FontHelper;
+import freemind.tools.IFontHelper;
 
 /**
  * @author foltin
@@ -69,6 +71,7 @@ public class EditNodeBase {
 	protected String text;
 	// this enables from outside close the edit mode
 	protected FocusListener textFieldListener = null;
+	protected IFontHelper fontHelper = new FontHelper();
 
 	EditNodeBase(final NodeView node, final String text,
 			ModeController controller, EditControl editControl)

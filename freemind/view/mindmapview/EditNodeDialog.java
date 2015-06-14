@@ -47,6 +47,7 @@ import com.inet.jortho.SpellChecker;
 
 import freemind.main.Tools;
 import freemind.modes.ModeController;
+import freemind.tools.FontHelper;
 import freemind.tools.Holders;
 
 /**
@@ -227,7 +228,7 @@ public class EditNodeDialog extends EditNodeBase {
 			});
 
 			Font font = getNode().getTextFont();
-			font = Tools.updateFontSize(font, getView().getZoom(),
+			font = new FontHelper().updateFontSize(font, getView().getZoom(),
 					font.getSize());
 			textArea.setFont(font);
 

@@ -101,8 +101,8 @@ public class UndoAction extends AbstractXmlAction {
 	}
 
 	protected void undoDoAction(ActionPair pair) {
-		logger.info("Undo, doing: " + Tools.printXmlAction(pair.getUndoAction()));
-		logger.info("Redo, would: " + Tools.printXmlAction(pair.getDoAction()));
+		logger.info("Undo, doing: " + controller.printXmlAction(pair.getUndoAction()));
+		logger.info("Redo, would: " + controller.printXmlAction(pair.getDoAction()));
 		isUndoAction = true;
 		this.controller.doTransaction("Undo",
 				new ActionPair(pair.getUndoAction(), pair.getDoAction()));
@@ -187,7 +187,7 @@ public class UndoAction extends AbstractXmlAction {
 		for (Iterator i = actionPairList.iterator(); i.hasNext();) {
 			ActionPair pair = (ActionPair) i.next();
 			logger.info("line " + (j++) + " = "
-					+ Tools.printXmlAction(pair.getDoAction()));
+					+ controller.printXmlAction(pair.getDoAction()));
 		}
 	}
 }

@@ -170,7 +170,7 @@ public abstract class CommunicationBase extends TerminateableThread {
 		if (pCommand instanceof CollaborationTransaction) {
 			CollaborationTransaction trans = (CollaborationTransaction) pCommand;
 			XmlAction doAction = mController.unMarshall(trans.getDoAction());
-			String out = pDirection + ": " + Tools.printXmlAction(doAction)
+			String out = pDirection + ": " + mController.printXmlAction(doAction)
 					+ " (Id: " + trans.getId() + ")";
 			logger.info(out);
 		} else {

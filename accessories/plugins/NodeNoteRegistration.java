@@ -65,6 +65,7 @@ import freemind.modes.ModeController.NodeSelectionListener;
 import freemind.modes.common.plugins.NodeNoteBase;
 import freemind.modes.mindmapmode.MindMapController;
 import freemind.modes.mindmapmode.actions.xml.ActorXml;
+import freemind.tools.FontHelper;
 import freemind.view.mindmapview.NodeView;
 
 public class NodeNoteRegistration implements HookRegistration, ActorXml,
@@ -373,7 +374,7 @@ public class NodeNoteRegistration implements HookRegistration, ActorXml,
 				 * http://sourceforge.net/tracker/?func=detail&aid=2800933&group_id
 				 * =7118&atid=107118
 				 */
-				defaultFont = Tools.updateFontSize(defaultFont,
+				defaultFont = new FontHelper().updateFontSize(defaultFont,
 						this.getMindMapController().getView().getZoom(),
 						defaultFont.getSize());
 			}

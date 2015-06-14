@@ -248,7 +248,7 @@ public class EditNodeWYSIWYG extends EditNodeBase {
 				 * http://sourceforge.net/tracker/?func=detail&aid=2800933&group_id
 				 * =7118&atid=107118
 				 */
-				font = Tools.updateFontSize(font, this.getView().getZoom(),
+				font = fontHelper.updateFontSize(font, this.getView().getZoom(),
 						font.getSize());
 			}
 			final Color nodeTextBackground = node.getTextBackground();

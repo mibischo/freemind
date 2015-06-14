@@ -86,6 +86,7 @@ import freemind.controller.MenuBar;
 import freemind.controller.MenuItemEnabledListener;
 import freemind.controller.MindMapNodesSelection;
 import freemind.controller.StructuredMenuHolder;
+import freemind.controller.actions.generated.instance.CompoundAction;
 import freemind.controller.actions.generated.instance.EditNoteToNodeAction;
 import freemind.controller.actions.generated.instance.MenuActionBase;
 import freemind.controller.actions.generated.instance.MenuCategoryBase;
@@ -2406,6 +2407,26 @@ public class MindMapController extends ControllerAdapter implements
 
 	public boolean doTransaction(String pName, ActionPair pPair) {
 		return actionFactory.doTransaction(pName, pPair);
+	}
+	
+	public String printXmlAction(XmlAction pAction) {
+		final String classString = pAction.getClass().getName()
+				.replaceAll(".*\\.", "");
+		if (pAction instanceof CompoundAction) {
+			CompoundAction compound = (CompoundAction) pAction;
+			StringBuffer buf = new StringBuffer("[");
+			for (Iterator it = compound.getListChoiceList().iterator(); it
+					.hasNext();) {
+				if (buf.length() > 1) {
+					buf.append(',');
+				}
+				XmlAction subAction = (XmlAction) it.next();
+				buf.append(printXmlAction(subAction));
+			}
+			buf.append(']');
+			return classString + " " + buf.toString();
+		}
+		return classString;
 	}
 
 }
