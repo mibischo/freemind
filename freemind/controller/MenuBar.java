@@ -30,6 +30,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
+import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.ButtonGroup;
 import javax.swing.JMenu;
@@ -40,8 +41,39 @@ import javax.swing.JRadioButtonMenuItem;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 
+import freemind.controller.action.AboutAction;
+import freemind.controller.action.CloseAction;
+import freemind.controller.action.DocumentationAction;
+import freemind.controller.action.HideAllAttributesAction;
+import freemind.controller.action.KeyDocumentationAction;
+import freemind.controller.action.LicenseAction;
+import freemind.controller.action.MoveToRootAction;
+import freemind.controller.action.NavigationMoveMapLeftAction;
+import freemind.controller.action.NavigationMoveMapRightAction;
+import freemind.controller.action.NavigationNextMapAction;
+import freemind.controller.action.NavigationPreviousMapAction;
+import freemind.controller.action.OpenURLAction;
+import freemind.controller.action.OptionAntialiasAction;
+import freemind.controller.action.OptionHTMLExportFoldingAction;
+import freemind.controller.action.OptionSelectionMechanismAction;
+import freemind.controller.action.PageAction;
+import freemind.controller.action.PrintAction;
+import freemind.controller.action.PrintPreviewAction;
+import freemind.controller.action.PropertyAction;
+import freemind.controller.action.ShowAllAttributesAction;
+import freemind.controller.action.ShowAttributeDialogAction;
+import freemind.controller.action.ShowFilterToolbarAction;
+import freemind.controller.action.ShowSelectedAttributesAction;
+import freemind.controller.action.ShowSelectionAsRectangleAction;
+import freemind.controller.action.ToggleLeftToolbarAction;
+import freemind.controller.action.ToggleMenubarAction;
+import freemind.controller.action.ToggleToolbarAction;
+import freemind.controller.action.ZoomInAction;
+import freemind.controller.action.ZoomOutAction;
 import freemind.main.FreeMind;
+import freemind.modes.MindMap;
 import freemind.modes.ModeController;
+import freemind.modes.attributes.AttributeTableLayoutModel;
 import freemind.view.MapModule;
 
 /**
@@ -50,7 +82,7 @@ import freemind.view.MapModule;
  * */
 public class MenuBar extends JMenuBar {
 
-	private static java.util.logging.Logger logger;
+	static java.util.logging.Logger logger;
 	public static final String MENU_BAR_PREFIX = "menu_bar/";
 	public static final String GENERAL_POPUP_PREFIX = "popup/";
 
@@ -79,15 +111,170 @@ public class MenuBar extends JMenuBar {
 	Controller c;
 	ActionListener mapsMenuActionListener = new MapsMenuActionListener();
 	private JMenu formatmenu;
+	public CloseAction close;
+	
+	public Action print;
+	public Action printDirect;
+
+
+	private Action printPreview;
+	private Action page;
+	private Action quit;
+	
+	public Action getQuit() {
+		return quit;
+	}
+
+
+	private Action showAllAttributes;
+	private Action showSelectedAttributes;
+	private Action hideAllAttributes;
+
+	private OptionAntialiasAction optionAntialiasAction;
+	public OptionAntialiasAction getOptionAntialiasAction() {
+		return optionAntialiasAction;
+	}
+
+
+	public Action optionHTMLExportFoldingAction;
+	public Action optionSelectionMechanismAction;
+
+	public Action about;
+	public Action faq;
+	public Action keyDocumentation;
+	public Action webDocu;
+	public Action documentation;
+	public Action license;
+	public Action showFilterToolbarAction;
+	public Action getShowFilterToolbarAction() {
+		return showFilterToolbarAction;
+	}
+
+
+	public Action showAttributeManagerAction;
+	public Action navigationPreviousMap;
+	public Action navigationNextMap;
+	public Action navigationMoveMapLeftAction;
+	public Action navigationMoveMapRightAction;
+
+	public Action moveToRoot;
+	public Action toggleMenubar;
+	public Action toggleToolbar;
+	public Action toggleLeftToolbar;
+
+	public Action zoomIn;
+	public Action getZoomIn() {
+		return zoomIn;
+	}
+
+	public Action getZoomOut() {
+		return zoomOut;
+	}
+
+
+	public Action zoomOut;
+
+	public Action showSelectionAsRectangle;
+	public PropertyAction propertyAction;
+	public PropertyAction getPropertyAction() {
+		return propertyAction;
+	}
+
+
+	public OpenURLAction freemindUrl;
 
 	public MenuBar(Controller controller) {
 		this.c = controller;
 		if (logger == null) {
 			logger = controller.getFrame().getLogger(this.getClass().getName());
 		}
+		
+		showAllAttributes = new ShowAllAttributesAction(c);
+		showSelectedAttributes = new ShowSelectedAttributesAction(c);
+		hideAllAttributes = new HideAllAttributesAction(c);
+		
+		close = new CloseAction(c);
+
+		print = new PrintAction(c, true);
+		printDirect = new PrintAction(c, false);
+		printPreview = new PrintPreviewAction(c);
+		page = new PageAction(c);
+		quit = new QuitAction(c);
+		about = new AboutAction(c);
+		freemindUrl = new OpenURLAction(c, c.getResourceString("FreeMind"),
+				c.getProperty("webFreeMindLocation"));
+		faq = new OpenURLAction(c, c.getResourceString("FAQ"),
+				c.getProperty("webFAQLocation"));
+		keyDocumentation = new KeyDocumentationAction(c);
+		webDocu = new OpenURLAction(c, c.getResourceString("webDocu"),
+				c.getProperty("webDocuLocation"));
+		documentation = new DocumentationAction(c);
+		license = new LicenseAction(c);
+		navigationPreviousMap = new NavigationPreviousMapAction(c);
+		navigationNextMap = new NavigationNextMapAction(c);
+		navigationMoveMapLeftAction = new NavigationMoveMapLeftAction(c);
+		navigationMoveMapRightAction = new NavigationMoveMapRightAction(c);
+		showFilterToolbarAction = new ShowFilterToolbarAction(c);
+		showAttributeManagerAction = new ShowAttributeDialogAction(c);
+		toggleMenubar = new ToggleMenubarAction(c);
+		toggleToolbar = new ToggleToolbarAction(c);
+		toggleLeftToolbar = new ToggleLeftToolbarAction(c);
+		optionAntialiasAction = new OptionAntialiasAction(c);
+		optionHTMLExportFoldingAction = new OptionHTMLExportFoldingAction(c);
+		optionSelectionMechanismAction = new OptionSelectionMechanismAction(c);
+
+		zoomIn = new ZoomInAction(c);
+		zoomOut = new ZoomOutAction(c);
+		propertyAction = new PropertyAction(c);
+
+		showSelectionAsRectangle = new ShowSelectionAsRectangleAction(c);
+
+		moveToRoot = new MoveToRootAction(c);
+
 		// updateMenus();
 	}// Constructor
 
+	/**
+	 * Manage the availabilty of all Actions dependend of whether there is a map
+	 * or not
+	 */
+	public void setAllActions(boolean enabled) {
+		print.setEnabled(enabled && c.isPrintingAllowed());
+		printDirect.setEnabled(enabled && c.isPrintingAllowed());
+		printPreview.setEnabled(enabled && c.isPrintingAllowed());
+		page.setEnabled(enabled && c.isPrintingAllowed());
+		close.setEnabled(enabled);
+		moveToRoot.setEnabled(enabled);
+		showAllAttributes.setEnabled(enabled);
+		showSelectedAttributes.setEnabled(enabled);
+		hideAllAttributes.setEnabled(enabled);
+		showAttributeManagerAction.setEnabled(enabled);
+		((MainToolBar) c.getToolBar()).setAllActions(enabled);
+		showSelectionAsRectangle.setEnabled(enabled);
+	}
+	
+	public void numberOfOpenMapInformation(int number, int pIndex) {
+		navigationPreviousMap.setEnabled(number > 0);
+		navigationNextMap.setEnabled(number > 0);
+		logger.info("number " + number + ", pIndex " + pIndex);
+		navigationMoveMapLeftAction.setEnabled(number > 1 && pIndex > 0);
+		navigationMoveMapRightAction.setEnabled(number > 1
+				&& pIndex < number - 1);
+	}
+	
+	public void setAttributeViewType(MindMap map, String value) {
+		if (value.equals(AttributeTableLayoutModel.SHOW_SELECTED)) {
+			((ShowSelectedAttributesAction) showSelectedAttributes)
+					.setAttributeViewType(map);
+		} else if (value.equals(AttributeTableLayoutModel.HIDE_ALL)) {
+			((HideAllAttributesAction) hideAllAttributes)
+					.setAttributeViewType(map);
+		} else if (value.equals(AttributeTableLayoutModel.SHOW_ALL)) {
+			((ShowAllAttributesAction) showAllAttributes)
+					.setAttributeViewType(map);
+		}
+	}
+	
 	/**
 	 * This is the only public method. It restores all menus.
 	 * 
@@ -180,16 +367,16 @@ public class MenuBar extends JMenuBar {
 
 		menuHolder.addMenu(new JMenu(c.getResourceString("help")), HELP_MENU
 				+ ".");
-		menuHolder.addAction(c.documentation, HELP_MENU + "doc/documentation");
-		menuHolder.addAction(c.freemindUrl, HELP_MENU + "doc/freemind");
-		menuHolder.addAction(c.faq, HELP_MENU + "doc/faq");
-		menuHolder.addAction(c.keyDocumentation, HELP_MENU
+		menuHolder.addAction(documentation, HELP_MENU + "doc/documentation");
+		menuHolder.addAction(freemindUrl, HELP_MENU + "doc/freemind");
+		menuHolder.addAction(faq, HELP_MENU + "doc/faq");
+		menuHolder.addAction(keyDocumentation, HELP_MENU
 				+ "doc/keyDocumentation");
 		menuHolder.addSeparator(HELP_MENU);
 		menuHolder.addCategory(HELP_MENU + "bugs");
 		menuHolder.addSeparator(HELP_MENU);
-		menuHolder.addAction(c.license, HELP_MENU + "about/license");
-		menuHolder.addAction(c.about, HELP_MENU + "about/about");
+		menuHolder.addAction(license, HELP_MENU + "about/license");
+		menuHolder.addAction(about, HELP_MENU + "about/about");
 
 		updateFileMenu();
 		updateViewMenu();
@@ -239,16 +426,16 @@ public class MenuBar extends JMenuBar {
 			// We have enabled hiding of menubar only in applets. It it because
 			// when we hide menubar in application, the key accelerators from
 			// menubar do not work.
-			newPopupItem = menuHolder.addAction(c.toggleMenubar, POPUP_MENU
+			newPopupItem = menuHolder.addAction(toggleMenubar, POPUP_MENU
 					+ "toggleMenubar");
 			newPopupItem.setForeground(new Color(100, 80, 80));
 		}
 
-		newPopupItem = menuHolder.addAction(c.toggleToolbar, POPUP_MENU
+		newPopupItem = menuHolder.addAction(toggleToolbar, POPUP_MENU
 				+ "toggleToolbar");
 		newPopupItem.setForeground(new Color(100, 80, 80));
 
-		newPopupItem = menuHolder.addAction(c.toggleLeftToolbar, POPUP_MENU
+		newPopupItem = menuHolder.addAction(toggleLeftToolbar, POPUP_MENU
 				+ "toggleLeftToolbar");
 		newPopupItem.setForeground(new Color(100, 80, 80));
 	}
@@ -282,24 +469,24 @@ public class MenuBar extends JMenuBar {
 
 	private void updateFileMenu() {
 
-		menuHolder.addAction(c.page, FILE_MENU + "print/pageSetup");
-		JMenuItem print = menuHolder.addAction(c.print, FILE_MENU
+		menuHolder.addAction(page, FILE_MENU + "print/pageSetup");
+		JMenuItem printItem = menuHolder.addAction(print, FILE_MENU
 				+ "print/print");
-		print.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
+		printItem.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_print")));
 
-		JMenuItem printPreview = menuHolder.addAction(c.printPreview, FILE_MENU
+		JMenuItem printPreviewItem = menuHolder.addAction(printPreview, FILE_MENU
 				+ "print/printPreview");
-		printPreview.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
+		printPreviewItem.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_print_preview")));
 
-		JMenuItem close = menuHolder.addAction(c.close, FILE_MENU
+		JMenuItem closeItem = menuHolder.addAction(close, FILE_MENU
 				+ "close/close");
-		close.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
+		closeItem.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_close")));
 
-		JMenuItem quit = menuHolder.addAction(c.quit, FILE_MENU + "quit/quit");
-		quit.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
+		JMenuItem quitItem = menuHolder.addAction(quit, FILE_MENU + "quit/quit");
+		quitItem.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_quit")));
 		updateLastOpenedList();
 	}
@@ -326,29 +513,29 @@ public class MenuBar extends JMenuBar {
 	}
 
 	private void updateEditMenu() {
-		JMenuItem moveToRoot = menuHolder.addAction(c.moveToRoot, NAVIGATE_MENU
+		JMenuItem moveToRootItem = menuHolder.addAction(moveToRoot, NAVIGATE_MENU
 				+ "nodes/moveToRoot");
-		moveToRoot.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
+		moveToRootItem.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_moveToRoot")));
 
-		JMenuItem previousMap = menuHolder.addAction(c.navigationPreviousMap,
+		JMenuItem previousMap = menuHolder.addAction(navigationPreviousMap,
 				MINDMAP_MENU + "navigate/navigationPreviousMap");
 		previousMap.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty(FreeMind.KEYSTROKE_PREVIOUS_MAP)));
 
-		JMenuItem nextMap = menuHolder.addAction(c.navigationNextMap,
+		JMenuItem nextMap = menuHolder.addAction(navigationNextMap,
 				MINDMAP_MENU + "navigate/navigationNextMap");
 		nextMap.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty(FreeMind.KEYSTROKE_NEXT_MAP)));
 
 		JMenuItem MoveMapLeft = menuHolder.addAction(
-				c.navigationMoveMapLeftAction, MINDMAP_MENU
+				navigationMoveMapLeftAction, MINDMAP_MENU
 						+ "navigate/navigationMoveMapLeft");
 		MoveMapLeft.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty(FreeMind.KEYSTROKE_MOVE_MAP_LEFT)));
 
 		JMenuItem MoveMapRight = menuHolder.addAction(
-				c.navigationMoveMapRightAction, MINDMAP_MENU
+				navigationMoveMapRightAction, MINDMAP_MENU
 						+ "navigate/navigationMoveMapRight");
 		MoveMapRight.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty(FreeMind.KEYSTROKE_MOVE_MAP_RIGHT)));
@@ -369,25 +556,25 @@ public class MenuBar extends JMenuBar {
 	}
 
 	private void updateViewMenu() {
-		JMenuItem toggleToolbar = menuHolder.addAction(c.toggleToolbar,
+		JMenuItem toggleToolbarItem = menuHolder.addAction(toggleToolbar,
 				VIEW_MENU + "toolbars/toggleToolbar");
-		JMenuItem toggleLeftToolbar = menuHolder.addAction(c.toggleLeftToolbar,
+		JMenuItem toggleLeftToolbarItem = menuHolder.addAction(toggleLeftToolbar,
 				VIEW_MENU + "toolbars/toggleLeftToolbar");
 
 		menuHolder.addSeparator(VIEW_MENU);
 
-		JMenuItem showSelectionAsRectangle = menuHolder.addAction(
-				c.showSelectionAsRectangle, VIEW_MENU
+		JMenuItem showSelectionAsRectangleItem = menuHolder.addAction(
+				showSelectionAsRectangle, VIEW_MENU
 						+ "general/selectionAsRectangle");
 
-		JMenuItem zoomIn = menuHolder.addAction(c.zoomIn, VIEW_MENU
+		JMenuItem zoomInItem = menuHolder.addAction(zoomIn, VIEW_MENU
 				+ "zoom/zoomIn");
-		zoomIn.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
+		zoomInItem.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_zoom_in")));
 
-		JMenuItem zoomOut = menuHolder.addAction(c.zoomOut, VIEW_MENU
+		JMenuItem zoomOutItem = menuHolder.addAction(zoomOut, VIEW_MENU
 				+ "zoom/zoomOut");
-		zoomOut.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
+		zoomOutItem.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_zoom_out")));
 
 		menuHolder.addSeparator(VIEW_MENU);
@@ -398,7 +585,7 @@ public class MenuBar extends JMenuBar {
 						+ "attributes/.");
 		ButtonGroup buttonGroup = new ButtonGroup();
 		JRadioButtonMenuItem itemShowAll = (JRadioButtonMenuItem) menuHolder
-				.addMenuItem(new JRadioButtonMenuItem(c.showAllAttributes),
+				.addMenuItem(new JRadioButtonMenuItem(showAllAttributes),
 						VIEW_MENU + "attributes/showAllAttributes");
 		itemShowAll.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_show_all_attributes")));
@@ -406,14 +593,14 @@ public class MenuBar extends JMenuBar {
 
 		JRadioButtonMenuItem itemShowSelected = (JRadioButtonMenuItem) menuHolder
 				.addMenuItem(
-						new JRadioButtonMenuItem(c.showSelectedAttributes),
+						new JRadioButtonMenuItem(showSelectedAttributes),
 						VIEW_MENU + "attributes/showSelectedAttributes");
 		itemShowSelected.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_show_selected_attributes")));
 		buttonGroup.add(itemShowSelected);
 
 		JRadioButtonMenuItem itemHideAll = (JRadioButtonMenuItem) menuHolder
-				.addMenuItem(new JRadioButtonMenuItem(c.hideAllAttributes),
+				.addMenuItem(new JRadioButtonMenuItem(hideAllAttributes),
 						VIEW_MENU + "attributes/hideAllAttributes");
 		itemHideAll.setAccelerator(KeyStroke.getKeyStroke(c.getFrame()
 				.getAdjustableProperty("keystroke_hide_all_attributes")));
@@ -512,5 +699,24 @@ public class MenuBar extends JMenuBar {
 			boolean pressed) {
 		return super.processKeyBinding(ks, e, condition, pressed);
 	}
+	
+	
+	public class QuitAction extends AbstractAction {
+		QuitAction(Controller controller) {
+			super(controller.getResourceString("quit"));
+		}
+
+		public void actionPerformed(ActionEvent e) {
+			c.quit();
+		}
+	}
+
+	
+
+	
+
+	//
+	// Map navigation
+	//
 
 }

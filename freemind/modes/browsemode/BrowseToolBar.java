@@ -41,7 +41,7 @@ public class BrowseToolBar extends JToolBar {
 
 		this.c = controller;
 		this.setRollover(true);
-		this.add(controller.getController().showFilterToolbarAction);
+		this.add(controller.getController().getMenuBar().getShowFilterToolbarAction());
 		urlfield = new PersistentEditableComboBox(controller,
 				BROWSE_URL_STORAGE_KEY);
 

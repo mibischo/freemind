@@ -339,7 +339,7 @@ public class MindMapController extends ControllerAdapter implements
 	public Action importBranch = new ImportBranchAction();
 	public Action importLinkedBranch = new ImportLinkedBranchAction();
 	public Action importLinkedBranchWithoutRoot = new ImportLinkedBranchWithoutRootAction();
-
+	
 	public Action showAttributeManagerAction = null;
 	public Action propertyAction = null;
 
@@ -477,8 +477,8 @@ public class MindMapController extends ControllerAdapter implements
 		mRegistrations = new Vector();
 
 		attributeController = new MindMapModeAttributeController(this);
-		showAttributeManagerAction = getController().showAttributeManagerAction;
-		propertyAction = getController().propertyAction;
+		showAttributeManagerAction = getController().getMenuBar().getShowFilterToolbarAction();
+		propertyAction = getController().getMenuBar().getPropertyAction();
 	}
 
 	private void createStandardActions() {
