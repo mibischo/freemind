@@ -47,6 +47,8 @@ public class AllTests {
 		suite.addTest(new TestSuite(SignedScriptTests.class));
 		suite.addTest(new TestSuite(LastStorageManagementTests.class));
 		suite.addTest(new TestSuite(ToolsTests.class));
+		suite.addTest(new TestSuite(OsHelperTests.class));
+		suite.addTest(new TestSuite(FindTextTests.class));
 		suite.addTest(new TestSuite(ExportTests.class));
 		suite.addTest(new TestSuite(LayoutTests.class));
 		suite.addTest(new TestSuite(LastOpenedTests.class));
