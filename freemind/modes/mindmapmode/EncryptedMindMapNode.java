@@ -189,7 +189,7 @@ public class EncryptedMindMapNode extends MindMapNodeModel {
 
 	/**
      */
-	private boolean equals(StringBuffer givenPassword, StringBuffer password2) {
+	public boolean equals(StringBuffer givenPassword, StringBuffer password2) {
 		if (givenPassword.length() != password.length())
 			return false;
 		for (int i = 0; i < password2.length(); i++) {

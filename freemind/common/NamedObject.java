@@ -55,6 +55,12 @@ public class NamedObject {
 		}
 		return object.equals(o);
 	}
+	
+	
+	@Override
+	public int hashCode() {
+		return name.hashCode() + object.hashCode();
+	}
 
 	public String toString() {
 		return name;

@@ -82,7 +82,7 @@ import freemind.view.MapModule;
  * */
 public class MenuBar extends JMenuBar {
 
-	static java.util.logging.Logger logger;
+	private static java.util.logging.Logger logger;
 	public static final String MENU_BAR_PREFIX = "menu_bar/";
 	public static final String GENERAL_POPUP_PREFIX = "popup/";
 
