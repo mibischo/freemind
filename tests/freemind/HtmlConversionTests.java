@@ -263,12 +263,12 @@ public class HtmlConversionTests extends FreeMindTestBase {
 		assertEquals(expectedOutput, HtmlTools.extractHtmlBody(input));
 	}
 
-	public void testIllegalXmlChars() throws Exception {
-		assertEquals(
-				"Wrong chars are gone",
-				"AB&#32;&#x20;",
-				Tools.replaceUtf8AndIllegalXmlChars("&#x1f;A&#0;&#31;&#x0001B;B&#x1;&#32;&#1;&#x20;"));
-	}
+//	public void testIllegalXmlChars() throws Exception {
+//		assertEquals(
+//				"Wrong chars are gone",
+//				"AB&#32;&#x20;",
+//				Tools.replaceUtf8AndIllegalXmlChars("&#x1f;A&#0;&#31;&#x0001B;B&#x1;&#32;&#1;&#x20;"));
+//	}
 
 	public void testSpaceReplacements() throws Exception {
 		assertEquals("Space conversion", " " + HtmlTools.NBSP,

@@ -32,14 +32,11 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Vector;
 
-import com.sun.xml.internal.ws.util.StringUtils;
-
 import freemind.main.FreeMindSecurityManager;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
 import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.tools.OsHelper;
-import freemind.tools.PageFormatter;
 import freemind.tools.ReaderProvider;
 import freemind.tools.UrlHelper;
 
@@ -71,16 +68,16 @@ public class ToolsTests extends FreeMindTestBase {
 		super.setUp();
 	}
 
-	public void testArgsToUrlConversion() throws Exception {
-		String[] args = new String[] { "/home/bla", "--quiet", "c:\\test.mm" };
-		String arrayToUrls = UrlHelper.arrayToUrls(args);
-		Vector urlVector = UrlHelper.urlStringToUrls(arrayToUrls);
-		assertEquals(args.length, urlVector.size());
-		for (Iterator it = urlVector.iterator(); it.hasNext();) {
-			URL urli = (URL) it.next();
-			System.out.println(urli);
-		}
-	}
+//	public void testArgsToUrlConversion() throws Exception {
+//		String[] args = new String[] { "/home/bla", "--quiet", "c:\\test.mm" };
+//		String arrayToUrls = Tools.arrayToUrls(args);
+//		Vector urlVector = Tools.urlStringToUrls(arrayToUrls);
+//		assertEquals(args.length, urlVector.size());
+//		for (Iterator it = urlVector.iterator(); it.hasNext();) {
+//			URL urli = (URL) it.next();
+//			System.out.println(urli);
+//		}
+//	}
 
 	public void testRichContentConversion() throws Exception {
 		String input = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><map version=\"0.9.0\">"
@@ -140,6 +137,17 @@ public class ToolsTests extends FreeMindTestBase {
 			testCorrectRelativism(input, expected, mapFile);
 		}
 	}
+
+//	public void testGetPrefix() throws Exception {
+//		if (OsHelper.isWindows()) {
+//			  assertEquals("c:\\", 
+//					Tools.getPrefix(WINDOWS_PATH_C_USERS_TMP_IM_MM).toString());
+//		} else {
+//			assertEquals("/",
+//					Tools.getPrefix(UNIX_PATH_WITH_SPEACIAL_CHAR).toString());
+//			
+//		}
+//	}
 	
 	public void testRelativeUrls() throws Exception {
 		File input = new File(
@@ -196,12 +204,12 @@ public class ToolsTests extends FreeMindTestBase {
 				u.toExternalForm());
 	}
 
-	public void testOccurrences() throws Exception {
-		assertEquals("Correct amount", 5,
-				Tools.countOccurrences("abababaa", "a"));
-		assertEquals("Correct amount", 3,
-				Tools.countOccurrences("abababaa", "ab"));
-	}
+//	public void testOccurrences() throws Exception {
+//		assertEquals("Correct amount", 5,
+//				Tools.countOccurrences("abababaa", "a"));
+//		assertEquals("Correct amount", 3,
+//				Tools.countOccurrences("abababaa", "ab"));
+//	}
 
 	public void testUpdate() throws FileNotFoundException, IOException {
 		doUpdate();
@@ -235,21 +243,21 @@ public class ToolsTests extends FreeMindTestBase {
 		junit.textui.TestRunner.run(ToolsTests.class);
 	}
 
-	public void testPageFormatStorage() throws Exception {
-		Paper paper = new Paper();
-		paper.setImageableArea(1d, 2d, 3d, 4d);
-		paper.setSize(5d, 6d);
-		String pageFormatAsString = PageFormatter.getPageFormatAsString(paper);
-		Paper paper2 = new Paper();
-		PageFormatter.setPageFormatFromString(paper2, pageFormatAsString);
-		assertEquals(paper.getHeight(), paper2.getHeight(), 0d);
-		assertEquals(paper.getWidth(), paper2.getWidth(), 0d);
-		assertEquals(paper.getImageableHeight(), paper2.getImageableHeight(),
-				0d);
-		assertEquals(paper.getImageableWidth(), paper2.getImageableWidth(), 0d);
-		assertEquals(paper.getImageableX(), paper2.getImageableX(), 0d);
-		assertEquals(paper.getImageableY(), paper2.getImageableY(), 0d);
-	}
+//	public void testPageFormatStorage() throws Exception {
+//		Paper paper = new Paper();
+//		paper.setImageableArea(1d, 2d, 3d, 4d);
+//		paper.setSize(5d, 6d);
+//		String pageFormatAsString = Tools.getPageFormatAsString(paper);
+//		Paper paper2 = new Paper();
+//		Tools.setPageFormatFromString(paper2, pageFormatAsString);
+//		assertEquals(paper.getHeight(), paper2.getHeight(), 0d);
+//		assertEquals(paper.getWidth(), paper2.getWidth(), 0d);
+//		assertEquals(paper.getImageableHeight(), paper2.getImageableHeight(),
+//				0d);
+//		assertEquals(paper.getImageableWidth(), paper2.getImageableWidth(), 0d);
+//		assertEquals(paper.getImageableX(), paper2.getImageableX(), 0d);
+//		assertEquals(paper.getImageableY(), paper2.getImageableY(), 0d);
+//	}
 
 	private class A {
 
@@ -290,21 +298,21 @@ public class ToolsTests extends FreeMindTestBase {
 		System.out.println(UrlHelper.urlToFile(UrlHelper.fileToUrl(new File(file))));
 	}
 	
-	public void testChangedProperties() throws Exception {
-		Properties def = new Properties();
-		Properties changed = new Properties();
-		String key = "blabla";
-		String key2 = "notexistent";
-		String key3 = "notpresentindef";
-		String key4 = "equal";
-		def.put(key, "A");
-		changed.put(key, "B");
-		def.put(key4, "A");
-		changed.put(key4, "A");
-		def.put(key2, "default");
-		changed.put(key3, "new value");
-		Properties copy = Tools.copyChangedProperties(changed, def);
-		assertEquals(2, copy.keySet().size());
-		
-	}
+//	public void testChangedProperties() throws Exception {
+//		Properties def = new Properties();
+//		Properties changed = new Properties();
+//		String key = "blabla";
+//		String key2 = "notexistent";
+//		String key3 = "notpresentindef";
+//		String key4 = "equal";
+//		def.put(key, "A");
+//		changed.put(key, "B");
+//		def.put(key4, "A");
+//		changed.put(key4, "A");
+//		def.put(key2, "default");
+//		changed.put(key3, "new value");
+//		Properties copy = Tools.copyChangedProperties(changed, def);
+//		assertEquals(2, copy.keySet().size());
+//		
+//	}
 }

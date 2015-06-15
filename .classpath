@@ -40,5 +40,6 @@
 	<classpathentry kind="lib" path="plugins/svg/batik-anim.jar"/>
 	<classpathentry kind="lib" path="plugins/svg/batik-codec.jar"/>
 	<classpathentry kind="lib" path="plugins/svg/xml-apis-ext.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
