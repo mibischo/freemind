@@ -70,8 +70,8 @@ public class ToolsTests extends FreeMindTestBase {
 
 	public void testArgsToUrlConversion() throws Exception {
 		String[] args = new String[] { "/home/bla", "--quiet", "c:\\test.mm" };
-		String arrayToUrls = Tools.arrayToUrls(args);
-		Vector urlVector = Tools.urlStringToUrls(arrayToUrls);
+		String arrayToUrls = UrlHelper.arrayToUrls(args);
+		Vector urlVector = UrlHelper.urlStringToUrls(arrayToUrls);
 		assertEquals(args.length, urlVector.size());
 		for (Iterator it = urlVector.iterator(); it.hasNext();) {
 			URL urli = (URL) it.next();

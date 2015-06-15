@@ -6,6 +6,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.StringTokenizer;
+import java.util.Vector;
 
 import freemind.main.Resources;
 
@@ -142,6 +143,32 @@ public class UrlHelper {
 
 
 
-
+	public static String arrayToUrls(String[] pArgs) {
+		StringBuffer b = new StringBuffer();
+		for (int i = 0; i < pArgs.length; i++) {
+			String fileName = pArgs[i];
+			try {
+				b.append(UrlHelper.fileToUrl(new File(fileName)));
+				b.append('\n');
+			} catch (MalformedURLException e) {
+				freemind.main.Resources.getInstance().logException(e);
+			}
+		}
+		return b.toString();
+	}
+	
+	public static Vector/* <URL> */urlStringToUrls(String pUrls) {
+		String[] urls = pUrls.split("\n");
+		Vector ret = new Vector();
+		for (int i = 0; i < urls.length; i++) {
+			String url = urls[i];
+			try {
+				ret.add(new URL(url));
+			} catch (MalformedURLException e) {
+				freemind.main.Resources.getInstance().logException(e);
+			}
+		}
+		return ret;
+	}
 
 }

@@ -1064,7 +1064,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 
 				String script;
 				// Put url to open here
-				script = arrayToUrls(pArgs);
+				script = UrlHelper.arrayToUrls(pArgs);
 				out.writeUTF(script);
 
 				logger.info("Waiting for server");
@@ -1093,19 +1093,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 
 	}
 
-	private String arrayToUrls(String[] pArgs) {
-		StringBuffer b = new StringBuffer();
-		for (int i = 0; i < pArgs.length; i++) {
-			String fileName = pArgs[i];
-			try {
-				b.append(UrlHelper.fileToUrl(new File(fileName)));
-				b.append('\n');
-			} catch (MalformedURLException e) {
-				freemind.main.Resources.getInstance().logException(e);
-			}
-		}
-		return b.toString();
-	}
+	
 
 
 	/**
