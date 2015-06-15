@@ -26,6 +26,8 @@ import java.awt.EventQueue;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.event.KeyEvent;
+import java.util.Iterator;
+import java.util.Properties;
 import java.util.Vector;
 
 import javax.swing.InputMap;
@@ -153,5 +155,15 @@ public class Tools {
 		map.remove(keyStrokeF8);
 	}
 
-
+	public static Properties copyChangedProperties(Properties props2,
+			Properties defProps2) {
+		Properties toBeStored = new Properties();
+		for (Iterator it = props2.keySet().iterator(); it.hasNext();) {
+			String key = (String) it.next();
+			if (!Tools.safeEquals(props2.get(key), defProps2.get(key))) {
+				toBeStored.put(key, props2.get(key));
+			}
+		}
+		return toBeStored;
+	}
 }

@@ -25,9 +25,9 @@ import java.io.StringReader;
 import com.lightdev.app.shtm.SHTMLPanel;
 
 import freemind.main.HtmlTools;
-import freemind.main.Tools;
 import freemind.main.XMLElement;
 import freemind.modes.mindmapmode.MindMapNodeModel;
+import freemind.tools.XmlTransformations;
 
 /**
  * @author foltin
@@ -261,13 +261,6 @@ public class HtmlConversionTests extends FreeMindTestBase {
 		String expectedOutput = getHtmlBody(" ");
 		assertTrue(HtmlTools.isHtmlNode(input));
 		assertEquals(expectedOutput, HtmlTools.extractHtmlBody(input));
-	}
-
-	public void testIllegalXmlChars() throws Exception {
-		assertEquals(
-				"Wrong chars are gone",
-				"AB&#32;&#x20;",
-				Tools.replaceUtf8AndIllegalXmlChars("&#x1f;A&#0;&#31;&#x0001B;B&#x1;&#32;&#1;&#x20;"));
 	}
 
 	public void testSpaceReplacements() throws Exception {

@@ -500,7 +500,7 @@ public class FreeMind extends JFrame implements FreeMindMain {
 			outputStreamWriter.write('\n');
 			outputStreamWriter.flush();
 			//to save as few props as possible.
-			Properties toBeStored = copyChangedProperties(props, defProps);
+			Properties toBeStored = Tools.copyChangedProperties(props, defProps);
 			toBeStored.store(out, null);
 			out.close();
 		} catch (Exception ex) {
@@ -510,18 +510,6 @@ public class FreeMind extends JFrame implements FreeMindMain {
 		if (pIsShutdown && mEditServer != null) {
 			mEditServer.stopServer();
 		}
-	}
-	
-	private Properties copyChangedProperties(Properties props2,
-			Properties defProps2) {
-		Properties toBeStored = new Properties();
-		for (Iterator it = props2.keySet().iterator(); it.hasNext();) {
-			String key = (String) it.next();
-			if (!Tools.safeEquals(props2.get(key), defProps2.get(key))) {
-				toBeStored.put(key, props2.get(key));
-			}
-		}
-		return toBeStored;
 	}
 
 	public MapView getView() {

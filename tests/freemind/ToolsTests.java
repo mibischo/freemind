@@ -32,8 +32,6 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Vector;
 
-import com.sun.xml.internal.ws.util.StringUtils;
-
 import freemind.main.FreeMindSecurityManager;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
@@ -41,6 +39,7 @@ import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.tools.OsHelper;
 import freemind.tools.PageFormatter;
 import freemind.tools.ReaderProvider;
+import freemind.tools.StringUtils;
 import freemind.tools.UrlHelper;
 
 /**
@@ -198,9 +197,9 @@ public class ToolsTests extends FreeMindTestBase {
 
 	public void testOccurrences() throws Exception {
 		assertEquals("Correct amount", 5,
-				Tools.countOccurrences("abababaa", "a"));
+				StringUtils.countOccurrences("abababaa", "a"));
 		assertEquals("Correct amount", 3,
-				Tools.countOccurrences("abababaa", "ab"));
+				StringUtils.countOccurrences("abababaa", "ab"));
 	}
 
 	public void testUpdate() throws FileNotFoundException, IOException {
