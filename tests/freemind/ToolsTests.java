@@ -32,11 +32,14 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Vector;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
 import freemind.main.FreeMindSecurityManager;
 import freemind.main.HtmlTools;
 import freemind.main.Tools;
 import freemind.modes.mindmapmode.MindMapMapModel;
 import freemind.tools.OsHelper;
+import freemind.tools.PageFormatter;
 import freemind.tools.ReaderProvider;
 import freemind.tools.UrlHelper;
 
@@ -135,17 +138,6 @@ public class ToolsTests extends FreeMindTestBase {
 			String expected = pathname;
 			File mapFile = new File(WINDOWS_PATH_C_USERS_TMP_IM_MM);
 			testCorrectRelativism(input, expected, mapFile);
-		}
-	}
-
-	public void testGetPrefix() throws Exception {
-		if (OsHelper.isWindows()) {
-			  assertEquals("c:\\", 
-					Tools.getPrefix(WINDOWS_PATH_C_USERS_TMP_IM_MM).toString());
-		} else {
-			assertEquals("/",
-					Tools.getPrefix(UNIX_PATH_WITH_SPEACIAL_CHAR).toString());
-			
 		}
 	}
 	
@@ -247,9 +239,9 @@ public class ToolsTests extends FreeMindTestBase {
 		Paper paper = new Paper();
 		paper.setImageableArea(1d, 2d, 3d, 4d);
 		paper.setSize(5d, 6d);
-		String pageFormatAsString = Tools.getPageFormatAsString(paper);
+		String pageFormatAsString = PageFormatter.getPageFormatAsString(paper);
 		Paper paper2 = new Paper();
-		Tools.setPageFormatFromString(paper2, pageFormatAsString);
+		PageFormatter.setPageFormatFromString(paper2, pageFormatAsString);
 		assertEquals(paper.getHeight(), paper2.getHeight(), 0d);
 		assertEquals(paper.getWidth(), paper2.getWidth(), 0d);
 		assertEquals(paper.getImageableHeight(), paper2.getImageableHeight(),
